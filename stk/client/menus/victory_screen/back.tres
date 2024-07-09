@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://d0raatgkmptv3"]
+
+[resource]
+resource_name = "back"
+diffuse_mode = 3
+specular_mode = 1

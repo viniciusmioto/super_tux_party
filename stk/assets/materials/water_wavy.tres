@@ -1,0 +1,18 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://bslpcxlwyen22"]
+
+[ext_resource type="Shader" path="res://assets/shaders/water.gdshader" id="1"]
+[ext_resource type="Texture2D" uid="uid://6t4xdeg2d4i7" path="res://assets/textures/water_diffuse.png" id="2"]
+
+[resource]
+render_priority = 1
+shader = ExtResource("1")
+shader_parameter/amplitude = Vector2(0.2, 0.1)
+shader_parameter/amplitude2 = Vector2(0.1, 0.2)
+shader_parameter/frequency = Vector2(3, 2.5)
+shader_parameter/frequency2 = Vector2(0.5, -1.5)
+shader_parameter/time_factor = Vector2(3, 2.5)
+shader_parameter/time_factor2 = Vector2(1, 2)
+shader_parameter/texture_scale = Vector2(30, 30)
+shader_parameter/texture_flow1 = Vector2(0.5, 0.25)
+shader_parameter/texture_flow2 = Vector2(-0.5, 1)
+shader_parameter/texturemap = ExtResource("2")

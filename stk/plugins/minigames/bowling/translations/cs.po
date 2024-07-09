@@ -1,0 +1,51 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2023-02-21 15:40+0000\n"
+"Last-Translator: Hannah Oravcová <hannah.vira.mrazek@gmail.com>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/super-tux-party/"
+"minigamesbowling/cs/>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 4.16-dev\n"
+
+msgid "BOWLING_FINISH_MSG"
+msgstr "Cíl!"
+
+msgid "MINIGAME_NAME"
+msgstr "Bowling"
+
+msgid "MINIGAME_ACTION_JUMP"
+msgstr "Skočit"
+
+msgid "MINIGAME_ACTION_THROW"
+msgstr "Hodit kouli"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Pohnout doleva"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Pohnout doprava"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Pohnout dolů"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Pohnout nahoru"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"Sólový hráč musí sestřelit všechny ostatní hráče z plošiny, aby vyhrál.\n"
+"Pokud vyprší čas, vyhrává skupina.\n"
+"Dávej pozor na padající krabice. Pokud Tě trefí, tak Tě omráčí, zároveň "
+"blokují střely."
+
+msgid "MINIGAME_ACTION_MOVE"
+msgstr "Pohnout se"

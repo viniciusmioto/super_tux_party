@@ -1,0 +1,43 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2021-02-22 20:50+0000\n"
+"Last-Translator: Omer I.S. <omeritzicschwartz@gmail.com>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/super-tux-party/"
+"minigamesknock_off/he/>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 4.5\n"
+
+msgid "KNOCK_OFF_PLAYER_WINS_MSG"
+msgstr "הניצחון בידי {player}!"
+
+msgid "KNOCK_OFF_TEAM_WINS_MSG"
+msgstr "הניצחון בידי קבוצה {team}!"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "לזוז ימינה"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "לזוז שמאלה"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "לזוז למטה"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "לזוז למעלה"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"כל השחקנים מנסה להפיל את כל היריבים מהקרחון.\n"
+"האחרון/ה שנשאר/ה מנצח/ת!"
+
+msgid "MINIGAME_NAME"
+msgstr "הפלה מהקרחון"

@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://dhslv88c2y40x"]
+
+[ext_resource type="Texture2D" uid="uid://b5qubqnacuxcv" path="res://assets/models/nature/Textures/NormalTree_Bark.png" id="1_1ktl5"]
+[ext_resource type="Texture2D" uid="uid://dbhkhkr704468" path="res://assets/models/nature/Textures/NormalTree_Bark_Normal.png" id="2_8s1r4"]
+
+[resource]
+resource_name = "NormalTree_Bark"
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("1_1ktl5")
+normal_enabled = true
+normal_texture = ExtResource("2_8s1r4")

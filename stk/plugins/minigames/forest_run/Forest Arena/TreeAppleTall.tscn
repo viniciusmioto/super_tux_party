@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://80pyngacd6mc"]
+
+[ext_resource type="PackedScene" uid="uid://bdgrbhq77a0qc" path="res://plugins/minigames/forest_run/Forest Arena/exported/TreeAppleTall.escn" id="1"]
+[ext_resource type="Material" uid="uid://vhs1rpuqw4me" path="res://plugins/minigames/forest_run/Forest Arena/material.tres" id="2_b6xpb"]
+
+[node name="TreeAppleTall" instance=ExtResource("1")]
+
+[node name="ForestTreeAppleTall" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_b6xpb")

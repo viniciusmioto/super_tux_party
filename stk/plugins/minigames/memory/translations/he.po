@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-02-14 21:50+0000\n"
+"Last-Translator: Omer I.S. <omeritzicschwartz@gmail.com>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/super-tux-party/"
+"minigamesmemory/he/>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
+"n % 10 == 0) ? 2 : 3));\n"
+"X-Generator: Weblate 4.5-dev\n"
+
+msgid "MINIGAME_NAME"
+msgstr "משחק זיכרון"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"על השחקנים למצוא צמדי קלפים תואמים.\n"
+"הקבוצה עם הכי הרבה צמדים מנצחת!"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "לזוז ימינה"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "לזוז שמאלה"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "לזוז למטה"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "לזוז למעלה"

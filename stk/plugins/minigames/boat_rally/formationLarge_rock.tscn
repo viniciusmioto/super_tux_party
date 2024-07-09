@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0cdd0hbmabu0"]
+
+[ext_resource type="PackedScene" uid="uid://b4q8h6v6uwsq3" path="res://plugins/minigames/boat_rally/pirate_kit/formationLarge_rock.gltf" id="1"]
+
+[sub_resource type="BoxShape3D" id="1"]
+size = Vector3(2, 4, 2)
+
+[node name="formationLarge_rock" groups=["rock"] instance=ExtResource("1")]
+
+[node name="formationLarge_rock2" parent="." index="0"]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 1.54, 0, -2, 0, -8.74228e-08, -1, 0, -1)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("1")

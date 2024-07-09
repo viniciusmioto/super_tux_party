@@ -1,0 +1,1316 @@
+[gd_scene load_steps=29 format=3 uid="uid://dcyoe2uryyyef"]
+
+[ext_resource type="Script" path="res://common/scenes/board_logic/controller/controller.gd" id="1"]
+[ext_resource type="Theme" uid="uid://d3w3vt3s6ujoh" path="res://assets/defaults/default_theme.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://cfujd5y86ott5" path="res://common/scenes/board_logic/controller/icons/cookie.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://xsusqt03md8o" path="res://common/scenes/board_logic/controller/icons/cake.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://ci7awbska220" path="res://common/scenes/board_logic/controller/icons/splash_background.png" id="8"]
+[ext_resource type="Script" path="res://common/scenes/board_logic/controller/debug.gd" id="9"]
+[ext_resource type="PackedScene" uid="uid://dnticulv4ta18" path="res://common/scenes/board_logic/controller/minigameinformationscreen.tscn" id="12"]
+[ext_resource type="PackedScene" uid="uid://dx4v7enp6x202" path="res://common/scenes/board_logic/controller/duelselection.tscn" id="13"]
+[ext_resource type="PackedScene" uid="uid://gaf2papev77h" path="res://common/scenes/board_logic/controller/itemselection.tscn" id="14"]
+[ext_resource type="PackedScene" uid="uid://cn4t5c64yka3x" path="res://common/scenes/board_logic/controller/shop.tscn" id="15"]
+[ext_resource type="PackedScene" uid="uid://bagr3rxpgympt" path="res://common/scenes/speech_dialog/speech_dialog.tscn" id="16"]
+[ext_resource type="PackedScene" path="res://common/scenes/board_logic/controller/selectspacehelper.tscn" id="17"]
+[ext_resource type="AudioStream" uid="uid://dvy1l71f473vi" path="res://assets/sounds/step-fx.ogg" id="19"]
+
+[sub_resource type="Animation" id="2"]
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-1600, -2000)]
+}
+
+[sub_resource type="Animation" id="3"]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-1600, 2000), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vnwt3"]
+_data = {
+"hide": SubResource("2"),
+"show": SubResource("3")
+}
+
+[sub_resource type="Animation" id="5"]
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MinigameTypeAnimation/Root/Player1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-44, -44), Vector2(84, -202)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MinigameTypeAnimation/Root/Player2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-44, -44), Vector2(124, -44)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MinigameTypeAnimation/Root/Player3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-44, -44), Vector2(84, 104)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("MinigameTypeAnimation/Root/Player4:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-44, -44), Vector2(-172, -44)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("MinigameTypeAnimation/Root:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("MinigameTypeAnimation/Root:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="6"]
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MinigameTypeAnimation/Root/Player1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-44, -44), Vector2(-172, -118)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MinigameTypeAnimation/Root/Player2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-44, -44), Vector2(-172, 30)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MinigameTypeAnimation/Root/Player3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-44, -44), Vector2(84, -118)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("MinigameTypeAnimation/Root/Player4:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-44, -44), Vector2(84, 30)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("MinigameTypeAnimation/Root:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("MinigameTypeAnimation/Root:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="7"]
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MinigameTypeAnimation/Root/Player1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-44, -44), Vector2(-172, -44)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MinigameTypeAnimation/Root/Player2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-44, -44), Vector2(84, -44)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MinigameTypeAnimation/Root:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("MinigameTypeAnimation/Root:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("MinigameTypeAnimation/Root/Player3:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("MinigameTypeAnimation/Root/Player4:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="8"]
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MinigameTypeAnimation/Root/Player1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-44, -44), Vector2(-44, -172)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MinigameTypeAnimation/Root/Player2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-44, -44), Vector2(84, -44)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MinigameTypeAnimation/Root/Player3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-44, -44), Vector2(-44, 84)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("MinigameTypeAnimation/Root/Player4:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-44, -44), Vector2(-172, -44)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("MinigameTypeAnimation/Root:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("MinigameTypeAnimation/Root:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7i7yd"]
+_data = {
+"1v3": SubResource("5"),
+"2v2": SubResource("6"),
+"Duel": SubResource("7"),
+"FFA": SubResource("8")
+}
+
+[sub_resource type="Animation" id="9"]
+resource_name = "show"
+length = 3.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Content/Selection:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0), Vector2(0, 33)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k11a3"]
+_data = {
+"show": SubResource("9")
+}
+
+[sub_resource type="Animation" id="10"]
+resource_name = "show"
+length = 3.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Content/Selection:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0), Vector2(0, 33)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ocb2t"]
+_data = {
+"show": SubResource("10")
+}
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_m4ou1"]
+
+[sub_resource type="Sky" id="Sky_4jq3x"]
+sky_material = SubResource("ProceduralSkyMaterial_m4ou1")
+
+[sub_resource type="Environment" id="Environment_xwdan"]
+sky = SubResource("Sky_4jq3x")
+ambient_light_source = 3
+
+[node name="Controller" type="Node3D" groups=["Controller"]]
+script = ExtResource("1")
+
+[node name="Screen" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("2")
+
+[node name="PlayerInfo1" type="VBoxContainer" parent="Screen"]
+layout_mode = 1
+offset_right = 180.0
+offset_bottom = 299.0
+
+[node name="Name" type="HBoxContainer" parent="Screen/PlayerInfo1"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Player" type="Label" parent="Screen/PlayerInfo1/Name"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "Player 1"
+
+[node name="Position" type="Label" parent="Screen/PlayerInfo1/Name"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_type_variation = &"HeaderLarge"
+text = "1"
+
+[node name="Cookies" type="HBoxContainer" parent="Screen/PlayerInfo1"]
+layout_mode = 2
+
+[node name="Image" type="TextureRect" parent="Screen/PlayerInfo1/Cookies"]
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("5")
+stretch_mode = 4
+
+[node name="Amount" type="Label" parent="Screen/PlayerInfo1/Cookies"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "0"
+vertical_alignment = 1
+
+[node name="Cakes" type="HBoxContainer" parent="Screen/PlayerInfo1"]
+layout_mode = 2
+
+[node name="Image" type="TextureRect" parent="Screen/PlayerInfo1/Cakes"]
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("6")
+stretch_mode = 5
+
+[node name="Amount" type="Label" parent="Screen/PlayerInfo1/Cakes"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "0"
+vertical_alignment = 1
+
+[node name="Items" type="HBoxContainer" parent="Screen/PlayerInfo1"]
+layout_mode = 2
+
+[node name="0" type="TextureRect" parent="Screen/PlayerInfo1/Items"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+expand_mode = 1
+
+[node name="1" type="TextureRect" parent="Screen/PlayerInfo1/Items"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+expand_mode = 1
+
+[node name="2" type="TextureRect" parent="Screen/PlayerInfo1/Items"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+expand_mode = 1
+
+[node name="PlayerInfo2" type="VBoxContainer" parent="Screen"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -186.0
+offset_bottom = 232.0
+grow_horizontal = 0
+
+[node name="Name" type="HBoxContainer" parent="Screen/PlayerInfo2"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Position" type="Label" parent="Screen/PlayerInfo2/Name"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_type_variation = &"HeaderLarge"
+text = "2"
+
+[node name="Player" type="Label" parent="Screen/PlayerInfo2/Name"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "Player 2"
+
+[node name="Cookies" type="HBoxContainer" parent="Screen/PlayerInfo2"]
+layout_mode = 2
+alignment = 2
+
+[node name="Amount" type="Label" parent="Screen/PlayerInfo2/Cookies"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "0"
+vertical_alignment = 1
+
+[node name="Image" type="TextureRect" parent="Screen/PlayerInfo2/Cookies"]
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("5")
+stretch_mode = 4
+
+[node name="Cakes" type="HBoxContainer" parent="Screen/PlayerInfo2"]
+layout_mode = 2
+alignment = 2
+
+[node name="Amount" type="Label" parent="Screen/PlayerInfo2/Cakes"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "0"
+vertical_alignment = 1
+
+[node name="Image" type="TextureRect" parent="Screen/PlayerInfo2/Cakes"]
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("6")
+stretch_mode = 4
+
+[node name="Items" type="HBoxContainer" parent="Screen/PlayerInfo2"]
+layout_mode = 2
+
+[node name="0" type="TextureRect" parent="Screen/PlayerInfo2/Items"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+expand_mode = 1
+
+[node name="1" type="TextureRect" parent="Screen/PlayerInfo2/Items"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+expand_mode = 1
+
+[node name="2" type="TextureRect" parent="Screen/PlayerInfo2/Items"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+expand_mode = 1
+
+[node name="PlayerInfo3" type="VBoxContainer" parent="Screen"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -299.0
+offset_right = 180.0
+grow_vertical = 0
+alignment = 2
+
+[node name="Name" type="HBoxContainer" parent="Screen/PlayerInfo3"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Player" type="Label" parent="Screen/PlayerInfo3/Name"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "Player 3"
+
+[node name="Position" type="Label" parent="Screen/PlayerInfo3/Name"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_type_variation = &"HeaderLarge"
+text = "3"
+
+[node name="Cookies" type="HBoxContainer" parent="Screen/PlayerInfo3"]
+layout_mode = 2
+
+[node name="Image" type="TextureRect" parent="Screen/PlayerInfo3/Cookies"]
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("5")
+stretch_mode = 4
+
+[node name="Amount" type="Label" parent="Screen/PlayerInfo3/Cookies"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "0"
+vertical_alignment = 1
+
+[node name="Cakes" type="HBoxContainer" parent="Screen/PlayerInfo3"]
+layout_mode = 2
+
+[node name="Image" type="TextureRect" parent="Screen/PlayerInfo3/Cakes"]
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("6")
+stretch_mode = 4
+
+[node name="Amount" type="Label" parent="Screen/PlayerInfo3/Cakes"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "0"
+vertical_alignment = 1
+
+[node name="Items" type="HBoxContainer" parent="Screen/PlayerInfo3"]
+layout_mode = 2
+
+[node name="0" type="TextureRect" parent="Screen/PlayerInfo3/Items"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+expand_mode = 1
+
+[node name="1" type="TextureRect" parent="Screen/PlayerInfo3/Items"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+expand_mode = 1
+
+[node name="2" type="TextureRect" parent="Screen/PlayerInfo3/Items"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+expand_mode = 1
+
+[node name="PlayerInfo4" type="VBoxContainer" parent="Screen"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -180.0
+offset_top = -299.0
+grow_horizontal = 0
+grow_vertical = 0
+alignment = 2
+
+[node name="Name" type="HBoxContainer" parent="Screen/PlayerInfo4"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Position" type="Label" parent="Screen/PlayerInfo4/Name"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_type_variation = &"HeaderLarge"
+text = "4"
+
+[node name="Player" type="Label" parent="Screen/PlayerInfo4/Name"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "Player 4"
+
+[node name="Cookies" type="HBoxContainer" parent="Screen/PlayerInfo4"]
+layout_mode = 2
+alignment = 2
+
+[node name="Amount" type="Label" parent="Screen/PlayerInfo4/Cookies"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "0"
+vertical_alignment = 1
+
+[node name="Image" type="TextureRect" parent="Screen/PlayerInfo4/Cookies"]
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("5")
+stretch_mode = 4
+
+[node name="Cakes" type="HBoxContainer" parent="Screen/PlayerInfo4"]
+layout_mode = 2
+alignment = 2
+
+[node name="Amount" type="Label" parent="Screen/PlayerInfo4/Cakes"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "0"
+vertical_alignment = 1
+
+[node name="Image" type="TextureRect" parent="Screen/PlayerInfo4/Cakes"]
+layout_mode = 2
+size_flags_vertical = 4
+texture = ExtResource("6")
+stretch_mode = 4
+
+[node name="Items" type="HBoxContainer" parent="Screen/PlayerInfo4"]
+layout_mode = 2
+
+[node name="0" type="TextureRect" parent="Screen/PlayerInfo4/Items"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+expand_mode = 1
+
+[node name="1" type="TextureRect" parent="Screen/PlayerInfo4/Items"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+expand_mode = 1
+
+[node name="2" type="TextureRect" parent="Screen/PlayerInfo4/Items"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Dice" type="Label" parent="Screen"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -98.0
+offset_bottom = -53.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_type_variation = &"HeaderMedium"
+text = "Roll Player 1!"
+horizontal_alignment = 1
+
+[node name="Turn" type="Label" parent="Screen"]
+layout_mode = 0
+anchor_right = 1.0
+offset_top = 16.0
+offset_bottom = 74.0
+theme_type_variation = &"HeaderLarge"
+text = "Turn: 1"
+horizontal_alignment = 1
+
+[node name="Stepcounter" type="Label" parent="Screen"]
+layout_mode = 0
+anchor_right = 1.0
+offset_top = 80.0
+offset_bottom = 138.0
+theme_type_variation = &"HeaderLarge"
+horizontal_alignment = 1
+
+[node name="Splash" type="AnimationPlayer" parent="Screen"]
+root_node = NodePath("Background")
+libraries = {
+"": SubResource("AnimationLibrary_vnwt3")
+}
+
+[node name="Background" type="TextureRect" parent="Screen/Splash"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1600.0
+offset_top = -2000.0
+offset_right = -1600.0
+offset_bottom = -2000.0
+mouse_filter = 2
+texture = ExtResource("8")
+stretch_mode = 5
+
+[node name="Player" type="TextureRect" parent="Screen/Splash/Background"]
+custom_minimum_size = Vector2(256, 256)
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 200.0
+offset_top = -160.0
+mouse_filter = 2
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Screen/Splash/Background"]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -338.0
+offset_top = -3.0
+offset_right = 196.0
+offset_bottom = 82.0
+theme_type_variation = &"HeaderLarge"
+text = "CONTEXT_LABEL_YOUR_TURN"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Debug" type="Node" parent="Screen"]
+script = ExtResource("9")
+
+[node name="Main" type="PopupPanel" parent="Screen/Debug"]
+title = "DEBUG"
+position = Vector2i(10, 35)
+size = Vector2i(276, 127)
+borderless = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Screen/Debug/Main"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 272.0
+offset_bottom = 123.0
+
+[node name="Row1" type="HBoxContainer" parent="Screen/Debug/Main/VBoxContainer"]
+layout_mode = 2
+
+[node name="Skip" type="Button" parent="Screen/Debug/Main/VBoxContainer/Row1"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Skip to next turn"
+
+[node name="AddCookies" type="Button" parent="Screen/Debug/Main/VBoxContainer/Row1"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Add cookies"
+
+[node name="AddCake" type="Button" parent="Screen/Debug/Main/VBoxContainer/Row1"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Add cakes"
+
+[node name="Row2" type="HBoxContainer" parent="Screen/Debug/Main/VBoxContainer"]
+layout_mode = 2
+
+[node name="PlayersTurn" type="Button" parent="Screen/Debug/Main/VBoxContainer/Row2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Go to players turn"
+
+[node name="Minigame" type="Button" parent="Screen/Debug/Main/VBoxContainer/Row2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Go to minigame"
+
+[node name="Item" type="Button" parent="Screen/Debug/Main/VBoxContainer/Row2"]
+layout_mode = 2
+text = "Give item"
+
+[node name="Row3" type="HBoxContainer" parent="Screen/Debug/Main/VBoxContainer"]
+layout_mode = 2
+
+[node name="Move" type="Button" parent="Screen/Debug/Main/VBoxContainer/Row3"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Move"
+
+[node name="List" type="PopupPanel" parent="Screen/Debug"]
+size = Vector2i(596, 104)
+
+[node name="Players" type="VBoxContainer" parent="Screen/Debug/List"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 592.0
+offset_bottom = 100.0
+
+[node name="Minigames" type="TabContainer" parent="Screen/Debug/List"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 592.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+clip_tabs = false
+
+[node name="Duel" type="ScrollContainer" parent="Screen/Debug/List/Minigames"]
+custom_minimum_size = Vector2(0, 350)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Screen/Debug/List/Minigames/Duel"]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+
+[node name="1v3" type="ScrollContainer" parent="Screen/Debug/List/Minigames"]
+visible = false
+custom_minimum_size = Vector2(0, 350)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Screen/Debug/List/Minigames/1v3"]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+
+[node name="2v2" type="ScrollContainer" parent="Screen/Debug/List/Minigames"]
+visible = false
+custom_minimum_size = Vector2(0, 350)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Screen/Debug/List/Minigames/2v2"]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+
+[node name="FFA" type="ScrollContainer" parent="Screen/Debug/List/Minigames"]
+visible = false
+custom_minimum_size = Vector2(0, 350)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Screen/Debug/List/Minigames/FFA"]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+
+[node name="NolokSolo" type="ScrollContainer" parent="Screen/Debug/List/Minigames"]
+visible = false
+custom_minimum_size = Vector2(0, 350)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Screen/Debug/List/Minigames/NolokSolo"]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+
+[node name="NolokCoop" type="ScrollContainer" parent="Screen/Debug/List/Minigames"]
+visible = false
+custom_minimum_size = Vector2(0, 350)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Screen/Debug/List/Minigames/NolokCoop"]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+
+[node name="GnuSolo" type="ScrollContainer" parent="Screen/Debug/List/Minigames"]
+visible = false
+custom_minimum_size = Vector2(0, 350)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Screen/Debug/List/Minigames/GnuSolo"]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+
+[node name="GnuCoop" type="ScrollContainer" parent="Screen/Debug/List/Minigames"]
+visible = false
+custom_minimum_size = Vector2(0, 350)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Screen/Debug/List/Minigames/GnuCoop"]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+
+[node name="Items" type="VBoxContainer" parent="Screen/Debug/List"]
+visible = false
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 592.0
+offset_bottom = 100.0
+
+[node name="Inputs" type="VBoxContainer" parent="Screen/Debug/List"]
+visible = false
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 592.0
+offset_bottom = 107.0
+
+[node name="Label" type="Label" parent="Screen/Debug/List/Inputs"]
+layout_mode = 2
+text = "Enter the number of spaces you want to move"
+
+[node name="Number" type="SpinBox" parent="Screen/Debug/List/Inputs"]
+layout_mode = 2
+rounded = true
+
+[node name="Ok" type="Button" parent="Screen/Debug/List/Inputs"]
+layout_mode = 2
+text = "Ok"
+
+[node name="MinigameTypeAnimation" type="AnimationPlayer" parent="Screen"]
+libraries = {
+"": SubResource("AnimationLibrary_7i7yd")
+}
+
+[node name="Root" type="Control" parent="Screen/MinigameTypeAnimation"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Player1" type="TextureRect" parent="Screen/MinigameTypeAnimation/Root"]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.0
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Player2" type="TextureRect" parent="Screen/MinigameTypeAnimation/Root"]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.0
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Player3" type="TextureRect" parent="Screen/MinigameTypeAnimation/Root"]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.0
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Player4" type="TextureRect" parent="Screen/MinigameTypeAnimation/Root"]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.0
+expand_mode = 1
+stretch_mode = 6
+
+[node name="VS" type="Label" parent="Screen/MinigameTypeAnimation/Root"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -29.0
+offset_right = 336.0
+offset_bottom = 56.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 1
+text = "CONTEXT_LABEL_VS"
+
+[node name="Roll" type="Button" parent="Screen"]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -102.0
+offset_top = -47.9999
+offset_right = 102.0
+offset_bottom = -7.99994
+grow_horizontal = 2
+focus_mode = 0
+text = "CONTEXT_LABEL_ROLL"
+
+[node name="MinigameInformation" parent="Screen" instance=ExtResource("12")]
+visible = false
+layout_mode = 1
+
+[node name="DuelSelection" parent="Screen" instance=ExtResource("13")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+
+[node name="ItemSelection" parent="Screen" instance=ExtResource("14")]
+layout_mode = 1
+offset_top = -90.0
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DuelReward" type="Control" parent="Screen"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="Screen/DuelReward"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -289.0
+offset_top = -85.0
+offset_right = 289.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_type_variation = &"HeaderLarge"
+text = "CONTEXT_LABEL_DUEL_REWARD"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Value" type="Label" parent="Screen/DuelReward"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -0.5
+offset_right = 0.5
+offset_bottom = 58.0
+grow_horizontal = 2
+theme_type_variation = &"HeaderLarge"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GNUSelection" type="ColorRect" parent="Screen"]
+visible = false
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -36.5
+offset_right = 150.0
+offset_bottom = 36.5
+color = Color(0.521569, 0, 0, 1)
+
+[node name="Content" type="Control" parent="Screen/GNUSelection"]
+anchors_preset = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -36.5
+offset_right = 150.0
+offset_bottom = 36.5
+
+[node name="Title" type="Label" parent="Screen/GNUSelection/Content"]
+layout_mode = 0
+offset_right = 300.0
+offset_bottom = 29.0
+theme_type_variation = &"HeaderSmall"
+text = "CONTEXT_GNU_ACTION_TYPE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Screen/GNUSelection/Content/Title"]
+show_behind_parent = true
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.396078, 0, 0, 1)
+
+[node name="Selection" type="Label" parent="Screen/GNUSelection/Content"]
+show_behind_parent = true
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 0
+offset_right = 300.0
+offset_bottom = 40.0
+theme_type_variation = &"HeaderSmall"
+text = "TEST"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Screen/GNUSelection"]
+libraries = {
+"": SubResource("AnimationLibrary_k11a3")
+}
+
+[node name="NolokSelection" type="ColorRect" parent="Screen"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -36.5
+offset_right = 150.0
+offset_bottom = 36.5
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.521569, 0, 0, 1)
+
+[node name="Content" type="Control" parent="Screen/NolokSelection"]
+anchors_preset = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -36.5
+offset_right = 150.0
+offset_bottom = 36.5
+
+[node name="Title" type="Label" parent="Screen/NolokSelection/Content"]
+layout_mode = 0
+offset_right = 300.0
+offset_bottom = 29.0
+theme_type_variation = &"HeaderSmall"
+text = "CONTEXT_NOLOK_ACTION_TYPE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="Screen/NolokSelection/Content/Title"]
+show_behind_parent = true
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.396078, 0, 0, 1)
+
+[node name="Selection" type="Label" parent="Screen/NolokSelection/Content"]
+show_behind_parent = true
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 0
+offset_right = 300.0
+offset_bottom = 40.0
+theme_type_variation = &"HeaderSmall"
+text = "TEST"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Screen/NolokSelection"]
+libraries = {
+"": SubResource("AnimationLibrary_ocb2t")
+}
+
+[node name="Shop" parent="Screen" instance=ExtResource("15")]
+visible = false
+layout_mode = 1
+
+[node name="SpeechDialog" parent="Screen" instance=ExtResource("16")]
+visible = false
+layout_mode = 1
+
+[node name="BeforeSetupCurtain" type="ColorRect" parent="Screen"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.352941, 0.788235, 0.866667, 1)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 4, 4)
+environment = SubResource("Environment_xwdan")
+current = true
+
+[node name="SelectSpaceHelper" parent="." instance=ExtResource("17")]
+
+[node name="StepFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("19")
+volume_db = -5.0
+
+[connection signal="pressed" from="Screen/Debug/Main/VBoxContainer/Row1/Skip" to="Screen/Debug" method="_on_Skip_pressed"]
+[connection signal="pressed" from="Screen/Debug/Main/VBoxContainer/Row1/AddCookies" to="Screen/Debug" method="_on_AddCookies_pressed"]
+[connection signal="pressed" from="Screen/Debug/Main/VBoxContainer/Row1/AddCake" to="Screen/Debug" method="_on_AddCake_pressed"]
+[connection signal="pressed" from="Screen/Debug/Main/VBoxContainer/Row2/PlayersTurn" to="Screen/Debug" method="_on_PlayersTurn_pressed"]
+[connection signal="pressed" from="Screen/Debug/Main/VBoxContainer/Row2/Minigame" to="Screen/Debug" method="_on_Minigame_pressed"]
+[connection signal="pressed" from="Screen/Debug/Main/VBoxContainer/Row2/Item" to="Screen/Debug" method="_on_Item_pressed"]
+[connection signal="pressed" from="Screen/Debug/Main/VBoxContainer/Row3/Move" to="Screen/Debug" method="_on_Move_pressed"]
+[connection signal="pressed" from="Screen/Debug/List/Inputs/Ok" to="Screen/Debug" method="_on_Ok_pressed"]
+[connection signal="pressed" from="Screen/Roll" to="." method="_on_Roll_pressed"]

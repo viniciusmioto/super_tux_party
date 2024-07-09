@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://boid7fvpjjbw2"]
+
+[ext_resource type="PackedScene" uid="uid://bu7dd5ajwnp5f" path="res://assets/models/food/OBJ/Pumpkin.obj" id="1_cwtry"]
+[ext_resource type="Script" path="res://plugins/minigames/harvest_food/pumpkin_model.gd" id="2_lx4sp"]
+
+[node name="Pumpkin" instance=ExtResource("1_cwtry")]
+script = ExtResource("2_lx4sp")

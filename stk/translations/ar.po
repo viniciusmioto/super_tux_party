@@ -1,0 +1,606 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2021-11-26 18:51+0000\n"
+"Last-Translator: Omer I.S. <omeritzicschwartz@gmail.com>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/super-tux-party/"
+"super-tux-party/ar/>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 4.10-dev\n"
+
+msgid "CONTEXT_LABEL_BUY_CAKE"
+msgstr ""
+
+msgid "CONTEXT_LABEL_DUEL_REWARD"
+msgstr ""
+
+msgid "CONTEXT_LABEL_DUEL_SELECT"
+msgstr ""
+
+msgid "CONTEXT_LABEL_FINISH"
+msgstr ""
+
+msgid "CONTEXT_LABEL_GO"
+msgstr ""
+
+msgid "CONTEXT_LABEL_PLAYER_ROLLED"
+msgstr ""
+
+msgid "CONTEXT_LABEL_READY_QUESTION"
+msgstr ""
+
+msgid "CONTEXT_LABEL_ROLL"
+msgstr ""
+
+msgid "CONTEXT_LABEL_ROLL_PLAYER"
+msgstr ""
+
+msgid "CONTEXT_LABEL_STEAL_ONE_CAKE"
+msgstr ""
+
+msgid "CONTEXT_LABEL_STEAL_TEN_COOKIES"
+msgstr ""
+
+msgid "CONTEXT_LABEL_TURN_NUM"
+msgstr ""
+
+msgid "CONTEXT_LABEL_VS"
+msgstr "ضد"
+
+msgid "CONTEXT_LABEL_YOUR_TURN"
+msgstr ""
+
+msgid "CONTEXT_NOTIFICATION_NOT_ENOUGH_COOKIES"
+msgstr ""
+
+msgid "CONTEXT_NOTIFICATION_NOT_ENOUGH_SPACE"
+msgstr ""
+
+msgid "MENU_CONTROLS_ACTION_1"
+msgstr ""
+
+msgid "MENU_CONTROLS_ACTION_2"
+msgstr ""
+
+msgid "MENU_CONTROLS_ACTION_3"
+msgstr ""
+
+msgid "MENU_CONTROLS_ACTION_4"
+msgstr ""
+
+msgid "MENU_CONTROLS_UNKNOWN_GAMEPAD_AXIS"
+msgstr ""
+
+msgid "MENU_CONTROLS_GENERIC_GAMEPAD_BUTTON"
+msgstr ""
+
+msgid "MENU_CONTROLS_MOUSE"
+msgstr "الفأرة"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON"
+msgstr ""
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_LEFT"
+msgstr ""
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_MIDDLE"
+msgstr ""
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_RIGHT"
+msgstr ""
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_DOWN"
+msgstr ""
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_LEFT"
+msgstr ""
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_RIGHT"
+msgstr ""
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_UP"
+msgstr ""
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT"
+msgstr ""
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT_2"
+msgstr ""
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT_3"
+msgstr ""
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT"
+msgstr ""
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT_2"
+msgstr ""
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT_3"
+msgstr ""
+
+msgid "MENU_CONTROLS_DIR_DOWN"
+msgstr "تحت"
+
+msgid "MENU_CONTROLS_DIR_LEFT"
+msgstr "يسار"
+
+msgid "MENU_CONTROLS_DIR_RIGHT"
+msgstr "يمين"
+
+msgid "MENU_CONTROLS_DIR_UP"
+msgstr "فوق"
+
+msgid "MENU_CONTROLS_SCREENSHOT"
+msgstr ""
+
+msgid "MENU_CONTROLS_DEV_MENU"
+msgstr ""
+
+msgid "MENU_IO_ENTER_SAVEGAME_NAME"
+msgstr ""
+
+msgid "MENU_IO_LOAD_GAME"
+msgstr "تحميل لعبة محفوظة"
+
+msgid "MENU_IO_SAVE"
+msgstr "حفظ"
+
+msgid "MENU_IO_SAVE_GAME"
+msgstr "حفظ اللعبة"
+
+msgid "MENU_LABEL_BACK"
+msgstr "الرجوع"
+
+msgid "MENU_LABEL_CANCEL"
+msgstr "إلغاء"
+
+msgid "MENU_LABEL_CONTINUE"
+msgstr "متابعة"
+
+msgid "MENU_LABEL_DESKTOP"
+msgstr "الخروج لسطح المكتب"
+
+msgid "MENU_SETTINGS_AWARD_LINEAR"
+msgstr ""
+
+msgid "MENU_LABEL_NEW_GAME"
+msgstr "لعبة جديدة"
+
+msgid "MENU_LABEL_START"
+msgstr ""
+
+msgid "MENU_LABEL_PAUSE"
+msgstr "إيقاف"
+
+msgid "MENU_LABEL_PAUSED"
+msgstr "متوقف"
+
+msgid "MENU_LABEL_PAUSE_ON_WINDOW_UNFOCUS"
+msgstr ""
+
+msgid "MENU_LABEL_PLAY"
+msgstr "لعب"
+
+msgid "MENU_LABEL_ONLINE"
+msgstr ""
+
+msgid "MENU_LABEL_PLAYER1"
+msgstr ""
+
+msgid "MENU_LABEL_PLAYER2"
+msgstr ""
+
+msgid "MENU_LABEL_PLAYER3"
+msgstr ""
+
+msgid "MENU_LABEL_PLAYER4"
+msgstr ""
+
+msgid "MENU_LABEL_PRESS_ANY_KEY"
+msgstr "اضغط على أي مفتاح"
+
+msgid "MENU_LABEL_QUIT"
+msgstr "خروج"
+
+msgid "MENU_LABEL_READY"
+msgstr ""
+
+msgid "MENU_LABEL_RESUME"
+msgstr ""
+
+msgid "MENU_LABEL_RETURN_MENU"
+msgstr "عودة إلى القائمة الرئيسية"
+
+msgid "MENU_LABEL_SELECT_BOARD"
+msgstr ""
+
+msgid "MENU_LABEL_SELECT_CHARACTER"
+msgstr ""
+
+msgid "MENU_LABEL_TRY"
+msgstr ""
+
+msgid "MENU_SETTINGS_AWARD_WINNER_TAKES_ALL"
+msgstr ""
+
+msgid "MENU_SETTINGS_AWARD_TYPE"
+msgstr ""
+
+msgid "MENU_LABEL_CREDITS"
+msgstr ""
+
+msgid "MENU_LABEL_SCREENSHOTS"
+msgstr ""
+
+msgid "MENU_OPTIONS"
+msgstr "خيارات"
+
+msgid "MENU_OPTIONS_AUDIO"
+msgstr ""
+
+msgid "MENU_OPTIONS_CONTROLS"
+msgstr "مفاتيح التحكم"
+
+msgid "MENU_OPTIONS_EFFECTS"
+msgstr ""
+
+msgid "MENU_OPTIONS_FRAME_CAP"
+msgstr ""
+
+msgid "MENU_OPTIONS_FULLSCREEN"
+msgstr "تكبير الشاشة Fullscreen"
+
+msgid "MENU_OPTIONS_MSAA"
+msgstr ""
+
+msgid "MENU_OPTIONS_LANGUAGE"
+msgstr "اللغة"
+
+msgid "MENU_OPTIONS_MASTER"
+msgstr ""
+
+msgid "MENU_OPTIONS_MISC"
+msgstr "منوّع"
+
+msgid "MENU_OPTIONS_MUSIC"
+msgstr "الموسيقى"
+
+msgid "MENU_OPTIONS_MUTE_ON_WINDOW_UNFOCUS"
+msgstr ""
+
+msgid "MENU_OPTIONS_SYSTEM_DEFAULT"
+msgstr ""
+
+msgid "MENU_OPTIONS_VISUAL"
+msgstr ""
+
+msgid "MENU_OPTIONS_VSYNC"
+msgstr "تزامن اللقطات مع الشاشة VSync"
+
+msgid "DIALOG_YES"
+msgstr "نعم"
+
+msgid "DIALOG_NO"
+msgstr "لا"
+
+msgid "MENU_LABEL_CONNECTION_ERROR_TITLE"
+msgstr ""
+
+msgid "MENU_LABEL_CONNECTION_TIMEOUT"
+msgstr ""
+
+msgid "MENU_LABEL_NO_SERVER_VERSION"
+msgstr ""
+
+msgid "MENU_LABEL_VERSION_MISMATCH_TITLE"
+msgstr ""
+
+msgid "MENU_LABEL_VERSION_MISMATCH"
+msgstr ""
+
+msgid "MENU_LABEL_CHOOSE_SERVER"
+msgstr ""
+
+msgid "MENU_LABEL_COPY"
+msgstr ""
+
+msgid "MENU_LABEL_LOBBY_CREATE"
+msgstr ""
+
+msgid "MENU_LABEL_LOBBY_JOIN"
+msgstr ""
+
+msgid "MENU_LOBBY_SETTINGS"
+msgstr ""
+
+msgid "MENU_SETTINGS_PUBLIC"
+msgstr ""
+
+msgid "MENU_SETTINGS_CAKE_COST"
+msgstr ""
+
+msgid "MENU_SETTINGS_TURNS"
+msgstr ""
+
+msgid "MENU_SETTINGS_ENABLE_TIMEOUT"
+msgstr ""
+
+msgid "MENU_SETTINGS_TIMEOUT"
+msgstr ""
+
+msgid "AI_DIFFICULTY"
+msgstr ""
+
+msgid "DIFFICULTY_EASY"
+msgstr ""
+
+msgid "DIFFICULTY_NORMAL"
+msgstr ""
+
+msgid "DIFFICULTY_HARD"
+msgstr ""
+
+msgid "CONTEXT_GNU_ACTION_TYPE"
+msgstr ""
+
+#, fuzzy
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY"
+msgstr "منوّع"
+
+#, fuzzy
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_HIGH"
+msgstr "منوّع"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_MEDIUM"
+msgstr ""
+
+#, fuzzy
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_LOW"
+msgstr "منوّع"
+
+msgid "MENU_OPTIONS_FXAA"
+msgstr ""
+
+msgid "MENU_GRAPHIC_QUALITY_REBOOT_NOTICE"
+msgstr ""
+
+msgid "MENU_LOBBY_ADD_PLAYER"
+msgstr ""
+
+msgid "CONTEXT_SPEAKER_SARA"
+msgstr ""
+
+msgid "CONTEXT_WINNER_ANNOUNCEMENT"
+msgstr ""
+
+msgid "CONTEXT_WINNER_REVEAL_ONE_PLAYER"
+msgstr ""
+
+msgid "CONTEXT_WINNER_REVEAL_TWO_PLAYER"
+msgstr ""
+
+msgid "CONTEXT_WINNER_REVEAL_THREE_PLAYER"
+msgstr ""
+
+msgid "CONTEXT_WINNER_REVEAL_FOUR_PLAYER"
+msgstr ""
+
+msgid "CONTEXT_LABEL_CAKES"
+msgstr "كعكات"
+
+msgid "CONTEXT_LABEL_COOKIES"
+msgstr ""
+
+msgid "CONTEXT_GNU_NAME"
+msgstr "جنو"
+
+msgid "CONTEXT_GNU_EVENT_START"
+msgstr ""
+
+msgid "CONTEXT_GNU_MINIGAME_SOLO_MODERATION"
+msgstr ""
+
+msgid "CONTEXT_GNU_MINIGAME_SOLO"
+msgstr ""
+
+msgid "CONTEXT_GNU_MINIGAME_COOP_MODERATION"
+msgstr ""
+
+msgid "CONTEXT_GNU_MINIGAME_COOP"
+msgstr ""
+
+msgid "CONTEXT_GNU_SOLO_VICTORY"
+msgstr ""
+
+msgid "CONTEXT_GNU_SOLO_LOSS"
+msgstr ""
+
+msgid "CONTEXT_GNU_COOP_VICTORY"
+msgstr ""
+
+msgid "CONTEXT_GNU_COOP_LOSS"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_NAME"
+msgstr "نولوك"
+
+msgid "CONTEXT_NOLOK_ACTION_TYPE"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_EVENT_START"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_MINIGAME_SOLO_MODERATION"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_MINIGAME_SOLO"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_MINIGAME_COOP_MODERATION"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_MINIGAME_COOP"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_SOLO_VICTORY"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_SOLO_LOSS"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_COOP_VICTORY"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_COOP_LOSS"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_LOSE_COOKIES_MODERATION"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_LOSE_COOKIES"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_ROLL_MODIFIER_MODERATION"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_ROLL_MODIFIER"
+msgstr ""
+
+msgid "CONTEXT_SHOW_TUTORIAL"
+msgstr ""
+
+msgid "CONTEXT_TUTORIAL_DICE"
+msgstr ""
+
+msgid "CONTEXT_TUTORIAL_COOKIES"
+msgstr ""
+
+msgid "CONTEXT_TUTORIAL_CAKES"
+msgstr ""
+
+msgid "CONTEXT_TUTORIAL_SPACES_NORMAL"
+msgstr ""
+
+msgid "CONTEXT_TUTORIAL_SPACES_SPECIAL"
+msgstr ""
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES"
+msgstr ""
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_FFA"
+msgstr ""
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_2V2"
+msgstr ""
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_1V3"
+msgstr ""
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_SPECIAL"
+msgstr ""
+
+msgid "CONTEXT_TUTORIAL_END"
+msgstr ""
+
+msgid "CONTEXT_CAKE_PLACED"
+msgstr ""
+
+msgid "CONTEXT_CAKE_WANT_BUY"
+msgstr ""
+
+msgid "CONTEXT_CAKE_BUY_AMOUNT"
+msgstr ""
+
+msgid "CONTEXT_CAKE_COLLECTED"
+msgstr ""
+
+msgid "CONTEXT_CAKE_CANT_AFFORD"
+msgstr ""
+
+msgid "SHOP_LABEL_TITLE"
+msgstr ""
+
+msgid "SHOP_LABEL_DESCRIPTION"
+msgstr ""
+
+msgid "SHOP_ITEM_NO_DESCRIPTION"
+msgstr ""
+
+msgid "REWARDSCREEN_MINIGAME_RESULTS"
+msgstr ""
+
+msgid "REWARDSCREEN_MINIGAME_WINNER"
+msgstr ""
+
+msgid "REWARDSCREEN_MINIGAME_REWARD"
+msgstr ""
+
+msgid "REWARDSCREEN_PRESS_BUTTON"
+msgstr ""
+
+msgid "MINIGAME_ACTION_MOVEMENT"
+msgstr ""
+
+msgid "MINIGAME_TYPE_FFA"
+msgstr ""
+
+msgid "MINIGAME_TYPE_2v2"
+msgstr ""
+
+msgid "MINIGAME_TYPE_1v3"
+msgstr ""
+
+msgid "MINIGAME_TYPE_DUEL"
+msgstr ""
+
+msgid "MINIGAME_TYPE_GNU_COOP"
+msgstr ""
+
+msgid "MINIGAME_TYPE_GNU_SOLO"
+msgstr ""
+
+msgid "MINIGAME_TYPE_NOLOK_COOP"
+msgstr ""
+
+msgid "MINIGAME_TYPE_NOLOK_SOLO"
+msgstr ""
+
+msgid "ERROR"
+msgstr ""
+
+msgid "SAVE_GAME_CANNOT_SAVE"
+msgstr ""
+
+msgid "SAVE_GAME_DISABLED"
+msgstr ""
+
+#~ msgid "MENU_LABEL_NUM_1"
+#~ msgstr "١"
+
+#~ msgid "MENU_LABEL_NUM_2"
+#~ msgstr "٢"
+
+#~ msgid "MENU_LABEL_NUM_3"
+#~ msgstr "٣"
+
+#~ msgid "MENU_LABEL_NUM_4"
+#~ msgstr "٤"
+
+#~ msgid "MENU_LABEL_OK"
+#~ msgstr "موافق"
+
+#, fuzzy
+#~ msgid "MENU_LABEL_PLAYSTATION"
+#~ msgstr "PlayStation"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD"
+#~ msgstr "مقبض التحكم"

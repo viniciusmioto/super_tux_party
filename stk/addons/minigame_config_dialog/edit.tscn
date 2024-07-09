@@ -1,0 +1,147 @@
+[gd_scene load_steps=2 format=3 uid="uid://dc3c78irx2vsm"]
+
+[ext_resource type="Script" path="res://addons/minigame_config_dialog/edit.gd" id="1"]
+
+[node name="PopupPanel" type="PopupPanel"]
+title = "Edit Minigame Configuration"
+size = Vector2i(908, 651)
+borderless = false
+script = ExtResource("1")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 904.0
+offset_bottom = 647.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(900, 600)
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+columns = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "Name:"
+
+[node name="Name" type="LineEdit" parent="VBoxContainer/ScrollContainer/VBoxContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+caret_blink = true
+caret_blink_interval = 0.5
+
+[node name="Label2" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "Main Scene:"
+
+[node name="MainScene" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "..."
+clip_text = true
+
+[node name="Label3" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "Screenshot:"
+
+[node name="Screenshot" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "..."
+clip_text = true
+
+[node name="Label4" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "Translations:"
+
+[node name="Translations" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "..."
+clip_text = true
+
+[node name="HSplitContainer" type="HSplitContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HSplitContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HSplitContainer/HBoxContainer"]
+layout_mode = 2
+text = "Type:"
+
+[node name="Type" type="ItemList" parent="VBoxContainer/ScrollContainer/VBoxContainer/HSplitContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+select_mode = 1
+item_count = 8
+item_0/text = "1v3"
+item_1/text = "2v2"
+item_2/text = "Duel"
+item_3/text = "Free for all"
+item_4/text = "Gnu Coop"
+item_5/text = "Gnu Solo"
+item_6/text = "Nolok Coop"
+item_7/text = "Nolok Solo"
+
+[node name="HBoxContainer2" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HSplitContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Description:"
+
+[node name="Description" type="TextEdit" parent="VBoxContainer/ScrollContainer/VBoxContainer/HSplitContainer/HBoxContainer2"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Toolbox" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+alignment = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/Toolbox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Controls:"
+
+[node name="Presets" type="MenuButton" parent="VBoxContainer/ScrollContainer/VBoxContainer/Toolbox"]
+layout_mode = 2
+text = "Add preset"
+item_count = 1
+popup/item_0/text = "Movement"
+popup/item_0/id = 0
+
+[node name="Add" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/Toolbox"]
+layout_mode = 2
+text = "+"
+
+[node name="Actions" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Save" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Save"
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+
+[connection signal="about_to_popup" from="." to="." method="_on_PopupPanel_about_to_show"]
+[connection signal="pressed" from="VBoxContainer/ScrollContainer/VBoxContainer/Toolbox/Add" to="." method="_on_Add_pressed"]
+[connection signal="pressed" from="VBoxContainer/Save" to="." method="_on_Save_pressed"]

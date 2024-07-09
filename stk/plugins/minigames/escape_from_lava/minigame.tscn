@@ -1,0 +1,236 @@
+[gd_scene load_steps=13 format=3 uid="uid://dw51sdql4r8i5"]
+
+[ext_resource type="Script" path="res://plugins/minigames/escape_from_lava/minigame.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://b6g5dqqnb0u6l" path="res://plugins/minigames/escape_from_lava/player.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://qjsp30wede5r" path="res://assets/textures/lava.png" id="3"]
+[ext_resource type="PackedScene" uid="uid://d0ohlotq06le3" path="res://plugins/minigames/escape_from_lava/ground.dae" id="4"]
+[ext_resource type="PackedScene" uid="uid://rprhyk2hitel" path="res://common/scenes/waypoint/waypoint.tscn" id="5"]
+[ext_resource type="PackedScene" uid="uid://fnm36igk8c4g" path="res://plugins/minigames/escape_from_lava/door.tscn" id="6"]
+[ext_resource type="AudioStream" uid="uid://d1wlk2mqd2dly" path="res://assets/music/minigames/escape from lava.ogg" id="8"]
+[ext_resource type="PackedScene" uid="uid://bmdaus4pimoxb" path="res://common/scenes/countdown/countdown.tscn" id="9"]
+
+[sub_resource type="PlaneMesh" id="1"]
+size = Vector2(128, 128)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v1fkb"]
+shading_mode = 0
+albedo_texture = ExtResource("3")
+uv1_scale = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="3"]
+size = Vector3(64, 0.1, 64)
+
+[sub_resource type="BoxShape3D" id="4"]
+size = Vector3(12, 0.1, 4)
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1")
+
+[node name="EndTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="Player1" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, -0.25, -26)
+
+[node name="Player2" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, -0.25, -26)
+
+[node name="Player3" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, -26)
+
+[node name="Player4" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, -26)
+
+[node name="Lava" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+collision_layer = 2
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Lava"]
+mesh = SubResource("1")
+surface_material_override/0 = SubResource("StandardMaterial3D_v1fkb")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lava"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+shape = SubResource("3")
+
+[node name="Ground" parent="." instance=ExtResource("4")]
+transform = Transform3D(4.88762e-07, 0, -1, 0, 1, 0, 1, 0, 4.88762e-07, 0, 0, -32)
+
+[node name="Navigation" type="Node3D" parent="."]
+
+[node name="Waypoint" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0.084275, -27)
+nodes = [NodePath("../Waypoint2"), NodePath("../Waypoint3")]
+
+[node name="Waypoint2" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.62985, 0.114126, -19.9804)
+nodes = [NodePath("../Waypoint4"), NodePath("../Waypoint11")]
+
+[node name="Waypoint11" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.44189, 0.331367, -17.3166)
+nodes = [NodePath("../Waypoint7")]
+
+[node name="Waypoint3" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.20906, 0.185743, -20.4348)
+nodes = [NodePath("../Waypoint4"), NodePath("../Waypoint23")]
+
+[node name="Waypoint4" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.823617, 0.0889988, -19.827)
+nodes = [NodePath("../Waypoint5")]
+
+[node name="Waypoint5" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.823617, 1.04602, -12.6155)
+nodes = [NodePath("../Waypoint8"), NodePath("../Waypoint9"), NodePath("../Waypoint10")]
+
+[node name="Waypoint6" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.61305, 1.04602, -12.6155)
+nodes = [NodePath("../Waypoint8"), NodePath("../Waypoint9"), NodePath("../Waypoint10")]
+
+[node name="Waypoint23" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.64593, 0.291183, -16.39)
+nodes = [NodePath("../Waypoint6")]
+
+[node name="Waypoint7" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.29073, 1.04602, -12.6155)
+nodes = [NodePath("../Waypoint8"), NodePath("../Waypoint9"), NodePath("../Waypoint10")]
+
+[node name="Waypoint8" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.02846, 1.04602, -9.85709)
+nodes = [NodePath("../Waypoint12")]
+
+[node name="Waypoint12" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0476138, 2.02309, 1.16699)
+nodes = [NodePath("../Waypoint25"), NodePath("../Waypoint20"), NodePath("../Waypoint24")]
+
+[node name="Waypoint24" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.484393, 2.02309, 2.3228)
+nodes = [NodePath("../Waypoint17")]
+
+[node name="Waypoint17" parent="Navigation" instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.625458, 3.42084, 16.1707)
+
+[node name="Waypoint9" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.648482, 1.04602, -9.85709)
+nodes = [NodePath("../Waypoint15")]
+
+[node name="Waypoint15" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.14457, 1.46507, -2.71846)
+nodes = [NodePath("../Waypoint16")]
+
+[node name="Waypoint16" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.48782, 2.03565, 0.954097)
+nodes = [NodePath("../Waypoint24"), NodePath("../Waypoint25"), NodePath("../Waypoint20")]
+
+[node name="Waypoint25" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.26642, 2.22206, 2.37377)
+nodes = [NodePath("../Waypoint18")]
+
+[node name="Waypoint18" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.18729, 3.24496, 10.5065)
+nodes = [NodePath("../Waypoint19")]
+
+[node name="Waypoint19" parent="Navigation" instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.31945, 3.49915, 15.3296)
+
+[node name="Waypoint10" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.49729, 1.04602, -9.85709)
+nodes = [NodePath("../Waypoint13")]
+
+[node name="Waypoint13" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.11438, 1.41743, -3.10745)
+nodes = [NodePath("../Waypoint14")]
+
+[node name="Waypoint14" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.04429, 1.88794, 1.12264)
+nodes = [NodePath("../Waypoint20"), NodePath("../Waypoint25"), NodePath("../Waypoint24")]
+
+[node name="Waypoint20" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.70387, 2.18118, 2.43186)
+nodes = [NodePath("../Waypoint21")]
+
+[node name="Waypoint21" parent="Navigation" node_paths=PackedStringArray("nodes") instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.10871, 3.06564, 10.6326)
+nodes = [NodePath("../Waypoint22")]
+
+[node name="Waypoint22" parent="Navigation" instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.23368, 3.4117, 15.5594)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-1, 1.37706e-07, -2.95313e-07, 0, 0.906308, 0.422618, 3.25841e-07, 0.422618, -0.906308, 0, 4, -30)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.6522, 0.559396, -0.511577, -0.140856, 0.573679, 0.806878, 0.744845, 0.598305, -0.295359, -16.1204, 4.31411, 0)
+light_energy = 0.35
+
+[node name="Stage1" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16)
+
+[node name="Door" parent="Stage1" instance=ExtResource("6")]
+transform = Transform3D(0.853528, 0, 0.521047, 0, 1, 0, -0.521047, 0, 0.853528, -2.08251, 0.391993, 1.9765)
+
+[node name="Door2" parent="Stage1" instance=ExtResource("6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.990371, 0.508965, 1.29821)
+
+[node name="Door3" parent="Stage1" instance=ExtResource("6")]
+transform = Transform3D(0.845698, 0, -0.533662, 0, 1, 0, 0.533662, 0, 0.845698, 3.86756, 0.389152, 1.8705)
+
+[node name="Stage2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="Door" parent="Stage2" instance=ExtResource("6")]
+transform = Transform3D(0.826698, 0, 0.562646, 0, 1, 0, -0.562646, 0, 0.826698, -2.58123, 1.9003, 3.85974)
+
+[node name="Door2" parent="Stage2" instance=ExtResource("6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.104514, 1.77055, 3.50319)
+
+[node name="Door3" parent="Stage2" instance=ExtResource("6")]
+transform = Transform3D(0.82975, 0, -0.558135, 0, 1, 0, 0.558135, 0, 0.82975, 3.45657, 1.96211, 4.19291)
+
+[node name="Stage3" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+
+[node name="Door" parent="Stage3" instance=ExtResource("6")]
+transform = Transform3D(0.997894, 0, 0.0648651, 0, 1, 0, -0.0648651, 0, 0.997894, -7.69064, 3.39246, 4.75503)
+
+[node name="Door2" parent="Stage3" instance=ExtResource("6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.146158, 3.40687, 4.56786)
+
+[node name="Door3" parent="Stage3" instance=ExtResource("6")]
+transform = Transform3D(0.961371, 0, -0.275255, 0, 1, 0, 0.275255, 0, 0.961371, 4.49052, 3.39487, 4.56296)
+
+[node name="Finish" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 3.5, 17)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Finish"]
+shape = SubResource("4")
+
+[node name="Screen" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Screen"]
+visible = false
+layout_mode = 0
+anchor_right = 1.0
+offset_top = 50.0
+offset_bottom = 58.0
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "ESCAPE_FROM_LAVA_FINISH_MSG"
+horizontal_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("8")
+autoplay = true
+
+[node name="Countdown" parent="." instance=ExtResource("9")]
+
+[connection signal="timeout" from="EndTimer" to="." method="_on_EndTimer_timeout"]
+[connection signal="body_entered" from="Lava" to="." method="_on_Lava_body_entered"]
+[connection signal="body_entered" from="Finish" to="." method="_on_Finish_body_entered"]

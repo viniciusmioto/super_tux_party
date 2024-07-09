@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-03-08 16:02+0000\n"
+"Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/super-tux-party/"
+"minigamesmemory/nl/>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5.1\n"
+
+msgid "MINIGAME_NAME"
+msgstr "Een goed stel hersens"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"Spelers moeten gelijke kaarten vinden.\n"
+"Het team met de meeste paren wint!"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Naar rechts"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Naar links"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Omlaag"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Omhoog"
+
+msgid "MINIGAME_ACTION_FLIP_CARD"
+msgstr "Kaart omdraaien"

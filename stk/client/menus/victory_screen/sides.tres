@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cfk2orqo6sprn"]
+
+[ext_resource type="Texture2D" uid="uid://ce1575020lybi" path="res://assets/textures/painted_wall.png" id="1_rwccu"]
+
+[resource]
+resource_name = "sides"
+cull_mode = 2
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("1_rwccu")
+uv1_scale = Vector3(1, 5, 5)

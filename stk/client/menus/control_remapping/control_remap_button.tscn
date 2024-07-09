@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://ceknwq06ye8c4"]
+
+[ext_resource type="PackedScene" uid="uid://bwy7gmeseew1j" path="res://common/scenes/sound_button/sound_button.tscn" id="1"]
+[ext_resource type="Script" path="res://client/menus/control_remapping/control_remap_button.gd" id="2"]
+
+[node name="Button" instance=ExtResource("1")]
+expand_icon = true
+script = ExtResource("2")
+
+[connection signal="pressed" from="." to="." method="_on_control_remap_pressed"]

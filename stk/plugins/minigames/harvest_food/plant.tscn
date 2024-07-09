@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://fu78kkm8offf"]
+
+[ext_resource type="Script" path="res://plugins/minigames/harvest_food/plant.gd" id="1_wmxmm"]
+[ext_resource type="PackedScene" uid="uid://boid7fvpjjbw2" path="res://plugins/minigames/harvest_food/pumpkin_model.tscn" id="2_wqhbb"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_hk61u"]
+
+[node name="Plant" type="Node3D" groups=["plants"]]
+script = ExtResource("1_wmxmm")
+
+[node name="Pumpkin" parent="." instance=ExtResource("2_wqhbb")]
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("SphereShape3D_hk61u")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]
+
+[editable path="Pumpkin"]

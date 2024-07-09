@@ -1,0 +1,536 @@
+[gd_resource type="Theme" load_steps=41 format=3 uid="uid://d3w3vt3s6ujoh"]
+
+[ext_resource type="FontVariation" uid="uid://v64kv8lvr38u" path="res://assets/fonts/default_font.tres" id="1"]
+[ext_resource type="FontFile" uid="uid://p207apocqrjv" path="res://assets/fonts/Liberation-Sans/LiberationSans-Bold.ttf" id="2"]
+[ext_resource type="FontFile" uid="uid://kuw8j2g7ogec" path="res://assets/fonts/Boogaloo-Regular.ttf" id="3"]
+[ext_resource type="Texture2D" uid="uid://b4qekbpr5goow" path="res://assets/defaults/theme_icons/On.svg" id="4"]
+[ext_resource type="Texture2D" uid="uid://cenvcsljklcw8" path="res://assets/defaults/theme_icons/NotSelected.svg" id="5"]
+[ext_resource type="Texture2D" uid="uid://doqgxxx4gui85" path="res://assets/defaults/theme_icons/Selected.svg" id="6"]
+[ext_resource type="Texture2D" uid="uid://cql5tn3rxtmuk" path="res://assets/defaults/theme_icons/Graper.svg" id="7"]
+[ext_resource type="Texture2D" uid="uid://bvm3ahmh14x8p" path="res://assets/defaults/theme_icons/GraberPress.svg" id="8"]
+[ext_resource type="Texture2D" uid="uid://ce074mehakiv1" path="res://assets/defaults/theme_icons/Scroll.svg" id="9"]
+[ext_resource type="FontVariation" uid="uid://dt2aqnbmv4cbb" path="res://assets/fonts/RichTextLabel-Bold.tres" id="9_no5q6"]
+[ext_resource type="Texture2D" uid="uid://vlo853ep63v5" path="res://assets/defaults/theme_icons/Off.svg" id="10"]
+[ext_resource type="FontVariation" uid="uid://bdt65myu3l155" path="res://assets/fonts/RichTextLabel-BoldItalic.tres" id="10_6gflf"]
+[ext_resource type="FontFile" uid="uid://wjr2xn6h5c81" path="res://assets/fonts/Amiri/Amiri-Bold.ttf" id="11"]
+[ext_resource type="FontVariation" uid="uid://ctn5nqcp1ylai" path="res://assets/fonts/RichTextLabel-Italic.tres" id="11_k21nw"]
+[ext_resource type="FontVariation" uid="uid://nkxv3prgq7dw" path="res://assets/fonts/RichTextLabel-Normal.tres" id="12_kpy4x"]
+
+[sub_resource type="FontFile" id="849"]
+fallbacks = Array[Font]([ExtResource("3"), ExtResource("2"), ExtResource("11")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/20/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/48/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/28/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/24/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/14/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/15/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/13/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/18/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/8/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/30/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/36/0 = Vector2(0, 0)
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+cache/0/20/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/20/0/kerning_overrides/20/0 = Vector2(0, 0)
+cache/0/20/0/kerning_overrides/48/0 = Vector2(0, 0)
+cache/0/20/0/kerning_overrides/28/0 = Vector2(0, 0)
+cache/0/20/0/kerning_overrides/24/0 = Vector2(0, 0)
+cache/0/20/0/kerning_overrides/14/0 = Vector2(0, 0)
+cache/0/20/0/kerning_overrides/15/0 = Vector2(0, 0)
+cache/0/20/0/kerning_overrides/13/0 = Vector2(0, 0)
+cache/0/20/0/kerning_overrides/18/0 = Vector2(0, 0)
+cache/0/20/0/kerning_overrides/8/0 = Vector2(0, 0)
+cache/0/20/0/kerning_overrides/30/0 = Vector2(0, 0)
+cache/0/20/0/kerning_overrides/36/0 = Vector2(0, 0)
+cache/0/48/0/ascent = 0.0
+cache/0/48/0/descent = 0.0
+cache/0/48/0/underline_position = 0.0
+cache/0/48/0/underline_thickness = 0.0
+cache/0/48/0/scale = 1.0
+cache/0/48/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/48/0/kerning_overrides/20/0 = Vector2(0, 0)
+cache/0/48/0/kerning_overrides/48/0 = Vector2(0, 0)
+cache/0/48/0/kerning_overrides/28/0 = Vector2(0, 0)
+cache/0/48/0/kerning_overrides/24/0 = Vector2(0, 0)
+cache/0/48/0/kerning_overrides/14/0 = Vector2(0, 0)
+cache/0/48/0/kerning_overrides/15/0 = Vector2(0, 0)
+cache/0/48/0/kerning_overrides/13/0 = Vector2(0, 0)
+cache/0/48/0/kerning_overrides/18/0 = Vector2(0, 0)
+cache/0/48/0/kerning_overrides/8/0 = Vector2(0, 0)
+cache/0/48/0/kerning_overrides/30/0 = Vector2(0, 0)
+cache/0/48/0/kerning_overrides/36/0 = Vector2(0, 0)
+cache/0/28/0/ascent = 0.0
+cache/0/28/0/descent = 0.0
+cache/0/28/0/underline_position = 0.0
+cache/0/28/0/underline_thickness = 0.0
+cache/0/28/0/scale = 1.0
+cache/0/28/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/28/0/kerning_overrides/20/0 = Vector2(0, 0)
+cache/0/28/0/kerning_overrides/48/0 = Vector2(0, 0)
+cache/0/28/0/kerning_overrides/28/0 = Vector2(0, 0)
+cache/0/28/0/kerning_overrides/24/0 = Vector2(0, 0)
+cache/0/28/0/kerning_overrides/14/0 = Vector2(0, 0)
+cache/0/28/0/kerning_overrides/15/0 = Vector2(0, 0)
+cache/0/28/0/kerning_overrides/13/0 = Vector2(0, 0)
+cache/0/28/0/kerning_overrides/18/0 = Vector2(0, 0)
+cache/0/28/0/kerning_overrides/8/0 = Vector2(0, 0)
+cache/0/28/0/kerning_overrides/30/0 = Vector2(0, 0)
+cache/0/28/0/kerning_overrides/36/0 = Vector2(0, 0)
+cache/0/24/0/ascent = 0.0
+cache/0/24/0/descent = 0.0
+cache/0/24/0/underline_position = 0.0
+cache/0/24/0/underline_thickness = 0.0
+cache/0/24/0/scale = 1.0
+cache/0/24/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/24/0/kerning_overrides/20/0 = Vector2(0, 0)
+cache/0/24/0/kerning_overrides/48/0 = Vector2(0, 0)
+cache/0/24/0/kerning_overrides/28/0 = Vector2(0, 0)
+cache/0/24/0/kerning_overrides/24/0 = Vector2(0, 0)
+cache/0/24/0/kerning_overrides/14/0 = Vector2(0, 0)
+cache/0/24/0/kerning_overrides/15/0 = Vector2(0, 0)
+cache/0/24/0/kerning_overrides/13/0 = Vector2(0, 0)
+cache/0/24/0/kerning_overrides/18/0 = Vector2(0, 0)
+cache/0/24/0/kerning_overrides/8/0 = Vector2(0, 0)
+cache/0/24/0/kerning_overrides/30/0 = Vector2(0, 0)
+cache/0/24/0/kerning_overrides/36/0 = Vector2(0, 0)
+cache/0/14/0/ascent = 0.0
+cache/0/14/0/descent = 0.0
+cache/0/14/0/underline_position = 0.0
+cache/0/14/0/underline_thickness = 0.0
+cache/0/14/0/scale = 1.0
+cache/0/14/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/14/0/kerning_overrides/20/0 = Vector2(0, 0)
+cache/0/14/0/kerning_overrides/48/0 = Vector2(0, 0)
+cache/0/14/0/kerning_overrides/28/0 = Vector2(0, 0)
+cache/0/14/0/kerning_overrides/24/0 = Vector2(0, 0)
+cache/0/14/0/kerning_overrides/14/0 = Vector2(0, 0)
+cache/0/14/0/kerning_overrides/15/0 = Vector2(0, 0)
+cache/0/14/0/kerning_overrides/13/0 = Vector2(0, 0)
+cache/0/14/0/kerning_overrides/18/0 = Vector2(0, 0)
+cache/0/14/0/kerning_overrides/8/0 = Vector2(0, 0)
+cache/0/14/0/kerning_overrides/30/0 = Vector2(0, 0)
+cache/0/14/0/kerning_overrides/36/0 = Vector2(0, 0)
+cache/0/15/0/ascent = 0.0
+cache/0/15/0/descent = 0.0
+cache/0/15/0/underline_position = 0.0
+cache/0/15/0/underline_thickness = 0.0
+cache/0/15/0/scale = 1.0
+cache/0/15/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/15/0/kerning_overrides/20/0 = Vector2(0, 0)
+cache/0/15/0/kerning_overrides/48/0 = Vector2(0, 0)
+cache/0/15/0/kerning_overrides/28/0 = Vector2(0, 0)
+cache/0/15/0/kerning_overrides/24/0 = Vector2(0, 0)
+cache/0/15/0/kerning_overrides/14/0 = Vector2(0, 0)
+cache/0/15/0/kerning_overrides/15/0 = Vector2(0, 0)
+cache/0/15/0/kerning_overrides/13/0 = Vector2(0, 0)
+cache/0/15/0/kerning_overrides/18/0 = Vector2(0, 0)
+cache/0/15/0/kerning_overrides/8/0 = Vector2(0, 0)
+cache/0/15/0/kerning_overrides/30/0 = Vector2(0, 0)
+cache/0/15/0/kerning_overrides/36/0 = Vector2(0, 0)
+cache/0/13/0/ascent = 0.0
+cache/0/13/0/descent = 0.0
+cache/0/13/0/underline_position = 0.0
+cache/0/13/0/underline_thickness = 0.0
+cache/0/13/0/scale = 1.0
+cache/0/13/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/13/0/kerning_overrides/20/0 = Vector2(0, 0)
+cache/0/13/0/kerning_overrides/48/0 = Vector2(0, 0)
+cache/0/13/0/kerning_overrides/28/0 = Vector2(0, 0)
+cache/0/13/0/kerning_overrides/24/0 = Vector2(0, 0)
+cache/0/13/0/kerning_overrides/14/0 = Vector2(0, 0)
+cache/0/13/0/kerning_overrides/15/0 = Vector2(0, 0)
+cache/0/13/0/kerning_overrides/13/0 = Vector2(0, 0)
+cache/0/13/0/kerning_overrides/18/0 = Vector2(0, 0)
+cache/0/13/0/kerning_overrides/8/0 = Vector2(0, 0)
+cache/0/13/0/kerning_overrides/30/0 = Vector2(0, 0)
+cache/0/13/0/kerning_overrides/36/0 = Vector2(0, 0)
+cache/0/18/0/ascent = 0.0
+cache/0/18/0/descent = 0.0
+cache/0/18/0/underline_position = 0.0
+cache/0/18/0/underline_thickness = 0.0
+cache/0/18/0/scale = 1.0
+cache/0/18/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/18/0/kerning_overrides/20/0 = Vector2(0, 0)
+cache/0/18/0/kerning_overrides/48/0 = Vector2(0, 0)
+cache/0/18/0/kerning_overrides/28/0 = Vector2(0, 0)
+cache/0/18/0/kerning_overrides/24/0 = Vector2(0, 0)
+cache/0/18/0/kerning_overrides/14/0 = Vector2(0, 0)
+cache/0/18/0/kerning_overrides/15/0 = Vector2(0, 0)
+cache/0/18/0/kerning_overrides/13/0 = Vector2(0, 0)
+cache/0/18/0/kerning_overrides/18/0 = Vector2(0, 0)
+cache/0/18/0/kerning_overrides/8/0 = Vector2(0, 0)
+cache/0/18/0/kerning_overrides/30/0 = Vector2(0, 0)
+cache/0/18/0/kerning_overrides/36/0 = Vector2(0, 0)
+cache/0/8/0/ascent = 0.0
+cache/0/8/0/descent = 0.0
+cache/0/8/0/underline_position = 0.0
+cache/0/8/0/underline_thickness = 0.0
+cache/0/8/0/scale = 1.0
+cache/0/8/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/8/0/kerning_overrides/20/0 = Vector2(0, 0)
+cache/0/8/0/kerning_overrides/48/0 = Vector2(0, 0)
+cache/0/8/0/kerning_overrides/28/0 = Vector2(0, 0)
+cache/0/8/0/kerning_overrides/24/0 = Vector2(0, 0)
+cache/0/8/0/kerning_overrides/14/0 = Vector2(0, 0)
+cache/0/8/0/kerning_overrides/15/0 = Vector2(0, 0)
+cache/0/8/0/kerning_overrides/13/0 = Vector2(0, 0)
+cache/0/8/0/kerning_overrides/18/0 = Vector2(0, 0)
+cache/0/8/0/kerning_overrides/8/0 = Vector2(0, 0)
+cache/0/8/0/kerning_overrides/30/0 = Vector2(0, 0)
+cache/0/8/0/kerning_overrides/36/0 = Vector2(0, 0)
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
+cache/0/30/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/30/0/kerning_overrides/20/0 = Vector2(0, 0)
+cache/0/30/0/kerning_overrides/48/0 = Vector2(0, 0)
+cache/0/30/0/kerning_overrides/28/0 = Vector2(0, 0)
+cache/0/30/0/kerning_overrides/24/0 = Vector2(0, 0)
+cache/0/30/0/kerning_overrides/14/0 = Vector2(0, 0)
+cache/0/30/0/kerning_overrides/15/0 = Vector2(0, 0)
+cache/0/30/0/kerning_overrides/13/0 = Vector2(0, 0)
+cache/0/30/0/kerning_overrides/18/0 = Vector2(0, 0)
+cache/0/30/0/kerning_overrides/8/0 = Vector2(0, 0)
+cache/0/30/0/kerning_overrides/30/0 = Vector2(0, 0)
+cache/0/30/0/kerning_overrides/36/0 = Vector2(0, 0)
+cache/0/36/0/ascent = 0.0
+cache/0/36/0/descent = 0.0
+cache/0/36/0/underline_position = 0.0
+cache/0/36/0/underline_thickness = 0.0
+cache/0/36/0/scale = 1.0
+cache/0/36/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/36/0/kerning_overrides/20/0 = Vector2(0, 0)
+cache/0/36/0/kerning_overrides/48/0 = Vector2(0, 0)
+cache/0/36/0/kerning_overrides/28/0 = Vector2(0, 0)
+cache/0/36/0/kerning_overrides/24/0 = Vector2(0, 0)
+cache/0/36/0/kerning_overrides/14/0 = Vector2(0, 0)
+cache/0/36/0/kerning_overrides/15/0 = Vector2(0, 0)
+cache/0/36/0/kerning_overrides/13/0 = Vector2(0, 0)
+cache/0/36/0/kerning_overrides/18/0 = Vector2(0, 0)
+cache/0/36/0/kerning_overrides/8/0 = Vector2(0, 0)
+cache/0/36/0/kerning_overrides/30/0 = Vector2(0, 0)
+cache/0/36/0/kerning_overrides/36/0 = Vector2(0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_45oeq"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.592773, 0.211291, 0.211291, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_21o6m"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.886719, 0.454617, 0.454617, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xk03e"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.772549, 0.247059, 0.247059, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ve58s"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.729412, 0.243137, 0.243137, 1)
+border_width_bottom = 2
+border_color = Color(0.423529, 0.0941176, 0.0941176, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="850"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.419608, 0.0901961, 0.0901961, 1)
+border_width_bottom = 2
+border_color = Color(0.729412, 0.239216, 0.239216, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="851"]
+bg_color = Color(0.886275, 0.321569, 0.321569, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="852"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.654902, 0.12549, 0.12549, 1)
+border_width_bottom = 2
+border_color = Color(0.729412, 0.239216, 0.239216, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+shadow_color = Color(0, 0, 0, 0.313726)
+shadow_size = 4
+
+[sub_resource type="ImageTexture" id="249"]
+
+[sub_resource type="ImageTexture" id="250"]
+
+[sub_resource type="ImageTexture" id="251"]
+
+[sub_resource type="StyleBoxFlat" id="845"]
+content_margin_left = 6.0
+content_margin_top = 4.0
+content_margin_right = 6.0
+content_margin_bottom = 4.0
+bg_color = Color(0.147059, 0.173529, 0.232353, 1)
+draw_center = false
+border_color = Color(0.122549, 0.144608, 0.193627, 1)
+
+[sub_resource type="StyleBoxFlat" id="853"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.729412, 0.239216, 0.239216, 1)
+border_width_bottom = 2
+border_color = Color(0.419608, 0.0901961, 0.0901961, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="854"]
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="855"]
+bg_color = Color(1, 0.729412, 0.0117647, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="859"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.419608, 0.0901961, 0.0901961, 1)
+border_width_bottom = 2
+border_color = Color(0.729412, 0.239216, 0.239216, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="ImageTexture" id="240"]
+
+[sub_resource type="StyleBoxFlat" id="856"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.654902, 0.12549, 0.12549, 1)
+border_width_bottom = 2
+border_color = Color(0.729412, 0.239216, 0.239216, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="857"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.419608, 0.0901961, 0.0901961, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_color = Color(0.419608, 0.0901961, 0.0901961, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+
+[sub_resource type="StyleBoxFlat" id="858"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.654902, 0.12549, 0.12549, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_color = Color(0.729412, 0.239216, 0.239216, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+
+[sub_resource type="ImageTexture" id="245"]
+
+[sub_resource type="StyleBoxTexture" id="861"]
+texture = ExtResource("7")
+region_rect = Rect2(0, 0, 37, 113)
+
+[sub_resource type="StyleBoxTexture" id="862"]
+texture = ExtResource("8")
+region_rect = Rect2(0, 0, 37, 113)
+
+[sub_resource type="StyleBoxTexture" id="863"]
+texture = ExtResource("8")
+region_rect = Rect2(0, 0, 37, 113)
+
+[sub_resource type="StyleBoxTexture" id="864"]
+texture = ExtResource("9")
+region_rect = Rect2(0, 0, 15, 330)
+
+[resource]
+default_font = SubResource("849")
+Button/colors/font_color = Color(0.933333, 0.933333, 0.933333, 1)
+Button/colors/font_disabled_color = Color(0.666667, 0.666667, 0.666667, 1)
+Button/colors/font_hover_color = Color(1, 1, 1, 1)
+Button/colors/font_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_color = Color(0.879412, 0.884706, 0.896471, 1)
+Button/colors/icon_pressed_color = Color(0.473529, 0.703529, 1.04627, 1)
+Button/fonts/font = SubResource("849")
+Button/styles/disabled = SubResource("StyleBoxFlat_45oeq")
+Button/styles/focus = SubResource("StyleBoxFlat_21o6m")
+Button/styles/hover = SubResource("StyleBoxFlat_21o6m")
+Button/styles/normal = SubResource("StyleBoxFlat_xk03e")
+Button/styles/pressed = SubResource("StyleBoxFlat_ve58s")
+CheckBox/colors/font_color = Color(0.933333, 0.933333, 0.933333, 1)
+CheckBox/colors/font_color_disabled = Color(0.666667, 0.666667, 0.666667, 1)
+CheckBox/colors/font_color_hover = Color(1, 1, 1, 1)
+CheckBox/colors/font_color_pressed = Color(1, 1, 1, 1)
+CheckBox/colors/icon_color_hover = Color(0.879412, 0.884706, 0.896471, 1)
+CheckBox/fonts/font = SubResource("849")
+CheckBox/icons/checked = ExtResource("6")
+CheckBox/icons/radio_checked = null
+CheckBox/icons/radio_unchecked = null
+CheckBox/icons/unchecked = ExtResource("5")
+CheckButton/colors/font_color = Color(0.933333, 0.933333, 0.933333, 1)
+CheckButton/colors/font_color_disabled = Color(0.666667, 0.666667, 0.666667, 1)
+CheckButton/colors/font_color_hover = Color(1, 1, 1, 1)
+CheckButton/colors/font_color_pressed = Color(1, 1, 1, 1)
+CheckButton/colors/icon_color_hover = Color(0.879412, 0.884706, 0.896471, 1)
+CheckButton/fonts/font = SubResource("849")
+CheckButton/icons/checked = ExtResource("4")
+CheckButton/icons/unchecked = ExtResource("10")
+HeaderLarge/base_type = &"Label"
+HeaderLarge/font_sizes/font_size = 48
+HeaderMedium/base_type = &"Label"
+HeaderMedium/font_sizes/font_size = 24
+HeaderSmall/font_sizes/font_size = 20
+ItemList/colors/font_color = Color(0, 0, 0, 1)
+ItemList/colors/font_color_selected = Color(0, 0, 0, 1)
+ItemList/colors/guide_color = Color(0, 0, 0, 1)
+ItemList/fonts/font = SubResource("849")
+Label/fonts/font = ExtResource("1")
+LineEdit/fonts/font = SubResource("849")
+LineEdit/styles/normal = SubResource("850")
+LineEdit/styles/read_only = SubResource("851")
+LinkButton/fonts/font = SubResource("849")
+MarginContainer/constants/margin_bottom = 8
+MarginContainer/constants/margin_left = 8
+MarginContainer/constants/margin_right = 8
+MarginContainer/constants/margin_top = 8
+MenuButton/fonts/font = SubResource("849")
+OptionButton/colors/font_color = Color(0.933333, 0.933333, 0.933333, 1)
+OptionButton/colors/font_color_disabled = Color(0.666667, 0.666667, 0.666667, 1)
+OptionButton/colors/font_color_hover = Color(1, 1, 1, 1)
+OptionButton/colors/font_color_pressed = Color(1, 1, 1, 1)
+OptionButton/colors/icon_color_hover = Color(0.879412, 0.884706, 0.896471, 1)
+OptionButton/fonts/font = SubResource("849")
+Panel/styles/panel = SubResource("852")
+PopupMenu/fonts/font = SubResource("849")
+PopupMenu/icons/visibility_hidden = SubResource("249")
+PopupMenu/icons/visibility_visible = SubResource("250")
+PopupMenu/icons/visibility_xray = SubResource("251")
+PopupMenu/styles/disabled = SubResource("845")
+PopupMenu/styles/focus = SubResource("845")
+PopupMenu/styles/normal = SubResource("845")
+PopupMenu/styles/panel = SubResource("853")
+PopupMenu/styles/pressed = SubResource("845")
+ProgressBar/fonts/font = SubResource("849")
+ProgressBar/styles/bg = SubResource("854")
+ProgressBar/styles/fg = SubResource("855")
+RichTextLabel/colors/selection_color = Color(0, 0, 0, 1)
+RichTextLabel/constants/line_separation = 1
+RichTextLabel/constants/table_hseparation = 3
+RichTextLabel/constants/table_vseparation = 3
+RichTextLabel/font_sizes/bold_font_size = 24
+RichTextLabel/font_sizes/bold_italics_font_size = 24
+RichTextLabel/font_sizes/italics_font_size = 24
+RichTextLabel/font_sizes/mono_font_size = 24
+RichTextLabel/font_sizes/normal_font_size = 24
+RichTextLabel/fonts/bold_font = ExtResource("9_no5q6")
+RichTextLabel/fonts/bold_italics_font = ExtResource("10_6gflf")
+RichTextLabel/fonts/italics_font = ExtResource("11_k21nw")
+RichTextLabel/fonts/normal_font = ExtResource("12_kpy4x")
+RichTextLabel/styles/focus = null
+RichTextLabel/styles/normal = null
+TabBar/constants/hseparation = 4
+TabBar/constants/label_valign_bg = 2
+TabBar/constants/label_valign_fg = 0
+TabBar/constants/top_margin = 24
+TabBar/fonts/font = SubResource("849")
+TabBar/icons/close = null
+TabBar/icons/decrement = null
+TabBar/icons/decrement_highlight = null
+TabBar/icons/increment = null
+TabBar/icons/increment_highlight = null
+TabBar/styles/panel = SubResource("859")
+TabContainer/fonts/font = SubResource("849")
+TabContainer/icons/menu_hl = SubResource("240")
+TabContainer/styles/panel = SubResource("856")
+TabContainer/styles/tab_bg = SubResource("857")
+TabContainer/styles/tab_fg = SubResource("858")
+TextEdit/colors/background_color = Color(0.419608, 0, 0, 1)
+TextEdit/fonts/font = SubResource("849")
+Tree/fonts/font = SubResource("849")
+Tree/fonts/title_button_font = SubResource("849")
+Tree/icons/arrow = null
+Tree/icons/arrow_collapsed = null
+Tree/icons/checked = null
+Tree/icons/select_arrow = null
+Tree/icons/select_option = SubResource("245")
+Tree/icons/unchecked = null
+Tree/icons/updown = null
+VScrollBar/styles/grabber = SubResource("861")
+VScrollBar/styles/grabber_highlight = SubResource("862")
+VScrollBar/styles/grabber_pressed = SubResource("863")
+VScrollBar/styles/scroll = SubResource("864")
+Window/fonts/title_font = SubResource("849")

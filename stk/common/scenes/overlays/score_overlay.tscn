@@ -1,0 +1,123 @@
+[gd_scene load_steps=2 format=3 uid="uid://7vgfj0ad020a"]
+
+[ext_resource type="Script" path="res://common/scenes/overlays/score_overlay.gd" id="1"]
+
+[node name="ScoreOverlay" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1")
+
+[node name="Player1" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_top = 20.0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Icons" type="HBoxContainer" parent="Player1"]
+layout_mode = 2
+
+[node name="Score" type="HBoxContainer" parent="Player1"]
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="Player1/Score"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Amount" type="Label" parent="Player1/Score"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "0"
+
+[node name="Player2" type="VBoxContainer" parent="."]
+layout_mode = 0
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_top = 20.0
+offset_bottom = 62.0
+grow_horizontal = 0
+alignment = 2
+
+[node name="Icons" type="HBoxContainer" parent="Player2"]
+layout_mode = 2
+alignment = 2
+
+[node name="Score" type="HBoxContainer" parent="Player2"]
+layout_mode = 2
+alignment = 2
+
+[node name="Amount" type="Label" parent="Player2/Score"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "0"
+
+[node name="Icon" type="TextureRect" parent="Player2/Score"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Player3" type="VBoxContainer" parent="."]
+layout_mode = 0
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -62.0
+offset_right = 40.0
+offset_bottom = -20.0
+grow_vertical = 0
+
+[node name="Icons" type="HBoxContainer" parent="Player3"]
+layout_mode = 2
+
+[node name="Score" type="HBoxContainer" parent="Player3"]
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="Player3/Score"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Amount" type="Label" parent="Player3/Score"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "0"
+
+[node name="Player4" type="VBoxContainer" parent="."]
+layout_mode = 0
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -62.0
+offset_bottom = -20.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Icons" type="HBoxContainer" parent="Player4"]
+layout_mode = 2
+alignment = 2
+
+[node name="Score" type="HBoxContainer" parent="Player4"]
+layout_mode = 2
+alignment = 2
+
+[node name="Amount" type="Label" parent="Player4/Score"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "0"
+
+[node name="Icon" type="TextureRect" parent="Player4/Score"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 6

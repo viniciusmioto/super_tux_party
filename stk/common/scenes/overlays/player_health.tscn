@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://7blw833payn7"]
+
+[ext_resource type="Texture2D" uid="uid://chpmcw52bco6b" path="res://assets/icons/heart_grayscale.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://c2j6h2cvflslv" path="res://assets/icons/heart.png" id="2"]
+
+[node name="Player1ScoreIcon" type="TextureProgressBar"]
+offset_right = 32.0
+offset_bottom = 32.0
+custom_minimum_size = Vector2(32, 32)
+max_value = 2.0
+value = 2.0
+texture_under = ExtResource("1")
+texture_progress = ExtResource("2")
+__meta__ = {
+"_edit_use_anchors_": false
+}

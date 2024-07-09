@@ -1,0 +1,93 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://jt7us5fj5t1k"
+path="res://.godot/imported/room.glb-ff74d4994214a008593e16186a2fa97f.scn"
+
+[deps]
+
+source_file="res://plugins/minigames/kernel_compiling/room/room.glb"
+dest_files=["res://.godot/imported/room.glb-ff74d4994214a008593e16186a2fa97f.scn"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Scene Root"
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=0
+meshes/lightmap_texel_size=0.1
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=15
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={
+"materials": {
+"Lamp_base_material.001": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/kernel_compiling/room/Lamp_base_material_001.material"
+},
+"Lampshade_material.001": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/kernel_compiling/room/Lampshade_material_001.material"
+},
+"Material": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/kernel_compiling/room/Material.material"
+},
+"Material.004": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/kernel_compiling/room/Material_004.material"
+},
+"Material.005": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/kernel_compiling/room/Material_005.material"
+},
+"Material.006": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/kernel_compiling/room/Material_006.material"
+},
+"Rug": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/kernel_compiling/room/Rug.material"
+},
+"Rug-Outside": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/kernel_compiling/room/Rug-Outside.material"
+},
+"Shelves": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/kernel_compiling/room/Shelves.material"
+},
+"Wood": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/kernel_compiling/room/Wood.material"
+},
+"floor": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/kernel_compiling/room/floor.material"
+},
+"handle": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/kernel_compiling/room/handle.material"
+},
+"roof": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/kernel_compiling/room/roof.material"
+},
+"wall": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/kernel_compiling/room/wall.material"
+}
+}
+}
+gltf/naming_version=0
+gltf/embedded_image_handling=1

@@ -1,0 +1,219 @@
+[gd_scene load_steps=9 format=3 uid="uid://dnticulv4ta18"]
+
+[ext_resource type="Script" path="res://common/scenes/board_logic/controller/minigameinformationscreen.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bwuce5d5a2314" path="res://assets/icons/cookie-grayscale.png" id="10"]
+[ext_resource type="Shader" path="res://common/main_menu_bg.gdshader" id="11"]
+
+[sub_resource type="ShaderMaterial" id="1"]
+shader = ExtResource("11")
+
+[sub_resource type="StyleBoxFlat" id="2"]
+bg_color = Color(0.0901961, 0.0901961, 0.129412, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 0.152941, 0.0941176, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="3"]
+bg_color = Color(0.764706, 0.258824, 0.247059, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 2
+border_color = Color(0.607843, 0.2, 0.192157, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="Animation" id="4"]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(7.21, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_45psx"]
+_data = {
+"fade_in": SubResource("4")
+}
+
+[node name="MinigameInformation" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.117647, 0.117647, 0.117647, 0.784314)
+
+[node name="Cookies" type="TextureRect" parent="Background"]
+visible = false
+self_modulate = Color(0.184314, 0.729412, 0.85098, 1)
+material = SubResource("1")
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource("10")
+stretch_mode = 1
+
+[node name="Content" type="Panel" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 45.0
+offset_top = 35.0
+offset_right = -45.0
+offset_bottom = -70.0
+theme_override_styles/panel = SubResource("2")
+
+[node name="Rows" type="VBoxContainer" parent="Content"]
+clip_contents = true
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 100.0
+offset_right = -10.0
+theme_override_constants/separation = 50
+
+[node name="Description" type="HBoxContainer" parent="Content/Rows"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 25
+
+[node name="Screenshot" type="TextureRect" parent="Content/Rows/Description"]
+custom_minimum_size = Vector2(572, 250)
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 3
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Text" type="RichTextLabel" parent="Content/Rows/Description"]
+custom_minimum_size = Vector2(380, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+
+[node name="Panel" type="Panel" parent="Content/Rows/Description"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("3")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Content/Rows/Description/Panel"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = -2.0
+offset_bottom = -2.0
+
+[node name="Label" type="Label" parent="Content/Rows/Description/Panel/VBoxContainer"]
+visible = false
+layout_mode = 2
+text = "MENU_LABEL_DESCRIPTION"
+
+[node name="Panel" type="Panel" parent="Content/Rows/Description/Panel/VBoxContainer/Label"]
+show_behind_parent = true
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Controls" type="GridContainer" parent="Content/Rows"]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 4
+
+[node name="Spacer" type="Control" parent="Content/Rows"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Title" type="Label" parent="."]
+custom_minimum_size = Vector2(500, 50)
+layout_mode = 0
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -250.0
+offset_top = 35.0
+offset_right = 250.0
+offset_bottom = 93.0
+theme_type_variation = &"HeaderLarge"
+text = "Title"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Mode" type="Label" parent="."]
+custom_minimum_size = Vector2(500, 50)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -250.0
+offset_top = 90.0
+offset_right = 250.0
+offset_bottom = 148.0
+grow_horizontal = 2
+theme_type_variation = &"HeaderMedium"
+text = "Mode"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Buttons" type="HBoxContainer" parent="."]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -144.0
+offset_top = -44.9999
+offset_right = 144.0
+offset_bottom = -7.99994
+theme_override_constants/separation = 25
+
+[node name="Try" type="Button" parent="Buttons"]
+custom_minimum_size = Vector2(130, 30)
+layout_mode = 2
+text = "MENU_LABEL_TRY"
+
+[node name="Play" type="Button" parent="Buttons"]
+custom_minimum_size = Vector2(133, 30)
+layout_mode = 2
+text = "MENU_LABEL_PLAY"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_45psx")
+}
+
+[connection signal="pressed" from="Buttons/Try" to="." method="_on_Try_pressed"]
+[connection signal="pressed" from="Buttons/Play" to="." method="_on_Play_pressed"]

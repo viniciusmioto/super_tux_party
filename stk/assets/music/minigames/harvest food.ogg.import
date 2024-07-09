@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b2yx335xcnxe0"
+path="res://.godot/imported/harvest food.ogg-de3116e67c9fefb8985a2c48aca915da.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/minigames/harvest food.ogg"
+dest_files=["res://.godot/imported/harvest food.ogg-de3116e67c9fefb8985a2c48aca915da.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

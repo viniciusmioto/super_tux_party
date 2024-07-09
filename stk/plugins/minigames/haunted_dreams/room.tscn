@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbbtum845mfgv"]
+
+[ext_resource type="PackedScene" uid="uid://c5t1stycj8380" path="res://plugins/minigames/haunted_dreams/room.glb" id="1_dn6yp"]
+
+[node name="room" instance=ExtResource("1_dn6yp")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="24"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+light_energy = 0.1
+omni_range = 100.0
+
+[node name="OmniLight2" type="OmniLight3D" parent="." index="25"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4, -4)
+light_energy = 0.1
+omni_range = 100.0
+
+[node name="OmniLight3" type="OmniLight3D" parent="." index="26"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4, 4)
+light_energy = 0.1
+omni_range = 100.0
+
+[node name="OmniLight4" type="OmniLight3D" parent="." index="27"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 4, 4)
+light_energy = 0.1
+omni_range = 100.0
+
+[node name="OmniLight5" type="OmniLight3D" parent="." index="28"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 4, -4)
+light_energy = 0.1
+omni_range = 100.0

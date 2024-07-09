@@ -1,0 +1,52 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2023-10-17 07:40+0000\n"
+"Last-Translator: Frankie McEyes <mceyes@protonmail.com>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/super-tux-party/"
+"minigamesescape_from_lava_1v3/it/>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.1\n"
+
+msgid "ESCAPE_FROM_LAVA_FINISH_MSG"
+msgstr "Fine!"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Vai a sinistra"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Vai a destra"
+
+msgid "MINIGAME_ACTION_OBSTRUCT"
+msgstr "Porta ostruita"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Vai avanti"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Retrocedi"
+
+msgid "MINIGAME_ACTION_OBSTRUCT_TWO"
+msgstr "Porta ostruita 2 - solo giocatore singolo"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"I giocatori gareggiano l'uno contro l'altro per raggiungere la cima, mentre "
+"la lava sale sotto di loro.\n"
+"Devono attraversare molte porte, ma una di queste porte è bloccata e non si "
+"aprirà.\n"
+"Il primo giocatore che riesce a raggiungere sano e salvo la cima vince!"
+
+msgid "MINIGAME_ACTION_OBSTRUCT_THREE"
+msgstr "Porta ostruita 3 - solo giocatore singolo"
+
+msgid "MINIGAME_NAME"
+msgstr "Fuga dalla lava"

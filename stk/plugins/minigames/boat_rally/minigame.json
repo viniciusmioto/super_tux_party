@@ -1,0 +1,14 @@
+{
+  "name": "MINIGAME_NAME",
+  "scene_path": "res://plugins/minigames/boat_rally/minigame.tscn",
+  "image_path": "res://plugins/minigames/boat_rally/screenshot.png",
+  "translation_directory": "res://plugins/minigames/boat_rally/translations",
+  "type": ["NolokCoop"],
+  "description": "MINIGAME_DESCRIPTION",
+  "controls": [
+    {
+      "actions": ["action1"],
+      "text": "MINIGAME_ACTION_PADDLE"
+    }
+  ]
+}

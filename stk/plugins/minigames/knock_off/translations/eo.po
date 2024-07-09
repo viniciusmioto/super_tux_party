@@ -1,0 +1,41 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-10-01 00:40+0000\n"
+"Last-Translator: phlostically <phlostically@mailinator.com>\n"
+"Language-Team: Esperanto <https://hosted.weblate.org/projects/"
+"super-tux-party/minigamesknock_off/eo/>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9-dev\n"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"Ĉiu ludanto provas frapi ĉiujn kontraŭulojn for de la glaciinsulo.\n"
+"La lasta ludanto restanta gajnos!"
+
+msgid "MINIGAME_NAME"
+msgstr "Forfrapi"
+
+msgid "KNOCK_OFF_TEAM_WINS_MSG"
+msgstr "Teamo {team} gajnis!"
+
+msgid "KNOCK_OFF_PLAYER_WINS_MSG"
+msgstr "{player} gajnis!"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Movi sin dekstren"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Movi sin maldekstren"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Movi sin malsupren"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Movi sin supren"
+
+msgid "MINIGAME_ACTION_MOVE"
+msgstr "Movi sin"

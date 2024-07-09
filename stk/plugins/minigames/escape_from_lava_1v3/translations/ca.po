@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-03-21 21:29+0000\n"
+"Last-Translator: Aleix Ràfols Bayot <alrafolsba@gmail.com>\n"
+"Language-Team: Catalan <https://hosted.weblate.org/projects/super-tux-party/"
+"minigamesescape_from_lava_1v3/ca/>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5.2-dev\n"
+
+msgid "ESCAPE_FROM_LAVA_FINISH_MSG"
+msgstr "Fi!"
+
+msgid "MINIGAME_ACTION_OBSTRUCT_THREE"
+msgstr "Porta blocada 3 - sols un jugador"
+
+msgid "MINIGAME_ACTION_OBSTRUCT_TWO"
+msgstr "Porta blocada 2 - sols un jugador"
+
+msgid "MINIGAME_ACTION_OBSTRUCT"
+msgstr "Porta blocada"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"Els jugadors competeixen entre ells per arribar a dalt, mentre que la lava "
+"augmenta per sota.\n"
+"Hauran de passar per múltiples portes. Una n'està blocada i no s'obrirà.\n"
+"El primer jugador que arribi sa i estalvi a dalt guanya!"
+
+msgid "MINIGAME_NAME"
+msgstr "Fuig de la lava"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Moure's cap a la dreta"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Moure's cap a l'esquerra"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Moure's avall"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Moure's amunt"

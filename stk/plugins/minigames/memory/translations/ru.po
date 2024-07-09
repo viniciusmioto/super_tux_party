@@ -1,0 +1,36 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-07-30 16:32+0000\n"
+"Last-Translator: Nikita Epifanov <nikgreens@protonmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/super-tux-party/"
+"minigamesmemory/ru/>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.7.2-dev\n"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Двигаться вправо"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Двигаться влево"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Двигаться вниз"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Двигаться вверх"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"Игроки должный найти подходящие пары карт.\n"
+"Побеждает команда, у которой больше пар!"
+
+msgid "MINIGAME_NAME"
+msgstr "Память"
+
+msgid "MINIGAME_ACTION_FLIP_CARD"
+msgstr "Перевернуть карту"

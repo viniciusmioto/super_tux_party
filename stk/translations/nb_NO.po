@@ -1,0 +1,730 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2021-12-26 21:52+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/super-"
+"tux-party/super-tux-party/nb_NO/>\n"
+"Language: nb_NO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.10.1\n"
+
+msgid "CONTEXT_LABEL_BUY_CAKE"
+msgstr "Kjøp en kake for {amount} kjeks"
+
+msgid "CONTEXT_LABEL_DUEL_REWARD"
+msgstr "Duellbelønning:"
+
+msgid "CONTEXT_LABEL_DUEL_SELECT"
+msgstr "Velg motstander:"
+
+msgid "CONTEXT_LABEL_FINISH"
+msgstr "Slutt!"
+
+msgid "CONTEXT_LABEL_GO"
+msgstr "Start!"
+
+msgid "CONTEXT_LABEL_PLAYER_ROLLED"
+msgstr "{name} rullet {value}:"
+
+msgid "CONTEXT_LABEL_READY_QUESTION"
+msgstr "Klar?"
+
+msgid "CONTEXT_LABEL_ROLL"
+msgstr "Kast terningen."
+
+msgid "CONTEXT_LABEL_ROLL_PLAYER"
+msgstr "Rull {name}!"
+
+msgid "CONTEXT_LABEL_STEAL_ONE_CAKE"
+msgstr "Vinneren stjeler én kake"
+
+msgid "CONTEXT_LABEL_STEAL_TEN_COOKIES"
+msgstr "Vinneren stjeler 10 kjeks"
+
+msgid "CONTEXT_LABEL_TURN_NUM"
+msgstr "Tur {turn}/{total}"
+
+msgid "CONTEXT_LABEL_VS"
+msgstr "mot"
+
+msgid "CONTEXT_LABEL_YOUR_TURN"
+msgstr "Det er din tur!"
+
+msgid "CONTEXT_NOTIFICATION_NOT_ENOUGH_COOKIES"
+msgstr "Du har ikke nok kjeks til å kjøpe dette"
+
+msgid "CONTEXT_NOTIFICATION_NOT_ENOUGH_SPACE"
+msgstr "Du har ikke nok plass igjen i ansamlingslageret"
+
+msgid "MENU_CONTROLS_ACTION_1"
+msgstr "Handling 1"
+
+msgid "MENU_CONTROLS_ACTION_2"
+msgstr "Handling 2"
+
+msgid "MENU_CONTROLS_ACTION_3"
+msgstr "Handling 3"
+
+msgid "MENU_CONTROLS_ACTION_4"
+msgstr "Handling 4"
+
+msgid "MENU_CONTROLS_UNKNOWN_GAMEPAD_AXIS"
+msgstr "Ukjent akse {axis}"
+
+msgid "MENU_CONTROLS_GENERIC_GAMEPAD_BUTTON"
+msgstr "Spillkontrollerknapp {button}"
+
+msgid "MENU_CONTROLS_MOUSE"
+msgstr "Mus"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON"
+msgstr "Museknapp"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_LEFT"
+msgstr "Venstre museknapp"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_MIDDLE"
+msgstr "Midtre museknapp"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_RIGHT"
+msgstr "Høyre museknapp"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_DOWN"
+msgstr "Knappehjulstrykk"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_LEFT"
+msgstr "Knappehjul venstre"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_RIGHT"
+msgstr "Knappehjul høyre"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_UP"
+msgstr "Knappehjul oppover"
+
+#, fuzzy
+msgid "MENU_CONTROLS_TRIGGER_LEFT"
+msgstr "Venstreklaff"
+
+#, fuzzy
+msgid "MENU_CONTROLS_TRIGGER_LEFT_2"
+msgstr "Venstreklaff 2"
+
+#, fuzzy
+msgid "MENU_CONTROLS_TRIGGER_LEFT_3"
+msgstr "Venstreklaff 3"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT"
+msgstr "Høyreklaff"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT_2"
+msgstr "Høyreklaff 2"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT_3"
+msgstr "Høyreklaff 3"
+
+msgid "MENU_CONTROLS_DIR_DOWN"
+msgstr "Nedover"
+
+msgid "MENU_CONTROLS_DIR_LEFT"
+msgstr "Venstre"
+
+msgid "MENU_CONTROLS_DIR_RIGHT"
+msgstr "Høyre"
+
+msgid "MENU_CONTROLS_DIR_UP"
+msgstr "Oppover"
+
+msgid "MENU_CONTROLS_SCREENSHOT"
+msgstr "Utfør skjermavbildning"
+
+msgid "MENU_CONTROLS_DEV_MENU"
+msgstr "Åpne utviklermeny"
+
+msgid "MENU_IO_ENTER_SAVEGAME_NAME"
+msgstr "Skriv inn navn på lagret spill:"
+
+msgid "MENU_IO_LOAD_GAME"
+msgstr "Last inn spill"
+
+msgid "MENU_IO_SAVE"
+msgstr "Lagre"
+
+msgid "MENU_IO_SAVE_GAME"
+msgstr "Lagre spill"
+
+msgid "MENU_LABEL_BACK"
+msgstr "Tilbake"
+
+msgid "MENU_LABEL_CANCEL"
+msgstr "Avbryt"
+
+msgid "MENU_LABEL_CONTINUE"
+msgstr "Fortsett"
+
+msgid "MENU_LABEL_DESKTOP"
+msgstr "Avslutt til skrivebord"
+
+msgid "MENU_SETTINGS_AWARD_LINEAR"
+msgstr ""
+
+msgid "MENU_LABEL_NEW_GAME"
+msgstr "Nytt spill"
+
+msgid "MENU_LABEL_START"
+msgstr ""
+
+msgid "MENU_LABEL_PAUSE"
+msgstr "Pause"
+
+msgid "MENU_LABEL_PAUSED"
+msgstr "Pauset"
+
+msgid "MENU_LABEL_PAUSE_ON_WINDOW_UNFOCUS"
+msgstr "Pause ved tap av vindusfokus"
+
+msgid "MENU_LABEL_PLAY"
+msgstr "Spill"
+
+msgid "MENU_LABEL_ONLINE"
+msgstr ""
+
+msgid "MENU_LABEL_PLAYER1"
+msgstr "Spiller1"
+
+msgid "MENU_LABEL_PLAYER2"
+msgstr "Spiller2"
+
+msgid "MENU_LABEL_PLAYER3"
+msgstr "Spiller3"
+
+msgid "MENU_LABEL_PLAYER4"
+msgstr "Spiller4"
+
+msgid "MENU_LABEL_PRESS_ANY_KEY"
+msgstr "Trykk vilkårlig tast"
+
+msgid "MENU_LABEL_QUIT"
+msgstr "Avslutt"
+
+msgid "MENU_LABEL_READY"
+msgstr "Klar!"
+
+msgid "MENU_LABEL_RESUME"
+msgstr "Fortsett"
+
+msgid "MENU_LABEL_RETURN_MENU"
+msgstr "Tilbake til hovedmeny"
+
+msgid "MENU_LABEL_SELECT_BOARD"
+msgstr "Velg kart:"
+
+msgid "MENU_LABEL_SELECT_CHARACTER"
+msgstr ""
+
+msgid "MENU_LABEL_TRY"
+msgstr "Prøv"
+
+msgid "MENU_SETTINGS_AWARD_WINNER_TAKES_ALL"
+msgstr ""
+
+msgid "MENU_SETTINGS_AWARD_TYPE"
+msgstr ""
+
+msgid "MENU_LABEL_CREDITS"
+msgstr "Æreshenvisninger"
+
+msgid "MENU_LABEL_SCREENSHOTS"
+msgstr "Skjermavbildninger"
+
+msgid "MENU_OPTIONS"
+msgstr "Innstillinger"
+
+msgid "MENU_OPTIONS_AUDIO"
+msgstr "Lyd"
+
+msgid "MENU_OPTIONS_CONTROLS"
+msgstr "Kontroller"
+
+msgid "MENU_OPTIONS_EFFECTS"
+msgstr "Effekter"
+
+msgid "MENU_OPTIONS_FRAME_CAP"
+msgstr "Rammetaktsbegrensning"
+
+msgid "MENU_OPTIONS_FULLSCREEN"
+msgstr "Fullskjermsvisning"
+
+#, fuzzy
+msgid "MENU_OPTIONS_MSAA"
+msgstr "Multisample-anti-bildestøy (MSAA)"
+
+msgid "MENU_OPTIONS_LANGUAGE"
+msgstr "Språk"
+
+msgid "MENU_OPTIONS_MASTER"
+msgstr "Hovedlydstyrke"
+
+msgid "MENU_OPTIONS_MISC"
+msgstr "Ymse"
+
+msgid "MENU_OPTIONS_MUSIC"
+msgstr "Musikk"
+
+msgid "MENU_OPTIONS_MUTE_ON_WINDOW_UNFOCUS"
+msgstr "Forstum ved tap av vindusfokus"
+
+msgid "MENU_OPTIONS_SYSTEM_DEFAULT"
+msgstr "Systemforvalg"
+
+msgid "MENU_OPTIONS_VISUAL"
+msgstr "Visuelt"
+
+msgid "MENU_OPTIONS_VSYNC"
+msgstr "VSynk"
+
+msgid "DIALOG_YES"
+msgstr "Ja"
+
+msgid "DIALOG_NO"
+msgstr "Nei"
+
+msgid "MENU_LABEL_CONNECTION_ERROR_TITLE"
+msgstr ""
+
+msgid "MENU_LABEL_CONNECTION_TIMEOUT"
+msgstr ""
+
+msgid "MENU_LABEL_NO_SERVER_VERSION"
+msgstr ""
+
+msgid "MENU_LABEL_VERSION_MISMATCH_TITLE"
+msgstr ""
+
+msgid "MENU_LABEL_VERSION_MISMATCH"
+msgstr ""
+
+msgid "MENU_LABEL_CHOOSE_SERVER"
+msgstr ""
+
+msgid "MENU_LABEL_COPY"
+msgstr ""
+
+msgid "MENU_LABEL_LOBBY_CREATE"
+msgstr ""
+
+msgid "MENU_LABEL_LOBBY_JOIN"
+msgstr ""
+
+msgid "MENU_LOBBY_SETTINGS"
+msgstr ""
+
+msgid "MENU_SETTINGS_PUBLIC"
+msgstr ""
+
+msgid "MENU_SETTINGS_CAKE_COST"
+msgstr ""
+
+msgid "MENU_SETTINGS_TURNS"
+msgstr ""
+
+msgid "MENU_SETTINGS_ENABLE_TIMEOUT"
+msgstr ""
+
+msgid "MENU_SETTINGS_TIMEOUT"
+msgstr ""
+
+msgid "AI_DIFFICULTY"
+msgstr "Maskinvanskelighetsgrad:"
+
+msgid "DIFFICULTY_EASY"
+msgstr "Lett"
+
+msgid "DIFFICULTY_NORMAL"
+msgstr "Normal"
+
+msgid "DIFFICULTY_HARD"
+msgstr "Vanskelig"
+
+msgid "CONTEXT_GNU_ACTION_TYPE"
+msgstr "GNU-handling"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY"
+msgstr "Grafikk-kvalitet"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_HIGH"
+msgstr "Høy"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_MEDIUM"
+msgstr "Middels"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_LOW"
+msgstr "Lav"
+
+msgid "MENU_OPTIONS_FXAA"
+msgstr "FXAA"
+
+msgid "MENU_GRAPHIC_QUALITY_REBOOT_NOTICE"
+msgstr "Endring av grafikkvalitet inntreffer ved neste omstart av spillet"
+
+msgid "MENU_LOBBY_ADD_PLAYER"
+msgstr ""
+
+msgid "CONTEXT_SPEAKER_SARA"
+msgstr "Sara"
+
+msgid "CONTEXT_WINNER_ANNOUNCEMENT"
+msgstr ""
+"Jeg vet at dere kjempet tappert om seieren, men nå er spillet over og vi "
+"trenger en vinner. Vinneren er…"
+
+msgid "CONTEXT_WINNER_REVEAL_ONE_PLAYER"
+msgstr "[color=#ff3300]{0}[/color]!"
+
+msgid "CONTEXT_WINNER_REVEAL_TWO_PLAYER"
+msgstr "[color=#ff3300]{0}[/color] og [color=#33ff00]{1}[/color]!"
+
+msgid "CONTEXT_WINNER_REVEAL_THREE_PLAYER"
+msgstr ""
+"[color=#ff3300]{0}[/color], [color=#33ff00]{1}[/color] og [color=#00ff88]{2}"
+"[/color]!"
+
+msgid "CONTEXT_WINNER_REVEAL_FOUR_PLAYER"
+msgstr ""
+"[color=#ff3300]{0}[/color], [color=#33ff00]{1}[/color], [color=#00ff88]{2}[/"
+"color] og [color=#ffff33]{3}[/color]!"
+
+msgid "CONTEXT_LABEL_CAKES"
+msgstr "Kaker"
+
+msgid "CONTEXT_LABEL_COOKIES"
+msgstr "Kjeks"
+
+msgid "CONTEXT_GNU_NAME"
+msgstr "GNU"
+
+msgid "CONTEXT_GNU_EVENT_START"
+msgstr "Hei der, trenger du hjelp? La meg se, hva jeg kan gjøre for deg i dag…"
+
+msgid "CONTEXT_GNU_MINIGAME_SOLO_MODERATION"
+msgstr ""
+"Dette er et alene-minispill! Vis meg alle dine ferdigheter, og jeg vil gi "
+"deg en [color=#dd44ff]{reward}[/color]."
+
+msgid "CONTEXT_GNU_MINIGAME_SOLO"
+msgstr "Alene-minispill"
+
+msgid "CONTEXT_GNU_MINIGAME_COOP_MODERATION"
+msgstr "La oss spille sammen! Jeg er sikker på at dette blir gøy"
+
+msgid "CONTEXT_GNU_MINIGAME_COOP"
+msgstr "Samspills-minispill"
+
+msgid "CONTEXT_GNU_SOLO_VICTORY"
+msgstr "Godt jobbet. Her har du belønningen din!"
+
+msgid "CONTEXT_GNU_SOLO_LOSS"
+msgstr "Det gikk ikke. Lykke til neste gang."
+
+msgid "CONTEXT_GNU_COOP_VICTORY"
+msgstr "Du klarte det. Jeg gleder meg til neste gang."
+
+msgid "CONTEXT_GNU_COOP_LOSS"
+msgstr ""
+"Selv om du ikke klarte det, trente du på lagarbeid. Jeg er sikker på at det "
+"lykkes for deg neste gang."
+
+msgid "CONTEXT_NOLOK_NAME"
+msgstr "Nolok"
+
+msgid "CONTEXT_NOLOK_ACTION_TYPE"
+msgstr "Nolok-handling"
+
+msgid "CONTEXT_NOLOK_EVENT_START"
+msgstr "Det er min tur! Jeg vet akkurat hva jeg skal gjøre…"
+
+msgid "CONTEXT_NOLOK_MINIGAME_SOLO_MODERATION"
+msgstr ""
+"Jeg utfordrer deg til et minispill! Hvis du kan slå meg kan du beholde "
+"greiene dine. Hvis ikke forsyner jeg meg av én av kakene dine…"
+
+msgid "CONTEXT_NOLOK_MINIGAME_SOLO"
+msgstr "Alene-minispill"
+
+msgid "CONTEXT_NOLOK_MINIGAME_COOP_MODERATION"
+msgstr "Meg mot alle dere? Tror dere engang dere har en sjanse mot meg?"
+
+msgid "CONTEXT_NOLOK_MINIGAME_COOP"
+msgstr "Samspills-minispill"
+
+msgid "CONTEXT_NOLOK_SOLO_VICTORY"
+msgstr "Vær takknemmelig for at jeg forskånet deg tapet!"
+
+msgid "CONTEXT_NOLOK_SOLO_LOSS"
+msgstr "Ser frem til å slå deg igjen!"
+
+msgid "CONTEXT_NOLOK_COOP_VICTORY"
+msgstr "Neste gang kommer du ikke til å vinne."
+
+msgid "CONTEXT_NOLOK_COOP_LOSS"
+msgstr "Haha, enkel seier."
+
+msgid "CONTEXT_NOLOK_LOSE_COOKIES_MODERATION"
+msgstr ""
+"Haha, der forsvinner [color=#00aaff]{amount}[/color] av kjeksene dine. Jeg "
+"er sikker på at [color=#dd44ff]{player}[/color] har nytte av dem."
+
+msgid "CONTEXT_NOLOK_LOSE_COOKIES"
+msgstr "Tap av kjeksene dine"
+
+msgid "CONTEXT_NOLOK_ROLL_MODIFIER_MODERATION"
+msgstr ""
+"Kanskje du skal ta det litt rolig. La oss se hva du får til med "
+"[color=#00aaff]{amount}[/color] mindre bevegelse de neste [color=#dd44ff]"
+"{duration}[/color] kastene."
+
+msgid "CONTEXT_NOLOK_ROLL_MODIFIER"
+msgstr "Forbannet terning"
+
+msgid "CONTEXT_SHOW_TUTORIAL"
+msgstr ""
+"Det ser ut til at dette er første gang du spiller. Vil du få forklart "
+"reglene?"
+
+msgid "CONTEXT_TUTORIAL_DICE"
+msgstr ""
+"Spillet er turbasert. I løpet av din tur, ruller du en terning og flytter "
+"det antallet felter forover som du får på terningen."
+
+msgid "CONTEXT_TUTORIAL_COOKIES"
+msgstr ""
+"Valutaen er kjeks. Du tjener kjeks ved å vinne minispill. Med kjeks kan du "
+"kjøpe ting når du passerer butikkfeltene."
+
+msgid "CONTEXT_TUTORIAL_CAKES"
+msgstr ""
+"For å vinne må du sanke flest kaker. Kjeks brukes som skille når det er "
+"uavgjort. Du kan kjøpe kaker på spesialfelter på brettet. Hvis du kjøper en, "
+"vil kaken flytte seg til et annet sted."
+
+msgid "CONTEXT_TUTORIAL_SPACES_NORMAL"
+msgstr ""
+"Det er forskjellige typer felter du kan lande på: Blå felter gir deg kaker, "
+"mens røde felter tar kakene dine."
+
+msgid "CONTEXT_TUTORIAL_SPACES_SPECIAL"
+msgstr ""
+"Grønne felter starter brettspesifikke hendelser. Kampfelter lar deg utfordre "
+"en annen spiller til et duellminispill."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES"
+msgstr ""
+"Etter at hver spiller har hatt sin tur, vil et minispill bli avholdt. Det er "
+"tre forskjellige varianter av minispill:"
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_FFA"
+msgstr "Alle mot alle, der alle kjemper om seieren mot alle andre."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_2V2"
+msgstr "To mot to, der det spilles i lag med to spillere i hver."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_1V3"
+msgstr ""
+"Én mot tre, der én spiller konkurrerer mot resten. Enkeltspilleren får en "
+"bonus for å fremskynde spillet."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_SPECIAL"
+msgstr ""
+"Spesielle minispill vil bli avholdt når en spiller lander på GNU eller NOLOK-"
+"felt. GNU-minispill er bra for deg, og NOLOK-minispill skader deg. Hold deg "
+"unna sistnevnte!"
+
+msgid "CONTEXT_TUTORIAL_END"
+msgstr "Takk for nå, du er klar til å spille. Spill og vinn med samme sinn."
+
+msgid "CONTEXT_CAKE_PLACED"
+msgstr "Her er en kake, kom og ta den!"
+
+msgid "CONTEXT_CAKE_WANT_BUY"
+msgstr "Ønsker du å kjøpe en kake?"
+
+msgid "CONTEXT_CAKE_BUY_AMOUNT"
+msgstr "Hvor mange kaker ønsker du å kjøpe?"
+
+msgid "CONTEXT_CAKE_COLLECTED"
+msgstr ""
+"Godt jobbet, [color=#00aaff]{player}[/color]. Det blir [color=#dd44ff]"
+"{amount}[/color] kake(r) på deg."
+
+msgid "CONTEXT_CAKE_CANT_AFFORD"
+msgstr "Du har ikke nok kjeks til å kjøpe en kake."
+
+#, fuzzy
+msgid "SHOP_LABEL_TITLE"
+msgstr "Butikk"
+
+#, fuzzy
+msgid "SHOP_LABEL_DESCRIPTION"
+msgstr "Enhetsbeskrivelse"
+
+msgid "SHOP_ITEM_NO_DESCRIPTION"
+msgstr "Ingen beskrivelse"
+
+msgid "REWARDSCREEN_MINIGAME_RESULTS"
+msgstr "Minispill-resultat"
+
+msgid "REWARDSCREEN_MINIGAME_WINNER"
+msgstr "Seier!"
+
+msgid "REWARDSCREEN_MINIGAME_REWARD"
+msgstr "Belønning:"
+
+#, fuzzy
+msgid "REWARDSCREEN_PRESS_BUTTON"
+msgstr "Trykk"
+
+#, fuzzy
+msgid "MINIGAME_ACTION_MOVEMENT"
+msgstr "Beveg"
+
+msgid "MINIGAME_TYPE_FFA"
+msgstr "Alle-mot-alle -minispill"
+
+msgid "MINIGAME_TYPE_2v2"
+msgstr "To-mot-to -minispill"
+
+msgid "MINIGAME_TYPE_1v3"
+msgstr "Én-mot-tre -minispill"
+
+msgid "MINIGAME_TYPE_DUEL"
+msgstr "Duell-minispill"
+
+msgid "MINIGAME_TYPE_GNU_COOP"
+msgstr "GNU-samarbeidsminispill"
+
+msgid "MINIGAME_TYPE_GNU_SOLO"
+msgstr "GNU-enkeltspiller-minispill"
+
+msgid "MINIGAME_TYPE_NOLOK_COOP"
+msgstr "Nolok-samarbeidsminispill"
+
+msgid "MINIGAME_TYPE_NOLOK_SOLO"
+msgstr "Nolok-enkeltspiller-minispill"
+
+msgid "ERROR"
+msgstr ""
+
+msgid "SAVE_GAME_CANNOT_SAVE"
+msgstr ""
+
+msgid "SAVE_GAME_DISABLED"
+msgstr ""
+
+#~ msgid "MENU_LABEL_NOT_READY_ELLIPSIS"
+#~ msgstr "Ikke klar enda…"
+
+#~ msgid "MENU_LABEL_NUM_1"
+#~ msgstr "1"
+
+#~ msgid "MENU_LABEL_NUM_3"
+#~ msgstr "3"
+
+#~ msgid "MENU_LABEL_OK"
+#~ msgstr "OK"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_2"
+#~ msgstr "Velg en karakter for spiller 2"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_4"
+#~ msgstr "Velg en karakter for spiller 4"
+
+#~ msgid "MENU_LABEL_BOARD_SETTINGS"
+#~ msgstr "Brettinnstillinger"
+
+#~ msgid "MENU_LABEL_XBOX"
+#~ msgstr "XBOX"
+
+#~ msgid "MENU_LABEL_TURNS"
+#~ msgstr "Turer:"
+
+#~ msgid "MENU_LABEL_DESCRIPTION"
+#~ msgstr "Beskrivelse"
+
+#~ msgid "MENU_CONTROLS_AXIS_MINUS"
+#~ msgstr "Akse -"
+
+#~ msgid "MENU_CONTROLS_AXIS_PLUS"
+#~ msgstr "Akse +"
+
+#~ msgid "MENU_CONTROLS_AXIS_X_LEFT"
+#~ msgstr "X venstre"
+
+#~ msgid "MENU_CONTROLS_AXIS_X_RIGHT"
+#~ msgstr "X høyre"
+
+#~ msgid "MENU_CONTROLS_AXIS_Y_LEFT"
+#~ msgstr "Y venstre"
+
+#~ msgid "MENU_CONTROLS_AXIS_Y_RIGHT"
+#~ msgstr "Y høyre"
+
+#~ msgid "MENU_CONTROLS_BUTTON_UNKNOWN"
+#~ msgstr "Ukjent knapp"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD"
+#~ msgstr "Spillkontroller"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON"
+#~ msgstr "Spillkontrollerknapp"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_1"
+#~ msgstr "Spillkontrollerknapp 1"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_2"
+#~ msgstr "Spillkontrollerknapp 2"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_3"
+#~ msgstr "Spillkontrollerknapp 3"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_4"
+#~ msgstr "Spillkontrollerknapp 4"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_A"
+#~ msgstr "Spillkontrollerknapp A"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_B"
+#~ msgstr "Spillkontrollerknapp B"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_CIRCLE"
+#~ msgstr "Spillkontrollerknapp sirkel"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_CROSS"
+#~ msgstr "Spillkontrolleroppsett"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_SQUARE"
+#~ msgstr "Spillkontrollerknapp firkant"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_TRIANGLE"
+#~ msgstr "Spillkontrollerknapp triangel"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_X"
+#~ msgstr "Spillkontrollerknapp X"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_Y"
+#~ msgstr "Spillkontrollerknapp Y"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_SELECT"
+#~ msgstr "Spillkontrollerknapp velg"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_START"
+#~ msgstr "Spillkontrollerknapp start"
+
+#~ msgid "MENU_LABEL_TITLE"
+#~ msgstr "Super Tux Party"

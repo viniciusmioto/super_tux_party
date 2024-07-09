@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=3 uid="uid://bq4ldr7nx4awu"]
+
+[ext_resource type="PackedScene" uid="uid://1llvj4si75ga" path="res://assets/models/cake/cake.glb" id="1"]
+[ext_resource type="Animation" uid="uid://d3sd28x41iimc" path="res://assets/models/cake/float.anim" id="3"]
+[ext_resource type="Animation" uid="uid://dmovwg8no71ce" path="res://assets/models/cake/collect.anim" id="4"]
+
+[sub_resource type="Animation" id="Animation_khfq3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 1.5, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 3.14159, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_03vx6"]
+_data = {
+"RESET": SubResource("Animation_khfq3"),
+"collect": ExtResource("4"),
+"float": ExtResource("3")
+}
+
+[node name="cake" instance=ExtResource("1")]
+transform = Transform3D(-1, 0, 2.53518e-06, 0, 1, 0, -2.53518e-06, 0, -1, 0, 1.5, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="5"]
+libraries = {
+"": SubResource("AnimationLibrary_03vx6")
+}

@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://vhs1rpuqw4me"]
+
+[ext_resource type="Texture2D" uid="uid://6fekp4by6b2b" path="res://plugins/minigames/forest_run/Forest Arena/ColorPaletteNormal.png" id="1_1b5v2"]
+
+[resource]
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("1_1b5v2")

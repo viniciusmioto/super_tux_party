@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dsvpj1n06ag4a"]
+
+[resource]
+resource_name = "trash_pink"
+cull_mode = 2
+albedo_color = Color(0.905883, 0.52549, 0.878431, 1)
+roughness = 0.4

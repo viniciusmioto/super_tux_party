@@ -1,0 +1,38 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-03-12 14:40+0000\n"
+"Last-Translator: ssantos <ssantos@web.de>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/"
+"super-tux-party/minigamesescape_from_lava/pt/>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.16.2-dev\n"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Mover para a direita"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Mover para a esquerda"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Descer"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Subir"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"Os jogadores correm uns contra os outros para chegar ao topo, enquanto a "
+"lava sobe por baixo.\n"
+"Eles têm de passar por várias portas. Uma de cada uma destas portas está "
+"bloqueada e não abre.\n"
+"O primeiro jogador que conseguir chegar ao topo ganha!"
+
+msgid "MINIGAME_NAME"
+msgstr "Escape from Lava"
+
+msgid "ESCAPE_FROM_LAVA_FINISH_MSG"
+msgstr "Acabou!"

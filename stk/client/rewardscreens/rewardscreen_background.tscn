@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://dq44tcwcjpik6"]
+
+[ext_resource type="Shader" path="res://common/main_menu_bg.gdshader" id="1"]
+[ext_resource type="Texture2D" uid="uid://bwuce5d5a2314" path="res://assets/icons/cookie-grayscale.png" id="2"]
+[ext_resource type="AudioStream" uid="uid://bjval734wcyw8" path="res://assets/sounds/minigame_end_screen/stuxparty_endjingle.ogg" id="4"]
+[ext_resource type="Script" path="res://client/rewardscreens/rewardscreen_background.gd" id="5"]
+[ext_resource type="AudioStream" uid="uid://dcpweg0ogj7ay" path="res://assets/sounds/minigame_end_screen/stuxparty_winjingle.ogg" id="6"]
+
+[sub_resource type="ShaderMaterial" id="1"]
+shader = ExtResource("1")
+
+[node name="Background" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6")
+bus = &"Music"
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4")
+bus = &"Music"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+self_modulate = Color(0.184314, 0.729412, 0.85098, 1)
+material = SubResource("1")
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource("2")
+stretch_mode = 1
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+offset_bottom = 105.0
+color = Color(0, 0.180392, 0.623529, 0.882353)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 106.0
+grow_horizontal = 2
+theme_type_variation = &"HeaderLarge"
+text = "REWARDSCREEN_MINIGAME_RESULTS"
+horizontal_alignment = 1
+vertical_alignment = 1

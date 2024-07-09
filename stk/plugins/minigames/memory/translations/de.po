@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-05-12 08:20+0000\n"
+"Last-Translator: Florian Kothmeier <floriankothmeier@web.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/super-tux-party/"
+"minigamesmemory/de/>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.13-dev\n"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Nach unten bewegen"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Nach oben bewegen"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Nach rechts bewegen"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Nach links bewegen"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"Die Spieler müssen zusammenpassende Kartenpaare finden.\n"
+"Das Team, welches die meisten Kartenpaare gefunden hat, gewinnt!"
+
+msgid "MINIGAME_NAME"
+msgstr "Memory"
+
+msgid "MINIGAME_ACTION_FLIP_CARD"
+msgstr "Karte aufdecken"

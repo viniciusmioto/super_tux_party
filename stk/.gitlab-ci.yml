@@ -1,0 +1,133 @@
+image: barichello/godot-ci:4.2
+
+.job_template: &build_base
+  interruptible: true
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - build
+      - super-tux-party-sources.zip
+  only:
+    - dev@SuperTuxParty/SuperTuxParty
+    - tags
+
+stages:
+  - build_and_test
+  - deploy
+
+build:linux:
+  stage: build_and_test
+  <<: *build_base
+  script:
+    - mkdir build
+    - godot --headless --export-release "Linux Client" "build/supertuxparty"
+
+build:server:
+  stage: build_and_test
+  <<: *build_base
+  script:
+    - mkdir build
+    - godot --headless --export-release "Linux Server" "build/supertuxparty_server.pck"
+    - wget -O godot_linux_server.zip 'https://downloads.tuxfamily.org/godotengine/3.3.2/Godot_v3.3.2-stable_linux_server.64.zip'
+    - unzip godot_linux_server.zip
+    - mv Godot_v3.3.2-stable_linux_server.64 build/supertuxparty_server
+
+build:windows:
+  stage: build_and_test
+  <<: *build_base
+  script:
+    - mkdir build
+    - godot --headless --export-release "Windows Desktop" "build/Supertuxparty.exe"
+
+build:osx:
+  stage: build_and_test
+  <<: *build_base
+  script:
+    - mkdir build
+    - godot --headless --export-release "Mac OSX Client" "build/supertuxparty.app"
+
+build:plugins:
+  stage: build_and_test
+  <<: *build_base
+  script:
+    - mkdir -p build/plugins
+    - godot --headless --export-release "Resources" "build/plugins/default.pck"
+
+build:sources:
+  stage: build_and_test
+  <<: *build_base
+  script:
+    - zip -r super-tux-party-sources.zip *
+  only:
+    - dev@SuperTuxParty/SuperTuxParty
+    - tags
+
+license_test:
+  interruptible: true
+  image: python:latest
+  stage: build_and_test
+  before_script:
+    - pip install tqdm
+  script:
+    - python check_license.py
+  except:
+    - tags
+
+deploy_nightly:
+  stage: deploy
+  dependencies:
+    - build:linux
+    - build:windows
+    - build:osx
+    - build:plugins
+    - build:server
+    - build:sources
+  before_script:
+    - apt-get update && apt-get install openssh-client -y
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo "$SSH_KNOWN_HOSTS" >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - mkdir .ci-bin && cd .ci-bin
+    - wget -O butler.zip https://broth.itch.ovh/butler/linux-amd64/LATEST/archive/default
+    - unzip butler.zip
+    - chmod +x butler
+    - cd ..
+    - export PATH=$(realpath .ci-bin):$PATH
+    - chmod +x release.sh
+    - ./release.sh nightly $CI_COMMIT_SHORT_SHA
+  only:
+    - dev@SuperTuxParty/SuperTuxParty
+
+deploy_release:
+  stage: deploy
+  dependencies:
+    - build:linux
+    - build:windows
+    - build:osx
+    - build:plugins
+    - build:server
+    - build:sources
+  before_script:
+    - apt-get update && apt-get install openssh-client -y
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo "$SSH_KNOWN_HOSTS" >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - mkdir .ci-bin && cd .ci-bin
+    - apt -qq update && apt -qq install -y curl
+    - wget -O butler.zip https://broth.itch.ovh/butler/linux-amd64/LATEST/archive/default
+    - unzip butler.zip
+    - chmod +x butler
+    - cd ..
+    - export PATH=$(realpath .ci-bin):$PATH
+    - chmod +x release.sh
+    - ./release.sh release $CI_COMMIT_REF_NAME
+  only:
+    - tags

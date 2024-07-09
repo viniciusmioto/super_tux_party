@@ -1,0 +1,14 @@
+{
+  "name": "MINIGAME_NAME",
+  "scene_path": "res://plugins/minigames/haunted_dreams/minigame.tscn",
+  "image_path": "res://plugins/minigames/haunted_dreams/screenshot.png",
+  "translation_directory": "res://plugins/minigames/haunted_dreams/translations",
+  "type": ["GnuCoop"],
+  "description": "MINIGAME_DESCRIPTION",
+  "controls": [
+    {
+      "actions": ["spacer", "up", "spacer", "left", "down", "right"],
+      "text": "MINIGAME_ACTION_MOVEMENT"
+    }
+  ]
+}

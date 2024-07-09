@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bbj7mi4k4hltv"]
+
+[ext_resource type="Texture2D" uid="uid://dv5fsg1qe6un5" path="res://common/scenes/board_logic/node/material/tile_green_col.png" id="1"]
+
+[resource]
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("1")
+metallic_specular = 0.0

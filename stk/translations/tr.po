@@ -1,0 +1,654 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2023-02-27 19:35+0000\n"
+"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/super-tux-party/"
+"super-tux-party/tr/>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.16-dev\n"
+
+msgid "CONTEXT_LABEL_BUY_CAKE"
+msgstr "{amount} kurabiye karşılığında bir pasta satın al"
+
+msgid "CONTEXT_LABEL_DUEL_REWARD"
+msgstr "Düello Ödülü:"
+
+msgid "CONTEXT_LABEL_DUEL_SELECT"
+msgstr "Rakip Seç:"
+
+msgid "CONTEXT_LABEL_FINISH"
+msgstr "Bitti!"
+
+msgid "CONTEXT_LABEL_GO"
+msgstr "Başla!"
+
+msgid "CONTEXT_LABEL_PLAYER_ROLLED"
+msgstr "{name}, {value} değerini attı:"
+
+msgid "CONTEXT_LABEL_READY_QUESTION"
+msgstr "Hazır?"
+
+msgid "CONTEXT_LABEL_ROLL"
+msgstr "At!"
+
+msgid "CONTEXT_LABEL_ROLL_PLAYER"
+msgstr "{name} at!"
+
+msgid "CONTEXT_LABEL_STEAL_ONE_CAKE"
+msgstr "Kazanan 1 pasta çalar"
+
+msgid "CONTEXT_LABEL_STEAL_TEN_COOKIES"
+msgstr "Kazanan 10 kurabiye çalar"
+
+msgid "CONTEXT_LABEL_TURN_NUM"
+msgstr "Sıra {turn}/{total}"
+
+msgid "CONTEXT_LABEL_VS"
+msgstr "karşı"
+
+msgid "CONTEXT_LABEL_YOUR_TURN"
+msgstr "Sıra sende!"
+
+msgid "CONTEXT_NOTIFICATION_NOT_ENOUGH_COOKIES"
+msgstr "Bunu satın almak için yeterli kurabiyen yok"
+
+msgid "CONTEXT_NOTIFICATION_NOT_ENOUGH_SPACE"
+msgstr "Çantanda yer kalmadı"
+
+msgid "MENU_CONTROLS_ACTION_1"
+msgstr "Eylem 1"
+
+msgid "MENU_CONTROLS_ACTION_2"
+msgstr "Eylem 2"
+
+msgid "MENU_CONTROLS_ACTION_3"
+msgstr "Eylem 3"
+
+msgid "MENU_CONTROLS_ACTION_4"
+msgstr "Eylem 4"
+
+msgid "MENU_CONTROLS_UNKNOWN_GAMEPAD_AXIS"
+msgstr "Bilinmeyen Eksen {axis}"
+
+msgid "MENU_CONTROLS_GENERIC_GAMEPAD_BUTTON"
+msgstr "Oyun kumandası düğmesi {button}"
+
+msgid "MENU_CONTROLS_MOUSE"
+msgstr "Fare"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON"
+msgstr "Fare düğmesi"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_LEFT"
+msgstr "Farenin sol düğmesi"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_MIDDLE"
+msgstr "Farenin orta düğmesi"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_RIGHT"
+msgstr "Farenin sağ düğmesi"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_DOWN"
+msgstr "Düğme tekerleği aşağı"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_LEFT"
+msgstr "Düğme tekerleği sol"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_RIGHT"
+msgstr "Düğme tekerleği sağ"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_UP"
+msgstr "Düğme tekerleği yukarı"
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT"
+msgstr "Sol Tetik"
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT_2"
+msgstr "Sol Tetik 2"
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT_3"
+msgstr "Sol Tetik 3"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT"
+msgstr "Sağ Tetik"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT_2"
+msgstr "Sağ Tetik 2"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT_3"
+msgstr "Sağ Tetik 3"
+
+msgid "MENU_CONTROLS_DIR_DOWN"
+msgstr "Aşağı"
+
+msgid "MENU_CONTROLS_DIR_LEFT"
+msgstr "Sol"
+
+msgid "MENU_CONTROLS_DIR_RIGHT"
+msgstr "Sağ"
+
+msgid "MENU_CONTROLS_DIR_UP"
+msgstr "Yukarı"
+
+msgid "MENU_CONTROLS_SCREENSHOT"
+msgstr "Ekran görüntüsü al"
+
+msgid "MENU_CONTROLS_DEV_MENU"
+msgstr "Geliştirici menüsünü aç"
+
+msgid "MENU_IO_ENTER_SAVEGAME_NAME"
+msgstr "Oyun kayıt adını gir:"
+
+msgid "MENU_IO_LOAD_GAME"
+msgstr "Kayıtlı Oyun"
+
+msgid "MENU_IO_SAVE"
+msgstr "Kaydet"
+
+msgid "MENU_IO_SAVE_GAME"
+msgstr "Oyunu Kaydet"
+
+msgid "MENU_LABEL_BACK"
+msgstr "Geri"
+
+msgid "MENU_LABEL_CANCEL"
+msgstr "İptal"
+
+msgid "MENU_LABEL_CONTINUE"
+msgstr "Devam Et"
+
+msgid "MENU_LABEL_DESKTOP"
+msgstr "Oyunu Kapat"
+
+msgid "MENU_SETTINGS_AWARD_LINEAR"
+msgstr "Doğrusal"
+
+msgid "MENU_LABEL_NEW_GAME"
+msgstr "Yeni Oyun"
+
+msgid "MENU_LABEL_START"
+msgstr "Başlat"
+
+msgid "MENU_LABEL_PAUSE"
+msgstr "Duraklat"
+
+msgid "MENU_LABEL_PAUSED"
+msgstr "Duraklatıldı"
+
+msgid "MENU_LABEL_PAUSE_ON_WINDOW_UNFOCUS"
+msgstr "Pencere odağı kaybolduğunda duraklat"
+
+msgid "MENU_LABEL_PLAY"
+msgstr "Oyna"
+
+msgid "MENU_LABEL_ONLINE"
+msgstr "Çevrim içi oyna"
+
+msgid "MENU_LABEL_PLAYER1"
+msgstr "Oyuncu1"
+
+msgid "MENU_LABEL_PLAYER2"
+msgstr "Oyuncu2"
+
+msgid "MENU_LABEL_PLAYER3"
+msgstr "Oyuncu3"
+
+msgid "MENU_LABEL_PLAYER4"
+msgstr "Oyuncu4"
+
+msgid "MENU_LABEL_PRESS_ANY_KEY"
+msgstr "Herhangi bir tuşa bas"
+
+msgid "MENU_LABEL_QUIT"
+msgstr "Çık"
+
+msgid "MENU_LABEL_READY"
+msgstr "Hazır!"
+
+msgid "MENU_LABEL_RESUME"
+msgstr "Devam Et"
+
+msgid "MENU_LABEL_RETURN_MENU"
+msgstr "Ana Menüye Geri Dön"
+
+msgid "MENU_LABEL_SELECT_BOARD"
+msgstr "Tahta Seç:"
+
+msgid "MENU_LABEL_SELECT_CHARACTER"
+msgstr "Karakterinizi seçin"
+
+msgid "MENU_LABEL_TRY"
+msgstr "Dene"
+
+msgid "MENU_SETTINGS_AWARD_WINNER_TAKES_ALL"
+msgstr "Kazanan hepsini alır"
+
+msgid "MENU_SETTINGS_AWARD_TYPE"
+msgstr "Ödül Türü"
+
+msgid "MENU_LABEL_CREDITS"
+msgstr "Emeği geçenler"
+
+msgid "MENU_LABEL_SCREENSHOTS"
+msgstr "Ekran görüntüleri"
+
+msgid "MENU_OPTIONS"
+msgstr "Seçenekler"
+
+msgid "MENU_OPTIONS_AUDIO"
+msgstr "Ses"
+
+msgid "MENU_OPTIONS_CONTROLS"
+msgstr "Denetimler"
+
+msgid "MENU_OPTIONS_EFFECTS"
+msgstr "Efektler"
+
+msgid "MENU_OPTIONS_FRAME_CAP"
+msgstr "FPS Limiti"
+
+msgid "MENU_OPTIONS_FULLSCREEN"
+msgstr "Tam Ekran"
+
+msgid "MENU_OPTIONS_MSAA"
+msgstr "Çok örnekli kenar yumuşatma (MSAA)"
+
+msgid "MENU_OPTIONS_LANGUAGE"
+msgstr "Dil"
+
+msgid "MENU_OPTIONS_MASTER"
+msgstr "Ana Ses"
+
+msgid "MENU_OPTIONS_MISC"
+msgstr "Çeşitli"
+
+msgid "MENU_OPTIONS_MUSIC"
+msgstr "Müzik"
+
+msgid "MENU_OPTIONS_MUTE_ON_WINDOW_UNFOCUS"
+msgstr "Pencere odağı kaybolduğunda sesi kapat"
+
+msgid "MENU_OPTIONS_SYSTEM_DEFAULT"
+msgstr "Sistem Varsayılanı"
+
+msgid "MENU_OPTIONS_VISUAL"
+msgstr "Görsel"
+
+msgid "MENU_OPTIONS_VSYNC"
+msgstr "Dikey Senkronizasyon"
+
+msgid "DIALOG_YES"
+msgstr "Evet"
+
+msgid "DIALOG_NO"
+msgstr "Hayır"
+
+msgid "MENU_LABEL_CONNECTION_ERROR_TITLE"
+msgstr "Bağlantı Hatası"
+
+msgid "MENU_LABEL_CONNECTION_TIMEOUT"
+msgstr ""
+"Sunucuya ulaşılamıyor.\n"
+"\n"
+"Lütfen sunucu yöneticinize başvurun."
+
+msgid "MENU_LABEL_NO_SERVER_VERSION"
+msgstr ""
+"Sunucu sürümü belirlenemedi.\n"
+"\n"
+"Lütfen sunucu yöneticinize başvurun."
+
+msgid "MENU_LABEL_VERSION_MISMATCH_TITLE"
+msgstr "Sürüm uyuşmazlığı"
+
+msgid "MENU_LABEL_VERSION_MISMATCH"
+msgstr ""
+"Bu sunucu için SuperTuxParty'nin uyumsuz bir sürümünü çalıştırıyorsunuz.\n"
+"Sizin sürümünüz: {local}\n"
+"Sunucu sürümü: {remote}\n"
+"\n"
+"Bu sunucuda oynamak için lütfen uyumlu bir sürüm indirin."
+
+msgid "MENU_LABEL_CHOOSE_SERVER"
+msgstr "Sunucu Seç:"
+
+msgid "MENU_LABEL_COPY"
+msgstr "Panoya Kopyala"
+
+msgid "MENU_LABEL_LOBBY_CREATE"
+msgstr "Lobi Oluştur"
+
+msgid "MENU_LABEL_LOBBY_JOIN"
+msgstr "Lobiye Katıl"
+
+msgid "MENU_LOBBY_SETTINGS"
+msgstr "Oyun Seçenekleri"
+
+msgid "MENU_SETTINGS_PUBLIC"
+msgstr "Ortak Lobi"
+
+msgid "MENU_SETTINGS_CAKE_COST"
+msgstr "Pasta maliyeti"
+
+msgid "MENU_SETTINGS_TURNS"
+msgstr "Sıra"
+
+msgid "MENU_SETTINGS_ENABLE_TIMEOUT"
+msgstr "Etkin olmayan oyuncuları at"
+
+msgid "MENU_SETTINGS_TIMEOUT"
+msgstr "Zaman Sınırı"
+
+msgid "AI_DIFFICULTY"
+msgstr "Yapay zeka zorluk düzeyi:"
+
+msgid "DIFFICULTY_EASY"
+msgstr "Kolay"
+
+msgid "DIFFICULTY_NORMAL"
+msgstr "Normal"
+
+msgid "DIFFICULTY_HARD"
+msgstr "Zor"
+
+msgid "CONTEXT_GNU_ACTION_TYPE"
+msgstr "GNU Eylemi"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY"
+msgstr "Grafik Kalitesi"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_HIGH"
+msgstr "Yüksek"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_MEDIUM"
+msgstr "Orta"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_LOW"
+msgstr "Düşük"
+
+msgid "MENU_OPTIONS_FXAA"
+msgstr ""
+
+msgid "MENU_GRAPHIC_QUALITY_REBOOT_NOTICE"
+msgstr ""
+"Grafik kalitesinin değiştirilmesi yalnızca yeniden başlattıktan sonra etkili "
+"olur"
+
+msgid "MENU_LOBBY_ADD_PLAYER"
+msgstr "Katılmak için basın"
+
+msgid "CONTEXT_SPEAKER_SARA"
+msgstr "Sara"
+
+msgid "CONTEXT_WINNER_ANNOUNCEMENT"
+msgstr ""
+"Hepinizin kazanmak için çok mücadele ettiğini biliyorum, ama şimdi oyun "
+"bitti ve bir kazanana ihtiyacımız var. Ve bu kazanan…"
+
+msgid "CONTEXT_WINNER_REVEAL_ONE_PLAYER"
+msgstr "[color=#ff3300]{0}[/color]!"
+
+msgid "CONTEXT_WINNER_REVEAL_TWO_PLAYER"
+msgstr "[color=#ff3300]{0}[/color] ve [color=#33ff00]{1}[/color]!"
+
+msgid "CONTEXT_WINNER_REVEAL_THREE_PLAYER"
+msgstr ""
+"[color=#ff3300]{0}[/color], [color=#33ff00]{1}[/color] ve [color=#00ff88]{2}"
+"[/color]!"
+
+msgid "CONTEXT_WINNER_REVEAL_FOUR_PLAYER"
+msgstr ""
+"[color=#ff3300]{0}[/color], [color=#33ff00]{1}[/color], [color=#00ff88]{2}[/"
+"color] ve [color=#ffff33]{3}[/color]!"
+
+msgid "CONTEXT_LABEL_CAKES"
+msgstr "Pastalar"
+
+msgid "CONTEXT_LABEL_COOKIES"
+msgstr "Kurabiyeler"
+
+msgid "CONTEXT_GNU_NAME"
+msgstr "GNU"
+
+msgid "CONTEXT_GNU_EVENT_START"
+msgstr ""
+"Hey oradaki, yardıma ihtiyacın var mı? Bakalım bugün senin için ne "
+"yapabilirim…"
+
+msgid "CONTEXT_GNU_MINIGAME_SOLO_MODERATION"
+msgstr ""
+"Bu tek kişilik küçük bir oyun! Bana becerilerini göster, sana bir "
+"[color=#dd44ff]{reward}[/color] vereyim"
+
+msgid "CONTEXT_GNU_MINIGAME_SOLO"
+msgstr "Tek Kişilik Küçük Oyun"
+
+msgid "CONTEXT_GNU_MINIGAME_COOP_MODERATION"
+msgstr "Haydi birlikte oynayalım! Eminim eğlenceli olacak"
+
+msgid "CONTEXT_GNU_MINIGAME_COOP"
+msgstr "Ortaklaşa Küçük Oyun"
+
+msgid "CONTEXT_GNU_SOLO_VICTORY"
+msgstr "Aferin. İşte ödülün!"
+
+msgid "CONTEXT_GNU_SOLO_LOSS"
+msgstr "Bu işe yaramadı. Belki bir dahaki sefere."
+
+msgid "CONTEXT_GNU_COOP_VICTORY"
+msgstr "Başardınız. Bir dahaki seferi sabırsızlıkla bekleyeceğim."
+
+msgid "CONTEXT_GNU_COOP_LOSS"
+msgstr ""
+"Başaramasanız da takım çalışmasını uyguladınız. Eminim bir dahaki sefere "
+"işinize yarayacak!"
+
+msgid "CONTEXT_NOLOK_NAME"
+msgstr "Nolok"
+
+msgid "CONTEXT_NOLOK_ACTION_TYPE"
+msgstr "Nolok Eylemi"
+
+msgid "CONTEXT_NOLOK_EVENT_START"
+msgstr "Benim sıram! Tam olarak ne yapacağımı biliyorum…"
+
+msgid "CONTEXT_NOLOK_MINIGAME_SOLO_MODERATION"
+msgstr ""
+"Seni küçük bir oyuna davet ediyorum! Beni yenebilirsen eşyaların sende "
+"kalır. Yenemezsen pastalarından birini alırım…"
+
+msgid "CONTEXT_NOLOK_MINIGAME_SOLO"
+msgstr "Tek Kişilik Küçük Oyun"
+
+msgid "CONTEXT_NOLOK_MINIGAME_COOP_MODERATION"
+msgstr ""
+"Hepinize karşı ben mi? Bana karşı bir şansınız olduğunu mu düşünüyorsunuz?"
+
+msgid "CONTEXT_NOLOK_MINIGAME_COOP"
+msgstr "Ortaklaşa Küçük Oyun"
+
+msgid "CONTEXT_NOLOK_SOLO_VICTORY"
+msgstr "Seni bağışladığıma şükret!"
+
+msgid "CONTEXT_NOLOK_SOLO_LOSS"
+msgstr "Seni tekrar yenmeyi dört gözle bekliyorum!"
+
+msgid "CONTEXT_NOLOK_COOP_VICTORY"
+msgstr "Bir dahaki sefere kazanamayacaksınız."
+
+msgid "CONTEXT_NOLOK_COOP_LOSS"
+msgstr "Haha, ne kadar kolay bir galibiyet."
+
+msgid "CONTEXT_NOLOK_LOSE_COOKIES_MODERATION"
+msgstr ""
+"Haha, [color=#00aaff]{amount}[/color] tane kurabiyen gitti. Eminim "
+"[color=#dd44ff]{player}[/color] için faydalı olacaklar"
+
+msgid "CONTEXT_NOLOK_LOSE_COOKIES"
+msgstr "Kurabiyelerini kaybet"
+
+msgid "CONTEXT_NOLOK_ROLL_MODIFIER_MODERATION"
+msgstr ""
+"Belki biraz yavaşlamalısın. Bakalım sonraki [color=#dd44ff]{duration}[/"
+"color] atış için [color=#00aaff]{amount}[/color] daha az hareketle ne "
+"yapacaksın"
+
+msgid "CONTEXT_NOLOK_ROLL_MODIFIER"
+msgstr "Lanetli zarlar"
+
+msgid "CONTEXT_SHOW_TUTORIAL"
+msgstr "Görünüşe göre ilk defa oynuyorsun. Kuralları açıklamamı ister misin?"
+
+msgid "CONTEXT_TUTORIAL_DICE"
+msgstr ""
+"Oyun sırayla oynanır. Sıra sana geldiğinde bir zar atarsın ve gösterdiği "
+"sayı kadar ileri gidersin."
+
+msgid "CONTEXT_TUTORIAL_COOKIES"
+msgstr ""
+"Para birimi kurabiyelerdir. Küçük oyunları kazanarak kurabiyeler elde "
+"edersin. Kurabiyeler ile mağaza alanlarından geçerken bir şeyler satın "
+"alabilirsin."
+
+msgid "CONTEXT_TUTORIAL_CAKES"
+msgstr ""
+"Kazanmak için en çok pastayı toplamalısın. Eşitlik olması durumunda "
+"kurabiyeler kullanılacaktır. Tahtadaki özel yerlerden pastalar satın "
+"alabilirsin. Bir tane alırsan, pasta başka bir yere taşınacaktır."
+
+msgid "CONTEXT_TUTORIAL_SPACES_NORMAL"
+msgstr ""
+"Gidebileceğin farklı türde alanlar vardır: Mavi alanlar sana kurabiyeler "
+"verir, kırmızı alanlar senden kurabiyelerini alır."
+
+msgid "CONTEXT_TUTORIAL_SPACES_SPECIAL"
+msgstr ""
+"Yeşil alanlar tahtaya özgü olayları başlatır. Savaş alanları ise başka bir "
+"oyuncuya karşı düello küçük oyununda meydan okuma imkanı verir."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES"
+msgstr ""
+"Her oyuncu kendi sırasını oynadıktan sonra bir küçük oyun oynanacaktır. Üç "
+"farklı küçük oyun çeşidi vardır:"
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_FFA"
+msgstr ""
+"Herkes herkese karşı, burada tüm oyuncular kazanmak için birbiriyle yarışır."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_2V2"
+msgstr "İkiye karşı iki, burada ikişerli takımlar halinde oynarsınız."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_1V3"
+msgstr ""
+"Ve bire karşı üç, burada bir kişi geri kalanlarla yarışır. Dengelemek için "
+"tek olan oyuncu ek bir şeyler alır."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_SPECIAL"
+msgstr ""
+"Bir oyuncu GNU veya NOLOK alanına gittiğinde özel küçük oyunlar "
+"oynanacaktır. Senin için GNU küçük oyunları iyidir, NOLOK küçük oyunları ise "
+"kötüdür. Bu yüzden ikinciden uzak dursan iyi olur!"
+
+msgid "CONTEXT_TUTORIAL_END"
+msgstr "Hepsi bu kadar, artık gitmeye hazırsın! İyi eğlenceler!"
+
+msgid "CONTEXT_CAKE_PLACED"
+msgstr "Pasta burada, gel ve al!"
+
+msgid "CONTEXT_CAKE_WANT_BUY"
+msgstr "Pasta almak ister misin?"
+
+msgid "CONTEXT_CAKE_BUY_AMOUNT"
+msgstr "Kaç tane pasta almak istiyorsun?"
+
+msgid "CONTEXT_CAKE_COLLECTED"
+msgstr ""
+"Aferin, [color=#00aaff]{player}[/color]. İşte sana [color=#dd44ff]{amount}[/"
+"color] pasta."
+
+msgid "CONTEXT_CAKE_CANT_AFFORD"
+msgstr "Üzgünüm ama pasta alacak kadar kurabiyen yok."
+
+msgid "SHOP_LABEL_TITLE"
+msgstr "Eşya Mağazası"
+
+msgid "SHOP_LABEL_DESCRIPTION"
+msgstr "Eşya açıklaması"
+
+msgid "SHOP_ITEM_NO_DESCRIPTION"
+msgstr "Açıklama yok"
+
+msgid "REWARDSCREEN_MINIGAME_RESULTS"
+msgstr "Küçük Oyun Sonuçları"
+
+msgid "REWARDSCREEN_MINIGAME_WINNER"
+msgstr "Kazanan!"
+
+msgid "REWARDSCREEN_MINIGAME_REWARD"
+msgstr "Ödül:"
+
+msgid "REWARDSCREEN_PRESS_BUTTON"
+msgstr "Bas"
+
+msgid "MINIGAME_ACTION_MOVEMENT"
+msgstr "Hareket Et"
+
+msgid "MINIGAME_TYPE_FFA"
+msgstr "Herkese açık küçük oyun"
+
+msgid "MINIGAME_TYPE_2v2"
+msgstr "İkiye karşı iki küçük oyun"
+
+msgid "MINIGAME_TYPE_1v3"
+msgstr "Bire karşı üç küçük oyun"
+
+msgid "MINIGAME_TYPE_DUEL"
+msgstr "Düello küçük oyunu"
+
+msgid "MINIGAME_TYPE_GNU_COOP"
+msgstr "GNU ortaklaşa küçük oyun"
+
+msgid "MINIGAME_TYPE_GNU_SOLO"
+msgstr "GNU tek kişilik küçük oyun"
+
+msgid "MINIGAME_TYPE_NOLOK_COOP"
+msgstr "Nolok ortaklaşa küçük oyun"
+
+msgid "MINIGAME_TYPE_NOLOK_SOLO"
+msgstr "Nolok tek kişilik küçük oyun"
+
+msgid "ERROR"
+msgstr "Hata"
+
+msgid "SAVE_GAME_CANNOT_SAVE"
+msgstr "Oyun şu anda kaydedilemiyor"
+
+msgid "SAVE_GAME_DISABLED"
+msgstr "Bu sunucuda oyun kaydetme devre dışı bırakıldı"
+
+#~ msgid "MENU_LABEL_NUM_1"
+#~ msgstr "1"
+
+#~ msgid "MENU_LABEL_OK"
+#~ msgstr "Tamam"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_4"
+#~ msgstr "Oyuncu 4 için bir karakter seç"
+
+#~ msgid "MENU_LABEL_TITLE"
+#~ msgstr "Super Tux Party"
+
+#~ msgid "MENU_LABEL_DESCRIPTION"
+#~ msgstr "Açıklama"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD"
+#~ msgstr "Oyun Kumandası"

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpxjf6588ye0n"]
+
+[ext_resource type="PackedScene" uid="uid://yxa8q45yao57" path="res://plugins/minigames/hurdle/ground/conveyor_belt.glb" id="1_pjgd4"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_s88it"]
+points = PackedVector3Array(3, -0.452986, 3.40971, 3, -0.288029, 3.29651, 2.99941, 0.358017, 3.51579, 2.99941, -0.049315, 3.64679, 2.99941, -0.071173, 3.64465, 2.99941, -0.440711, 3.42822, -3, -0.452986, 3.40971, 2.99941, -0.550001, 3.00034, 2.99941, -0.550001, -2.90029, 2.99941, -0.506716, -3.31464, 2.99941, -0.497025, -3.33387, 2.99941, -0.178309, -3.61936, 2.99941, 0.549893, 3.09076, 2.99941, 0.549247, 3.11211, 2.99941, 0.374599, 3.50155, 2.99941, -0.157528, -3.62648, 2.99941, 0.268109, -3.5802, 2.99941, 0.28706, -3.56881, 2.99941, 0.53568, -3.22067, 2.99941, 0.540094, -3.1986, 2.99941, 0.549893, -2.79065, -3, 0.358017, 3.51579, -3, -0.049315, 3.64607, -3, -0.071173, 3.64465, -3, -0.440711, 3.42822, -3, -0.550001, 3.00034, -3, -0.550001, -2.90029, -3, -0.506716, -3.31464, -3, -0.497025, -3.33387, -3, -0.178309, -3.61936, -3, 0.55, 1.82918, -3, 0.549893, 3.09076, -3, 0.549247, 3.11211, -3, 0.374599, 3.50155, -3, -0.157528, -3.62648, -3, 0.268109, -3.5802, -3, 0.28706, -3.56881, -3, 0.53568, -3.22067, -3, 0.540094, -3.1986, -3, 0.549893, -2.79065, -3, 0.55, -0.690403)
+
+[node name="conveyor_belt" instance=ExtResource("1_pjgd4")]
+
+[node name="Cube" parent="." index="3"]
+blend_shapes/frame_0060 = 0.999999
+
+[node name="AnimationPlayer" parent="." index="4"]
+autoplay = "KeyAction"
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="5" groups=["ground"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+shape = SubResource("ConvexPolygonShape3D_s88it")

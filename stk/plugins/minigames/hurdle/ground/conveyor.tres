@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://chabcvvap03v4"]
+
+[resource]
+resource_name = "conveyor"
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(0.298039, 0.298039, 0.298039, 1)
+metallic = 0.42
+metallic_specular = 0.0
+roughness = 0.5

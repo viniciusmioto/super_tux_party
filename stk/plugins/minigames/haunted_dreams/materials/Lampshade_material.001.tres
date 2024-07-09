@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cnerbhj0pp22h"]
+
+[resource]
+resource_name = "Lampshade_material.001"
+cull_mode = 2
+albedo_color = Color(0.906332, 0.826657, 0.701411, 1)
+roughness = 0.5

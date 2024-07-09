@@ -1,0 +1,18 @@
+{
+  "name": "MINIGAME_NAME",
+  "scene_path": "res://plugins/minigames/dungeon_parkour/minigame.tscn",
+  "image_path": "res://plugins/minigames/dungeon_parkour/screenshot.png",
+  "translation_directory": "res://plugins/minigames/dungeon_parkour/translations",
+  "type": ["NolokSolo"],
+  "description": "MINIGAME_DESCRIPTION",
+  "controls": [
+    {
+      "actions": ["spacer", "up", "spacer", "left", "down", "right"],
+      "text": "MINIGAME_ACTION_MOVEMENT"
+    },
+    {
+      "actions": ["action1"],
+      "text": "MINIGAME_ACTION_JUMP"
+    }
+  ]
+}

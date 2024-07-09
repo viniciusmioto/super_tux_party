@@ -1,0 +1,14 @@
+{
+  "name": "MINIGAME_NAME",
+  "scene_path": "res://plugins/minigames/escape_from_lava/minigame.tscn",
+  "image_path": "res://plugins/minigames/escape_from_lava/screenshot.png",
+  "translation_directory": "res://plugins/minigames/escape_from_lava/translations",
+  "type": ["2v2", "Duel", "FFA"],
+  "description": "MINIGAME_DESCRIPTION",
+  "controls": [
+    {
+      "actions": ["spacer", "up", "spacer", "left", "down", "right"],
+      "text": "MINIGAME_ACTION_MOVEMENT"
+    }
+  ]
+}

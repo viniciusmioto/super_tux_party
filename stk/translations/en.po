@@ -1,0 +1,772 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2022-05-13 19:14+0000\n"
+"Last-Translator: Florian Kothmeier <floriankothmeier@web.de>\n"
+"Language-Team: English <https://hosted.weblate.org/projects/super-tux-party/"
+"super-tux-party/en/>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.13-dev\n"
+
+msgid "CONTEXT_LABEL_BUY_CAKE"
+msgstr "Buy a cake for {amount} cookies"
+
+msgid "CONTEXT_LABEL_DUEL_REWARD"
+msgstr "Duel Reward:"
+
+msgid "CONTEXT_LABEL_DUEL_SELECT"
+msgstr "Select Opponent:"
+
+msgid "CONTEXT_LABEL_FINISH"
+msgstr "Finish!"
+
+msgid "CONTEXT_LABEL_GO"
+msgstr "Go!"
+
+msgid "CONTEXT_LABEL_PLAYER_ROLLED"
+msgstr "{name} rolled {value}:"
+
+msgid "CONTEXT_LABEL_READY_QUESTION"
+msgstr "Ready?"
+
+msgid "CONTEXT_LABEL_ROLL"
+msgstr "Roll!"
+
+msgid "CONTEXT_LABEL_ROLL_PLAYER"
+msgstr "Roll {name}!"
+
+msgid "CONTEXT_LABEL_STEAL_ONE_CAKE"
+msgstr "Winner steals 1 cake"
+
+msgid "CONTEXT_LABEL_STEAL_TEN_COOKIES"
+msgstr "Winner steals 10 cookies"
+
+msgid "CONTEXT_LABEL_TURN_NUM"
+msgstr "Turn {turn}/{total}"
+
+msgid "CONTEXT_LABEL_VS"
+msgstr "VS."
+
+msgid "CONTEXT_LABEL_YOUR_TURN"
+msgstr "It's your turn!"
+
+msgid "CONTEXT_NOTIFICATION_NOT_ENOUGH_COOKIES"
+msgstr "You don't have enough cookies to buy that"
+
+msgid "CONTEXT_NOTIFICATION_NOT_ENOUGH_SPACE"
+msgstr "There is no space left in your inventory"
+
+msgid "MENU_CONTROLS_ACTION_1"
+msgstr "Action 1"
+
+msgid "MENU_CONTROLS_ACTION_2"
+msgstr "Action 2"
+
+msgid "MENU_CONTROLS_ACTION_3"
+msgstr "Action 3"
+
+msgid "MENU_CONTROLS_ACTION_4"
+msgstr "Action 4"
+
+msgid "MENU_CONTROLS_UNKNOWN_GAMEPAD_AXIS"
+msgstr "Unknown Axis {axis}"
+
+msgid "MENU_CONTROLS_GENERIC_GAMEPAD_BUTTON"
+msgstr "Gamepad button {button}"
+
+msgid "MENU_CONTROLS_MOUSE"
+msgstr "Mouse"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON"
+msgstr "Mouse button"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_LEFT"
+msgstr "Left mouse button"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_MIDDLE"
+msgstr "Middle mouse button"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_RIGHT"
+msgstr "Right mouse button"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_DOWN"
+msgstr "Button wheel down"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_LEFT"
+msgstr "Button wheel left"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_RIGHT"
+msgstr "Button wheel right"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_UP"
+msgstr "Button wheel up"
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT"
+msgstr "Left Trigger"
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT_2"
+msgstr "Left Trigger 2"
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT_3"
+msgstr "Left Trigger 3"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT"
+msgstr "Right Trigger"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT_2"
+msgstr "Right Trigger 2"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT_3"
+msgstr "Right Trigger 3"
+
+msgid "MENU_CONTROLS_DIR_DOWN"
+msgstr "Down"
+
+msgid "MENU_CONTROLS_DIR_LEFT"
+msgstr "Left"
+
+msgid "MENU_CONTROLS_DIR_RIGHT"
+msgstr "Right"
+
+msgid "MENU_CONTROLS_DIR_UP"
+msgstr "Up"
+
+msgid "MENU_CONTROLS_SCREENSHOT"
+msgstr "Take screenshot"
+
+msgid "MENU_CONTROLS_DEV_MENU"
+msgstr "Open developer menu"
+
+msgid "MENU_IO_ENTER_SAVEGAME_NAME"
+msgstr "Enter savegame name:"
+
+msgid "MENU_IO_LOAD_GAME"
+msgstr "Load Game"
+
+msgid "MENU_IO_SAVE"
+msgstr "Save"
+
+msgid "MENU_IO_SAVE_GAME"
+msgstr "Save Game"
+
+msgid "MENU_LABEL_BACK"
+msgstr "Back"
+
+msgid "MENU_LABEL_CANCEL"
+msgstr "Cancel"
+
+msgid "MENU_LABEL_CONTINUE"
+msgstr "Continue"
+
+msgid "MENU_LABEL_DESKTOP"
+msgstr "Exit to Desktop"
+
+msgid "MENU_SETTINGS_AWARD_LINEAR"
+msgstr "Linear"
+
+msgid "MENU_LABEL_NEW_GAME"
+msgstr "New Game"
+
+msgid "MENU_LABEL_START"
+msgstr "Start"
+
+msgid "MENU_LABEL_PAUSE"
+msgstr "Pause"
+
+msgid "MENU_LABEL_PAUSED"
+msgstr "Paused"
+
+msgid "MENU_LABEL_PAUSE_ON_WINDOW_UNFOCUS"
+msgstr "Pause when window focus is lost"
+
+msgid "MENU_LABEL_PLAY"
+msgstr "Play"
+
+msgid "MENU_LABEL_ONLINE"
+msgstr "Play online"
+
+msgid "MENU_LABEL_PLAYER1"
+msgstr "Player1"
+
+msgid "MENU_LABEL_PLAYER2"
+msgstr "Player2"
+
+msgid "MENU_LABEL_PLAYER3"
+msgstr "Player3"
+
+msgid "MENU_LABEL_PLAYER4"
+msgstr "Player4"
+
+msgid "MENU_LABEL_PRESS_ANY_KEY"
+msgstr "Press any key"
+
+msgid "MENU_LABEL_QUIT"
+msgstr "Quit"
+
+msgid "MENU_LABEL_READY"
+msgstr "Ready!"
+
+msgid "MENU_LABEL_RESUME"
+msgstr "Resume"
+
+msgid "MENU_LABEL_RETURN_MENU"
+msgstr "Return to Main Menu"
+
+msgid "MENU_LABEL_SELECT_BOARD"
+msgstr "Select Board:"
+
+msgid "MENU_LABEL_SELECT_CHARACTER"
+msgstr "Select your Character"
+
+msgid "MENU_LABEL_TRY"
+msgstr "Try"
+
+msgid "MENU_SETTINGS_AWARD_WINNER_TAKES_ALL"
+msgstr "Winner takes all"
+
+msgid "MENU_SETTINGS_AWARD_TYPE"
+msgstr "Award Type"
+
+msgid "MENU_LABEL_CREDITS"
+msgstr "Credits"
+
+msgid "MENU_LABEL_SCREENSHOTS"
+msgstr "Screenshots"
+
+msgid "MENU_OPTIONS"
+msgstr "Options"
+
+msgid "MENU_OPTIONS_AUDIO"
+msgstr "Audio"
+
+msgid "MENU_OPTIONS_CONTROLS"
+msgstr "Controls"
+
+msgid "MENU_OPTIONS_EFFECTS"
+msgstr "Effects"
+
+msgid "MENU_OPTIONS_FRAME_CAP"
+msgstr "Frame Cap"
+
+msgid "MENU_OPTIONS_FULLSCREEN"
+msgstr "Fullscreen"
+
+msgid "MENU_OPTIONS_MSAA"
+msgstr "Multisample anti-aliasing (MSAA)"
+
+msgid "MENU_OPTIONS_LANGUAGE"
+msgstr "Language"
+
+msgid "MENU_OPTIONS_MASTER"
+msgstr "Master"
+
+msgid "MENU_OPTIONS_MISC"
+msgstr "Misc."
+
+msgid "MENU_OPTIONS_MUSIC"
+msgstr "Music"
+
+msgid "MENU_OPTIONS_MUTE_ON_WINDOW_UNFOCUS"
+msgstr "Mute when window focus is lost"
+
+msgid "MENU_OPTIONS_SYSTEM_DEFAULT"
+msgstr "System Default"
+
+msgid "MENU_OPTIONS_VISUAL"
+msgstr "Visual"
+
+msgid "MENU_OPTIONS_VSYNC"
+msgstr "VSync"
+
+msgid "DIALOG_YES"
+msgstr "Yes"
+
+msgid "DIALOG_NO"
+msgstr "No"
+
+msgid "MENU_LABEL_CONNECTION_ERROR_TITLE"
+msgstr "Connection Error"
+
+msgid "MENU_LABEL_CONNECTION_TIMEOUT"
+msgstr ""
+"Cannot reach server.\n"
+"\n"
+"Please contact your server administrator."
+
+msgid "MENU_LABEL_NO_SERVER_VERSION"
+msgstr ""
+"Could not determine server version.\n"
+"\n"
+"Please contact your server administrator."
+
+msgid "MENU_LABEL_VERSION_MISMATCH_TITLE"
+msgstr "Version mismatch"
+
+msgid "MENU_LABEL_VERSION_MISMATCH"
+msgstr ""
+"You are running an incompatible version of SuperTuxParty for this server.\n"
+"Your version: {local}\n"
+"Server version: {remote}\n"
+"\n"
+"Please download a compatible version to play on this server."
+
+msgid "MENU_LABEL_CHOOSE_SERVER"
+msgstr "Choose Server:"
+
+msgid "MENU_LABEL_COPY"
+msgstr "Copy to Clipboard"
+
+msgid "MENU_LABEL_LOBBY_CREATE"
+msgstr "Create Lobby"
+
+msgid "MENU_LABEL_LOBBY_JOIN"
+msgstr "Join Lobby"
+
+msgid "MENU_LOBBY_SETTINGS"
+msgstr "Game Options"
+
+msgid "MENU_SETTINGS_PUBLIC"
+msgstr "Public Lobby"
+
+msgid "MENU_SETTINGS_CAKE_COST"
+msgstr "Cake cost"
+
+msgid "MENU_SETTINGS_TURNS"
+msgstr "Turns"
+
+msgid "MENU_SETTINGS_ENABLE_TIMEOUT"
+msgstr "Kick players for Inactivity"
+
+msgid "MENU_SETTINGS_TIMEOUT"
+msgstr "Time Limit"
+
+msgid "AI_DIFFICULTY"
+msgstr "AI difficulty:"
+
+msgid "DIFFICULTY_EASY"
+msgstr "Easy"
+
+msgid "DIFFICULTY_NORMAL"
+msgstr "Normal"
+
+msgid "DIFFICULTY_HARD"
+msgstr "Hard"
+
+msgid "CONTEXT_GNU_ACTION_TYPE"
+msgstr "GNU Action"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY"
+msgstr "Graphic Quality"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_HIGH"
+msgstr "High"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_MEDIUM"
+msgstr "Medium"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_LOW"
+msgstr "Low"
+
+msgid "MENU_OPTIONS_FXAA"
+msgstr "FXAA"
+
+msgid "MENU_GRAPHIC_QUALITY_REBOOT_NOTICE"
+msgstr "Changing the graphic quality only takes effect after a restart"
+
+msgid "MENU_LOBBY_ADD_PLAYER"
+msgstr "Press to join"
+
+msgid "CONTEXT_SPEAKER_SARA"
+msgstr "Sara"
+
+msgid "CONTEXT_WINNER_ANNOUNCEMENT"
+msgstr ""
+"I know all of you were fighting hard to win, but now the game is over and we "
+"need a winner. And this winner is…"
+
+msgid "CONTEXT_WINNER_REVEAL_ONE_PLAYER"
+msgstr "[color=#ff3300]{0}[/color]!"
+
+msgid "CONTEXT_WINNER_REVEAL_TWO_PLAYER"
+msgstr "[color=#ff3300]{0}[/color] and [color=#33ff00]{1}[/color]!"
+
+msgid "CONTEXT_WINNER_REVEAL_THREE_PLAYER"
+msgstr ""
+"[color=#ff3300]{0}[/color], [color=#33ff00]{1}[/color] and [color=#00ff88]{2}"
+"[/color]!"
+
+msgid "CONTEXT_WINNER_REVEAL_FOUR_PLAYER"
+msgstr ""
+"[color=#ff3300]{0}[/color], [color=#33ff00]{1}[/color], [color=#00ff88]{2}[/"
+"color] and [color=#ffff33]{3}[/color]!"
+
+msgid "CONTEXT_LABEL_CAKES"
+msgstr "Cakes"
+
+msgid "CONTEXT_LABEL_COOKIES"
+msgstr "Cookies"
+
+msgid "CONTEXT_GNU_NAME"
+msgstr "GNU"
+
+msgid "CONTEXT_GNU_EVENT_START"
+msgstr "Hey there, need some help? Let me see, what I can do for you today…"
+
+msgid "CONTEXT_GNU_MINIGAME_SOLO_MODERATION"
+msgstr ""
+"It's a solo minigame! Show me your skills and I'll give you a [color=#dd44ff]"
+"{reward}[/color]"
+
+msgid "CONTEXT_GNU_MINIGAME_SOLO"
+msgstr "Solo Minigame"
+
+msgid "CONTEXT_GNU_MINIGAME_COOP_MODERATION"
+msgstr "Let's play together! I'm sure this will be fun"
+
+msgid "CONTEXT_GNU_MINIGAME_COOP"
+msgstr "Coop Minigame"
+
+msgid "CONTEXT_GNU_SOLO_VICTORY"
+msgstr "Well done. Here's your reward!"
+
+msgid "CONTEXT_GNU_SOLO_LOSS"
+msgstr "That didn't work out. Maybe next time."
+
+msgid "CONTEXT_GNU_COOP_VICTORY"
+msgstr "You did it. I'll look forward to the next time."
+
+msgid "CONTEXT_GNU_COOP_LOSS"
+msgstr ""
+"Although you didn't make it, you practiced your teamwork. I'm sure next time "
+"will work out for you!"
+
+msgid "CONTEXT_NOLOK_NAME"
+msgstr "Nolok"
+
+msgid "CONTEXT_NOLOK_ACTION_TYPE"
+msgstr "Nolok Action"
+
+msgid "CONTEXT_NOLOK_EVENT_START"
+msgstr "It's my turn! I know exactly, what to do…"
+
+msgid "CONTEXT_NOLOK_MINIGAME_SOLO_MODERATION"
+msgstr ""
+"I challenge you to a minigame! If you can defeat me, you can keep your "
+"stuff. If not I'll take one of your cakes…"
+
+msgid "CONTEXT_NOLOK_MINIGAME_SOLO"
+msgstr "Solo Minigame"
+
+msgid "CONTEXT_NOLOK_MINIGAME_COOP_MODERATION"
+msgstr "Me vs. all of you? Do you even think you stand a chance against me?"
+
+msgid "CONTEXT_NOLOK_MINIGAME_COOP"
+msgstr "Coop Minigame"
+
+msgid "CONTEXT_NOLOK_SOLO_VICTORY"
+msgstr "Be grateful that I spared you!"
+
+msgid "CONTEXT_NOLOK_SOLO_LOSS"
+msgstr "Looking forward to beat you again!"
+
+msgid "CONTEXT_NOLOK_COOP_VICTORY"
+msgstr "Next time you won't win."
+
+msgid "CONTEXT_NOLOK_COOP_LOSS"
+msgstr "Haha, what an easy win."
+
+msgid "CONTEXT_NOLOK_LOSE_COOKIES_MODERATION"
+msgstr ""
+"Haha, there go [color=#00aaff]{amount}[/color] of your cookies. I'm sure "
+"[color=#dd44ff]{player}[/color] has a use for them"
+
+msgid "CONTEXT_NOLOK_LOSE_COOKIES"
+msgstr "Lose your cookies"
+
+msgid "CONTEXT_NOLOK_ROLL_MODIFIER_MODERATION"
+msgstr ""
+"Maybe you should slow down a bit. Let's see how you do with [color=#00aaff]"
+"{amount}[/color] less movement for the next [color=#dd44ff]{duration}[/"
+"color] throws"
+
+msgid "CONTEXT_NOLOK_ROLL_MODIFIER"
+msgstr "Cursed die"
+
+msgid "CONTEXT_SHOW_TUTORIAL"
+msgstr ""
+"It looks like this is your first time playing. Do you want me to explain the "
+"rules?"
+
+msgid "CONTEXT_TUTORIAL_DICE"
+msgstr ""
+"The game is played in turns. During your turn, you roll a die and move the "
+"number it shows forward."
+
+msgid "CONTEXT_TUTORIAL_COOKIES"
+msgstr ""
+"The currency is cookies. You earn cookies by winning minigames. With cookies "
+"you can buy items when passing the shop spaces."
+
+msgid "CONTEXT_TUTORIAL_CAKES"
+msgstr ""
+"To win, you need to collect the most cakes. Cookies will be used as a "
+"tiebreaker. You can buy cakes at special places on the board. If you buy "
+"one, the cake will move to another location."
+
+msgid "CONTEXT_TUTORIAL_SPACES_NORMAL"
+msgstr ""
+"There are different types of spaces you can land on: Blue spaces give you "
+"cookies, while red spaces take your cookies."
+
+msgid "CONTEXT_TUTORIAL_SPACES_SPECIAL"
+msgstr ""
+"Green spaces start board specific events. Battle spaces let you challenge "
+"another player to a duel minigame."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES"
+msgstr ""
+"After every player had their turn, a minigame will be played. There are "
+"three different flavours of minigames:"
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_FFA"
+msgstr "Free for all, where everyone competes with everyone to win."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_2V2"
+msgstr "Two vs two, where you play in teams of two."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_1V3"
+msgstr ""
+"And one vs three, where one competes with the rest. The solo player gets a "
+"bonus to even things up."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_SPECIAL"
+msgstr ""
+"Special minigames will be played when a player lands on a GNU or NOLOK "
+"space. GNU minigames are good, while NOLOK minigames are bad for you. So "
+"better stay away from the latter!"
+
+msgid "CONTEXT_TUTORIAL_END"
+msgstr "That's it, now you're ready to go! Have fun!"
+
+msgid "CONTEXT_CAKE_PLACED"
+msgstr "Here's the cake, come and get it!"
+
+msgid "CONTEXT_CAKE_WANT_BUY"
+msgstr "Do you want to buy a cake?"
+
+msgid "CONTEXT_CAKE_BUY_AMOUNT"
+msgstr "How many cakes do you want to buy?"
+
+msgid "CONTEXT_CAKE_COLLECTED"
+msgstr ""
+"Well done, [color=#00aaff]{player}[/color]. That's [color=#dd44ff]{amount}[/"
+"color] cake(s) for you."
+
+msgid "CONTEXT_CAKE_CANT_AFFORD"
+msgstr "I'm sorry but you don't have enough cookies to buy a cake."
+
+msgid "SHOP_LABEL_TITLE"
+msgstr "Item Shop"
+
+msgid "SHOP_LABEL_DESCRIPTION"
+msgstr "Item description"
+
+msgid "SHOP_ITEM_NO_DESCRIPTION"
+msgstr "No description"
+
+msgid "REWARDSCREEN_MINIGAME_RESULTS"
+msgstr "Minigame Results"
+
+msgid "REWARDSCREEN_MINIGAME_WINNER"
+msgstr "Winner!"
+
+msgid "REWARDSCREEN_MINIGAME_REWARD"
+msgstr "Reward:"
+
+msgid "REWARDSCREEN_PRESS_BUTTON"
+msgstr "Press"
+
+msgid "MINIGAME_ACTION_MOVEMENT"
+msgstr "Move"
+
+msgid "MINIGAME_TYPE_FFA"
+msgstr "Free-for-all minigame"
+
+msgid "MINIGAME_TYPE_2v2"
+msgstr "Two-on-two minigame"
+
+msgid "MINIGAME_TYPE_1v3"
+msgstr "One-on-three minigame"
+
+msgid "MINIGAME_TYPE_DUEL"
+msgstr "Duel minigame"
+
+msgid "MINIGAME_TYPE_GNU_COOP"
+msgstr "GNU Coop minigame"
+
+msgid "MINIGAME_TYPE_GNU_SOLO"
+msgstr "GNU Solo minigame"
+
+msgid "MINIGAME_TYPE_NOLOK_COOP"
+msgstr "Nolok Coop minigame"
+
+msgid "MINIGAME_TYPE_NOLOK_SOLO"
+msgstr "Nolok Solo minigame"
+
+msgid "ERROR"
+msgstr "Error"
+
+msgid "SAVE_GAME_CANNOT_SAVE"
+msgstr "Cannot save the game at this time"
+
+msgid "SAVE_GAME_DISABLED"
+msgstr "Saving games is disabled on this server"
+
+#~ msgid "MENU_LABEL_CONNECTION_ERROR"
+#~ msgstr "Connection Error"
+
+#~ msgid "MENU_LABEL_CHARACTER"
+#~ msgstr "Character:"
+
+#~ msgid "MENU_LABEL_NINTENDO_DS"
+#~ msgstr "Nintendo DS"
+
+#~ msgid "MENU_LABEL_NOT_READY_ELLIPSIS"
+#~ msgstr "Not ready…"
+
+#~ msgid "MENU_LABEL_NUMBERS"
+#~ msgstr "Numbers"
+
+#~ msgid "MENU_LABEL_NUM_1"
+#~ msgstr "1"
+
+#~ msgid "MENU_LABEL_NUM_2"
+#~ msgstr "2"
+
+#~ msgid "MENU_LABEL_NUM_3"
+#~ msgstr "3"
+
+#~ msgid "MENU_LABEL_NUM_4"
+#~ msgstr "4"
+
+#~ msgid "MENU_LABEL_OK"
+#~ msgstr "OK"
+
+#~ msgid "MENU_LABEL_PLAYSTATION"
+#~ msgstr "PlayStation"
+
+#~ msgid "MENU_LABEL_REWARD_SYSTEM"
+#~ msgstr "Reward System:"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_1"
+#~ msgstr "Select a character for player 1"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_2"
+#~ msgstr "Select a character for player 2"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_3"
+#~ msgstr "Select a character for player 3"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_4"
+#~ msgstr "Select a character for player 4"
+
+#~ msgid "MENU_LABEL_SELECT_NUM_PLAYERS"
+#~ msgstr "Select amount of players"
+
+#~ msgid "MENU_LABEL_BOARD_SETTINGS"
+#~ msgstr "Board Settings"
+
+#~ msgid "MENU_LABEL_TITLE"
+#~ msgstr "Super Tux Party"
+
+#~ msgid "MENU_LABEL_XBOX"
+#~ msgstr "XBOX"
+
+#~ msgid "MENU_LABEL_LINEAR"
+#~ msgstr "Linear"
+
+#~ msgid "MENU_LABEL_WINNER_TAKES_ALL"
+#~ msgstr "Winner takes all"
+
+#~ msgid "MENU_LABEL_CAKE_COST"
+#~ msgstr "Cake cost:"
+
+#~ msgid "MENU_LABEL_TURNS"
+#~ msgstr "Turns:"
+
+#~ msgid "MENU_CONTROLS_AXIS_MINUS"
+#~ msgstr "Axis -"
+
+#~ msgid "MENU_CONTROLS_AXIS_PLUS"
+#~ msgstr "Axis +"
+
+#~ msgid "MENU_CONTROLS_AXIS_X_LEFT"
+#~ msgstr "X Left"
+
+#~ msgid "MENU_CONTROLS_AXIS_X_RIGHT"
+#~ msgstr "X Right"
+
+#~ msgid "MENU_CONTROLS_AXIS_Y_LEFT"
+#~ msgstr "Y Left"
+
+#~ msgid "MENU_CONTROLS_AXIS_Y_RIGHT"
+#~ msgstr "Y Right"
+
+#~ msgid "MENU_CONTROLS_BUTTON_UNKNOWN"
+#~ msgstr "Unknown Button"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD"
+#~ msgstr "Gamepad"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON"
+#~ msgstr "Gamepad button {button}"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_1"
+#~ msgstr "Gamepad button 1"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_2"
+#~ msgstr "Gamepad button 2"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_3"
+#~ msgstr "Gamepad button 3"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_4"
+#~ msgstr "Gamepad button 4"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_A"
+#~ msgstr "Gamepad button A"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_B"
+#~ msgstr "Gamepad button B"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_CIRCLE"
+#~ msgstr "Gamepad button Circle"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_CROSS"
+#~ msgstr "Gamepad button Cross"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_SQUARE"
+#~ msgstr "Gamepad button Square"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_TRIANGLE"
+#~ msgstr "Gamepad button Triangle"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_X"
+#~ msgstr "Gamepad button X"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_Y"
+#~ msgstr "Gamepad button Y"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_SELECT"
+#~ msgstr "Gamepad Select"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_START"
+#~ msgstr "Gamepad Start"

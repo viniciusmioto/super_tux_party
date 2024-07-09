@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccv3i5fhve2g1"]
+
+[ext_resource type="PackedScene" uid="uid://bwy7gmeseew1j" path="res://common/scenes/sound_button/sound_button.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://ce0mvl4hh0a6g" path="res://assets/icons/delete.png" id="3"]
+
+[node name="SaveGame" type="HBoxContainer"]
+offset_right = 60.0
+offset_bottom = 38.0
+
+[node name="Load" parent="." instance=ExtResource("2")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Delete" parent="." instance=ExtResource("2")]
+layout_mode = 2
+icon = ExtResource("3")

@@ -1,0 +1,52 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2021-05-22 11:32+0000\n"
+"Last-Translator: Benjamin Weis <benjamin.weis@gmx.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/super-tux-party/"
+"minigamesbowling/de/>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.7-dev\n"
+
+msgid "MINIGAME_NAME"
+msgstr "Bowling"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"Der Einzelspieler muss alle anderen Spieler von der Plaftform schießen, um "
+"zu gewinnen.\n"
+"Läuft die Zeit aus, so gewinnt die Gruppe.\n"
+"Vorsicht vor fallenden Boxen. Wirst du getroffen, betäuben sie dich für "
+"kurze Zeit. Außerdem blocken Sie Kugeln ab."
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Nach oben bewegen"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Nach unten bewegen"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Nach links bewegen"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Nach rechts bewegen"
+
+msgid "MINIGAME_ACTION_JUMP"
+msgstr "Springen"
+
+msgid "MINIGAME_ACTION_THROW"
+msgstr "Ball werfen"
+
+msgid "BOWLING_FINISH_MSG"
+msgstr "Fertig!"
+
+msgid "MINIGAME_ACTION_MOVE"
+msgstr "Bewegen"

@@ -1,0 +1,50 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2020-05-19 12:36+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"Language-Team: English <https://hosted.weblate.org/projects/super-tux-party/"
+"minigamesbowling/en/>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.1-dev\n"
+
+msgid "MINIGAME_NAME"
+msgstr "Bowling"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"The solo player needs to shoot all other players off the platform to win.\n"
+"If the time runs out, the group wins.\n"
+"Keep an eye out for falling boxes. They stun if you get hit, but also block bullets."
+
+msgid "MINIGAME_ACTION_MOVE"
+msgstr "Move"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Move Up"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Move Down"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Move Left"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Move Right"
+
+msgid "MINIGAME_ACTION_JUMP"
+msgstr "Jump"
+
+msgid "MINIGAME_ACTION_THROW"
+msgstr "Throw ball"
+
+msgid "BOWLING_FINISH_MSG"
+msgstr "Finish!"

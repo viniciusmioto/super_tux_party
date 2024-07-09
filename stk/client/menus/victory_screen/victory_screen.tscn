@@ -1,0 +1,390 @@
+[gd_scene load_steps=20 format=3 uid="uid://b0emuyv2pjcan"]
+
+[ext_resource type="Script" path="res://client/menus/victory_screen/victory_screen.gd" id="1"]
+[ext_resource type="Script" path="res://client/menus/victory_screen/victory_screen_player.gd" id="2"]
+[ext_resource type="AudioStream" uid="uid://dyqy6yix1y3pa" path="res://assets/music/menus/Steppin Up.ogg" id="3"]
+[ext_resource type="AudioStream" uid="uid://bbjyqebn0cmp7" path="res://assets/music/menus/Red Curtain.ogg" id="4"]
+[ext_resource type="PackedScene" uid="uid://btlnjxj768gbx" path="res://client/menus/victory_screen/stage.glb" id="6_6c2f6"]
+[ext_resource type="Animation" uid="uid://bsq1f0dkywvhy" path="res://client/menus/victory_screen/KeyAction.tres" id="7_4novu"]
+[ext_resource type="PackedScene" uid="uid://bagr3rxpgympt" path="res://common/scenes/speech_dialog/speech_dialog.tscn" id="13"]
+
+[sub_resource type="Environment" id="Environment_elova"]
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.1
+
+[sub_resource type="Animation" id="1"]
+resource_name = "fade_out"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -60.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(3.9),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lqqob"]
+_data = {
+"fade_out": SubResource("1")
+}
+
+[sub_resource type="ParticleProcessMaterial" id="2"]
+emission_shape = 2
+emission_sphere_radius = 1.5
+direction = Vector3(0, -1, 0)
+initial_velocity_min = 2.0
+initial_velocity_max = 2.0
+hue_variation_min = -1.0
+hue_variation_max = 1.0
+
+[sub_resource type="StandardMaterial3D" id="3"]
+vertex_color_use_as_albedo = true
+
+[sub_resource type="BoxMesh" id="4"]
+material = SubResource("3")
+size = Vector3(0.05, 0.05, 0)
+
+[sub_resource type="Animation" id="5"]
+resource_name = "closeup"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Scene/stage/Camera:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0.0198516, 3.3163, 11.1262), Vector3(0.02, 0.816, 6.126)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Scene/stage/Camera:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-8.799, 0, 0), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vdbha"]
+_data = {
+"closeup": SubResource("5")
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lh2hr"]
+_data = {
+"KeyAction": ExtResource("7_4novu")
+}
+
+[sub_resource type="StyleBoxFlat" id="12"]
+bg_color = Color(0.196078, 0.196078, 0.196078, 0.784314)
+
+[sub_resource type="StyleBoxFlat" id="13"]
+bg_color = Color(0, 0, 0, 0.392157)
+
+[sub_resource type="StyleBoxFlat" id="14"]
+bg_color = Color(0.392157, 0.352941, 0.313726, 0.784314)
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_elova")
+
+[node name="Player1" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 0)
+script = ExtResource("2")
+
+[node name="Player2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+script = ExtResource("2")
+
+[node name="Player3" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+script = ExtResource("2")
+
+[node name="Player4" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0)
+script = ExtResource("2")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3")
+bus = &"Music"
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4")
+autoplay = true
+bus = &"Music"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AudioStreamPlayer2"]
+libraries = {
+"": SubResource("AnimationLibrary_lqqob")
+}
+
+[node name="Particles" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.1464, -0.293965)
+emitting = false
+amount = 400
+visibility_aabb = AABB(-4, -4, -2, 8, 8, 4)
+process_material = SubResource("2")
+draw_pass_1 = SubResource("4")
+
+[node name="CameraMovement" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_vdbha")
+}
+
+[node name="SpeechDialog" parent="." instance=ExtResource("13")]
+
+[node name="Scene" parent="." instance=ExtResource("6_6c2f6")]
+
+[node name="Spot" parent="Scene/stage" index="3"]
+transform = Transform3D(-0.366805, -0.0266662, -0.0732648, -0.0162103, -0.318601, 0.197118, -0.0762631, 0.195978, 0.310485, -1.87004, 5.8374, 9.18669)
+light_energy = 10.0
+
+[node name="Spot001" parent="Scene/stage" index="4"]
+transform = Transform3D(-0.366805, 0.0266663, 0.073265, 0.0162102, -0.318601, 0.197118, 0.0762632, 0.195978, 0.310486, 1.88, 5.837, 9.187)
+light_energy = 10.0
+
+[node name="Camera" parent="Scene/stage" index="6"]
+transform = Transform3D(1, 0, 0, 0, 0.988231, 0.152969, 0, -0.152969, 0.988231, 0.0198516, 3.3163, 11.1262)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Scene"]
+libraries = {
+"": SubResource("AnimationLibrary_lh2hr")
+}
+
+[node name="Summary" type="PanelContainer" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -389.0
+offset_top = -118.5
+offset_right = 389.0
+offset_bottom = 118.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("12")
+
+[node name="Stats" type="VBoxContainer" parent="Summary"]
+layout_mode = 2
+
+[node name="Names" type="PanelContainer" parent="Summary/Stats"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("13")
+
+[node name="Entries" type="HBoxContainer" parent="Summary/Stats/Names"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Player1" type="Label" parent="Summary/Stats/Names/Entries"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+horizontal_alignment = 1
+clip_text = true
+
+[node name="Player2" type="Label" parent="Summary/Stats/Names/Entries"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+horizontal_alignment = 1
+clip_text = true
+
+[node name="Player3" type="Label" parent="Summary/Stats/Names/Entries"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+horizontal_alignment = 1
+clip_text = true
+
+[node name="Player4" type="Label" parent="Summary/Stats/Names/Entries"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+horizontal_alignment = 1
+clip_text = true
+
+[node name="ColorRect" type="ColorRect" parent="Summary/Stats"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+
+[node name="CakeLabel" type="PanelContainer" parent="Summary/Stats"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("14")
+
+[node name="Entries" type="HBoxContainer" parent="Summary/Stats/CakeLabel"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Player1" type="Label" parent="Summary/Stats/CakeLabel/Entries"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+text = "CONTEXT_LABEL_CAKES"
+horizontal_alignment = 1
+clip_text = true
+
+[node name="Player2" type="Label" parent="Summary/Stats/CakeLabel/Entries"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+text = "CONTEXT_LABEL_CAKES"
+horizontal_alignment = 1
+clip_text = true
+
+[node name="Player3" type="Label" parent="Summary/Stats/CakeLabel/Entries"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+text = "CONTEXT_LABEL_CAKES"
+horizontal_alignment = 1
+clip_text = true
+
+[node name="Player4" type="Label" parent="Summary/Stats/CakeLabel/Entries"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+text = "CONTEXT_LABEL_CAKES"
+horizontal_alignment = 1
+clip_text = true
+
+[node name="Cakes" type="PanelContainer" parent="Summary/Stats"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("13")
+
+[node name="Entries" type="HBoxContainer" parent="Summary/Stats/Cakes"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Player1" type="Label" parent="Summary/Stats/Cakes/Entries"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+horizontal_alignment = 1
+clip_text = true
+
+[node name="Player2" type="Label" parent="Summary/Stats/Cakes/Entries"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+horizontal_alignment = 1
+clip_text = true
+
+[node name="Player3" type="Label" parent="Summary/Stats/Cakes/Entries"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+horizontal_alignment = 1
+clip_text = true
+
+[node name="Player4" type="Label" parent="Summary/Stats/Cakes/Entries"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+horizontal_alignment = 1
+clip_text = true
+
+[node name="CookieLabel" type="PanelContainer" parent="Summary/Stats"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("14")
+
+[node name="Entries" type="HBoxContainer" parent="Summary/Stats/CookieLabel"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Player1" type="Label" parent="Summary/Stats/CookieLabel/Entries"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+text = "CONTEXT_LABEL_COOKIES"
+horizontal_alignment = 1
+clip_text = true
+
+[node name="Player2" type="Label" parent="Summary/Stats/CookieLabel/Entries"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+text = "CONTEXT_LABEL_COOKIES"
+horizontal_alignment = 1
+clip_text = true
+
+[node name="Player3" type="Label" parent="Summary/Stats/CookieLabel/Entries"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+text = "CONTEXT_LABEL_COOKIES"
+horizontal_alignment = 1
+clip_text = true
+
+[node name="Player4" type="Label" parent="Summary/Stats/CookieLabel/Entries"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+text = "CONTEXT_LABEL_COOKIES"
+horizontal_alignment = 1
+clip_text = true
+
+[node name="Cookies" type="PanelContainer" parent="Summary/Stats"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("13")
+
+[node name="Entries" type="HBoxContainer" parent="Summary/Stats/Cookies"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Player1" type="Label" parent="Summary/Stats/Cookies/Entries"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+horizontal_alignment = 1
+clip_text = true
+
+[node name="Player2" type="Label" parent="Summary/Stats/Cookies/Entries"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+horizontal_alignment = 1
+clip_text = true
+
+[node name="Player3" type="Label" parent="Summary/Stats/Cookies/Entries"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+horizontal_alignment = 1
+clip_text = true
+
+[node name="Player4" type="Label" parent="Summary/Stats/Cookies/Entries"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+horizontal_alignment = 1
+clip_text = true
+
+[editable path="Scene"]

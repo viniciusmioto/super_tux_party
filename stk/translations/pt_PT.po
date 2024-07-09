@@ -1,0 +1,753 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2021-01-20 01:32+0000\n"
+"Last-Translator: Márcia Costa <marciacostta.00@gmail.com>\n"
+"Language-Team: Portuguese (Portugal) <https://hosted.weblate.org/projects/"
+"super-tux-party/super-tux-party/pt_PT/>\n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5-dev\n"
+
+msgid "CONTEXT_LABEL_BUY_CAKE"
+msgstr "Compre um bolo por {amount} biscoitos"
+
+msgid "CONTEXT_LABEL_DUEL_REWARD"
+msgstr "Recompensa do Duelo:"
+
+msgid "CONTEXT_LABEL_DUEL_SELECT"
+msgstr "Selecione Oponente:"
+
+msgid "CONTEXT_LABEL_FINISH"
+msgstr "Acabou!"
+
+msgid "CONTEXT_LABEL_GO"
+msgstr "Começar!"
+
+msgid "CONTEXT_LABEL_PLAYER_ROLLED"
+msgstr "{name} jogou {value}:"
+
+msgid "CONTEXT_LABEL_READY_QUESTION"
+msgstr "Pronto?"
+
+msgid "CONTEXT_LABEL_ROLL"
+msgstr "Jogue!"
+
+msgid "CONTEXT_LABEL_ROLL_PLAYER"
+msgstr "Jogue {name}!"
+
+msgid "CONTEXT_LABEL_STEAL_ONE_CAKE"
+msgstr "O vencedor rouba 1 bolo"
+
+msgid "CONTEXT_LABEL_STEAL_TEN_COOKIES"
+msgstr "O vencedor rouba 10 biscoitos"
+
+msgid "CONTEXT_LABEL_TURN_NUM"
+msgstr "Rodada {turn}"
+
+msgid "CONTEXT_LABEL_VS"
+msgstr "VS."
+
+msgid "CONTEXT_LABEL_YOUR_TURN"
+msgstr "É a sua vez!"
+
+msgid "CONTEXT_NOTIFICATION_NOT_ENOUGH_COOKIES"
+msgstr "Não tem biscoitos o suficiente para comprar isto"
+
+msgid "CONTEXT_NOTIFICATION_NOT_ENOUGH_SPACE"
+msgstr "Não tem espaço o suficiente em seu inventário"
+
+msgid "MENU_CONTROLS_ACTION_1"
+msgstr "Ação 1"
+
+msgid "MENU_CONTROLS_ACTION_2"
+msgstr "Ação 2"
+
+msgid "MENU_CONTROLS_ACTION_3"
+msgstr "Ação 3"
+
+msgid "MENU_CONTROLS_ACTION_4"
+msgstr "Ação 4"
+
+msgid "MENU_CONTROLS_UNKNOWN_GAMEPAD_AXIS"
+msgstr "Eixo desconhecido {axis}"
+
+msgid "MENU_CONTROLS_GENERIC_GAMEPAD_BUTTON"
+msgstr "Botão gamepad {button}"
+
+msgid "MENU_CONTROLS_MOUSE"
+msgstr "Rato"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON"
+msgstr "Botão 1 do rato"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_LEFT"
+msgstr "Botão esquerdo do rato"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_MIDDLE"
+msgstr "Botão do meio do rato"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_RIGHT"
+msgstr "Botão direito do rato"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_DOWN"
+msgstr "Botão de rolagem abaixo"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_LEFT"
+msgstr "Botão de rolagem esquerda"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_RIGHT"
+msgstr "Botão de rolagem direita"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_UP"
+msgstr "Botão de rolagem acima"
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT"
+msgstr "Gatilho Esquerdo"
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT_2"
+msgstr "Gatilho Esquerdo 2"
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT_3"
+msgstr "Gatilho Esquerdo 3"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT"
+msgstr "Gatilho Direito"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT_2"
+msgstr "Gatilho Direito 2"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT_3"
+msgstr "Gatilho Direito 3"
+
+msgid "MENU_CONTROLS_DIR_DOWN"
+msgstr "Baixo"
+
+msgid "MENU_CONTROLS_DIR_LEFT"
+msgstr "Esquerda"
+
+msgid "MENU_CONTROLS_DIR_RIGHT"
+msgstr "Direita"
+
+msgid "MENU_CONTROLS_DIR_UP"
+msgstr "Cima"
+
+msgid "MENU_CONTROLS_SCREENSHOT"
+msgstr "Tirar screenshot"
+
+msgid "MENU_CONTROLS_DEV_MENU"
+msgstr "Abrir o menu de desenvolvimento"
+
+msgid "MENU_IO_ENTER_SAVEGAME_NAME"
+msgstr "Insira o nome do jogo á gravar:"
+
+msgid "MENU_IO_LOAD_GAME"
+msgstr "Carregar Jogo"
+
+msgid "MENU_IO_SAVE"
+msgstr "Gravar"
+
+msgid "MENU_IO_SAVE_GAME"
+msgstr "Gravar Jogo"
+
+msgid "MENU_LABEL_BACK"
+msgstr "Atrás"
+
+msgid "MENU_LABEL_CANCEL"
+msgstr "Cancelar"
+
+msgid "MENU_LABEL_CONTINUE"
+msgstr "Continuar"
+
+msgid "MENU_LABEL_DESKTOP"
+msgstr "Sair para o ambiente de trabalho"
+
+msgid "MENU_SETTINGS_AWARD_LINEAR"
+msgstr ""
+
+msgid "MENU_LABEL_NEW_GAME"
+msgstr "Novo Jogo"
+
+msgid "MENU_LABEL_START"
+msgstr ""
+
+msgid "MENU_LABEL_PAUSE"
+msgstr "Pausa"
+
+msgid "MENU_LABEL_PAUSED"
+msgstr "Em Pausa"
+
+msgid "MENU_LABEL_PAUSE_ON_WINDOW_UNFOCUS"
+msgstr "Pausa quando o foco da janela for perdido"
+
+msgid "MENU_LABEL_PLAY"
+msgstr "Jogar"
+
+msgid "MENU_LABEL_ONLINE"
+msgstr ""
+
+msgid "MENU_LABEL_PLAYER1"
+msgstr "Jogador1"
+
+msgid "MENU_LABEL_PLAYER2"
+msgstr "Jogador 2"
+
+msgid "MENU_LABEL_PLAYER3"
+msgstr "Jogador3"
+
+msgid "MENU_LABEL_PLAYER4"
+msgstr "Jogador4"
+
+msgid "MENU_LABEL_PRESS_ANY_KEY"
+msgstr "Carregue em qualquer tecla"
+
+msgid "MENU_LABEL_QUIT"
+msgstr "Sair"
+
+msgid "MENU_LABEL_READY"
+msgstr "Pronto!"
+
+msgid "MENU_LABEL_RESUME"
+msgstr "Resumir"
+
+msgid "MENU_LABEL_RETURN_MENU"
+msgstr "Regressar ao Menu Principal"
+
+msgid "MENU_LABEL_SELECT_BOARD"
+msgstr "Selecione o tabuleiro:"
+
+msgid "MENU_LABEL_SELECT_CHARACTER"
+msgstr ""
+
+msgid "MENU_LABEL_TRY"
+msgstr "Tentar"
+
+msgid "MENU_SETTINGS_AWARD_WINNER_TAKES_ALL"
+msgstr ""
+
+msgid "MENU_SETTINGS_AWARD_TYPE"
+msgstr ""
+
+msgid "MENU_LABEL_CREDITS"
+msgstr "Créditos"
+
+msgid "MENU_LABEL_SCREENSHOTS"
+msgstr "captura de ecrã"
+
+msgid "MENU_OPTIONS"
+msgstr "Opções"
+
+msgid "MENU_OPTIONS_AUDIO"
+msgstr "Áudio"
+
+msgid "MENU_OPTIONS_CONTROLS"
+msgstr "Controlos"
+
+msgid "MENU_OPTIONS_EFFECTS"
+msgstr "Efeitos"
+
+msgid "MENU_OPTIONS_FRAME_CAP"
+msgstr "Limite de Frames"
+
+msgid "MENU_OPTIONS_FULLSCREEN"
+msgstr "Ecrã inteiro"
+
+msgid "MENU_OPTIONS_MSAA"
+msgstr ""
+
+msgid "MENU_OPTIONS_LANGUAGE"
+msgstr "Idoima"
+
+msgid "MENU_OPTIONS_MASTER"
+msgstr "Mestre"
+
+msgid "MENU_OPTIONS_MISC"
+msgstr "Diversos"
+
+msgid "MENU_OPTIONS_MUSIC"
+msgstr "Música"
+
+msgid "MENU_OPTIONS_MUTE_ON_WINDOW_UNFOCUS"
+msgstr "Silenciar quando o foco da janela for perdido"
+
+msgid "MENU_OPTIONS_SYSTEM_DEFAULT"
+msgstr "Predefinição do Sistema"
+
+msgid "MENU_OPTIONS_VISUAL"
+msgstr "Visual"
+
+msgid "MENU_OPTIONS_VSYNC"
+msgstr "Vsync"
+
+msgid "DIALOG_YES"
+msgstr "Sim"
+
+msgid "DIALOG_NO"
+msgstr "Não"
+
+msgid "MENU_LABEL_CONNECTION_ERROR_TITLE"
+msgstr ""
+
+msgid "MENU_LABEL_CONNECTION_TIMEOUT"
+msgstr ""
+
+msgid "MENU_LABEL_NO_SERVER_VERSION"
+msgstr ""
+
+msgid "MENU_LABEL_VERSION_MISMATCH_TITLE"
+msgstr ""
+
+msgid "MENU_LABEL_VERSION_MISMATCH"
+msgstr ""
+
+msgid "MENU_LABEL_CHOOSE_SERVER"
+msgstr ""
+
+msgid "MENU_LABEL_COPY"
+msgstr ""
+
+msgid "MENU_LABEL_LOBBY_CREATE"
+msgstr ""
+
+msgid "MENU_LABEL_LOBBY_JOIN"
+msgstr ""
+
+msgid "MENU_LOBBY_SETTINGS"
+msgstr ""
+
+msgid "MENU_SETTINGS_PUBLIC"
+msgstr ""
+
+msgid "MENU_SETTINGS_CAKE_COST"
+msgstr ""
+
+msgid "MENU_SETTINGS_TURNS"
+msgstr ""
+
+msgid "MENU_SETTINGS_ENABLE_TIMEOUT"
+msgstr ""
+
+msgid "MENU_SETTINGS_TIMEOUT"
+msgstr ""
+
+msgid "AI_DIFFICULTY"
+msgstr "Dificuldade das IA:"
+
+msgid "DIFFICULTY_EASY"
+msgstr "Fácil"
+
+msgid "DIFFICULTY_NORMAL"
+msgstr "Normal"
+
+msgid "DIFFICULTY_HARD"
+msgstr "Difícil"
+
+msgid "CONTEXT_GNU_ACTION_TYPE"
+msgstr "GNU ação"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY"
+msgstr "qualidade gráfica"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_HIGH"
+msgstr "alta"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_MEDIUM"
+msgstr "médio"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_LOW"
+msgstr "baixo"
+
+msgid "MENU_OPTIONS_FXAA"
+msgstr ""
+
+msgid "MENU_GRAPHIC_QUALITY_REBOOT_NOTICE"
+msgstr "A alteração da qualidade gráfica só tem efeito após reiniciar"
+
+msgid "MENU_LOBBY_ADD_PLAYER"
+msgstr ""
+
+msgid "CONTEXT_SPEAKER_SARA"
+msgstr "Sara"
+
+msgid "CONTEXT_WINNER_ANNOUNCEMENT"
+msgstr ""
+"Sei que todos vocês lutaram muito para ganhar, mas agora o jogo acabou e "
+"precisamos de um vencedor. E o vencedor é…"
+
+msgid "CONTEXT_WINNER_REVEAL_ONE_PLAYER"
+msgstr ""
+
+msgid "CONTEXT_WINNER_REVEAL_TWO_PLAYER"
+msgstr ""
+
+msgid "CONTEXT_WINNER_REVEAL_THREE_PLAYER"
+msgstr ""
+
+msgid "CONTEXT_WINNER_REVEAL_FOUR_PLAYER"
+msgstr ""
+
+msgid "CONTEXT_LABEL_CAKES"
+msgstr "Bolos"
+
+msgid "CONTEXT_LABEL_COOKIES"
+msgstr "Bolachas"
+
+msgid "CONTEXT_GNU_NAME"
+msgstr "GNU"
+
+msgid "CONTEXT_GNU_EVENT_START"
+msgstr "Olá, precisa de ajuda? Deixe-me ver o que posso fazer por si hoje …"
+
+msgid "CONTEXT_GNU_MINIGAME_SOLO_MODERATION"
+msgstr ""
+"É um minijogo a solo! Mostre-me suas habilidades e eu te darei uma [color = "
+"# dd44ff] {recompensa} [/ color]"
+
+msgid "CONTEXT_GNU_MINIGAME_SOLO"
+msgstr "minijogo a solo"
+
+msgid "CONTEXT_GNU_MINIGAME_COOP_MODERATION"
+msgstr "Vamos jogar juntos! Tenho a certeza que vai ser divertido"
+
+msgid "CONTEXT_GNU_MINIGAME_COOP"
+msgstr "minijogo coop"
+
+msgid "CONTEXT_GNU_SOLO_VICTORY"
+msgstr "Muito bem. Aqui está o teu prémio!"
+
+msgid "CONTEXT_GNU_SOLO_LOSS"
+msgstr "Isso não funcionou. Talvez na próxima vez."
+
+msgid "CONTEXT_GNU_COOP_VICTORY"
+msgstr "Você fez isso. Eu vou esperar pela próxima vez."
+
+msgid "CONTEXT_GNU_COOP_LOSS"
+msgstr ""
+"Embora não tenha conseguido, praticaste o teu trabalho em equipa. Tenho "
+"certeza que da próxima vez vai correr bem!"
+
+msgid "CONTEXT_NOLOK_NAME"
+msgstr "nolok"
+
+msgid "CONTEXT_NOLOK_ACTION_TYPE"
+msgstr "Nolok ação"
+
+msgid "CONTEXT_NOLOK_EVENT_START"
+msgstr "É a minha vez! Eu sei exatamento o que fazer…"
+
+msgid "CONTEXT_NOLOK_MINIGAME_SOLO_MODERATION"
+msgstr ""
+"Eu te desafio para um minijogo! Se poderes derrotar me, podes ficar com tuas "
+"coisas. Senão vou levar um dos teus bolos …"
+
+msgid "CONTEXT_NOLOK_MINIGAME_SOLO"
+msgstr "minijogo a solo"
+
+msgid "CONTEXT_NOLOK_MINIGAME_COOP_MODERATION"
+msgstr "Eu contra todos vocês? Ainda achas que tens uma chance contra mim?"
+
+msgid "CONTEXT_NOLOK_MINIGAME_COOP"
+msgstr "minijogo coop"
+
+msgid "CONTEXT_NOLOK_SOLO_VICTORY"
+msgstr "Fique grato por ter te poupado!"
+
+msgid "CONTEXT_NOLOK_SOLO_LOSS"
+msgstr "Ansioso para vencer te novamente!"
+
+msgid "CONTEXT_NOLOK_COOP_VICTORY"
+msgstr "Da próxima vez não vais ganhar."
+
+msgid "CONTEXT_NOLOK_COOP_LOSS"
+msgstr "Haha, que vitória fácil."
+
+msgid "CONTEXT_NOLOK_LOSE_COOKIES_MODERATION"
+msgstr ""
+"Haha, lá vai [color = # 00aaff] {montante} [/ cor] de seus cookies. Tenho "
+"certeza de que [cor = # dd44ff] {jogador} [/ cor] tem uma utilidade para eles"
+
+msgid "CONTEXT_NOLOK_LOSE_COOKIES"
+msgstr "Perdeste as tuas bolachas"
+
+msgid "CONTEXT_NOLOK_ROLL_MODIFIER_MODERATION"
+msgstr ""
+"Talvez você deva abrandar um pouco. Vamos ver como você se sai com [cor = # "
+"00aaff] {montante} [/ cor] menos movimento para os próximos [cor = # dd44ff] "
+"{duração} [/ cor] jogadas"
+
+msgid "CONTEXT_NOLOK_ROLL_MODIFIER"
+msgstr "morrer amaldiçoado"
+
+msgid "CONTEXT_SHOW_TUTORIAL"
+msgstr ""
+"Parece que é a primeira vez que jogas. Queres que eu explique as regras?"
+
+msgid "CONTEXT_TUTORIAL_DICE"
+msgstr ""
+"O jogo é jogado por turnos. Durante a tua vez, lanças um dado e moves o "
+"número mostrado para frente."
+
+msgid "CONTEXT_TUTORIAL_COOKIES"
+msgstr ""
+"A moeda são as bolachas. Você ganha bolachas ao vencer minijogos. Com as "
+"bolachas podes comprar itens ao passar pelas lojas."
+
+msgid "CONTEXT_TUTORIAL_CAKES"
+msgstr ""
+"Para ganhar, precisas coletar o máximo de bolos. As bolachas serão usadas "
+"como um desempate. Você pode comprar bolos em locais especiais do tabuleiro. "
+"Se comprares um, o bolo irá para outro local."
+
+msgid "CONTEXT_TUTORIAL_SPACES_NORMAL"
+msgstr ""
+"Existem diferentes tipos de espaços em que podes pousar: os espaços azuis "
+"fornecem bolachas, enquanto os espaços vermelhos recebem as bolachas."
+
+msgid "CONTEXT_TUTORIAL_SPACES_SPECIAL"
+msgstr ""
+"Espaços verdes iniciam eventos específicos do tabuleiro. Os espaços de "
+"batalha permitem que desafies outro jogador para um minijogo de duelo."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES"
+msgstr ""
+"Depois que cada jogador tiver a sua vez, um minijogo será jogado. Existem "
+"três sabores diferentes de minijogos:"
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_FFA"
+msgstr "Gratuito para todos, onde todos competem com todos pela vitória."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_2V2"
+msgstr "Dois contra dois, onde jogas em equipas de dois."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_1V3"
+msgstr ""
+"E um contra três, onde um compete com o resto. O jogador solo recebe um "
+"bônus para equilibrar as coisas."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_SPECIAL"
+msgstr ""
+"Minijogos especiais serão jogados quando um jogador pousar em um espaço GNU "
+"ou NOLOK. Minijogos GNU são bons, enquanto minijogos NOLOK são ruins para "
+"ti. Portanto, é melhor ficar longe do último!"
+
+msgid "CONTEXT_TUTORIAL_END"
+msgstr "É isso, agora tu estás pronto para começar! Diverte-te!"
+
+msgid "CONTEXT_CAKE_PLACED"
+msgstr "Aqui está o bolo, vem buscar!"
+
+msgid "CONTEXT_CAKE_WANT_BUY"
+msgstr "Queres comprar um bolo?"
+
+msgid "CONTEXT_CAKE_BUY_AMOUNT"
+msgstr "Quantos bolos queres comprar?"
+
+msgid "CONTEXT_CAKE_COLLECTED"
+msgstr ""
+"Muito bem, [cor = # 00aaff] {jogador} [/ cor]. Isso é [cor = # dd44ff] "
+"{montante} [/ cor] bolo (s) para ti."
+
+msgid "CONTEXT_CAKE_CANT_AFFORD"
+msgstr "Sinto muito, mas não tens bolachas suficientes para comprar um bolo."
+
+msgid "SHOP_LABEL_TITLE"
+msgstr "Loja de itens"
+
+msgid "SHOP_LABEL_DESCRIPTION"
+msgstr "Descrição do item"
+
+msgid "SHOP_ITEM_NO_DESCRIPTION"
+msgstr "Sem descrição"
+
+msgid "REWARDSCREEN_MINIGAME_RESULTS"
+msgstr ""
+
+msgid "REWARDSCREEN_MINIGAME_WINNER"
+msgstr ""
+
+msgid "REWARDSCREEN_MINIGAME_REWARD"
+msgstr ""
+
+msgid "REWARDSCREEN_PRESS_BUTTON"
+msgstr ""
+
+msgid "MINIGAME_ACTION_MOVEMENT"
+msgstr ""
+
+msgid "MINIGAME_TYPE_FFA"
+msgstr ""
+
+msgid "MINIGAME_TYPE_2v2"
+msgstr ""
+
+msgid "MINIGAME_TYPE_1v3"
+msgstr ""
+
+msgid "MINIGAME_TYPE_DUEL"
+msgstr ""
+
+msgid "MINIGAME_TYPE_GNU_COOP"
+msgstr ""
+
+msgid "MINIGAME_TYPE_GNU_SOLO"
+msgstr ""
+
+msgid "MINIGAME_TYPE_NOLOK_COOP"
+msgstr ""
+
+msgid "MINIGAME_TYPE_NOLOK_SOLO"
+msgstr ""
+
+msgid "ERROR"
+msgstr ""
+
+msgid "SAVE_GAME_CANNOT_SAVE"
+msgstr ""
+
+msgid "SAVE_GAME_DISABLED"
+msgstr ""
+
+#~ msgid "MENU_LABEL_CHARACTER"
+#~ msgstr "Personagem:"
+
+#~ msgid "MENU_LABEL_LINEAR"
+#~ msgstr "Linear"
+
+#~ msgid "MENU_LABEL_NINTENDO_DS"
+#~ msgstr "Nintendo DS"
+
+#~ msgid "MENU_LABEL_NOT_READY_ELLIPSIS"
+#~ msgstr "Não preparado…"
+
+#~ msgid "MENU_LABEL_NUMBERS"
+#~ msgstr "Números"
+
+#~ msgid "MENU_LABEL_NUM_1"
+#~ msgstr "1"
+
+#~ msgid "MENU_LABEL_NUM_2"
+#~ msgstr "2"
+
+#~ msgid "MENU_LABEL_NUM_3"
+#~ msgstr "3"
+
+#~ msgid "MENU_LABEL_NUM_4"
+#~ msgstr "4"
+
+#~ msgid "MENU_LABEL_OK"
+#~ msgstr "OK"
+
+#~ msgid "MENU_LABEL_PLAYSTATION"
+#~ msgstr "PlayStation"
+
+#~ msgid "MENU_LABEL_REWARD_SYSTEM"
+#~ msgstr "Sistema de Recompensa:"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_1"
+#~ msgstr "Selecione a personagem para o jogador 1"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_2"
+#~ msgstr "Selecione a personagem para o jogador 2"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_3"
+#~ msgstr "Selecione a personagem para o jogador 3"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_4"
+#~ msgstr "Selecione a personagem para o jogador 4"
+
+#~ msgid "MENU_LABEL_SELECT_NUM_PLAYERS"
+#~ msgstr "Selecione a quantidade de jogadores"
+
+#~ msgid "MENU_LABEL_WINNER_TAKES_ALL"
+#~ msgstr "Vencedor leva tudo"
+
+#~ msgid "MENU_LABEL_XBOX"
+#~ msgstr "XBOX"
+
+#~ msgid "MENU_LABEL_CAKE_COST"
+#~ msgstr "Custo do bolo:"
+
+#~ msgid "MENU_LABEL_TURNS"
+#~ msgstr "Voltas:"
+
+#~ msgid "MENU_LABEL_TITLE"
+#~ msgstr "Super Tux Party"
+
+#~ msgid "MENU_LABEL_DESCRIPTION"
+#~ msgstr "Descrição"
+
+#~ msgid "MENU_CONTROLS_AXIS_MINUS"
+#~ msgstr "Eixo -"
+
+#~ msgid "MENU_CONTROLS_AXIS_PLUS"
+#~ msgstr "Eixo +"
+
+#~ msgid "MENU_CONTROLS_AXIS_X_LEFT"
+#~ msgstr "X Esquerdo"
+
+#~ msgid "MENU_CONTROLS_AXIS_X_RIGHT"
+#~ msgstr "X Direito"
+
+#~ msgid "MENU_CONTROLS_AXIS_Y_LEFT"
+#~ msgstr "Y Esquerdo"
+
+#~ msgid "MENU_CONTROLS_AXIS_Y_RIGHT"
+#~ msgstr "Y Direito"
+
+#~ msgid "MENU_CONTROLS_BUTTON_UNKNOWN"
+#~ msgstr "Botão Desconhecido"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD"
+#~ msgstr "Comando"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON"
+#~ msgstr "Botão do controle"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_1"
+#~ msgstr "Botão 1 do controle"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_2"
+#~ msgstr "Botão 2 do controle"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_3"
+#~ msgstr "Botão 3 do controle"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_4"
+#~ msgstr "Botão 4 do controle"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_A"
+#~ msgstr "Botão A do controle"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_B"
+#~ msgstr "Botão B do controle"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_CIRCLE"
+#~ msgstr "Botão Circulo do controle"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_CROSS"
+#~ msgstr "Botão Cruz do controle"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_SQUARE"
+#~ msgstr "Botão Quadrado do controle"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_TRIANGLE"
+#~ msgstr "Botão Triangulo do controle"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_X"
+#~ msgstr "Botão X do controle"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_Y"
+#~ msgstr "Botão Y do controle"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_SELECT"
+#~ msgstr "Controle Selecionar"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_START"
+#~ msgstr "Controle Começar"

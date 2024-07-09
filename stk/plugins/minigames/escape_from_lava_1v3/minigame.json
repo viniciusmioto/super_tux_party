@@ -1,0 +1,27 @@
+{
+  "name": "MINIGAME_NAME",
+  "scene_path": "res://plugins/minigames/escape_from_lava_1v3/minigame.tscn",
+  "image_path": "res://plugins/minigames/escape_from_lava_1v3/screenshot.png",
+  "translation_directory": "res://plugins/minigames/escape_from_lava_1v3/translations",
+  "type": ["1v3"],
+  "description": "MINIGAME_DESCRIPTION",
+  "controls": [
+    {
+      "actions": ["spacer", "up", "spacer", "left", "down", "right"],
+      "text": "MINIGAME_ACTION_MOVEMENT",
+      "team": 0
+    },
+    {
+      "actions": [
+        "action1",
+        "action2",
+        "action3",
+        "spacer",
+        "spacer",
+        "spacer"
+      ],
+      "text": "MINIGAME_ACTION_OBSTRUCT",
+      "team": 1
+    }
+  ]
+}

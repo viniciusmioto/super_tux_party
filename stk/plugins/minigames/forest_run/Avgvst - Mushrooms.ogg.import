@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://corcrqvl68g3f"
+path="res://.godot/imported/Avgvst - Mushrooms.ogg-326359170cde6623803cfbc8be59feb0.oggvorbisstr"
+
+[deps]
+
+source_file="res://plugins/minigames/forest_run/Avgvst - Mushrooms.ogg"
+dest_files=["res://.godot/imported/Avgvst - Mushrooms.ogg-326359170cde6623803cfbc8be59feb0.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,208 @@
+[gd_scene load_steps=6 format=3 uid="uid://bvsena8q5rdqh"]
+
+[ext_resource type="Theme" uid="uid://d3w3vt3s6ujoh" path="res://assets/defaults/default_theme.tres" id="1"]
+[ext_resource type="Script" path="res://client/menus/control_remapping/control_remapper.gd" id="3"]
+[ext_resource type="PackedScene" uid="uid://bwy7gmeseew1j" path="res://common/scenes/sound_button/sound_button.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://ceknwq06ye8c4" path="res://client/menus/control_remapping/control_remap_button.tscn" id="5"]
+
+[sub_resource type="Shortcut" id="2"]
+
+[node name="ControlRemapper" type="VBoxContainer"]
+custom_minimum_size = Vector2(750, 0)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -375.0
+offset_top = -145.0
+offset_right = 375.0
+offset_bottom = 145.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("1")
+script = ExtResource("3")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="Grid" type="HBoxContainer" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="Column1" type="VBoxContainer" parent="PanelContainer/VBoxContainer/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="up" type="HBoxContainer" parent="PanelContainer/VBoxContainer/Grid/Column1"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/Grid/Column1/up"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MENU_CONTROLS_DIR_UP"
+
+[node name="Button" parent="PanelContainer/VBoxContainer/Grid/Column1/up" instance=ExtResource("5")]
+custom_minimum_size = Vector2(29, 0)
+layout_mode = 2
+action = ""
+
+[node name="left" type="HBoxContainer" parent="PanelContainer/VBoxContainer/Grid/Column1"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/Grid/Column1/left"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MENU_CONTROLS_DIR_LEFT"
+
+[node name="Button" parent="PanelContainer/VBoxContainer/Grid/Column1/left" instance=ExtResource("5")]
+custom_minimum_size = Vector2(29, 0)
+layout_mode = 2
+action = ""
+
+[node name="down" type="HBoxContainer" parent="PanelContainer/VBoxContainer/Grid/Column1"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/Grid/Column1/down"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MENU_CONTROLS_DIR_DOWN"
+
+[node name="Button" parent="PanelContainer/VBoxContainer/Grid/Column1/down" instance=ExtResource("5")]
+custom_minimum_size = Vector2(29, 0)
+layout_mode = 2
+action = ""
+
+[node name="right" type="HBoxContainer" parent="PanelContainer/VBoxContainer/Grid/Column1"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/Grid/Column1/right"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MENU_CONTROLS_DIR_RIGHT"
+
+[node name="Button" parent="PanelContainer/VBoxContainer/Grid/Column1/right" instance=ExtResource("5")]
+custom_minimum_size = Vector2(29, 0)
+layout_mode = 2
+action = ""
+
+[node name="Spacer" type="Control" parent="PanelContainer/VBoxContainer/Grid/Column1"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="ok" type="HBoxContainer" parent="PanelContainer/VBoxContainer/Grid/Column1"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/Grid/Column1/ok"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MENU_LABEL_CONTINUE"
+
+[node name="Button" parent="PanelContainer/VBoxContainer/Grid/Column1/ok" instance=ExtResource("5")]
+custom_minimum_size = Vector2(29, 0)
+layout_mode = 2
+action = ""
+
+[node name="Column2" type="VBoxContainer" parent="PanelContainer/VBoxContainer/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="action1" type="HBoxContainer" parent="PanelContainer/VBoxContainer/Grid/Column2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/Grid/Column2/action1"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MENU_CONTROLS_ACTION_1"
+
+[node name="Button" parent="PanelContainer/VBoxContainer/Grid/Column2/action1" instance=ExtResource("5")]
+custom_minimum_size = Vector2(29, 0)
+layout_mode = 2
+action = ""
+
+[node name="action2" type="HBoxContainer" parent="PanelContainer/VBoxContainer/Grid/Column2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/Grid/Column2/action2"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MENU_CONTROLS_ACTION_2"
+
+[node name="Button" parent="PanelContainer/VBoxContainer/Grid/Column2/action2" instance=ExtResource("5")]
+custom_minimum_size = Vector2(29, 0)
+layout_mode = 2
+action = ""
+
+[node name="action3" type="HBoxContainer" parent="PanelContainer/VBoxContainer/Grid/Column2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/Grid/Column2/action3"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MENU_CONTROLS_ACTION_3"
+
+[node name="Button" parent="PanelContainer/VBoxContainer/Grid/Column2/action3" instance=ExtResource("5")]
+custom_minimum_size = Vector2(29, 0)
+layout_mode = 2
+action = ""
+
+[node name="action4" type="HBoxContainer" parent="PanelContainer/VBoxContainer/Grid/Column2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/Grid/Column2/action4"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MENU_CONTROLS_ACTION_4"
+
+[node name="Button" parent="PanelContainer/VBoxContainer/Grid/Column2/action4" instance=ExtResource("5")]
+custom_minimum_size = Vector2(29, 0)
+layout_mode = 2
+action = ""
+
+[node name="Spacer2" type="Control" parent="PanelContainer/VBoxContainer/Grid/Column2"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="pause" type="HBoxContainer" parent="PanelContainer/VBoxContainer/Grid/Column2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/Grid/Column2/pause"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MENU_LABEL_PAUSE"
+
+[node name="Button" parent="PanelContainer/VBoxContainer/Grid/Column2/pause" instance=ExtResource("5")]
+custom_minimum_size = Vector2(29, 0)
+layout_mode = 2
+action = ""
+
+[node name="Spacer2" type="Control" parent="."]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Back" parent="." instance=ExtResource("4")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+shortcut = SubResource("2")
+shortcut_in_tooltip = false
+text = "MENU_LABEL_BACK"
+
+[connection signal="pressed" from="Back" to="." method="_on_Back_pressed"]

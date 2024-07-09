@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ceukqbj646xoi"]
+
+[resource]
+resource_name = "belly"
+diffuse_mode = 3
+specular_mode = 1
+albedo_color = Color(1, 0.564706, 0.309804, 1)
+metallic_specular = 0.0

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://5fg71k8bgd0k"]
+
+[ext_resource type="Script" path="res://common/scenes/sound_button/sound_button.gd" id="1"]
+
+[node name="HSlider" type="HSlider"]
+offset_right = 41.0
+offset_bottom = 20.0
+script = ExtResource("1")
+
+[connection signal="focus_exited" from="." to="." method="_select"]

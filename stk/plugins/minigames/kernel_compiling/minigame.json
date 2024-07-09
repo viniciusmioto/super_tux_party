@@ -1,0 +1,23 @@
+{
+  "name": "MINIGAME_NAME",
+  "scene_path": "res://plugins/minigames/kernel_compiling/minigame.tscn",
+  "image_path": "res://plugins/minigames/kernel_compiling/screenshot.png",
+  "translation_directory": "res://plugins/minigames/kernel_compiling/translations",
+  "type": ["2v2", "Duel", "FFA"],
+  "description": "MINIGAME_DESCRIPTION",
+  "controls": [
+    {
+      "actions": [
+        "up",
+        "left",
+        "down",
+        "right",
+        "action1",
+        "action2",
+        "action3",
+        "action4"
+      ],
+      "text": "MINIGAME_ACTION_PRESS_BUTTON"
+    }
+  ]
+}

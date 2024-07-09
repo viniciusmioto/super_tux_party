@@ -1,0 +1,31 @@
+{
+	"controls": [
+		{
+			"actions": [
+				"spacer",
+				"up",
+				"spacer",
+				"left",
+				"down",
+				"right"
+			],
+			"text": "MINIGAME_ACTION_MOVEMENT"
+		},
+		{
+			"actions": [
+				"action1"
+			],
+			"text": "MINIGAME_ACTION_PICKUP"
+		}
+	],
+	"description": "MINIGAME_DESCRIPTION",
+	"image_path": "res://plugins/minigames/harvest_food/screenshot.png",
+	"name": "MINIGAME_NAME",
+	"scene_path": "res://plugins/minigames/harvest_food/minigame.tscn",
+	"translation_directory": "res://plugins/minigames/harvest_food/translations",
+	"type": [
+		"2v2",
+		"Duel",
+		"FFA"
+	]
+}

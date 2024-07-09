@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bwjkko53on1v"]
+
+[ext_resource type="Texture2D" uid="uid://dfu4olru7y780" path="res://plugins/boards/KDEValley/dragons/dragon2_head.png" id="1_cw1nh"]
+
+[resource]
+resource_name = "Head"
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("1_cw1nh")
+metallic_specular = 0.0

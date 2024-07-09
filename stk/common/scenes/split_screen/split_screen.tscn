@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://lxmroerqe74s"]
+
+[ext_resource type="Script" path="res://common/scenes/split_screen/split_screen.gd" id="1"]
+
+[node name="SplitScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1")
+
+[node name="Player1" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 360.0
+
+[node name="Player2" type="TextureRect" parent="."]
+layout_mode = 0
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -640.0
+offset_bottom = 360.0
+
+[node name="Player3" type="TextureRect" parent="."]
+layout_mode = 0
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -360.0
+offset_right = 640.0
+
+[node name="Player4" type="TextureRect" parent="."]
+layout_mode = 0
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -640.0
+offset_top = -360.0

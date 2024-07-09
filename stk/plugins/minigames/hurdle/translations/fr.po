@@ -1,0 +1,32 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2023-04-06 11:50+0000\n"
+"Last-Translator: Zekovski <zekovski@e.email>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/super-tux-party/"
+"minigameshurdle/fr/>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Weblate 4.17-dev\n"
+
+msgid "HURDLE_PLAYER_WINS_MSG"
+msgstr "{player} a gagné !"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"Les joueurs sont sur une plate-forme mobile.\n"
+"\n"
+"Ne tombez pas de la plate-forme ! Le dernier joueur debout gagne."
+
+msgid "MINIGAME_ACTION_JUMP"
+msgstr "Sauter"
+
+msgid "MINIGAME_NAME"
+msgstr "Obstacles"

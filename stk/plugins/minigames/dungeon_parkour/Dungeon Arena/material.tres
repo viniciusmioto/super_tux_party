@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bpw6d625t0cfs"]
+
+[ext_resource type="Texture2D" uid="uid://dqrq8ockm4pkh" path="res://plugins/minigames/dungeon_parkour/Dungeon Arena/ColorPaletteRED.png" id="1_c1mpx"]
+
+[resource]
+albedo_texture = ExtResource("1_c1mpx")

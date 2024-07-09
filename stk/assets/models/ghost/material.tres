@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://oqnm8c1wa3v4"]
+
+[ext_resource type="Texture2D" uid="uid://8q001npst6x" path="res://assets/models/ghost/textures/jack-o-lantern_dif.png" id="1_wdspp"]
+[ext_resource type="Texture2D" uid="uid://dv7i6e8c1k0p6" path="res://assets/models/ghost/textures/jack-o-lantern_glow.png" id="2_jrvxd"]
+[ext_resource type="Texture2D" uid="uid://ba5c0wbr8u8ny" path="res://assets/models/ghost/textures/jack-o-lantern_spec.png" id="3_63ig8"]
+[ext_resource type="Texture2D" uid="uid://ctfpx6iqwcr8y" path="res://assets/models/ghost/textures/jack-o-lantern_nor.png" id="4_y5spx"]
+
+[resource]
+albedo_texture = ExtResource("1_wdspp")
+metallic = 1.0
+metallic_texture = ExtResource("3_63ig8")
+emission_enabled = true
+emission_texture = ExtResource("2_jrvxd")
+normal_enabled = true
+normal_texture = ExtResource("4_y5spx")

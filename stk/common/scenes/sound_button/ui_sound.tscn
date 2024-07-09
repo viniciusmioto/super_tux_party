@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://slbnupaiib82"]
+
+[node name="UISound" type="AudioStreamPlayer"]
+process_mode = 3
+bus = &"Effects"

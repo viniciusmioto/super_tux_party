@@ -1,0 +1,33 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2021-12-26 21:52+0000\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/super-tux-party/"
+"minigameshurdle/nl/>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.10.1\n"
+
+msgid "HURDLE_PLAYER_WINS_MSG"
+msgstr "{player} heeft gewonnen!"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"De spelers staan op een bewegend platform.\n"
+"\n"
+"Zorg dat je er niet vanaf valt! De laatste speler die overeind is gebleven "
+"wint."
+
+msgid "MINIGAME_NAME"
+msgstr "Hindernisbaan"
+
+msgid "MINIGAME_ACTION_JUMP"
+msgstr "Springen"

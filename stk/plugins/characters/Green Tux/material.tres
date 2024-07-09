@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://bwldm1lj4mgbe"]
+
+[ext_resource type="Texture2D" uid="uid://o2e4mtihlwg4" path="res://plugins/characters/Green Tux/tux_texture.png" id="1"]
+
+[sub_resource type="StandardMaterial3D" id="1"]
+cull_mode = 1
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+grow = true
+grow_amount = 0.01
+
+[resource]
+resource_local_to_scene = true
+next_pass = SubResource("1")
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("1")
+roughness = 0.75

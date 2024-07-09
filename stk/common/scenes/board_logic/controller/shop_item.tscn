@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=3 uid="uid://cshgs0ad1ftdo"]
+
+[ext_resource type="Texture2D" uid="uid://cfujd5y86ott5" path="res://common/scenes/board_logic/controller/icons/cookie.png" id="2"]
+[ext_resource type="Shader" path="res://assets/shaders/outline.gdshader" id="3"]
+[ext_resource type="Script" path="res://common/scenes/board_logic/controller/shop_item.gd" id="4"]
+
+[sub_resource type="ShaderMaterial" id="1"]
+resource_local_to_scene = true
+shader = ExtResource("3")
+shader_parameter/width = 5.0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/enable_shader = false
+
+[node name="Item" type="VBoxContainer"]
+offset_right = 132.0
+offset_bottom = 164.0
+script = ExtResource("4")
+
+[node name="Image" type="TextureButton" parent="."]
+material = SubResource("1")
+custom_minimum_size = Vector2(132, 128)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Cost" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Amount" type="Label" parent="Cost"]
+custom_minimum_size = Vector2(96, 0)
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="Cost/Amount"]
+show_behind_parent = true
+layout_mode = 0
+offset_top = -1.0
+offset_right = 140.0
+offset_bottom = 44.0
+
+[node name="Currency" type="TextureRect" parent="Cost"]
+layout_mode = 2
+texture = ExtResource("2")
+stretch_mode = 5
+
+[connection signal="focus_entered" from="Image" to="." method="_on_focus_entered"]
+[connection signal="focus_exited" from="Image" to="." method="_on_focus_exited"]
+[connection signal="mouse_entered" from="Image" to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Image" to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="Image" to="." method="_on_pressed"]

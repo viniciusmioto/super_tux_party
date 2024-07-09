@@ -1,0 +1,46 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2021-02-22 20:50+0000\n"
+"Last-Translator: Omer I.S. <omeritzicschwartz@gmail.com>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/super-tux-party/"
+"minigamesbowling/he/>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 4.5\n"
+
+msgid "BOWLING_FINISH_MSG"
+msgstr "סיום!"
+
+msgid "MINIGAME_ACTION_JUMP"
+msgstr "קפיצה"
+
+msgid "MINIGAME_NAME"
+msgstr "כדורת"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"שחקן בודד יכול להעיף את כל השחקנים האחרים מהרציפים שלהם כדי לנצח.\n"
+"אם נגמר הזמן, הקבוצה מנצחת."
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "לזוז ימינה"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "לזוז שמאלה"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "לזוז למטה"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "לזוז למעלה"
+
+msgid "MINIGAME_ACTION_THROW"
+msgstr "זריקת כדור - שחקן בודד בלבד"

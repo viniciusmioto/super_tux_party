@@ -1,0 +1,117 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://c5t1stycj8380"
+path="res://.godot/imported/room.glb-a97b8cf92ab7e45ee8bf26d9d05464c4.scn"
+
+[deps]
+
+source_file="res://plugins/minigames/haunted_dreams/room.glb"
+dest_files=["res://.godot/imported/room.glb-a97b8cf92ab7e45ee8bf26d9d05464c4.scn"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Scene Root"
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={
+"materials": {
+"Lamp_Bulb.001": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/haunted_dreams/materials/Lamp_Bulb.001.tres"
+},
+"Lamp_base_material.001": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/haunted_dreams/materials/Lamp_base_material.001.tres"
+},
+"Lampholder_material.001": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/haunted_dreams/materials/Lampholder_material.001.tres"
+},
+"Lampshade_material.001": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/haunted_dreams/materials/Lampshade_material.001.tres"
+},
+"Lampstrings_material.001": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/haunted_dreams/materials/Lampstrings_material.001.tres"
+},
+"Material.004": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/haunted_dreams/materials/Material.004.tres"
+},
+"Material.005": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/haunted_dreams/materials/Material.005.tres"
+},
+"Material.006": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/haunted_dreams/materials/Material.006.tres"
+},
+"Material.008": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/haunted_dreams/materials/Material.008.tres"
+},
+"Shelves": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/haunted_dreams/materials/Shelves.tres"
+},
+"Wood": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/haunted_dreams/materials/Wood.tres"
+},
+"cobwebs": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/haunted_dreams/materials/cobwebs.tres"
+},
+"crate": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/haunted_dreams/materials/crate.tres"
+},
+"floor": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/haunted_dreams/materials/floor.tres"
+},
+"handle": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/haunted_dreams/materials/handle.tres"
+},
+"trash_green": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/haunted_dreams/materials/trash_green.tres"
+},
+"trash_pink": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/haunted_dreams/materials/trash_pink.tres"
+},
+"trash_yellow": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/haunted_dreams/materials/trash_yellow.tres"
+},
+"trashcan": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/haunted_dreams/materials/trashcan.tres"
+},
+"wall": {
+"use_external/enabled": true,
+"use_external/path": "res://plugins/minigames/haunted_dreams/materials/wall.tres"
+}
+}
+}
+gltf/naming_version=0
+gltf/embedded_image_handling=1

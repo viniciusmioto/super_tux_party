@@ -1,0 +1,22 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-11-25 13:29+0000\n"
+"Last-Translator: Jakub Fabijan <animatorzPolski@gmail.com>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/super-tux-party/"
+"minigamesboat_rally/pl/>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.4-dev\n"
+
+msgid "MINIGAME_ACTION_PADDLE"
+msgstr "Wiosłowanie"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr "Gracze muszą dotrzeć do lini mety nie dając się trafić bombą"
+
+msgid "MINIGAME_NAME"
+msgstr "Wyścig łódek"

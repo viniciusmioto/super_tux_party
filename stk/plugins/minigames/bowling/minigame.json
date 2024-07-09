@@ -1,0 +1,23 @@
+{
+  "name": "MINIGAME_NAME",
+  "scene_path": "res://plugins/minigames/bowling/minigame.tscn",
+  "image_path": "res://plugins/minigames/bowling/screenshot.png",
+  "translation_directory": "res://plugins/minigames/bowling/translations",
+  "type": ["1v3"],
+  "description": "MINIGAME_DESCRIPTION",
+  "controls": [
+    {
+      "actions": ["spacer", "up", "spacer", "left", "down", "right"],
+      "text": "MINIGAME_ACTION_MOVE"
+    },
+    {
+      "actions": ["action1"],
+      "text": "MINIGAME_ACTION_JUMP"
+    },
+    {
+      "actions": ["action2"],
+      "text": "MINIGAME_ACTION_THROW",
+      "team": 1
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-07-06 21:41+0000\n"
+"Last-Translator: Yannick A. <yannick.armand@protonmail.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/super-tux-party/"
+"minigamesforest_run/fr/>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.2-dev\n"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr "Sautez et courez jusqu'à la ligne d'arrivée"
+
+msgid "MINIGAME_ACTION_JUMP"
+msgstr "Sauter"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Se déplacer vers la droite"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Se déplacer vers la gauche"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Se déplacer vers le bas"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Se déplacer vers le haut"
+
+msgid "MINIGAME_NAME"
+msgstr "Course dans la forêt"

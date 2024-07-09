@@ -1,0 +1,37 @@
+
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2019-10-29 23:16:00.263763\n"
+"Last-Translator: Automatic generated\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "MINIGAME_NAME"
+msgstr "Escape from Lava"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr "Players race against each other to reach the top, while the lava is rising beneath.\nThey have to pass through multiple doors. One of each these doors is blocked and won't open.\nThe first player that makes it safe to the top wins!"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Move Up"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Move Down"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Move Left"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Move Right"
+
+msgid "ESCAPE_FROM_LAVA_FINISH_MSG"
+msgstr "Finish!"
+

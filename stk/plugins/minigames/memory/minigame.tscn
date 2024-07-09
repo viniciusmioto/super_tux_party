@@ -1,0 +1,172 @@
+[gd_scene load_steps=9 format=3 uid="uid://wltosiqal3qv"]
+
+[ext_resource type="PackedScene" uid="uid://c32he6yne4syd" path="res://plugins/minigames/memory/card.tscn" id="1"]
+[ext_resource type="Script" path="res://plugins/minigames/memory/player.gd" id="2"]
+[ext_resource type="Script" path="res://plugins/minigames/memory/minigame.gd" id="3"]
+[ext_resource type="PackedScene" uid="uid://7vgfj0ad020a" path="res://common/scenes/overlays/score_overlay.tscn" id="4"]
+[ext_resource type="AudioStream" uid="uid://ikgno6hqd5ks" path="res://plugins/minigames/memory/84322__splashdust__flipcard.wav" id="5"]
+[ext_resource type="AudioStream" uid="uid://t4gqodkiwly6" path="res://plugins/minigames/memory/montage.ogg" id="6"]
+[ext_resource type="AudioStream" uid="uid://deymll0vpnxxv" path="res://assets/sounds/correct.wav" id="7"]
+
+[sub_resource type="Environment" id="Environment_wcidd"]
+background_mode = 1
+background_color = Color(0.101961, 0.145098, 0.188235, 1)
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("3")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -1.62921e-07, 1, 0, -1, -1.62921e-07, 0, 20, 0)
+environment = SubResource("Environment_wcidd")
+
+[node name="Player1" type="Node3D" parent="."]
+script = ExtResource("2")
+idx = 1
+ally = NodePath("../Player2")
+
+[node name="Flip" type="AudioStreamPlayer" parent="Player1"]
+stream = ExtResource("5")
+
+[node name="Point" type="AudioStreamPlayer" parent="Player1"]
+stream = ExtResource("7")
+
+[node name="Player2" type="Node3D" parent="."]
+script = ExtResource("2")
+idx = 2
+column = 7
+ally = NodePath("../Player1")
+
+[node name="Flip" type="AudioStreamPlayer" parent="Player2"]
+stream = ExtResource("5")
+bus = &"Effects"
+
+[node name="Point" type="AudioStreamPlayer" parent="Player2"]
+stream = ExtResource("7")
+bus = &"Effects"
+
+[node name="Player3" type="Node3D" parent="."]
+script = ExtResource("2")
+idx = 3
+row = 4
+ally = NodePath("../Player4")
+
+[node name="Flip" type="AudioStreamPlayer" parent="Player3"]
+stream = ExtResource("5")
+bus = &"Effects"
+
+[node name="Point" type="AudioStreamPlayer" parent="Player3"]
+stream = ExtResource("7")
+bus = &"Effects"
+
+[node name="Player4" type="Node3D" parent="."]
+script = ExtResource("2")
+idx = 4
+row = 4
+column = 7
+ally = NodePath("../Player3")
+
+[node name="Flip" type="AudioStreamPlayer" parent="Player4"]
+stream = ExtResource("5")
+bus = &"Effects"
+
+[node name="Point" type="AudioStreamPlayer" parent="Player4"]
+stream = ExtResource("7")
+bus = &"Effects"
+
+[node name="Row1" type="Node3D" parent="."]
+
+[node name="1" parent="Row1" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, -8)
+
+[node name="2" parent="Row1" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -8)
+
+[node name="3" parent="Row1" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, -8)
+
+[node name="5" parent="Row1" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0, -8)
+
+[node name="6" parent="Row1" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -8)
+
+[node name="7" parent="Row1" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5, 0, -8)
+
+[node name="Row2" type="Node3D" parent="."]
+
+[node name="1" parent="Row2" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, -3)
+
+[node name="2" parent="Row2" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -3)
+
+[node name="3" parent="Row2" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, -3)
+
+[node name="5" parent="Row2" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0, -3)
+
+[node name="6" parent="Row2" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -3)
+
+[node name="7" parent="Row2" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5, 0, -3)
+
+[node name="Row3" type="Node3D" parent="."]
+
+[node name="1" parent="Row3" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, 2)
+
+[node name="2" parent="Row3" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 2)
+
+[node name="3" parent="Row3" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, 2)
+
+[node name="5" parent="Row3" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0, 2)
+
+[node name="6" parent="Row3" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 2)
+
+[node name="7" parent="Row3" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5, 0, 2)
+
+[node name="Row4" type="Node3D" parent="."]
+
+[node name="1" parent="Row4" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, 7)
+
+[node name="2" parent="Row4" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 7)
+
+[node name="3" parent="Row4" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, 7)
+
+[node name="5" parent="Row4" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0, 7)
+
+[node name="6" parent="Row4" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 7)
+
+[node name="7" parent="Row4" instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5, 0, 7)
+
+[node name="ScoreOverlay" parent="." instance=ExtResource("4")]
+layout_mode = 3
+anchors_preset = 15
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6")
+volume_db = -10.0
+autoplay = true
+bus = &"Music"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

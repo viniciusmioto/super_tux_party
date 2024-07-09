@@ -1,0 +1,32 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2021-06-03 20:32+0000\n"
+"Last-Translator: Liu Tao <lyuutau@outlook.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"super-tux-party/minigamesescape_from_lava_1v3/zh_Hans/>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 4.7-dev\n"
+
+msgid "ESCAPE_FROM_LAVA_FINISH_MSG"
+msgstr ""
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "上升"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"玩家们互相竞赛，以到达顶部，而下面的熔岩正在上升。\n"
+"他们必须通过多个门。这些门中有一个被堵住了，打不开。\n"
+"第一个安全到达顶层的玩家获胜!"
+
+msgid "MINIGAME_NAME"
+msgstr "逃离熔岩"

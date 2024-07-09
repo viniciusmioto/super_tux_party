@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ch7l8mi25vcrm"
+path="res://.godot/imported/Wind Run.ogg-f1dcca5d2a77d1dad804219193a5b882.oggvorbisstr"
+
+[deps]
+
+source_file="res://plugins/minigames/dungeon_parkour/Wind Run.ogg"
+dest_files=["res://.godot/imported/Wind Run.ogg-f1dcca5d2a77d1dad804219193a5b882.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://br2agcfephylr"]
+
+[ext_resource type="Script" path="res://plugins/minigames/escape_from_lava_1v3/player.gd" id="1"]
+
+[node name="Player" type="CharacterBody3D" groups=["players"]]
+script = ExtResource("1")
+
+[node name="Model" type="Node3D" parent="."]
+
+[node name="Shape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, 0)
+
+[node name="Timer" type="Timer" parent="."]
+process_mode = 1
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

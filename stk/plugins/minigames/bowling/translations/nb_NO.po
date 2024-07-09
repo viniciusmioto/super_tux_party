@@ -1,0 +1,48 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2021-02-28 04:50+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
+"super-tux-party/minigamesbowling/nb_NO/>\n"
+"Language: nb_NO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5\n"
+
+msgid "BOWLING_FINISH_MSG"
+msgstr "Slutt!"
+
+#, fuzzy
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"Enkeltspilleren må bølle alle andre spillere av plattformen for å vinne.\n"
+"Hvis tiden går ut, vinner gruppen. Hold øye med fallende kister. Hvis de "
+"treffer deg blir du forslått, men de blokkerer også kuler."
+
+msgid "MINIGAME_ACTION_THROW"
+msgstr "Kast ball - kun enkeltspiller"
+
+msgid "MINIGAME_ACTION_JUMP"
+msgstr "Hopp"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Flytt til høyre"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Flytt til venstre"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Flytt nedover"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Flytt oppover"
+
+msgid "MINIGAME_NAME"
+msgstr "Bowling"

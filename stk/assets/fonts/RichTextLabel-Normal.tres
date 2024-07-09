@@ -1,0 +1,9 @@
+[gd_resource type="FontVariation" load_steps=4 format=3 uid="uid://nkxv3prgq7dw"]
+
+[ext_resource type="FontFile" uid="uid://y4ykxp5u2qxq" path="res://assets/fonts/IBM-Plex-Sans/IBMPlexSans-Regular.otf" id="1"]
+[ext_resource type="FontFile" uid="uid://biitd15jepj85" path="res://assets/fonts/Liberation-Sans/LiberationSans-Regular.ttf" id="2"]
+[ext_resource type="FontFile" uid="uid://dsakatno8suot" path="res://assets/fonts/Amiri/Amiri-Regular.ttf" id="3"]
+
+[resource]
+base_font = ExtResource("1")
+fallbacks = Array[Font]([ExtResource("2"), ExtResource("3")])

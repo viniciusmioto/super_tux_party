@@ -1,0 +1,52 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2020-08-30 19:36+0000\n"
+"Last-Translator: ssantos <ssantos@web.de>\n"
+"Language-Team: Portuguese (Portugal) <https://hosted.weblate.org/projects/"
+"super-tux-party/minigamesescape_from_lava_1v3/pt_PT/>\n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2.1-dev\n"
+
+msgid "ESCAPE_FROM_LAVA_FINISH_MSG"
+msgstr "Acabou!"
+
+msgid "MINIGAME_ACTION_OBSTRUCT_THREE"
+msgstr "Porta de obstrução 3 - apenas jogador solo"
+
+msgid "MINIGAME_ACTION_OBSTRUCT_TWO"
+msgstr "Porta de obstrução 2 - apenas jogador solo"
+
+msgid "MINIGAME_ACTION_OBSTRUCT_ONE"
+msgstr "Porta de obstrução 1 - apenas jogador solo"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"Os jogadores correm uns contra os outros para chegar ao topo, enquanto a "
+"lava está a subir por baixo.\n"
+"Eles têm de passar por várias portas. Uma de cada uma destas portas está "
+"bloqueada e não abre.\n"
+"O primeiro jogador que conseguir chegar ao topo ganha!"
+
+msgid "MINIGAME_NAME"
+msgstr "Escape from Lava"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Mover para a direita"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Mover para a esquerda"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Descer"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Subir"

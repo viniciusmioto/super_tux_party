@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b6oww3ktmplc4"]
+
+[ext_resource type="Texture2D" uid="uid://70dhkejsgpos" path="res://assets/models/nature/Textures/Flowers.png" id="1_of8c2"]
+
+[resource]
+resource_name = "Flowers"
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+cull_mode = 2
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("1_of8c2")

@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://bssuyfl74vm4o"]
+
+[ext_resource type="Texture2D" uid="uid://cfujd5y86ott5" path="res://common/scenes/board_logic/controller/icons/cookie.png" id="1"]
+[ext_resource type="Script" path="res://client/rewardscreens/cookie_text.gd" id="2"]
+
+[node name="CookieText" type="VBoxContainer"]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+alignment = 2
+script = ExtResource("2")
+
+[node name="Line1" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(130, 85)
+layout_mode = 2
+alignment = 2
+
+[node name="Reward" type="Label" parent="Line1"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+
+[node name="TextureRect" type="TextureRect" parent="Line1"]
+layout_mode = 2
+texture = ExtResource("1")
+stretch_mode = 5
+
+[node name="Line2" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(0, 65)
+layout_mode = 2
+alignment = 2
+
+[node name="Total" type="Label" parent="Line2"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+
+[node name="TextureRect" type="TextureRect" parent="Line2"]
+layout_mode = 2
+texture = ExtResource("1")
+stretch_mode = 5

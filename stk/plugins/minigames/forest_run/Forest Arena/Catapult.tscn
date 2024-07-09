@@ -1,0 +1,149 @@
+[gd_scene load_steps=14 format=3 uid="uid://dm5cn6f42jwlx"]
+
+[ext_resource type="PackedScene" uid="uid://dxudy6yyrypm1" path="res://plugins/minigames/forest_run/Forest Arena/exported/CatapultBase.escn" id="1"]
+[ext_resource type="Script" path="res://plugins/minigames/forest_run/Forest Arena/catapult.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://6fekp4by6b2b" path="res://plugins/minigames/forest_run/Forest Arena/ColorPaletteNormal.png" id="3"]
+[ext_resource type="Material" uid="uid://vhs1rpuqw4me" path="res://plugins/minigames/forest_run/Forest Arena/material.tres" id="3_1slmn"]
+[ext_resource type="PackedScene" uid="uid://byi3ur1w2j7hr" path="res://plugins/minigames/forest_run/Forest Arena/exported/CatapultArm.escn" id="4"]
+[ext_resource type="PackedScene" uid="uid://bpoeor3hh7wkx" path="res://plugins/minigames/forest_run/Forest Arena/exported/CatapultWheel.escn" id="5"]
+[ext_resource type="PackedScene" uid="uid://b4lrhddynaioj" path="res://plugins/minigames/forest_run/Forest Arena/exported/CannonBall.escn" id="6"]
+
+[sub_resource type="Animation" id="Animation_ckbik"]
+length = 0.001
+
+[sub_resource type="Animation" id="2"]
+resource_name = "throw"
+length = 2.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Scene Root:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2, 2.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(-100, 0, 0), Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(-100, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Scene Root6:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1, 2, 2.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(10, 0, 0), Vector3(10, 0, 0), Vector3(-90, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Scene Root6:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1, 2.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Scene Root6/ForestCannonBall:surface_material_override/0:albedo_color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1, 1.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yklcu"]
+_data = {
+"RESET": SubResource("Animation_ckbik"),
+"throw": SubResource("2")
+}
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_stnb0"]
+transparency = 4
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("3")
+
+[sub_resource type="StandardMaterial3D" id="4"]
+shading_mode = 0
+vertex_color_use_as_albedo = true
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_nmime"]
+
+[node name="Catapult" instance=ExtResource("1")]
+script = ExtResource("2")
+
+[node name="ForestCatapultBase" parent="." index="0"]
+surface_material_override/0 = ExtResource("3_1slmn")
+
+[node name="Scene Root" parent="." index="1" instance=ExtResource("4")]
+transform = Transform3D(1, 0, 0, 0, -0.173648, 0.984807, 0, -0.984807, -0.173648, 0, 1.25, -0.8)
+
+[node name="ForestCatapultArm" parent="Scene Root" index="0"]
+surface_material_override/0 = ExtResource("3_1slmn")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2"]
+libraries = {
+"": SubResource("AnimationLibrary_yklcu")
+}
+
+[node name="Scene Root2" parent="." index="3" instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1)
+
+[node name="ForestCatapultWheel" parent="Scene Root2" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1.19249e-08, -1, 0, 1, 1.19249e-08, 0, 0, 0)
+surface_material_override/0 = ExtResource("3_1slmn")
+
+[node name="Scene Root3" parent="." index="4" instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1)
+
+[node name="ForestCatapultWheel" parent="Scene Root3" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1.19249e-08, -1, 0, 1, 1.19249e-08, 0, 0, 0)
+surface_material_override/0 = ExtResource("3_1slmn")
+
+[node name="Scene Root4" parent="." index="5" instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="ForestCatapultWheel" parent="Scene Root4" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1.19249e-08, -1, 0, 1, 1.19249e-08, 0, 0, 0)
+surface_material_override/0 = ExtResource("3_1slmn")
+
+[node name="Scene Root5" parent="." index="6" instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="ForestCatapultWheel" parent="Scene Root5" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1.19249e-08, -1, 0, 1, 1.19249e-08, 0, 0, 0)
+surface_material_override/0 = ExtResource("3_1slmn")
+
+[node name="Scene Root6" parent="." index="7" instance=ExtResource("6")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1.25, -0.8)
+visible = false
+
+[node name="ForestCannonBall" parent="Scene Root6" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.65)
+surface_material_override/0 = SubResource("StandardMaterial3D_stnb0")
+
+[node name="Marker3D" type="Marker3D" parent="." index="8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, -10)
+
+[node name="Preview" type="MeshInstance3D" parent="." index="9"]
+material_override = SubResource("4")
+mesh = SubResource("ImmediateMesh_nmime")
+
+[editable path="Scene Root"]
+[editable path="Scene Root2"]
+[editable path="Scene Root3"]
+[editable path="Scene Root4"]
+[editable path="Scene Root5"]
+[editable path="Scene Root6"]

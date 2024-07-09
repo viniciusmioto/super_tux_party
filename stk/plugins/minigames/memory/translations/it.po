@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-04-09 16:06+0000\n"
+"Last-Translator: G R <gradaellig@gmail.com>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/super-tux-party/"
+"minigamesmemory/it/>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.12-dev\n"
+
+msgid "MINIGAME_ACTION_FLIP_CARD"
+msgstr "Gira la carta"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"I giocatori devono trovare le coppie di carte corrispondenti.\n"
+"La squadra con più coppie vince!"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Retrocedi"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Vai a sinistra"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Vai a destra"
+
+msgid "MINIGAME_NAME"
+msgstr "Memory"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Vai avanti"

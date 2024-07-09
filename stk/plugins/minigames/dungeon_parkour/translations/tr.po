@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-10-23 16:26+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/super-tux-party/"
+"minigamesdungeon_parkour/tr/>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.3.1\n"
+
+msgid "MINIGAME_ACTION_JUMP"
+msgstr "Zıpla"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr "Bitiş çizgisine kadar zıpla ve koş"
+
+msgid "MINIGAME_NAME"
+msgstr "Zindan Parkuru"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Sağa"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Sola"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Aşağı"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Yukarı"

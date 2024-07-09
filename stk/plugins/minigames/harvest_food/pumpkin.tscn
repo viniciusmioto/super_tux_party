@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnmo8dae5s12t"]
+
+[ext_resource type="Script" path="res://plugins/minigames/harvest_food/pumpkin.gd" id="1_oca32"]
+[ext_resource type="PackedScene" uid="uid://boid7fvpjjbw2" path="res://plugins/minigames/harvest_food/pumpkin_model.tscn" id="2_q3bhs"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_xe8ak"]
+height = 1.0
+radius = 0.75
+
+[node name="Pumpkin" type="RigidBody3D"]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_oca32")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("CylinderShape3D_xe8ak")
+
+[node name="Pumpkin" parent="." instance=ExtResource("2_q3bhs")]

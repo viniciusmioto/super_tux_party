@@ -1,0 +1,386 @@
+[gd_scene load_steps=13 format=3 uid="uid://cgbsssfd3qc50"]
+
+[ext_resource type="Script" path="res://plugins/boards/KDEValley/board.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://c4c62erhr3xkm" path="res://plugins/boards/KDEValley/landscape/kdevalley.glb" id="2"]
+[ext_resource type="Material" uid="uid://byv360y45sm7g" path="res://assets/materials/water_still.tres" id="3"]
+[ext_resource type="ArrayMesh" uid="uid://dngsl57llrrfp" path="res://assets/models/tree/tree.obj" id="4"]
+[ext_resource type="PackedScene" uid="uid://dcyoe2uryyyef" path="res://common/scenes/board_logic/controller/controller.tscn" id="5"]
+[ext_resource type="PackedScene" uid="uid://wtj7iedl45l7" path="res://common/scenes/board_logic/player_board/player_board.tscn" id="6"]
+[ext_resource type="PackedScene" uid="uid://dw3dff20fschf" path="res://common/scenes/board_logic/node/node.tscn" id="7"]
+[ext_resource type="PackedScene" uid="uid://bslb0dokcqark" path="res://plugins/boards/KDEValley/dragons/dragon2.glb" id="9_s2m6t"]
+[ext_resource type="PackedScene" uid="uid://dfkmfw54nllxg" path="res://plugins/boards/KDEValley/dragons/dragon1.glb" id="10_j1roq"]
+[ext_resource type="AudioStream" uid="uid://dv2o7xmoruojj" path="res://assets/music/boards/kdevalley.wav" id="11"]
+[ext_resource type="PackedScene" uid="uid://bagr3rxpgympt" path="res://common/scenes/speech_dialog/speech_dialog.tscn" id="12"]
+
+[sub_resource type="PlaneMesh" id="1"]
+size = Vector2(100, 100)
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1")
+
+[node name="Water" type="MeshInstance3D" parent="."]
+mesh = SubResource("1")
+surface_material_override/0 = ExtResource("3")
+
+[node name="kdevalley2" parent="." instance=ExtResource("2")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
+
+[node name="Decoration" type="Node3D" parent="."]
+
+[node name="Tree" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -29.2382, 1.46875, 6.92944)
+mesh = ExtResource("4")
+
+[node name="Tree2" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -25.8816, 1.55955, 9.45717)
+mesh = ExtResource("4")
+
+[node name="Tree3" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -25.8816, 1.50787, 4.58257)
+mesh = ExtResource("4")
+
+[node name="Tree5" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -25.8816, 1.57195, -1.30558)
+mesh = ExtResource("4")
+
+[node name="Tree17" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -28.4398, 1.49898, 1.66645)
+mesh = ExtResource("4")
+
+[node name="Tree6" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -23.3949, 1.45511, -7.14496)
+mesh = ExtResource("4")
+
+[node name="Tree16" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -26.1661, 1.51293, -5.29571)
+mesh = ExtResource("4")
+
+[node name="Tree7" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -23.3949, 1.56366, -15.2009)
+mesh = ExtResource("4")
+
+[node name="Tree18" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -21.5821, 1.56673, -12.3124)
+mesh = ExtResource("4")
+
+[node name="Tree22" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.800537, 1.81835, -20.6216)
+mesh = ExtResource("4")
+
+[node name="Tree23" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1.54677, 1.81835, -22.35)
+mesh = ExtResource("4")
+
+[node name="Tree24" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 5.54703, 2.09149, -22.35)
+mesh = ExtResource("4")
+
+[node name="Tree25" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 10.5371, 1.91173, -22.35)
+mesh = ExtResource("4")
+
+[node name="Tree26" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 10.5371, 1.56807, -18.9046)
+mesh = ExtResource("4")
+
+[node name="Tree27" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 4.00112, 1.61472, -18.9046)
+mesh = ExtResource("4")
+
+[node name="Tree19" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -26.2025, 1.80864, -9.90665)
+mesh = ExtResource("4")
+
+[node name="Tree8" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.288674, 1.64389, 14.5891)
+mesh = ExtResource("4")
+
+[node name="Tree9" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 13.7943, 1.5759, 20.9006)
+mesh = ExtResource("4")
+
+[node name="Tree10" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 9.45846, 1.5759, 18.0946)
+mesh = ExtResource("4")
+
+[node name="Tree11" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 9.45846, 1.5759, 22.005)
+mesh = ExtResource("4")
+
+[node name="Tree12" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 4.84636, 1.53205, 23.7548)
+mesh = ExtResource("4")
+
+[node name="Tree13" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.179826, 1.59751, 27.1998)
+mesh = ExtResource("4")
+
+[node name="Tree14" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 19.092, 1.43098, 19.5057)
+mesh = ExtResource("4")
+
+[node name="Tree15" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 15.4441, 0.931494, 18.0142)
+mesh = ExtResource("4")
+
+[node name="Tree4" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -28.6536, 1.61553, 16.5553)
+mesh = ExtResource("4")
+
+[node name="Tree20" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -30.8745, 0.981702, 12.8529)
+mesh = ExtResource("4")
+
+[node name="Tree21" type="MeshInstance3D" parent="Decoration"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -31.0632, 1.41996, 18.5376)
+mesh = ExtResource("4")
+
+[node name="Controller" parent="." instance=ExtResource("5")]
+COOKIES_FOR_CAKE = 20
+MAX_TURNS = 30
+start_node = NodePath("../Nodes/Start")
+
+[node name="Player1" parent="." instance=ExtResource("6")]
+
+[node name="Player2" parent="." instance=ExtResource("6")]
+
+[node name="Player3" parent="." instance=ExtResource("6")]
+
+[node name="Player4" parent="." instance=ExtResource("6")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.906308, -0.144544, 0.397131, 0, 0.939693, 0.34202, -0.422618, -0.309976, 0.851651, 0, 38.1499, 34.4648)
+light_energy = 1.5
+shadow_enabled = true
+
+[node name="Nodes" type="Node3D" parent="."]
+
+[node name="Start" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.5583, 1.70851, 12.6072)
+_visible = false
+next = Array[NodePath]([NodePath("../Node2")])
+
+[node name="Node" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.910041, 0, -0.414519, 0, 1, 0, 0.414519, 0, 0.910041, -24.8956, 1.80991, 18.4694)
+type = 1
+next = Array[NodePath]([NodePath("../Node2")])
+prev = Array[NodePath]([NodePath("../Node26")])
+
+[node name="Node2" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.4528, 1.83667, 13.3766)
+next = Array[NodePath]([NodePath("../Node3")])
+prev = Array[NodePath]([NodePath("../Node"), NodePath("../Start"), NodePath("../Node35")])
+
+[node name="Node3" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.967968, 0, 0.251073, 0, 1, 0, -0.251073, 0, 0.967968, -22.3815, 1.83892, 8.34419)
+next = Array[NodePath]([NodePath("../Node4")])
+prev = Array[NodePath]([NodePath("../Node2")])
+
+[node name="Node4" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.7387, 1.81625, 2.56897)
+type = 1
+next = Array[NodePath]([NodePath("../Node5")])
+prev = Array[NodePath]([NodePath("../Node3")])
+
+[node name="Node5" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.94865, 0, -0.316328, 0, 1, 0, 0.316328, 0, 0.94865, -21.3293, 1.82819, -3.48174)
+next = Array[NodePath]([NodePath("../Node11")])
+prev = Array[NodePath]([NodePath("../Node4")])
+
+[node name="Node11" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.2964, 1.82819, -7.41037)
+_visible = false
+next = Array[NodePath]([NodePath("../Node6")])
+prev = Array[NodePath]([NodePath("../Node5")])
+
+[node name="Node6" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.9674, 0, 0.253251, 0, 1, 0, -0.253251, 0, 0.9674, -16.8773, 1.87362, -9.89212)
+next = Array[NodePath]([NodePath("../Node7")])
+prev = Array[NodePath]([NodePath("../Node11")])
+
+[node name="Node7" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.976964, 0, -0.213406, 0, 1, 0, 0.213406, 0, 0.976964, -11.5895, 1.86081, -12.8209)
+type = 1
+next = Array[NodePath]([NodePath("../Node8")])
+prev = Array[NodePath]([NodePath("../Node6")])
+
+[node name="Node8" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.911331, 0, -0.411673, 0, 1, 0, 0.411673, 0, 0.911331, -4.69606, 1.84028, -14.006)
+next = Array[NodePath]([NodePath("../Node9")])
+prev = Array[NodePath]([NodePath("../Node7")])
+
+[node name="Node9" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.849975, 0, 0.526822, 0, 1, 0, -0.526822, 0, 0.849975, 1.2783, 1.83045, -14.0915)
+type = 3
+next = Array[NodePath]([NodePath("../Node10")])
+prev = Array[NodePath]([NodePath("../Node8")])
+
+[node name="Node10" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.960484, 0.00271981, 0.278321, -0.0028317, 0.999996, 0, -0.27832, -0.000788121, 0.960488, 8.49545, 1.78804, -12.9348)
+potential_cake = true
+next = Array[NodePath]([NodePath("../dragon1")])
+prev = Array[NodePath]([NodePath("../Node9")])
+
+[node name="dragon1" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.993801, 0, -0.111174, 0, 1, 0, 0.111174, 0, 0.993801, 15.0588, 1.83231, -8.96335)
+type = 2
+next = Array[NodePath]([NodePath("../Node12")])
+prev = Array[NodePath]([NodePath("../Node10")])
+
+[node name="Dragon" parent="Nodes/dragon1" instance=ExtResource("10_j1roq")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 0.5, 0.05, -0.8)
+
+[node name="Node12" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.835836, 0, 0.548979, 0, 1, 0, -0.548979, 0, 0.835836, 19.203, 1.87093, -3.11643)
+type = 1
+next = Array[NodePath]([NodePath("../Node13"), NodePath("../Node28")])
+prev = Array[NodePath]([NodePath("../dragon1")])
+
+[node name="Node13" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.1372, 1.83819, 1.24555)
+next = Array[NodePath]([NodePath("../Node14")])
+prev = Array[NodePath]([NodePath("../Node12")])
+
+[node name="Node14" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.819842, 0, -0.57259, 0, 1, 0, 0.57259, 0, 0.819842, 17.4666, 1.82438, 6.52683)
+potential_cake = true
+next = Array[NodePath]([NodePath("../Node15")])
+prev = Array[NodePath]([NodePath("../Node13")])
+
+[node name="Node15" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.535002, 0, -0.844852, 0, 1, 0, 0.844852, 0, 0.535002, 13.2303, 1.81833, 10.5254)
+type = 5
+next = Array[NodePath]([NodePath("../Node16")])
+prev = Array[NodePath]([NodePath("../Node14")])
+
+[node name="Node16" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(1, 0, 0, 0, 0.999999, -0.0011796, 0, 0.0011796, 0.999999, 7.80787, 1.82262, 13.5046)
+type = 1
+next = Array[NodePath]([NodePath("../Node17"), NodePath("../Node23")])
+prev = Array[NodePath]([NodePath("../Node15"), NodePath("../Node34")])
+
+[node name="Node17" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.924673, 0, 0.380764, 0, 1, 0, -0.380764, 0, 0.924673, 4.16278, 1.8439, 18.5086)
+next = Array[NodePath]([NodePath("../Node18")])
+prev = Array[NodePath]([NodePath("../Node16")])
+
+[node name="Node18" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.964068, 0, 0.265657, 0, 1, 0, -0.265657, 0, 0.964068, -0.426109, 1.81974, 23.8584)
+type = 3
+next = Array[NodePath]([NodePath("../Node19")])
+prev = Array[NodePath]([NodePath("../Node17")])
+
+[node name="Node19" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.999866, 0, -0.0163705, 0, 1, 0, 0.0163705, 0, 0.999866, -5.87241, 1.84382, 28.2678)
+potential_cake = true
+next = Array[NodePath]([NodePath("../Node20")])
+prev = Array[NodePath]([NodePath("../Node18")])
+
+[node name="Node20" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.808545, 0, 0.588435, 0, 1, 0, -0.588435, 0, 0.808545, -12.9186, 1.82006, 30.6913)
+type = 1
+next = Array[NodePath]([NodePath("../Node21")])
+prev = Array[NodePath]([NodePath("../Node19")])
+
+[node name="Node21" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -19.4483, 1.84223, 29.7473)
+type = 6
+next = Array[NodePath]([NodePath("../Node22")])
+prev = Array[NodePath]([NodePath("../Node20")])
+
+[node name="Node22" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.945853, 0, -0.324594, 0, 1, 0, 0.324594, 0, 0.945853, -24.0291, 1.82421, 25.7307)
+type = 4
+next = Array[NodePath]([NodePath("../Node26")])
+prev = Array[NodePath]([NodePath("../Node21")])
+
+[node name="Node26" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.0116, 1.86406, 22.8267)
+_visible = false
+next = Array[NodePath]([NodePath("../Node")])
+prev = Array[NodePath]([NodePath("../Node22")])
+
+[node name="Node23" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.967599, 0, 0.252492, 0, 1, 0, -0.252492, 0, 0.967599, 2.43152, 1.82522, 11.9121)
+next = Array[NodePath]([NodePath("../Node24")])
+prev = Array[NodePath]([NodePath("../Node16")])
+
+[node name="Node24" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -1.94491, 1.81723, 10.7794)
+type = 5
+next = Array[NodePath]([NodePath("../Node25")])
+prev = Array[NodePath]([NodePath("../Node23")])
+
+[node name="Node25" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.835242, 0, 0.549883, 0, 1, 0, -0.549883, 0, 0.835242, -7.10158, 1.83188, 10.0921)
+potential_cake = true
+next = Array[NodePath]([NodePath("../dragon2")])
+prev = Array[NodePath]([NodePath("../Node24")])
+
+[node name="dragon2" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.990353, 0, -0.138568, 0, 1, 0, 0.138568, 0, 0.990353, -11.9087, 1.80926, 11.3914)
+type = 2
+next = Array[NodePath]([NodePath("../Node27")])
+prev = Array[NodePath]([NodePath("../Node25")])
+
+[node name="Dragon" parent="Nodes/dragon2" instance=ExtResource("9_s2m6t")]
+transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -0.3, 0.05, -0.9)
+
+[node name="Node27" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.978717, 0, -0.205214, 0, 1, 0, 0.205214, 0, 0.978717, -16.6008, 1.81279, 13.1194)
+next = Array[NodePath]([NodePath("../Node35")])
+prev = Array[NodePath]([NodePath("../dragon2")])
+
+[node name="Node35" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.978717, 0, -0.205214, 0, 1, 0, 0.205214, 0, 0.978717, -18.9107, 1.81279, 13.6776)
+_visible = false
+next = Array[NodePath]([NodePath("../Node2")])
+prev = Array[NodePath]([NodePath("../Node27")])
+
+[node name="Node28" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.995611, 0, 0.093587, 0, 1, 0, -0.093587, 0, 0.995611, 24.6091, 1.80258, -0.767163)
+next = Array[NodePath]([NodePath("../Node29")])
+prev = Array[NodePath]([NodePath("../Node12")])
+
+[node name="Node29" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 28.4518, 1.84403, 2.17441)
+type = 4
+next = Array[NodePath]([NodePath("../Node30")])
+prev = Array[NodePath]([NodePath("../Node28")])
+
+[node name="Node30" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.98862, 0, 0.150433, 0, 1, 0, -0.150433, 0, 0.98862, 30.205, 1.8703, 6.37827)
+type = 1
+next = Array[NodePath]([NodePath("../Node31")])
+prev = Array[NodePath]([NodePath("../Node29")])
+
+[node name="Node31" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.795738, 0, -0.605641, 0, 1, 0, 0.605641, 0, 0.795738, 28.1077, 1.83493, 11.1191)
+potential_cake = true
+next = Array[NodePath]([NodePath("../Node32")])
+prev = Array[NodePath]([NodePath("../Node30")])
+
+[node name="Node32" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.2916, 1.81492, 14.9229)
+next = Array[NodePath]([NodePath("../Node33")])
+prev = Array[NodePath]([NodePath("../Node31")])
+
+[node name="Node33" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.936139, 0, -0.351629, 0, 1, 0, 0.351629, 0, 0.936139, 17.9468, 1.8219, 16.3956)
+type = 1
+next = Array[NodePath]([NodePath("../Node34")])
+prev = Array[NodePath]([NodePath("../Node32")])
+
+[node name="Node34" parent="Nodes" instance=ExtResource("7")]
+transform = Transform3D(0.978942, 0, 0.204137, 0, 1, 0, -0.204137, 0, 0.978942, 13.1955, 1.91665, 16.1117)
+next = Array[NodePath]([NodePath("../Node16")])
+prev = Array[NodePath]([NodePath("../Node33")])
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("11")
+autoplay = true
+
+[node name="SpeechDialog" parent="." instance=ExtResource("12")]
+
+[connection signal="trigger_event" from="Controller" to="." method="handle_event"]

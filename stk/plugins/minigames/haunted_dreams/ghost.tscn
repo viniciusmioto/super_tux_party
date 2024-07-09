@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://0ujvnm4ckadg"]
+
+[ext_resource type="PackedScene" uid="uid://c70b4ujjs1b4u" path="res://assets/models/ghost/ghost.glb" id="1_5nkfy"]
+[ext_resource type="Script" path="res://plugins/minigames/haunted_dreams/ghost.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gfqvx"]
+size = Vector3(0.5, 1, 0.5)
+
+[node name="ghost" groups=["ghost"] instance=ExtResource("1_5nkfy")]
+script = ExtResource("2")
+
+[node name="Area3D" type="Area3D" parent="." index="2"]
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0"]
+shape = SubResource("BoxShape3D_gfqvx")
+
+[connection signal="area_entered" from="Area3D" to="." method="_on_area_3d_area_entered"]
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

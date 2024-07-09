@@ -1,0 +1,101 @@
+[gd_scene load_steps=5 format=3 uid="uid://crkb02st8dl2i"]
+
+[ext_resource type="Theme" uid="uid://d3w3vt3s6ujoh" path="res://assets/defaults/default_theme.tres" id="1"]
+[ext_resource type="Script" path="res://client/menus/lobby/lobby_menu.gd" id="2"]
+[ext_resource type="PackedScene" uid="uid://ccf1udr0f0h2k" path="res://client/menus/lobby/character_menu.tscn" id="3"]
+
+[sub_resource type="Shortcut" id="2"]
+
+[node name="LobbyMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1")
+script = ExtResource("2")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Content" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer/Content"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="Sidebar" type="VBoxContainer" parent="MarginContainer/VBoxContainer/Content/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/Content"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/Content/VBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+text = "MENU_LABEL_SELECT_BOARD"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Board" type="OptionButton" parent="MarginContainer/VBoxContainer/Content/VBoxContainer"]
+layout_mode = 2
+
+[node name="Characters" type="GridContainer" parent="MarginContainer/VBoxContainer/Content/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 2
+
+[node name="Footer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Leave" type="Button" parent="MarginContainer/VBoxContainer/Footer"]
+layout_mode = 2
+shortcut = SubResource("2")
+shortcut_in_tooltip = false
+text = "MENU_LABEL_BACK"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/Footer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Lobby" type="Label" parent="MarginContainer/VBoxContainer/Footer/HBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"HeaderMedium"
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/Footer/HBoxContainer"]
+layout_mode = 2
+text = "MENU_LABEL_COPY"
+
+[node name="Start" type="Button" parent="MarginContainer/VBoxContainer/Footer"]
+layout_mode = 2
+text = "MENU_LABEL_START"
+
+[node name="CharacterMenu" parent="." instance=ExtResource("3")]
+visible = false
+layout_mode = 1
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="item_selected" from="MarginContainer/VBoxContainer/Content/VBoxContainer/Board" to="." method="_on_Board_item_selected"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Footer/Leave" to="." method="_on_Leave_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Footer/HBoxContainer/Button" to="." method="_on_lobby_code_copy"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Footer/Start" to="." method="_on_Start_pressed"]

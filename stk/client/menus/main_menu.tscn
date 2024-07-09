@@ -1,0 +1,708 @@
+[gd_scene load_steps=41 format=3 uid="uid://c6aw5cs71kqpf"]
+
+[ext_resource type="Theme" uid="uid://d3w3vt3s6ujoh" path="res://assets/defaults/default_theme.tres" id="1"]
+[ext_resource type="Script" path="res://client/menus/main_menu.gd" id="2"]
+[ext_resource type="PackedScene" uid="uid://bwy7gmeseew1j" path="res://common/scenes/sound_button/sound_button.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://jeq4trt5v2ii" path="res://client/menus/options_menu.tscn" id="6"]
+[ext_resource type="Texture2D" uid="uid://c0nrxhlddlfnb" path="res://assets/icons/loading/load7.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://irb550xf4wrh" path="res://assets/icons/loading/load5.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://bwuce5d5a2314" path="res://assets/icons/cookie-grayscale.png" id="9"]
+[ext_resource type="AudioStream" uid="uid://84xm3vqhllm4" path="res://assets/music/menus/main menu.ogg" id="10"]
+[ext_resource type="PackedScene" uid="uid://qj0eee4pl4ou" path="res://assets/tux/tux.tscn" id="11"]
+[ext_resource type="Texture2D" uid="uid://do4atdfkvupja" path="res://assets/textures/title/Title.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://c78h7wwr1xo57" path="res://assets/icons/loading/load2.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://sep57uwhhofv" path="res://assets/icons/off.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://d2wyl0yo5slun" path="res://assets/icons/loading/load3.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://djf3uyycy1b1x" path="res://assets/icons/loading/load14.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://chcupfqt004uf" path="res://assets/icons/loading/load10.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://d28f5rpbspl1l" path="res://assets/icons/loading/load8.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://c6b3ba8v2e1k4" path="res://assets/icons/loading/load13.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://bkv1hrhgpcc2x" path="res://assets/icons/loading/load0.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://c0r3tblgejqns" path="res://assets/icons/loading/load6.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://cdr6c8hds2jfa" path="res://assets/icons/loading/load1.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://ukvokr3k6dn1" path="res://assets/icons/loading/load9.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://oi5xcl2ihxb7" path="res://assets/icons/loading/load15.png" id="26"]
+[ext_resource type="Shader" path="res://common/main_menu_bg.gdshader" id="26_0hf63"]
+[ext_resource type="Texture2D" uid="uid://bf8ip2wx2vahn" path="res://assets/icons/loading/load11.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://0f02qia2tthu" path="res://assets/icons/loading/load4.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://bdfgcxc28cext" path="res://assets/icons/loading/load12.png" id="29"]
+
+[sub_resource type="Animation" id="2"]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LoadGameMenu/Title:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LoadGameMenu/Back:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-901, 397), Vector2(0, 397)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LoadGameMenu/ScrollContainer:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-913, 183), Vector2(0, 183)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("LoadGameMenu/Back:size")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(512, 35.0001), Vector2(512, 35.0001)]
+}
+
+[sub_resource type="Animation" id="3"]
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MainMenu/Buttons:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(-464, 412), Vector2(-464, 412), Vector2(128, 412)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MainMenu/TextureRect:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(128, -248), Vector2(128, -248), Vector2(128, 152)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("OptionsMenu/OptionsMenu:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1018, 133.5)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("OptionsMenu/Title:visible_ratio")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("LoadGameMenu/Back:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-901, 397)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("MainMenu/TextureRect:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.19, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="4"]
+resource_name = "OptionsMenu"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("OptionsMenu/Title:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("OptionsMenu/OptionsMenu:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-1018, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ycp77"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("OptionsMenu/OptionsMenu:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(265, 188)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_285ke"]
+_data = {
+"LoadGameMenu": SubResource("2"),
+"MainMenu": SubResource("3"),
+"OptionsMenu": SubResource("4"),
+"RESET": SubResource("Animation_ycp77")
+}
+
+[sub_resource type="Animation" id="Animation_6xc25"]
+resource_name = "ArmatureAction"
+length = 2.66667
+tracks/0/type = "rotation_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("Armature/Skeleton3D:Head")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, -0.00654644, 0.707077, 0.00654645, 0.707076, 0.0666667, 1, -0.00349526, 0.707438, 0.00348492, 0.706758, 0.133333, 1, 0.00479621, 0.70835, -0.00483469, 0.705828, 0.2, 1, 0.0170351, 0.709516, -0.0171151, 0.704276, 0.266667, 1, 0.0319141, 0.710643, -0.0320446, 0.702098, 0.4, 1, 0.0642712, 0.711989, -0.0645114, 0.696261, 0.466667, 1, 0.0790813, 0.712098, -0.0793718, 0.693082, 0.533333, 1, 0.0912312, 0.711947, -0.0915629, 0.690235, 0.6, 1, 0.0994458, 0.711722, -0.0998053, 0.688187, 0.666667, 1, 0.102465, 0.711614, -0.102835, 0.68741, 0.733333, 1, 0.0960946, 0.710899, -0.0961909, 0.690026, 0.8, 1, 0.0808522, 0.708928, -0.0802961, 0.696015, 0.866667, 1, 0.0625937, 0.706087, -0.0612587, 0.702688, 0.933333, 1, 0.0472688, 0.703302, -0.0452824, 0.707871, 1.06667, 1, 0.0472688, 0.703302, -0.0452824, 0.707871, 1.13333, 1, 0.0625937, 0.706087, -0.0612587, 0.702688, 1.2, 1, 0.0808522, 0.708928, -0.0802961, 0.696015, 1.26667, 1, 0.0960946, 0.710899, -0.0961909, 0.690026, 1.4, 1, 0.0960946, 0.710899, -0.0961909, 0.690026, 1.46667, 1, 0.0808522, 0.708928, -0.0802961, 0.696015, 1.53333, 1, 0.0625937, 0.706087, -0.0612587, 0.702688, 1.6, 1, 0.0472688, 0.703302, -0.0452824, 0.707871, 1.73333, 1, 0.0472688, 0.703302, -0.0452824, 0.707871, 1.8, 1, 0.0625937, 0.706087, -0.0612587, 0.702688, 1.86667, 1, 0.0808522, 0.708928, -0.0802961, 0.696015, 1.93333, 1, 0.0960946, 0.710899, -0.0961909, 0.690026, 2, 1, 0.102465, 0.711614, -0.102835, 0.68741, 2.06667, 1, 0.0994458, 0.711722, -0.0998053, 0.688187, 2.13333, 1, 0.0912312, 0.711947, -0.0915629, 0.690235, 2.2, 1, 0.0790813, 0.712098, -0.0793718, 0.693082, 2.26667, 1, 0.0642712, 0.711989, -0.0645115, 0.696261, 2.4, 1, 0.0319141, 0.710643, -0.0320446, 0.702098, 2.46667, 1, 0.0170351, 0.709516, -0.0171151, 0.704276, 2.53333, 1, 0.00479621, 0.70835, -0.0048347, 0.705828, 2.6, 1, -0.00349527, 0.707438, 0.00348493, 0.706758, 2.66667, 1, -0.00654644, 0.707077, 0.00654645, 0.707076)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("Armature/Skeleton3D:LeftMid")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, -0.509518, -0.490298, -0.509518, 0.490298, 0.0666667, 1, -0.510781, -0.489099, -0.510371, 0.489292, 0.133333, 1, -0.514217, -0.485827, -0.512657, 0.486555, 0.2, 1, -0.519282, -0.480963, -0.515962, 0.482499, 0.266667, 1, -0.525435, -0.474986, -0.519869, 0.477538, 0.4, 1, -0.538898, -0.461702, -0.527893, 0.466636, 0.466667, 1, -0.545204, -0.455445, -0.531261, 0.46161, 0.533333, 1, -0.550595, -0.450175, -0.533736, 0.457508, 0.6, 1, -0.554616, -0.446454, -0.53499, 0.454825, 0.666667, 1, -0.55682, -0.444841, -0.5347, 0.454053, 0.733333, 1, -0.55558, -0.447287, -0.531344, 0.457098, 0.8, 1, -0.550912, -0.453616, -0.524985, 0.463809, 0.866667, 1, -0.544851, -0.46121, -0.517687, 0.471616, 0.933333, 1, -0.539551, -0.467542, -0.511631, 0.47804, 1.06667, 1, -0.539369, -0.467603, -0.511819, 0.477985, 1.13333, 1, -0.544304, -0.461391, -0.518252, 0.471451, 1.2, 1, -0.55009, -0.453887, -0.525832, 0.463561, 1.26667, 1, -0.554849, -0.447527, -0.532097, 0.456876, 1.4, 1, -0.554849, -0.447527, -0.532097, 0.456876, 1.46667, 1, -0.55009, -0.453886, -0.525832, 0.463561, 1.53333, 1, -0.544304, -0.461391, -0.518252, 0.471451, 1.6, 1, -0.539369, -0.467603, -0.511819, 0.477985, 1.73333, 1, -0.539551, -0.467542, -0.511631, 0.47804, 1.8, 1, -0.544851, -0.46121, -0.517687, 0.471616, 1.86667, 1, -0.550912, -0.453616, -0.524985, 0.463809, 1.93333, 1, -0.55558, -0.447287, -0.531344, 0.457098, 2, 1, -0.55682, -0.444841, -0.5347, 0.454053, 2.06667, 1, -0.554616, -0.446454, -0.53499, 0.454825, 2.13333, 1, -0.550595, -0.450175, -0.533736, 0.457508, 2.2, 1, -0.545204, -0.455445, -0.531261, 0.46161, 2.26667, 1, -0.538898, -0.461702, -0.527893, 0.466636, 2.4, 1, -0.525435, -0.474986, -0.519869, 0.477538, 2.46667, 1, -0.519282, -0.480963, -0.515962, 0.482499, 2.53333, 1, -0.514217, -0.485827, -0.512657, 0.486555, 2.6, 1, -0.510781, -0.489099, -0.510371, 0.489292, 2.66667, 1, -0.509518, -0.490298, -0.509518, 0.490298)
+tracks/2/type = "rotation_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("Armature/Skeleton3D:RightMid")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, -0.51098, 0.488774, 0.51098, 0.488774, 0.0666667, 1, -0.509605, 0.490387, 0.509929, 0.48969, 0.133333, 1, -0.505854, 0.494751, 0.507061, 0.49216, 0.2, 1, -0.50028, 0.501144, 0.502788, 0.495761, 0.266667, 1, -0.493439, 0.508841, 0.497527, 0.500066, 0.4, 1, -0.478285, 0.525329, 0.485811, 0.509177, 0.466667, 1, -0.471208, 0.532776, 0.480312, 0.513238, 0.533333, 1, -0.46533, 0.538844, 0.475731, 0.516523, 0.6, 1, -0.461316, 0.542928, 0.472596, 0.51872, 0.666667, 1, -0.459832, 0.544425, 0.471436, 0.519522, 0.733333, 1, -0.462658, 0.541075, 0.47272, 0.519347, 0.8, 1, -0.46936, 0.533037, 0.475742, 0.518886, 0.866667, 1, -0.477286, 0.52336, 0.479275, 0.518254, 0.933333, 1, -0.483865, 0.515185, 0.482172, 0.517658, 1.06667, 1, -0.483865, 0.515185, 0.482172, 0.517658, 1.13333, 1, -0.477286, 0.52336, 0.479275, 0.518254, 1.2, 1, -0.46936, 0.533037, 0.475742, 0.518886, 1.26667, 1, -0.462658, 0.541075, 0.47272, 0.519347, 1.4, 1, -0.462658, 0.541075, 0.47272, 0.519347, 1.46667, 1, -0.46936, 0.533037, 0.475742, 0.518886, 1.53333, 1, -0.477286, 0.52336, 0.479275, 0.518254, 1.6, 1, -0.483865, 0.515185, 0.482172, 0.517658, 1.73333, 1, -0.483865, 0.515185, 0.482172, 0.517658, 1.8, 1, -0.477286, 0.52336, 0.479275, 0.518254, 1.86667, 1, -0.46936, 0.533037, 0.475742, 0.518886, 1.93333, 1, -0.462658, 0.541075, 0.47272, 0.519347, 2, 1, -0.459832, 0.544425, 0.471436, 0.519522, 2.06667, 1, -0.461316, 0.542928, 0.472596, 0.51872, 2.13333, 1, -0.46533, 0.538844, 0.475731, 0.516523, 2.2, 1, -0.471208, 0.532776, 0.480312, 0.513238, 2.26667, 1, -0.478285, 0.525329, 0.485811, 0.509177, 2.4, 1, -0.493439, 0.508841, 0.497527, 0.500067, 2.46667, 1, -0.50028, 0.501144, 0.502788, 0.495761, 2.53333, 1, -0.505854, 0.494751, 0.507061, 0.49216, 2.6, 1, -0.509605, 0.490387, 0.509929, 0.48969, 2.66667, 1, -0.51098, 0.488774, 0.51098, 0.488774)
+tracks/3/type = "rotation_3d"
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/path = NodePath("Armature/Skeleton3D:RightArm")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, -0.294429, -1.25943e-07, 1.32485e-08, 0.955673, 0.0666667, 1, -0.278276, -0.00138292, 0.00108918, 0.9605, 0.133333, 1, -0.234032, -0.00494575, 0.00427613, 0.972207, 0.2, 1, -0.167934, -0.00964981, 0.00955269, 0.985705, 0.266667, 1, -0.0866372, -0.014399, 0.0167998, 0.995994, 0.333333, 1, 0.00250064, -0.0182472, 0.025585, 0.999503, 0.4, 1, 0.0916221, -0.0206024, 0.0351244, 0.994961, 0.466667, 1, 0.172873, -0.0213659, 0.0443831, 0.983712, 0.533333, 1, 0.238909, -0.0209443, 0.0522432, 0.969409, 0.6, 1, 0.283097, -0.0201046, 0.0576459, 0.957146, 0.666667, 1, 0.299226, -0.0196811, 0.0596433, 0.952113, 0.733333, 1, 0.257704, -0.0204562, 0.0510053, 0.96466, 0.8, 1, 0.156885, -0.019473, 0.0307041, 0.986947, 0.866667, 1, 0.0345995, -0.0132228, 0.00771416, 0.999284, 0.933333, 1, -0.0680858, -0.0039714, -0.00982461, 0.997623, 1.06667, 1, -0.0680857, -0.0039714, -0.0098246, 0.997623, 1.13333, 1, 0.0345995, -0.0132228, 0.00771416, 0.999284, 1.2, 1, 0.156885, -0.019473, 0.0307041, 0.986947, 1.26667, 1, 0.257704, -0.0204562, 0.0510053, 0.96466, 1.4, 1, 0.257704, -0.0204562, 0.0510053, 0.96466, 1.46667, 1, 0.156885, -0.019473, 0.0307041, 0.986947, 1.53333, 1, 0.0345995, -0.0132228, 0.00771416, 0.999284, 1.6, 1, -0.0680858, -0.00397141, -0.0098246, 0.997623, 1.73333, 1, -0.0680857, -0.0039714, -0.0098246, 0.997623, 1.8, 1, 0.0345995, -0.0132228, 0.00771416, 0.999284, 1.86667, 1, 0.156885, -0.019473, 0.0307041, 0.986947, 1.93333, 1, 0.257704, -0.0204562, 0.0510053, 0.96466, 2, 1, 0.299226, -0.0196811, 0.0596433, 0.952113, 2.06667, 1, 0.283097, -0.0201046, 0.0576459, 0.957146, 2.13333, 1, 0.238909, -0.0209443, 0.0522432, 0.969409, 2.2, 1, 0.172873, -0.0213659, 0.0443831, 0.983712, 2.26667, 1, 0.0916221, -0.0206024, 0.0351244, 0.994961, 2.33333, 1, 0.00250071, -0.0182472, 0.025585, 0.999503, 2.4, 1, -0.0866372, -0.014399, 0.0167998, 0.995994, 2.46667, 1, -0.167934, -0.00964981, 0.0095527, 0.985705, 2.53333, 1, -0.234032, -0.00494575, 0.00427613, 0.972207, 2.6, 1, -0.278276, -0.00138291, 0.00108918, 0.9605, 2.66667, 1, -0.294429, -1.25943e-07, 1.32485e-08, 0.955673)
+tracks/4/type = "position_3d"
+tracks/4/imported = true
+tracks/4/enabled = true
+tracks/4/path = NodePath("Cylinder")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = PackedFloat32Array(0, 1, 0.00556195, 0.209635, -0.0572934)
+tracks/5/type = "rotation_3d"
+tracks/5/imported = true
+tracks/5/enabled = true
+tracks/5/path = NodePath("Cylinder")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = PackedFloat32Array(0, 1, -0.00178166, -0.0523056, -0.0339961, 0.998051)
+
+[sub_resource type="Animation" id="Animation_wdblx"]
+resource_name = "CylinderAction"
+length = 2.66667
+tracks/0/type = "position_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("Cylinder")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.00556195, 0.209635, -0.0572934, 0.0666667, 1, 0.00715097, 0.209072, -0.0572934, 0.133333, 1, 0.011464, 0.207543, -0.0572934, 0.2, 1, 0.0178201, 0.205291, -0.0572934, 0.266667, 1, 0.0255381, 0.202555, -0.0572934, 0.4, 1, 0.0423363, 0.196602, -0.0572934, 0.466667, 1, 0.0500544, 0.193866, -0.0572934, 0.533333, 1, 0.0564104, 0.191614, -0.0572934, 0.6, 1, 0.0607235, 0.190085, -0.0572934, 0.666667, 1, 0.0623125, 0.189522, -0.0572934, 0.733333, 1, 0.0579291, 0.190766, -0.0572934, 0.8, 1, 0.0474766, 0.193735, -0.0572934, 0.866667, 1, 0.0350009, 0.197277, -0.0572934, 0.933333, 1, 0.0245483, 0.200245, -0.0572934, 1.06667, 1, 0.0245483, 0.200245, -0.0572934, 1.13333, 1, 0.0350009, 0.197277, -0.0572934, 1.2, 1, 0.0474766, 0.193735, -0.0572934, 1.26667, 1, 0.0579291, 0.190767, -0.0572934, 1.4, 1, 0.0579291, 0.190766, -0.0572934, 1.46667, 1, 0.0474766, 0.193735, -0.0572934, 1.53333, 1, 0.0350009, 0.197277, -0.0572934, 1.6, 1, 0.0245483, 0.200245, -0.0572934, 1.73333, 1, 0.0245483, 0.200245, -0.0572934, 1.8, 1, 0.0350009, 0.197277, -0.0572934, 1.86667, 1, 0.0474766, 0.193735, -0.0572934, 1.93333, 1, 0.0579291, 0.190767, -0.0572934, 2, 1, 0.0623125, 0.189522, -0.0572934, 2.06667, 1, 0.0607235, 0.190085, -0.0572934, 2.13333, 1, 0.0564104, 0.191614, -0.0572934, 2.2, 1, 0.0500544, 0.193866, -0.0572934, 2.26667, 1, 0.0423363, 0.196602, -0.0572934, 2.4, 1, 0.0255381, 0.202555, -0.0572934, 2.46667, 1, 0.0178201, 0.205291, -0.0572934, 2.53333, 1, 0.011464, 0.207543, -0.0572934, 2.6, 1, 0.00715096, 0.209072, -0.0572934, 2.66667, 1, 0.00556195, 0.209635, -0.0572934)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("Cylinder")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, -0.00178166, -0.0523056, -0.0339961, 0.998051, 0.0666667, 1, -0.00193135, -0.0523287, -0.0367288, 0.997952, 0.133333, 1, -0.0023359, -0.0523811, -0.0441445, 0.997648, 0.2, 1, -0.00292732, -0.0524314, -0.0550684, 0.997101, 0.266667, 1, -0.00363735, -0.0524493, -0.0683242, 0.996277, 0.4, 1, -0.00514915, -0.0523239, -0.0971297, 0.993882, 0.466667, 1, -0.00582698, -0.0521909, -0.110338, 0.992506, 0.533333, 1, -0.00637666, -0.0520456, -0.121201, 0.991242, 0.6, 1, -0.00674507, -0.0519286, -0.128564, 0.990318, 0.666667, 1, -0.00687984, -0.0518818, -0.131275, 0.989964, 0.733333, 1, -0.00640566, -0.0520444, -0.121784, 0.991171, 0.8, 1, -0.00525092, -0.0523326, -0.0991054, 0.993686, 0.866667, 1, -0.00383194, -0.0524931, -0.0719701, 0.996017, 0.933333, 1, -0.00261255, -0.052474, -0.0491926, 0.997407, 1.06667, 1, -0.00261255, -0.052474, -0.0491926, 0.997407, 1.13333, 1, -0.00383194, -0.0524932, -0.0719701, 0.996017, 1.2, 1, -0.00525092, -0.0523326, -0.0991054, 0.993686, 1.26667, 1, -0.00640566, -0.0520444, -0.121784, 0.991171, 1.4, 1, -0.00640566, -0.0520444, -0.121784, 0.991171, 1.46667, 1, -0.00525092, -0.0523326, -0.0991054, 0.993686, 1.53333, 1, -0.00383194, -0.0524931, -0.0719701, 0.996017, 1.6, 1, -0.00261255, -0.052474, -0.0491926, 0.997407, 1.73333, 1, -0.00261255, -0.052474, -0.0491926, 0.997407, 1.8, 1, -0.00383194, -0.0524932, -0.0719701, 0.996017, 1.86667, 1, -0.00525092, -0.0523326, -0.0991054, 0.993686, 1.93333, 1, -0.00640566, -0.0520444, -0.121784, 0.991171, 2, 1, -0.00687984, -0.0518818, -0.131275, 0.989964, 2.06667, 1, -0.00674507, -0.0519286, -0.128564, 0.990318, 2.13333, 1, -0.00637666, -0.0520456, -0.121201, 0.991242, 2.2, 1, -0.00582698, -0.0521909, -0.110338, 0.992506, 2.26667, 1, -0.00514915, -0.0523239, -0.0971297, 0.993882, 2.4, 1, -0.00363736, -0.0524493, -0.0683242, 0.996277, 2.46667, 1, -0.00292732, -0.0524314, -0.0550685, 0.997101, 2.53333, 1, -0.0023359, -0.0523811, -0.0441445, 0.997648, 2.6, 1, -0.00193134, -0.0523287, -0.0367288, 0.997952, 2.66667, 1, -0.00178166, -0.0523056, -0.0339961, 0.998051)
+tracks/2/type = "rotation_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("Armature/Skeleton3D:Head")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, -0.00654644, 0.707077, 0.00654645, 0.707076)
+tracks/3/type = "rotation_3d"
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/path = NodePath("Armature/Skeleton3D:LeftMid")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, -0.509518, -0.490298, -0.509518, 0.490298)
+tracks/4/type = "rotation_3d"
+tracks/4/imported = true
+tracks/4/enabled = true
+tracks/4/path = NodePath("Armature/Skeleton3D:RightMid")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = PackedFloat32Array(0, 1, -0.51098, 0.488774, 0.51098, 0.488774)
+tracks/5/type = "rotation_3d"
+tracks/5/imported = true
+tracks/5/enabled = true
+tracks/5/path = NodePath("Armature/Skeleton3D:RightArm")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = PackedFloat32Array(0, 1, -0.294429, -1.25943e-07, 1.32485e-08, 0.955673)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3l6mj"]
+_data = {
+"ArmatureAction": SubResource("Animation_6xc25"),
+"CylinderAction": SubResource("Animation_wdblx")
+}
+
+[sub_resource type="Animation" id="Animation_d0n8r"]
+resource_name = "CylinderAction"
+length = 2.66667
+tracks/0/type = "position_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("Cylinder")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.00556195, 0.209635, -0.0572934, 0.0666667, 1, 0.00715097, 0.209072, -0.0572934, 0.133333, 1, 0.011464, 0.207543, -0.0572934, 0.2, 1, 0.0178201, 0.205291, -0.0572934, 0.266667, 1, 0.0255381, 0.202555, -0.0572934, 0.4, 1, 0.0423363, 0.196602, -0.0572934, 0.466667, 1, 0.0500544, 0.193866, -0.0572934, 0.533333, 1, 0.0564104, 0.191614, -0.0572934, 0.6, 1, 0.0607235, 0.190085, -0.0572934, 0.666667, 1, 0.0623125, 0.189522, -0.0572934, 0.733333, 1, 0.0579291, 0.190766, -0.0572934, 0.8, 1, 0.0474766, 0.193735, -0.0572934, 0.866667, 1, 0.0350009, 0.197277, -0.0572934, 0.933333, 1, 0.0245483, 0.200245, -0.0572934, 1.06667, 1, 0.0245483, 0.200245, -0.0572934, 1.13333, 1, 0.0350009, 0.197277, -0.0572934, 1.2, 1, 0.0474766, 0.193735, -0.0572934, 1.26667, 1, 0.0579291, 0.190767, -0.0572934, 1.4, 1, 0.0579291, 0.190766, -0.0572934, 1.46667, 1, 0.0474766, 0.193735, -0.0572934, 1.53333, 1, 0.0350009, 0.197277, -0.0572934, 1.6, 1, 0.0245483, 0.200245, -0.0572934, 1.73333, 1, 0.0245483, 0.200245, -0.0572934, 1.8, 1, 0.0350009, 0.197277, -0.0572934, 1.86667, 1, 0.0474766, 0.193735, -0.0572934, 1.93333, 1, 0.0579291, 0.190767, -0.0572934, 2, 1, 0.0623125, 0.189522, -0.0572934, 2.06667, 1, 0.0607235, 0.190085, -0.0572934, 2.13333, 1, 0.0564104, 0.191614, -0.0572934, 2.2, 1, 0.0500544, 0.193866, -0.0572934, 2.26667, 1, 0.0423363, 0.196602, -0.0572934, 2.4, 1, 0.0255381, 0.202555, -0.0572934, 2.46667, 1, 0.0178201, 0.205291, -0.0572934, 2.53333, 1, 0.011464, 0.207543, -0.0572934, 2.6, 1, 0.00715096, 0.209072, -0.0572934, 2.66667, 1, 0.00556195, 0.209635, -0.0572934)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("Cylinder")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, -0.00178166, -0.0523056, -0.0339961, 0.998051, 0.0666667, 1, -0.00193135, -0.0523287, -0.0367288, 0.997952, 0.133333, 1, -0.0023359, -0.0523811, -0.0441445, 0.997648, 0.2, 1, -0.00292732, -0.0524314, -0.0550684, 0.997101, 0.266667, 1, -0.00363735, -0.0524493, -0.0683242, 0.996277, 0.4, 1, -0.00514915, -0.0523239, -0.0971297, 0.993882, 0.466667, 1, -0.00582698, -0.0521909, -0.110338, 0.992506, 0.533333, 1, -0.00637666, -0.0520456, -0.121201, 0.991242, 0.6, 1, -0.00674507, -0.0519286, -0.128564, 0.990318, 0.666667, 1, -0.00687984, -0.0518818, -0.131275, 0.989964, 0.733333, 1, -0.00640566, -0.0520444, -0.121784, 0.991171, 0.8, 1, -0.00525092, -0.0523326, -0.0991054, 0.993686, 0.866667, 1, -0.00383194, -0.0524931, -0.0719701, 0.996017, 0.933333, 1, -0.00261255, -0.052474, -0.0491926, 0.997407, 1.06667, 1, -0.00261255, -0.052474, -0.0491926, 0.997407, 1.13333, 1, -0.00383194, -0.0524932, -0.0719701, 0.996017, 1.2, 1, -0.00525092, -0.0523326, -0.0991054, 0.993686, 1.26667, 1, -0.00640566, -0.0520444, -0.121784, 0.991171, 1.4, 1, -0.00640566, -0.0520444, -0.121784, 0.991171, 1.46667, 1, -0.00525092, -0.0523326, -0.0991054, 0.993686, 1.53333, 1, -0.00383194, -0.0524931, -0.0719701, 0.996017, 1.6, 1, -0.00261255, -0.052474, -0.0491926, 0.997407, 1.73333, 1, -0.00261255, -0.052474, -0.0491926, 0.997407, 1.8, 1, -0.00383194, -0.0524932, -0.0719701, 0.996017, 1.86667, 1, -0.00525092, -0.0523326, -0.0991054, 0.993686, 1.93333, 1, -0.00640566, -0.0520444, -0.121784, 0.991171, 2, 1, -0.00687984, -0.0518818, -0.131275, 0.989964, 2.06667, 1, -0.00674507, -0.0519286, -0.128564, 0.990318, 2.13333, 1, -0.00637666, -0.0520456, -0.121201, 0.991242, 2.2, 1, -0.00582698, -0.0521909, -0.110338, 0.992506, 2.26667, 1, -0.00514915, -0.0523239, -0.0971297, 0.993882, 2.4, 1, -0.00363736, -0.0524493, -0.0683242, 0.996277, 2.46667, 1, -0.00292732, -0.0524314, -0.0550685, 0.997101, 2.53333, 1, -0.0023359, -0.0523811, -0.0441445, 0.997648, 2.6, 1, -0.00193134, -0.0523287, -0.0367288, 0.997952, 2.66667, 1, -0.00178166, -0.0523056, -0.0339961, 0.998051)
+tracks/2/type = "rotation_3d"
+tracks/2/imported = true
+tracks/2/enabled = false
+tracks/2/path = NodePath("Armature/Skeleton3D:Head")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, -0.00654644, 0.707077, 0.00654645, 0.707076)
+tracks/3/type = "rotation_3d"
+tracks/3/imported = true
+tracks/3/enabled = false
+tracks/3/path = NodePath("Armature/Skeleton3D:LeftMid")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, -0.509518, -0.490298, -0.509518, 0.490298)
+tracks/4/type = "rotation_3d"
+tracks/4/imported = true
+tracks/4/enabled = false
+tracks/4/path = NodePath("Armature/Skeleton3D:RightMid")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = PackedFloat32Array(0, 1, -0.51098, 0.488774, 0.51098, 0.488774)
+tracks/5/type = "rotation_3d"
+tracks/5/imported = true
+tracks/5/enabled = false
+tracks/5/path = NodePath("Armature/Skeleton3D:RightArm")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = PackedFloat32Array(0, 1, -0.294429, -1.25943e-07, 1.32485e-08, 0.955673)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lldwj"]
+_data = {
+"CylinderAction": SubResource("Animation_d0n8r")
+}
+
+[sub_resource type="Shortcut" id="9"]
+
+[sub_resource type="Shortcut" id="11"]
+
+[sub_resource type="AnimatedTexture" id="12"]
+frames = 16
+frame_0/texture = ExtResource("26")
+frame_1/texture = ExtResource("18")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("21")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("29")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("27")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("19")
+frame_5/duration = 1.0
+frame_6/texture = ExtResource("25")
+frame_6/duration = 1.0
+frame_7/texture = ExtResource("20")
+frame_7/duration = 1.0
+frame_8/texture = ExtResource("7")
+frame_8/duration = 1.0
+frame_9/texture = ExtResource("23")
+frame_9/duration = 1.0
+frame_10/texture = ExtResource("8")
+frame_10/duration = 1.0
+frame_11/texture = ExtResource("28")
+frame_11/duration = 1.0
+frame_12/texture = ExtResource("17")
+frame_12/duration = 1.0
+frame_13/texture = ExtResource("15")
+frame_13/duration = 1.0
+frame_14/texture = ExtResource("24")
+frame_14/duration = 1.0
+frame_15/texture = ExtResource("22")
+frame_15/duration = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xva7f"]
+shader = ExtResource("26_0hf63")
+
+[node name="Menus" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1")
+script = ExtResource("2")
+
+[node name="Animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_285ke")
+}
+autoplay = "MainMenu"
+
+[node name="MainMenu" type="Control" parent="."]
+anchors_preset = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -640.0
+offset_top = -360.0
+offset_right = 640.0
+offset_bottom = 360.0
+
+[node name="Quit" parent="MainMenu" instance=ExtResource("4")]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 0
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -49.9999
+offset_right = 46.0
+offset_bottom = -13.9999
+icon = ExtResource("16")
+expand_icon = true
+
+[node name="Buttons" type="GridContainer" parent="MainMenu"]
+custom_minimum_size = Vector2(400, 100)
+layout_mode = 0
+anchor_bottom = 1.0
+offset_left = -464.0
+offset_top = 412.0
+offset_right = 41.0
+offset_bottom = -136.0
+columns = 2
+
+[node name="Play" parent="MainMenu/Buttons" instance=ExtResource("4")]
+custom_minimum_size = Vector2(200, 40)
+layout_mode = 2
+text = "MENU_LABEL_NEW_GAME"
+clip_text = true
+
+[node name="Play2" parent="MainMenu/Buttons" instance=ExtResource("4")]
+custom_minimum_size = Vector2(200, 40)
+layout_mode = 2
+text = "MENU_LABEL_ONLINE"
+clip_text = true
+
+[node name="Load" parent="MainMenu/Buttons" instance=ExtResource("4")]
+custom_minimum_size = Vector2(200, 40)
+layout_mode = 2
+text = "MENU_IO_LOAD_GAME"
+
+[node name="Options" parent="MainMenu/Buttons" instance=ExtResource("4")]
+custom_minimum_size = Vector2(200, 40)
+layout_mode = 2
+text = "MENU_OPTIONS"
+
+[node name="Screenshots" parent="MainMenu/Buttons" instance=ExtResource("4")]
+custom_minimum_size = Vector2(200, 40)
+layout_mode = 2
+text = "MENU_LABEL_SCREENSHOTS"
+
+[node name="TextureRect" type="TextureRect" parent="MainMenu"]
+layout_mode = 0
+anchor_bottom = 1.0
+offset_left = 128.0
+offset_top = -248.0
+offset_right = 1152.0
+offset_bottom = -328.0
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("14")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="MainMenu"]
+layout_mode = 0
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -562.0
+offset_top = 104.0
+offset_right = -50.0
+offset_bottom = -104.0
+
+[node name="SubViewport" type="SubViewport" parent="MainMenu/SubViewportContainer"]
+transparent_bg = true
+handle_input_locally = false
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="MainMenu/SubViewportContainer/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.892)
+keep_aspect = 0
+fov = 23.4
+
+[node name="tux" parent="MainMenu/SubViewportContainer/SubViewport" instance=ExtResource("11")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MainMenu/SubViewportContainer/SubViewport/tux"]
+libraries = {
+"": SubResource("AnimationLibrary_3l6mj")
+}
+autoplay = "ArmatureAction"
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="MainMenu/SubViewportContainer/SubViewport/tux"]
+libraries = {
+"": SubResource("AnimationLibrary_lldwj")
+}
+autoplay = "CylinderAction"
+
+[node name="OmniLight3D" type="OmniLight3D" parent="MainMenu/SubViewportContainer/SubViewport/tux"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.13843, 1.50051, 2.54785)
+light_energy = 6.75
+omni_range = 8.5
+
+[node name="ServerList" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ServerList"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Label" type="Label" parent="ServerList/VBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "MENU_LABEL_CHOOSE_SERVER"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="ServerList/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="List" type="VBoxContainer" parent="ServerList/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Footer" type="HBoxContainer" parent="ServerList/VBoxContainer"]
+layout_mode = 2
+
+[node name="Leave" type="Button" parent="ServerList/VBoxContainer/Footer"]
+layout_mode = 2
+shortcut = SubResource("9")
+shortcut_in_tooltip = false
+text = "MENU_LABEL_BACK"
+
+[node name="OptionsMenu" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Title" type="Label" parent="OptionsMenu"]
+layout_mode = 0
+anchor_right = 1.0
+offset_top = 100.0
+offset_bottom = 158.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"HeaderLarge"
+text = "MENU_OPTIONS"
+horizontal_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="OptionsMenu" parent="OptionsMenu" instance=ExtResource("6")]
+layout_mode = 1
+offset_left = 265.0
+offset_top = 188.0
+offset_right = 265.0
+offset_bottom = 188.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LoadGameMenu" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -216.0
+offset_right = 256.0
+offset_bottom = 216.0
+
+[node name="Title" type="Label" parent="LoadGameMenu"]
+layout_mode = 0
+anchor_right = 1.0
+offset_top = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 2
+theme_type_variation = &"HeaderLarge"
+text = "MENU_IO_LOAD_GAME"
+horizontal_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="LoadGameMenu"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -913.0
+offset_top = 183.0
+offset_right = -898.0
+offset_bottom = -49.0
+
+[node name="Saves" type="VBoxContainer" parent="LoadGameMenu/ScrollContainer"]
+custom_minimum_size = Vector2(512, 0)
+layout_mode = 2
+
+[node name="Back" parent="LoadGameMenu" instance=ExtResource("4")]
+layout_mode = 0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -901.0
+offset_top = -35.0
+offset_right = -901.0
+offset_bottom = 9.15527e-05
+shortcut = SubResource("11")
+shortcut_in_tooltip = false
+text = "MENU_LABEL_BACK"
+custom_click = "res://assets/sounds/ui/click2.wav"
+
+[node name="LoadAnimation" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="LoadAnimation"]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 0.392157)
+
+[node name="TextureRect" type="TextureRect" parent="LoadAnimation"]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -50.0
+offset_right = 50.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("12")
+expand_mode = 1
+
+[node name="Cancel" type="Button" parent="LoadAnimation"]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = 90.0
+offset_right = 100.0
+offset_bottom = 121.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "MENU_LABEL_CANCEL"
+
+[node name="Background" type="TextureRect" parent="."]
+self_modulate = Color(0.184314, 0.729412, 0.85098, 1)
+show_behind_parent = true
+material = SubResource("ShaderMaterial_xva7f")
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("9")
+stretch_mode = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10")
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+
+[connection signal="pressed" from="MainMenu/Quit" to="." method="_on_Quit_pressed"]
+[connection signal="pressed" from="MainMenu/Buttons/Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="MainMenu/Buttons/Play2" to="." method="_on_Play2_pressed"]
+[connection signal="pressed" from="MainMenu/Buttons/Load" to="." method="_on_Load_pressed"]
+[connection signal="pressed" from="MainMenu/Buttons/Options" to="." method="_on_Options_pressed"]
+[connection signal="pressed" from="MainMenu/Buttons/Screenshots" to="." method="_on_Screenshots_pressed"]
+[connection signal="animation_finished" from="MainMenu/SubViewportContainer/SubViewport/tux/AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+[connection signal="pressed" from="ServerList/VBoxContainer/Footer/Leave" to="." method="_on_ServerList_Leave_pressed"]
+[connection signal="quit" from="OptionsMenu/OptionsMenu" to="." method="_on_OptionsMenu_quit"]
+[connection signal="pressed" from="LoadGameMenu/Back" to="." method="_on_LoadGame_Back_pressed"]
+[connection signal="pressed" from="LoadAnimation/Cancel" to="." method="_on_connection_failed"]

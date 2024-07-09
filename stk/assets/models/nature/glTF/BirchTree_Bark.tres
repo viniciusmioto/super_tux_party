@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://bx685gm061wil"]
+
+[ext_resource type="Texture2D" uid="uid://bjqcq02fa72pd" path="res://assets/models/nature/Textures/BirchTree_Bark.png" id="1_16b5n"]
+[ext_resource type="Texture2D" uid="uid://nahj4ia1x0bb" path="res://assets/models/nature/Textures/BirchTree_Bark_Normal.png" id="2_etkld"]
+
+[resource]
+resource_name = "BirchTree_Bark"
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("1_16b5n")
+metallic_specular = 0.0
+normal_enabled = true
+normal_texture = ExtResource("2_etkld")

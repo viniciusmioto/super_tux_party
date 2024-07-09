@@ -1,0 +1,673 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2021-03-21 21:29+0000\n"
+"Last-Translator: Aleix Ràfols Bayot <alrafolsba@gmail.com>\n"
+"Language-Team: Catalan <https://hosted.weblate.org/projects/super-tux-party/"
+"super-tux-party/ca/>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5.2-dev\n"
+
+msgid "CONTEXT_LABEL_BUY_CAKE"
+msgstr "Compra un pastís per {amount} galetes"
+
+msgid "CONTEXT_LABEL_DUEL_REWARD"
+msgstr "Recompensa del duel:"
+
+msgid "CONTEXT_LABEL_DUEL_SELECT"
+msgstr "Selecciona l'oponent:"
+
+msgid "CONTEXT_LABEL_FINISH"
+msgstr "Fi!"
+
+msgid "CONTEXT_LABEL_GO"
+msgstr "Endavant!"
+
+msgid "CONTEXT_LABEL_PLAYER_ROLLED"
+msgstr "{name} ha tret un {value}:"
+
+msgid "CONTEXT_LABEL_READY_QUESTION"
+msgstr "Llestos?"
+
+msgid "CONTEXT_LABEL_ROLL"
+msgstr "Tira!"
+
+msgid "CONTEXT_LABEL_ROLL_PLAYER"
+msgstr "Tira {name}!"
+
+msgid "CONTEXT_LABEL_STEAL_ONE_CAKE"
+msgstr "El guanyador roba 1 patsís"
+
+msgid "CONTEXT_LABEL_STEAL_TEN_COOKIES"
+msgstr "El guanyador roba 10 galetes"
+
+msgid "CONTEXT_LABEL_TURN_NUM"
+msgstr "Torn {turn}/{total}"
+
+msgid "CONTEXT_LABEL_VS"
+msgstr "VS."
+
+msgid "CONTEXT_LABEL_YOUR_TURN"
+msgstr "Et toca!"
+
+msgid "CONTEXT_NOTIFICATION_NOT_ENOUGH_COOKIES"
+msgstr "No tens prou galetes per comprar-ho"
+
+msgid "CONTEXT_NOTIFICATION_NOT_ENOUGH_SPACE"
+msgstr "No hi ha espai lliure al teu inventari"
+
+msgid "MENU_CONTROLS_ACTION_1"
+msgstr "Acció 1"
+
+msgid "MENU_CONTROLS_ACTION_2"
+msgstr "Acció 2"
+
+msgid "MENU_CONTROLS_ACTION_3"
+msgstr "Acció 3"
+
+msgid "MENU_CONTROLS_ACTION_4"
+msgstr "Acció 4"
+
+msgid "MENU_CONTROLS_UNKNOWN_GAMEPAD_AXIS"
+msgstr "Eix {axis} desconegut"
+
+msgid "MENU_CONTROLS_GENERIC_GAMEPAD_BUTTON"
+msgstr "Botó {button} de la maneta"
+
+msgid "MENU_CONTROLS_MOUSE"
+msgstr "Ratolí"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON"
+msgstr "Botó del ratolí"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_LEFT"
+msgstr "Botó esquerre del ratolí"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_MIDDLE"
+msgstr "Botó del mig del ratolí"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_RIGHT"
+msgstr "Botó dret del ratolí"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_DOWN"
+msgstr "Roda de desplaçament avall"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_LEFT"
+msgstr "Roda de desplaçament amunt"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_RIGHT"
+msgstr "Roda de desplaçament dreta"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_UP"
+msgstr "Roda de desplaçament amunt"
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT"
+msgstr "Gallet esquerre"
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT_2"
+msgstr "Gallet esquerre 2"
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT_3"
+msgstr "Gallet esquerre 3"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT"
+msgstr "Gallet dret"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT_2"
+msgstr "Gallet dret 2"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT_3"
+msgstr "Gallet dret 3"
+
+msgid "MENU_CONTROLS_DIR_DOWN"
+msgstr "Avall"
+
+msgid "MENU_CONTROLS_DIR_LEFT"
+msgstr "Esquerra"
+
+msgid "MENU_CONTROLS_DIR_RIGHT"
+msgstr "Dreta"
+
+msgid "MENU_CONTROLS_DIR_UP"
+msgstr "Amunt"
+
+msgid "MENU_CONTROLS_SCREENSHOT"
+msgstr "Pren una captura de pantalla"
+
+msgid "MENU_CONTROLS_DEV_MENU"
+msgstr "Obre el menú de desenvolupador"
+
+msgid "MENU_IO_ENTER_SAVEGAME_NAME"
+msgstr "Nom de la partida a desar:"
+
+msgid "MENU_IO_LOAD_GAME"
+msgstr "Carrega una partida"
+
+msgid "MENU_IO_SAVE"
+msgstr "Desa"
+
+msgid "MENU_IO_SAVE_GAME"
+msgstr "Desa la partida"
+
+msgid "MENU_LABEL_BACK"
+msgstr "Enrere"
+
+msgid "MENU_LABEL_CANCEL"
+msgstr "Canel·la"
+
+msgid "MENU_LABEL_CONTINUE"
+msgstr "Continua"
+
+msgid "MENU_LABEL_DESKTOP"
+msgstr "Ix a l'escriptori"
+
+msgid "MENU_SETTINGS_AWARD_LINEAR"
+msgstr ""
+
+msgid "MENU_LABEL_NEW_GAME"
+msgstr "Nova partida"
+
+msgid "MENU_LABEL_START"
+msgstr ""
+
+msgid "MENU_LABEL_PAUSE"
+msgstr "Pausa"
+
+msgid "MENU_LABEL_PAUSED"
+msgstr "Pausat"
+
+msgid "MENU_LABEL_PAUSE_ON_WINDOW_UNFOCUS"
+msgstr "Pausa quan la finestra perdi el focus"
+
+msgid "MENU_LABEL_PLAY"
+msgstr "Juga"
+
+msgid "MENU_LABEL_ONLINE"
+msgstr ""
+
+msgid "MENU_LABEL_PLAYER1"
+msgstr "Jugador1"
+
+msgid "MENU_LABEL_PLAYER2"
+msgstr "Jugador2"
+
+msgid "MENU_LABEL_PLAYER3"
+msgstr "Jugador3"
+
+msgid "MENU_LABEL_PLAYER4"
+msgstr "Jugador4"
+
+msgid "MENU_LABEL_PRESS_ANY_KEY"
+msgstr "Prem qualsevol tecla"
+
+msgid "MENU_LABEL_QUIT"
+msgstr "Ix"
+
+msgid "MENU_LABEL_READY"
+msgstr "Llestos!"
+
+msgid "MENU_LABEL_RESUME"
+msgstr "Reprén"
+
+msgid "MENU_LABEL_RETURN_MENU"
+msgstr "Torna al menú principal"
+
+msgid "MENU_LABEL_SELECT_BOARD"
+msgstr "Tria el tauler:"
+
+msgid "MENU_LABEL_SELECT_CHARACTER"
+msgstr ""
+
+msgid "MENU_LABEL_TRY"
+msgstr "Prova"
+
+msgid "MENU_SETTINGS_AWARD_WINNER_TAKES_ALL"
+msgstr ""
+
+msgid "MENU_SETTINGS_AWARD_TYPE"
+msgstr ""
+
+msgid "MENU_LABEL_CREDITS"
+msgstr "Crèdits"
+
+msgid "MENU_LABEL_SCREENSHOTS"
+msgstr "Captures de pantalla"
+
+msgid "MENU_OPTIONS"
+msgstr "Arranjament"
+
+msgid "MENU_OPTIONS_AUDIO"
+msgstr "Àudio"
+
+msgid "MENU_OPTIONS_CONTROLS"
+msgstr "Controls"
+
+msgid "MENU_OPTIONS_EFFECTS"
+msgstr "Efectes"
+
+msgid "MENU_OPTIONS_FRAME_CAP"
+msgstr "Límit d'FPS"
+
+msgid "MENU_OPTIONS_FULLSCREEN"
+msgstr "Pantalla sencera"
+
+msgid "MENU_OPTIONS_MSAA"
+msgstr "Antialiàsing multisample (MSAA)"
+
+msgid "MENU_OPTIONS_LANGUAGE"
+msgstr "Llengua"
+
+msgid "MENU_OPTIONS_MASTER"
+msgstr "Àudio mestre"
+
+msgid "MENU_OPTIONS_MISC"
+msgstr ""
+
+msgid "MENU_OPTIONS_MUSIC"
+msgstr "Música"
+
+msgid "MENU_OPTIONS_MUTE_ON_WINDOW_UNFOCUS"
+msgstr "Silencia quan la finestra perdi el focus"
+
+msgid "MENU_OPTIONS_SYSTEM_DEFAULT"
+msgstr "Com el sistema"
+
+msgid "MENU_OPTIONS_VISUAL"
+msgstr "Visual"
+
+msgid "MENU_OPTIONS_VSYNC"
+msgstr ""
+
+msgid "DIALOG_YES"
+msgstr "Sí"
+
+msgid "DIALOG_NO"
+msgstr ""
+
+msgid "MENU_LABEL_CONNECTION_ERROR_TITLE"
+msgstr ""
+
+msgid "MENU_LABEL_CONNECTION_TIMEOUT"
+msgstr ""
+
+msgid "MENU_LABEL_NO_SERVER_VERSION"
+msgstr ""
+
+msgid "MENU_LABEL_VERSION_MISMATCH_TITLE"
+msgstr ""
+
+msgid "MENU_LABEL_VERSION_MISMATCH"
+msgstr ""
+
+msgid "MENU_LABEL_CHOOSE_SERVER"
+msgstr ""
+
+msgid "MENU_LABEL_COPY"
+msgstr ""
+
+msgid "MENU_LABEL_LOBBY_CREATE"
+msgstr ""
+
+msgid "MENU_LABEL_LOBBY_JOIN"
+msgstr ""
+
+msgid "MENU_LOBBY_SETTINGS"
+msgstr ""
+
+msgid "MENU_SETTINGS_PUBLIC"
+msgstr ""
+
+msgid "MENU_SETTINGS_CAKE_COST"
+msgstr ""
+
+msgid "MENU_SETTINGS_TURNS"
+msgstr ""
+
+msgid "MENU_SETTINGS_ENABLE_TIMEOUT"
+msgstr ""
+
+msgid "MENU_SETTINGS_TIMEOUT"
+msgstr ""
+
+msgid "AI_DIFFICULTY"
+msgstr "Dificultat de l'IA"
+
+msgid "DIFFICULTY_EASY"
+msgstr "Fàcil"
+
+msgid "DIFFICULTY_NORMAL"
+msgstr "Normal"
+
+msgid "DIFFICULTY_HARD"
+msgstr "Difícil"
+
+msgid "CONTEXT_GNU_ACTION_TYPE"
+msgstr "Acció GNU"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY"
+msgstr "Qualitat dels gràfics"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_HIGH"
+msgstr "Alta"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_MEDIUM"
+msgstr "Mitja"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_LOW"
+msgstr "Baixa"
+
+msgid "MENU_OPTIONS_FXAA"
+msgstr ""
+
+msgid "MENU_GRAPHIC_QUALITY_REBOOT_NOTICE"
+msgstr "Canviar la qualitat gràfica només pren efecte després de reiniciar"
+
+msgid "MENU_LOBBY_ADD_PLAYER"
+msgstr ""
+
+msgid "CONTEXT_SPEAKER_SARA"
+msgstr ""
+
+msgid "CONTEXT_WINNER_ANNOUNCEMENT"
+msgstr ""
+"Sé que tots heu lluitat de valent per guanyar, però ara la partida s'ha "
+"acabat i necessitem un guanyador. I aquest guanyador és…"
+
+msgid "CONTEXT_WINNER_REVEAL_ONE_PLAYER"
+msgstr ""
+
+msgid "CONTEXT_WINNER_REVEAL_TWO_PLAYER"
+msgstr ""
+
+msgid "CONTEXT_WINNER_REVEAL_THREE_PLAYER"
+msgstr ""
+
+msgid "CONTEXT_WINNER_REVEAL_FOUR_PLAYER"
+msgstr ""
+
+msgid "CONTEXT_LABEL_CAKES"
+msgstr "Pastissos"
+
+msgid "CONTEXT_LABEL_COOKIES"
+msgstr "Galetes"
+
+msgid "CONTEXT_GNU_NAME"
+msgstr ""
+
+msgid "CONTEXT_GNU_EVENT_START"
+msgstr "Ei, necessites ajuda? Deixa'm veure, què puc oferir-te avui…"
+
+#, fuzzy
+msgid "CONTEXT_GNU_MINIGAME_SOLO_MODERATION"
+msgstr ""
+"És un minijoc d'un jugador! Mostra'm les teves habilitats i et donaré "
+"[color=#dd44ff]{reward}[/color]"
+
+msgid "CONTEXT_GNU_MINIGAME_SOLO"
+msgstr "Minijoc d'un jugador"
+
+msgid "CONTEXT_GNU_MINIGAME_COOP_MODERATION"
+msgstr "Juguem junts! Estic segur que ens divertirem"
+
+msgid "CONTEXT_GNU_MINIGAME_COOP"
+msgstr "Minijoc cooperatiu"
+
+msgid "CONTEXT_GNU_SOLO_VICTORY"
+msgstr "Ben fet. Ací tens la teva recompensa!"
+
+msgid "CONTEXT_GNU_SOLO_LOSS"
+msgstr "No te n'has sortit. Potser a la proera."
+
+msgid "CONTEXT_GNU_COOP_VICTORY"
+msgstr "Ho has fet. Esper la pròxima vegada."
+
+msgid "CONTEXT_GNU_COOP_LOSS"
+msgstr ""
+"Tot i que no te n'has sortit, has practicat la teva companyonia. Estic "
+"convençut que el pròxim cop te'n sortiràs!"
+
+msgid "CONTEXT_NOLOK_NAME"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_ACTION_TYPE"
+msgstr "Acció Nolok"
+
+msgid "CONTEXT_NOLOK_EVENT_START"
+msgstr "Em toca! Sé exactament què he de fer…"
+
+msgid "CONTEXT_NOLOK_MINIGAME_SOLO_MODERATION"
+msgstr ""
+"Et desafii a un minijoc! Si pots vèncer-me, podràs quedar-te amb les teves "
+"coses. Si no, et prendré un pastís."
+
+msgid "CONTEXT_NOLOK_MINIGAME_SOLO"
+msgstr "Minijoc d'un jugador"
+
+msgid "CONTEXT_NOLOK_MINIGAME_COOP_MODERATION"
+msgstr "Jo contra tots vosaltres? De debò us penseu que teniu cap oportunitat?"
+
+msgid "CONTEXT_NOLOK_MINIGAME_COOP"
+msgstr "Minijoc cooperatiu"
+
+msgid "CONTEXT_NOLOK_SOLO_VICTORY"
+msgstr "Agraeix que t'hagi salvat!"
+
+msgid "CONTEXT_NOLOK_SOLO_LOSS"
+msgstr "Esper tornar-te a guanyar!"
+
+msgid "CONTEXT_NOLOK_COOP_VICTORY"
+msgstr "El pròxim cop no guanyaràs."
+
+msgid "CONTEXT_NOLOK_COOP_LOSS"
+msgstr "Ha, ha, ha, quina victòria més fàcil."
+
+msgid "CONTEXT_NOLOK_LOSE_COOKIES_MODERATION"
+msgstr ""
+"Ha, ha, ha, acomiada't de [color=#00aaff]{amount}[/color] galetes teves. "
+"Estic segur que [color=#dd44ff]{player}[/color] en farà un bon servei"
+
+msgid "CONTEXT_NOLOK_LOSE_COOKIES"
+msgstr "Perds les teves galetes"
+
+msgid "CONTEXT_NOLOK_ROLL_MODIFIER_MODERATION"
+msgstr ""
+"Potser t'hauries d'alentir una miqueta. Vegem què faràs amb [color=#00aaff]"
+"{amount}[/color] moviments menys durant les següents [color=#dd44ff]"
+"{duration}[/color] tirades"
+
+msgid "CONTEXT_NOLOK_ROLL_MODIFIER"
+msgstr "Dau maleït"
+
+msgid "CONTEXT_SHOW_TUTORIAL"
+msgstr ""
+"Sembla que aquest és el vostre primer cop jugant. Voleu que us expliqui les "
+"regles?"
+
+msgid "CONTEXT_TUTORIAL_DICE"
+msgstr ""
+"El joc es juga per torns. Durant el vostre torn, tirareu un dau i us moureu "
+"el número que mostra cap endavant."
+
+msgid "CONTEXT_TUTORIAL_COOKIES"
+msgstr ""
+"La moneda són galetes. Obteniu galetes a mesura que guanyeu minijocs. Amb "
+"les galetes podeu comprar articles quan passeu per les caselles de botiga."
+
+msgid "CONTEXT_TUTORIAL_CAKES"
+msgstr ""
+"Per guanyar, heu de ser qui reculli més pastissos. Les galetes es faran "
+"sevir com a desempat. Podeu comprar pastissos en llocs especials del tauler. "
+"Si en compreu un, el pastís es mourà a un altre lloc."
+
+msgid "CONTEXT_TUTORIAL_SPACES_NORMAL"
+msgstr ""
+"Hi ha diferents caselles en què podeu aterrar: les caselles blaves us donen "
+"galetes, mentre que les vermelles us en prenen."
+
+msgid "CONTEXT_TUTORIAL_SPACES_SPECIAL"
+msgstr ""
+"Les caselles verdes activen esdeveniments específics del tauler. Les "
+"caselles de batalla permeten desafiar un altre jugador a un minijoc de duel."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES"
+msgstr ""
+"Després del torn de cada jugador, es jugarà un minjoc. N'hi ha de tres "
+"diferents menes:"
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_FFA"
+msgstr "Tots contra tots, on tothom competeix contra tothom per guanyar."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_2V2"
+msgstr "Dos contra dos, on es juga en equips de dos."
+
+#, fuzzy
+msgid "CONTEXT_TUTORIAL_MINIGAMES_1V3"
+msgstr ""
+"I un contra tres, on algú competeix contra la resta. El jugador en solitari "
+"obté una bonificació per igualar les coses."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_SPECIAL"
+msgstr ""
+"Els minijocs especials es juguen quan un jugador caigui en una casella GNU o "
+"NOLOK. Els minijocs GNU són beneficiosos, mentre que els NOLOCK us seran "
+"dolents. Així que millor no apropar-s'hi!"
+
+msgid "CONTEXT_TUTORIAL_END"
+msgstr "Això és tot, ara prepareu-vos per començar! Divertiu-vos!"
+
+msgid "CONTEXT_CAKE_PLACED"
+msgstr "El pastís és ací, veniu a agafar-lo!"
+
+msgid "CONTEXT_CAKE_WANT_BUY"
+msgstr "Vols comprar cap pastís?"
+
+msgid "CONTEXT_CAKE_BUY_AMOUNT"
+msgstr "Quants en vols comprar, de pastissos?"
+
+#, fuzzy
+msgid "CONTEXT_CAKE_COLLECTED"
+msgstr ""
+"Ben fet, [color=#00aaff]{player}[/color]. Això seran [color=#dd44ff]{amount}"
+"[/color] pastissos per a tu."
+
+msgid "CONTEXT_CAKE_CANT_AFFORD"
+msgstr "Ho sent, però no tens prou galetes per a comprar un pastís."
+
+msgid "SHOP_LABEL_TITLE"
+msgstr "Botiga d'objectes"
+
+msgid "SHOP_LABEL_DESCRIPTION"
+msgstr "Descripció de l'objecte"
+
+msgid "SHOP_ITEM_NO_DESCRIPTION"
+msgstr "Sense descripció"
+
+msgid "REWARDSCREEN_MINIGAME_RESULTS"
+msgstr "Resultats del minijoc"
+
+msgid "REWARDSCREEN_MINIGAME_WINNER"
+msgstr "Guanyador!"
+
+msgid "REWARDSCREEN_MINIGAME_REWARD"
+msgstr "Recompensa:"
+
+msgid "REWARDSCREEN_PRESS_BUTTON"
+msgstr "Prem"
+
+msgid "MINIGAME_ACTION_MOVEMENT"
+msgstr "Moure's"
+
+msgid "MINIGAME_TYPE_FFA"
+msgstr "Minijoc campi qui pugui"
+
+msgid "MINIGAME_TYPE_2v2"
+msgstr "Minijoc dos contra dos"
+
+msgid "MINIGAME_TYPE_1v3"
+msgstr "Minijoc un contra tres"
+
+msgid "MINIGAME_TYPE_DUEL"
+msgstr "Minijoc de duel"
+
+msgid "MINIGAME_TYPE_GNU_COOP"
+msgstr "Minijoc GNU cooperatiu"
+
+msgid "MINIGAME_TYPE_GNU_SOLO"
+msgstr "Minijoc GNU d'un jugador"
+
+msgid "MINIGAME_TYPE_NOLOK_COOP"
+msgstr "Minijoc Nolok cooperatiu"
+
+msgid "MINIGAME_TYPE_NOLOK_SOLO"
+msgstr "Minijoc Nolok d'un jugador"
+
+msgid "ERROR"
+msgstr ""
+
+msgid "SAVE_GAME_CANNOT_SAVE"
+msgstr ""
+
+msgid "SAVE_GAME_DISABLED"
+msgstr ""
+
+#~ msgid "MENU_LABEL_CHARACTER"
+#~ msgstr "Personatge:"
+
+#~ msgid "MENU_LABEL_LINEAR"
+#~ msgstr "Lineal"
+
+#~ msgid "MENU_LABEL_NINTENDO_DS"
+#~ msgstr "Nintendo DS"
+
+#~ msgid "MENU_LABEL_NOT_READY_ELLIPSIS"
+#~ msgstr "No està llest…"
+
+#~ msgid "MENU_LABEL_NUMBERS"
+#~ msgstr "Nombres"
+
+#~ msgid "MENU_LABEL_NUM_1"
+#~ msgstr "1"
+
+#~ msgid "MENU_LABEL_OK"
+#~ msgstr "D'acord"
+
+#~ msgid "MENU_LABEL_PLAYSTATION"
+#~ msgstr "PlayStation"
+
+#~ msgid "MENU_LABEL_REWARD_SYSTEM"
+#~ msgstr "Sistema de recompensa:"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_1"
+#~ msgstr "Tria un personatge per al jugador 1"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_2"
+#~ msgstr "Tria un personatge per al jugador 2"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_3"
+#~ msgstr "Tria un personatge per al jugador 3"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_4"
+#~ msgstr "Tria un personatge per al jugador 4"
+
+#~ msgid "MENU_LABEL_SELECT_NUM_PLAYERS"
+#~ msgstr "Tria el nombre de jugadors"
+
+#~ msgid "MENU_LABEL_BOARD_SETTINGS"
+#~ msgstr "Arranjament del tauler"
+
+#~ msgid "MENU_LABEL_WINNER_TAKES_ALL"
+#~ msgstr "EL guanyador s'ho enduu tot"
+
+#~ msgid "MENU_LABEL_CAKE_COST"
+#~ msgstr "Cost de pastissos:"
+
+#~ msgid "MENU_LABEL_TURNS"
+#~ msgstr "Torns:"

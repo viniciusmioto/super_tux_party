@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cagiwiydkbmyf"]
+
+[ext_resource type="Texture2D" uid="uid://c7if4jtttlc1d" path="res://assets/models/nature/Textures/Rocks.png" id="1_5o8ec"]
+
+[resource]
+resource_name = "Rock"
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("1_5o8ec")

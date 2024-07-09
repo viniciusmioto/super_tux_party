@@ -1,0 +1,52 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2021-07-30 16:32+0000\n"
+"Last-Translator: Nikita Epifanov <nikgreens@protonmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/super-tux-party/"
+"minigamesbowling/ru/>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 4.7.2-dev\n"
+
+msgid "BOWLING_FINISH_MSG"
+msgstr "Финиш!"
+
+msgid "MINIGAME_ACTION_THROW"
+msgstr "Бросай мяч"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"Чтобы победить, игроку-одиночке нужно сбивать всех остальных игроков с "
+"платформы.\n"
+"Если время заканчивается, группа побеждает.\n"
+"Следите за падающими коробками. Они оглушают вас, если вас ударили, но также "
+"блокируют пули."
+
+msgid "MINIGAME_NAME"
+msgstr "Боулинг"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Двигаться вправо"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Двигаться влево"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Двигаться вниз"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Двигаться вверх"
+
+msgid "MINIGAME_ACTION_JUMP"
+msgstr "Прыжок"
+
+msgid "MINIGAME_ACTION_MOVE"
+msgstr "Двигаться"

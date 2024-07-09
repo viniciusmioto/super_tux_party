@@ -1,0 +1,97 @@
+[gd_scene load_steps=6 format=3 uid="uid://tac6ca6ek51d"]
+
+[ext_resource type="PackedScene" uid="uid://dq44tcwcjpik6" path="res://client/rewardscreens/rewardscreen_background.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://bssuyfl74vm4o" path="res://client/rewardscreens/cookie_text.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://cxolqitqwby3e" path="res://client/rewardscreens/continue_check.tscn" id="3"]
+[ext_resource type="Script" path="res://client/rewardscreens/gnu_coop/gnu_coop.gd" id="4"]
+
+[sub_resource type="Environment" id="1"]
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.5
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("4")
+
+[node name="UIUpdate" type="Timer" parent="."]
+wait_time = 0.1
+
+[node name="Background" parent="." instance=ExtResource("1")]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1280, 720)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(-1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, -5, 0.7, 0)
+environment = SubResource("1")
+fov = 37.0
+
+[node name="OmniLight3D" type="OmniLight3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1.5, 0)
+shadow_enabled = true
+omni_range = 400.0
+omni_attenuation = 9.9152e-05
+
+[node name="Placement1" type="Marker3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(0.34202, 0, -0.939693, 0, 1, 0, 0.939693, 0, 0.34202, 0, 0, -1.5)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SubViewportContainer/SubViewport/Placement1"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CookieText" parent="SubViewportContainer/SubViewport/Placement1/VBoxContainer" instance=ExtResource("2")]
+layout_mode = 2
+
+[node name="ContinueCheck" parent="SubViewportContainer/SubViewport/Placement1/VBoxContainer" instance=ExtResource("3")]
+layout_mode = 2
+
+[node name="Placement2" type="Marker3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(0.173648, 0, -0.984808, 0, 1, 0, 0.984808, 0, 0.173648, 0.25, 0, -0.5)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SubViewportContainer/SubViewport/Placement2"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CookieText" parent="SubViewportContainer/SubViewport/Placement2/VBoxContainer" instance=ExtResource("2")]
+layout_mode = 2
+
+[node name="ContinueCheck" parent="SubViewportContainer/SubViewport/Placement2/VBoxContainer" instance=ExtResource("3")]
+layout_mode = 2
+
+[node name="Placement3" type="Marker3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(-0.173648, 0, -0.984808, 0, 1, 0, 0.984808, 0, -0.173648, 0.25, 0, 0.5)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SubViewportContainer/SubViewport/Placement3"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CookieText" parent="SubViewportContainer/SubViewport/Placement3/VBoxContainer" instance=ExtResource("2")]
+layout_mode = 2
+
+[node name="ContinueCheck" parent="SubViewportContainer/SubViewport/Placement3/VBoxContainer" instance=ExtResource("3")]
+layout_mode = 2
+
+[node name="Placement4" type="Marker3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(-0.34202, 0, -0.939693, 0, 1, 0, 0.939693, 0, -0.34202, 0, 0, 1.5)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SubViewportContainer/SubViewport/Placement4"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CookieText" parent="SubViewportContainer/SubViewport/Placement4/VBoxContainer" instance=ExtResource("2")]
+layout_mode = 2
+
+[node name="ContinueCheck" parent="SubViewportContainer/SubViewport/Placement4/VBoxContainer" instance=ExtResource("3")]
+layout_mode = 2
+
+[connection signal="timeout" from="UIUpdate" to="SubViewportContainer/SubViewport/Placement1/VBoxContainer/CookieText" method="countdown"]
+[connection signal="timeout" from="UIUpdate" to="SubViewportContainer/SubViewport/Placement2/VBoxContainer/CookieText" method="countdown"]
+[connection signal="timeout" from="UIUpdate" to="SubViewportContainer/SubViewport/Placement3/VBoxContainer/CookieText" method="countdown"]
+[connection signal="timeout" from="UIUpdate" to="SubViewportContainer/SubViewport/Placement4/VBoxContainer/CookieText" method="countdown"]

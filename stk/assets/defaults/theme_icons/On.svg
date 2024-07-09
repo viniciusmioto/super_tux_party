@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="15mm" height="7mm" viewBox="0 0 16 8" version="1.1" id="svg8" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <g id="layer1" transform="matrix(0.852616, 0, 0, 1, 0.500003, 0.503975)" bx:origin="0.533334 0.5">
+    <g id="g843" transform="translate(-33.192629,-91.558917)">
+      <g id="g1502" transform="matrix(2.3514929,0,0,2.0000008,-46.791652,-91.558984)">
+        <g id="g1426" transform="matrix(0.88657198,0,0,0.88088901,3.8581697,10.905673)">
+          <path id="rect835-3" style="fill-opacity: 1; stroke: none; stroke-width: 0.0708287; stroke-linejoin: round; paint-order: markers; fill: rgb(27, 170, 27);" d="m 35.283382,91.934363 c -0.634563,0 -1.269129,0.776277 -1.269126,1.615132 -3e-6,0.838855 0.475922,1.615132 1.269126,1.615132 h 5.711069 c 0.793205,0 1.423199,-0.786344 1.423182,-1.674438 -1.6e-5,-0.888066 -0.653208,-1.555821 -1.423182,-1.555826 z" bx:origin="0.502107 0.498077"/>
+          <circle style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264999;stroke-linejoin:round;paint-order:markers fill stroke" id="path855" cx="40.46867" cy="93.543289" r="1.984375" bx:origin="-0.063154 0.5"/>
+        </g>
+      </g>
+      <text style="font-size: 2.82222px; line-height: 1.25; font-family: sans-serif; fill: rgb(255, 255, 255); stroke-width: 0.264583; white-space: pre;" x="35.177006" y="94.866211" id="text1460"><tspan id="tspan1458" x="35.177006" y="94.866211" style="font-size:2.82222px;fill:#ffffff;stroke-width:0.264583"/></text>
+    </g>
+  </g>
+</svg>

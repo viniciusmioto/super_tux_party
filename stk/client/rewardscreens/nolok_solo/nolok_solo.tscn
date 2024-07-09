@@ -1,0 +1,62 @@
+[gd_scene load_steps=8 format=3 uid="uid://cvepihqhocwot"]
+
+[ext_resource type="PackedScene" uid="uid://bssuyfl74vm4o" path="res://client/rewardscreens/cookie_text.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://ctaoxj4wcnm8i" path="res://client/rewardscreens/winner_text.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://cxolqitqwby3e" path="res://client/rewardscreens/continue_check.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://dq44tcwcjpik6" path="res://client/rewardscreens/rewardscreen_background.tscn" id="4"]
+[ext_resource type="Script" path="res://client/rewardscreens/nolok_solo/nolok_solo.gd" id="5"]
+[ext_resource type="Texture2D" uid="uid://xsusqt03md8o" path="res://common/scenes/board_logic/controller/icons/cake.png" id="6"]
+
+[sub_resource type="Environment" id="1"]
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.5
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("5")
+
+[node name="UIUpdate" type="Timer" parent="."]
+wait_time = 0.1
+
+[node name="Background" parent="." instance=ExtResource("4")]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1280, 720)
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(-1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, -5, 0.7, 0)
+environment = SubResource("1")
+fov = 37.0
+
+[node name="OmniLight3D" type="OmniLight3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1.5, 0)
+shadow_enabled = true
+omni_range = 400.0
+omni_attenuation = 9.9152e-05
+
+[node name="Placement" type="Marker3D" parent="SubViewportContainer/SubViewport"]
+transform = Transform3D(-1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 0, 0, 0)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SubViewportContainer/SubViewport/Placement"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CookieText" parent="SubViewportContainer/SubViewport/Placement/VBoxContainer" instance=ExtResource("1")]
+layout_mode = 2
+icon = ExtResource("6")
+
+[node name="ContinueCheck" parent="SubViewportContainer/SubViewport/Placement/VBoxContainer" instance=ExtResource("3")]
+layout_mode = 2
+
+[node name="WinnerText" parent="SubViewportContainer/SubViewport/Placement" instance=ExtResource("2")]
+
+[connection signal="timeout" from="UIUpdate" to="SubViewportContainer/SubViewport/Placement/VBoxContainer/CookieText" method="countdown"]

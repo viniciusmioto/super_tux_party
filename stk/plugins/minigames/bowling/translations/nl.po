@@ -1,0 +1,52 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2021-03-08 16:02+0000\n"
+"Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/super-tux-party/"
+"minigamesbowling/nl/>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5.1\n"
+
+msgid "BOWLING_FINISH_MSG"
+msgstr "Klaar!"
+
+msgid "MINIGAME_NAME"
+msgstr "Kegelen"
+
+msgid "MINIGAME_ACTION_THROW"
+msgstr "Bal gooien"
+
+msgid "MINIGAME_ACTION_JUMP"
+msgstr "Springen"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Naar rechts"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Naar links"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Omlaag"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Omhoog"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"De solospeler moet alle andere spelers van het platform schieten om te "
+"winnen.\n"
+"Als de klok afgaat, wint de groep.\n"
+"Let op vallende dozen. Als je daardoor geraakt wordt, houden ze kogels "
+"tegen, maar kun je ook tijdelijk niet bewegen."
+
+msgid "MINIGAME_ACTION_MOVE"
+msgstr "Verplaatsen"

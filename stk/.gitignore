@@ -1,0 +1,6 @@
+.python-version
+*~
+*.kra
+.import/
+.directory
+.godot/

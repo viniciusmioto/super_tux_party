@@ -1,0 +1,33 @@
+[gd_scene load_steps=7 format=3 uid="uid://dw3dff20fschf"]
+
+[ext_resource type="Script" path="res://common/scenes/board_logic/node/node.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://cn4uw3cuihfbn" path="res://common/scenes/board_logic/node/node.glb" id="2"]
+[ext_resource type="Material" uid="uid://dd4iiymral01t" path="res://common/scenes/board_logic/node/material/node_blue_material.tres" id="3"]
+[ext_resource type="PackedScene" uid="uid://bq4ldr7nx4awu" path="res://assets/models/cake/cake.tscn" id="4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4mp5e"]
+shading_mode = 0
+vertex_color_use_as_albedo = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_n63pa"]
+
+[node name="Node" type="Node3D" groups=["nodes"]]
+script = ExtResource("1")
+
+[node name="Model" parent="." instance=ExtResource("2")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, 0, -0.05, 0)
+
+[node name="Cylinder" parent="Model" index="0"]
+surface_material_override/0 = ExtResource("3")
+
+[node name="Cake" parent="." instance=ExtResource("4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+visible = false
+
+[node name="EditorLines" type="MeshInstance3D" parent="."]
+top_level = true
+material_override = SubResource("StandardMaterial3D_4mp5e")
+mesh = SubResource("ArrayMesh_n63pa")
+skeleton = NodePath("")
+
+[editable path="Model"]

@@ -1,0 +1,42 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-04-12 13:26+0000\n"
+"Last-Translator: liimee <alt3753.7@gmail.com>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/"
+"super-tux-party/minigamesescape_from_lava_1v3/id/>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.6-dev\n"
+
+#, fuzzy
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"Pemain-pemain berpacu satu sama lain untuk meraih puncak, saat lava sedang "
+"naik di bawah.\n"
+"Mereka harus melewati pintu-pintu. Salah satu dari setiap pintu ini diblokir "
+"dan tidak mau terbuka.\n"
+"Pemain pertama yang mencapai puncak dengan selamat menang!"
+
+msgid "MINIGAME_ACTION_OBSTRUCT"
+msgstr "Halangi pintu"
+
+msgid "ESCAPE_FROM_LAVA_FINISH_MSG"
+msgstr "Selesai!"
+
+msgid "MINIGAME_NAME"
+msgstr "Kabur dari Lava"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Bergerak ke Kanan"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Bergerak ke Kiri"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Bergerak ke Bawah"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Bergerak ke Atas"

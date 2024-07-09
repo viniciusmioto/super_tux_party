@@ -1,0 +1,730 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2023-02-13 11:38+0000\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/super-tux-party/"
+"super-tux-party/nl/>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.16-dev\n"
+
+msgid "CONTEXT_LABEL_BUY_CAKE"
+msgstr "Koop een taart voor {amount} koekjes"
+
+msgid "CONTEXT_LABEL_DUEL_REWARD"
+msgstr "Beloning voor duel:"
+
+msgid "CONTEXT_LABEL_DUEL_SELECT"
+msgstr "Kies een tegenstander:"
+
+msgid "CONTEXT_LABEL_FINISH"
+msgstr "Klaar!"
+
+msgid "CONTEXT_LABEL_GO"
+msgstr "Start!"
+
+msgid "CONTEXT_LABEL_PLAYER_ROLLED"
+msgstr "{name} heeft {value} gegooid:"
+
+msgid "CONTEXT_LABEL_READY_QUESTION"
+msgstr "Klaar?"
+
+msgid "CONTEXT_LABEL_ROLL"
+msgstr "Gooien maar!"
+
+msgid "CONTEXT_LABEL_ROLL_PLAYER"
+msgstr "{name} gooien!"
+
+msgid "CONTEXT_LABEL_STEAL_ONE_CAKE"
+msgstr "De winnaar steelt 1 taart"
+
+msgid "CONTEXT_LABEL_STEAL_TEN_COOKIES"
+msgstr "De winnaar steelt 10 koekjes"
+
+msgid "CONTEXT_LABEL_TURN_NUM"
+msgstr "Beurt {turn}/{total}"
+
+msgid "CONTEXT_LABEL_VS"
+msgstr "vs"
+
+msgid "CONTEXT_LABEL_YOUR_TURN"
+msgstr "Jij bent aan de beurt!"
+
+msgid "CONTEXT_NOTIFICATION_NOT_ENOUGH_COOKIES"
+msgstr "Je hebt niet genoeg koekjes om dat te kunnen kopen"
+
+msgid "CONTEXT_NOTIFICATION_NOT_ENOUGH_SPACE"
+msgstr "Je hebt geen ruimte meer in je inventaris"
+
+msgid "MENU_CONTROLS_ACTION_1"
+msgstr "Actie 1"
+
+msgid "MENU_CONTROLS_ACTION_2"
+msgstr "Actie 2"
+
+msgid "MENU_CONTROLS_ACTION_3"
+msgstr "Actie 3"
+
+msgid "MENU_CONTROLS_ACTION_4"
+msgstr "Actie 4"
+
+msgid "MENU_CONTROLS_UNKNOWN_GAMEPAD_AXIS"
+msgstr "Onbekende as {axis}"
+
+msgid "MENU_CONTROLS_GENERIC_GAMEPAD_BUTTON"
+msgstr "Gamepadknop {button}"
+
+msgid "MENU_CONTROLS_MOUSE"
+msgstr "Muis"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON"
+msgstr "Muisknop"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_LEFT"
+msgstr "Linkermuisknop"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_MIDDLE"
+msgstr "Middelste muisknop"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_RIGHT"
+msgstr "Rechtermuisknop"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_DOWN"
+msgstr "Muiswiel omlaag"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_LEFT"
+msgstr "Muiswiel links"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_RIGHT"
+msgstr "Muiswiel rechts"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_UP"
+msgstr "Muiswiel omhoog"
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT"
+msgstr "Linkertrekker"
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT_2"
+msgstr "Linkertrekker 2"
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT_3"
+msgstr "Linkertrekker 3"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT"
+msgstr "Rechtertrekker"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT_2"
+msgstr "Rechtertrekker 2"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT_3"
+msgstr "Rechtertrekker 3"
+
+msgid "MENU_CONTROLS_DIR_DOWN"
+msgstr "Omlaag"
+
+msgid "MENU_CONTROLS_DIR_LEFT"
+msgstr "Links"
+
+msgid "MENU_CONTROLS_DIR_RIGHT"
+msgstr "Rechts"
+
+msgid "MENU_CONTROLS_DIR_UP"
+msgstr "Omhoog"
+
+msgid "MENU_CONTROLS_SCREENSHOT"
+msgstr "Maak een schermfoto"
+
+msgid "MENU_CONTROLS_DEV_MENU"
+msgstr "Open het ontwikkelaarsmenu"
+
+msgid "MENU_IO_ENTER_SAVEGAME_NAME"
+msgstr "Geef het spel een naam:"
+
+msgid "MENU_IO_LOAD_GAME"
+msgstr "Spel laden"
+
+msgid "MENU_IO_SAVE"
+msgstr "Opslaan"
+
+msgid "MENU_IO_SAVE_GAME"
+msgstr "Spel opslaan"
+
+msgid "MENU_LABEL_BACK"
+msgstr "Terug"
+
+msgid "MENU_LABEL_CANCEL"
+msgstr "Annuleren"
+
+msgid "MENU_LABEL_CONTINUE"
+msgstr "Doorgaan"
+
+msgid "MENU_LABEL_DESKTOP"
+msgstr "Volledig afsluiten"
+
+msgid "MENU_SETTINGS_AWARD_LINEAR"
+msgstr "Lineair"
+
+msgid "MENU_LABEL_NEW_GAME"
+msgstr "Nieuw spel"
+
+msgid "MENU_LABEL_START"
+msgstr "Starten"
+
+msgid "MENU_LABEL_PAUSE"
+msgstr "Pauzeren"
+
+msgid "MENU_LABEL_PAUSED"
+msgstr "Gepauzeerd"
+
+msgid "MENU_LABEL_PAUSE_ON_WINDOW_UNFOCUS"
+msgstr "Pauzeren als venster niet meer gefocust is"
+
+msgid "MENU_LABEL_PLAY"
+msgstr "Spelen"
+
+msgid "MENU_LABEL_ONLINE"
+msgstr "Online spelen"
+
+msgid "MENU_LABEL_PLAYER1"
+msgstr "Speler 1"
+
+msgid "MENU_LABEL_PLAYER2"
+msgstr "Speler 2"
+
+msgid "MENU_LABEL_PLAYER3"
+msgstr "Speler 3"
+
+msgid "MENU_LABEL_PLAYER4"
+msgstr "Speler 4"
+
+msgid "MENU_LABEL_PRESS_ANY_KEY"
+msgstr "Druk op een knop"
+
+msgid "MENU_LABEL_QUIT"
+msgstr "Afsluiten"
+
+msgid "MENU_LABEL_READY"
+msgstr "Klaar!"
+
+msgid "MENU_LABEL_RESUME"
+msgstr "Hervatten"
+
+msgid "MENU_LABEL_RETURN_MENU"
+msgstr "Terug naar hoofdmenu"
+
+msgid "MENU_LABEL_SELECT_BOARD"
+msgstr "Kies een bord:"
+
+msgid "MENU_LABEL_SELECT_CHARACTER"
+msgstr "Kies een personage"
+
+msgid "MENU_LABEL_TRY"
+msgstr "Proberen"
+
+msgid "MENU_SETTINGS_AWARD_WINNER_TAKES_ALL"
+msgstr "Alles is voor de winnaar"
+
+msgid "MENU_SETTINGS_AWARD_TYPE"
+msgstr "Soort prijs"
+
+msgid "MENU_LABEL_CREDITS"
+msgstr "Met dank aan"
+
+msgid "MENU_LABEL_SCREENSHOTS"
+msgstr "Schermfoto's"
+
+msgid "MENU_OPTIONS"
+msgstr "Instellingen"
+
+msgid "MENU_OPTIONS_AUDIO"
+msgstr "Geluid"
+
+msgid "MENU_OPTIONS_CONTROLS"
+msgstr "Besturing"
+
+msgid "MENU_OPTIONS_EFFECTS"
+msgstr "Effecten"
+
+msgid "MENU_OPTIONS_FRAME_CAP"
+msgstr "Framelimiet"
+
+msgid "MENU_OPTIONS_FULLSCREEN"
+msgstr "Schermvullend"
+
+msgid "MENU_OPTIONS_MSAA"
+msgstr "Multisample-anti-kartelvorming (MSAA)"
+
+msgid "MENU_OPTIONS_LANGUAGE"
+msgstr "Taal"
+
+msgid "MENU_OPTIONS_MASTER"
+msgstr "Algemeen volume"
+
+msgid "MENU_OPTIONS_MISC"
+msgstr "Overig"
+
+msgid "MENU_OPTIONS_MUSIC"
+msgstr "Muziek"
+
+msgid "MENU_OPTIONS_MUTE_ON_WINDOW_UNFOCUS"
+msgstr "Dempen als venster niet meer gefocust is"
+
+msgid "MENU_OPTIONS_SYSTEM_DEFAULT"
+msgstr "Systeemstandaard"
+
+msgid "MENU_OPTIONS_VISUAL"
+msgstr "Beeld"
+
+msgid "MENU_OPTIONS_VSYNC"
+msgstr "V-sync"
+
+msgid "DIALOG_YES"
+msgstr "Ja"
+
+msgid "DIALOG_NO"
+msgstr "Nee"
+
+msgid "MENU_LABEL_CONNECTION_ERROR_TITLE"
+msgstr "Verbindingsfout"
+
+msgid "MENU_LABEL_CONNECTION_TIMEOUT"
+msgstr ""
+"Er kan geen verbinding worden gemaakt met de server.\n"
+"\n"
+"Neem contact op met de serverbeheerder."
+
+msgid "MENU_LABEL_NO_SERVER_VERSION"
+msgstr ""
+"De serverversie kan niet worden vastgesteld.\n"
+"\n"
+"Neem contact op met de serverbeheerder."
+
+msgid "MENU_LABEL_VERSION_MISMATCH_TITLE"
+msgstr "Onjuiste versie"
+
+msgid "MENU_LABEL_VERSION_MISMATCH"
+msgstr ""
+"Je versie van SuperTuxParty is niet compatibel met deze server.\n"
+"Jouw versie: {local}\n"
+"Serverversie: {remote}\n"
+"\n"
+"Download een compatibele versie om verbinding te maken met deze server."
+
+msgid "MENU_LABEL_CHOOSE_SERVER"
+msgstr "Kies een server:"
+
+msgid "MENU_LABEL_COPY"
+msgstr "Kopiëren naar klembord"
+
+msgid "MENU_LABEL_LOBBY_CREATE"
+msgstr "Kamer samenstellen"
+
+msgid "MENU_LABEL_LOBBY_JOIN"
+msgstr "Kamer binnengaan"
+
+msgid "MENU_LOBBY_SETTINGS"
+msgstr "Spelinstellingen"
+
+msgid "MENU_SETTINGS_PUBLIC"
+msgstr "Openbare kamer"
+
+msgid "MENU_SETTINGS_CAKE_COST"
+msgstr "Aantal koekjes"
+
+msgid "MENU_SETTINGS_TURNS"
+msgstr "Aantal beurten"
+
+msgid "MENU_SETTINGS_ENABLE_TIMEOUT"
+msgstr "Spelers buitenzetten als ze inactief zijn"
+
+msgid "MENU_SETTINGS_TIMEOUT"
+msgstr "Tijdslimiet"
+
+msgid "AI_DIFFICULTY"
+msgstr "Moeilijkheidsgraad van computer:"
+
+msgid "DIFFICULTY_EASY"
+msgstr "Makkelijk"
+
+msgid "DIFFICULTY_NORMAL"
+msgstr "Normaal"
+
+msgid "DIFFICULTY_HARD"
+msgstr "Moeilijk"
+
+msgid "CONTEXT_GNU_ACTION_TYPE"
+msgstr "GNU-actie"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY"
+msgstr "Grafische kwaliteit"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_HIGH"
+msgstr "Hoog"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_MEDIUM"
+msgstr "Gemiddeld"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_LOW"
+msgstr "Laag"
+
+msgid "MENU_OPTIONS_FXAA"
+msgstr ""
+
+msgid "MENU_GRAPHIC_QUALITY_REBOOT_NOTICE"
+msgstr "Herstart om de wijziging toe te passen"
+
+msgid "MENU_LOBBY_ADD_PLAYER"
+msgstr "Klik om naar binnen te gaan"
+
+msgid "CONTEXT_SPEAKER_SARA"
+msgstr "Sara"
+
+msgid "CONTEXT_WINNER_ANNOUNCEMENT"
+msgstr ""
+"Iedereen heeft zijn stinkende best gedaan, maar het spel is afgelopen en er "
+"kan maar één winnaar zijn. En dat is…"
+
+msgid "CONTEXT_WINNER_REVEAL_ONE_PLAYER"
+msgstr "[color=#ff3300]{0}[/color]!"
+
+msgid "CONTEXT_WINNER_REVEAL_TWO_PLAYER"
+msgstr "[color=#ff3300]{0}[/color] en [color=#33ff00]{1}[/color]!"
+
+msgid "CONTEXT_WINNER_REVEAL_THREE_PLAYER"
+msgstr ""
+"[color=#ff3300]{0}[/color], [color=#33ff00]{1}[/color] en [color=#00ff88]{2}"
+"[/color]!"
+
+msgid "CONTEXT_WINNER_REVEAL_FOUR_PLAYER"
+msgstr ""
+"[color=#ff3300]{0}[/color], [color=#33ff00]{1}[/color], [color=#00ff88]{2}[/"
+"color] en [color=#ffff33]{3}[/color]!"
+
+msgid "CONTEXT_LABEL_CAKES"
+msgstr "Taarten"
+
+msgid "CONTEXT_LABEL_COOKIES"
+msgstr "Koekjes"
+
+msgid "CONTEXT_GNU_NAME"
+msgstr "GNU"
+
+msgid "CONTEXT_GNU_EVENT_START"
+msgstr "Hé, heb je hulp nodig? Ik kan je helpen…"
+
+msgid "CONTEXT_GNU_MINIGAME_SOLO_MODERATION"
+msgstr ""
+"Een minispel voor één speler! Laat zien wat je kunt, dan krijg je van mij "
+"een [color=#dd44ff]{reward}[/color]"
+
+msgid "CONTEXT_GNU_MINIGAME_SOLO"
+msgstr "Minispel voor één speler"
+
+msgid "CONTEXT_GNU_MINIGAME_COOP_MODERATION"
+msgstr "Laten we samen spelen! Hoe meer zielen, hoe meer vreugd."
+
+msgid "CONTEXT_GNU_MINIGAME_COOP"
+msgstr "Minispel voor meerdere spelers"
+
+msgid "CONTEXT_GNU_SOLO_VICTORY"
+msgstr "Goed gedaan! Dit is je beloning."
+
+msgid "CONTEXT_GNU_SOLO_LOSS"
+msgstr "Dat ging niet zo goed. Volgende keer beter."
+
+msgid "CONTEXT_GNU_COOP_VICTORY"
+msgstr "Goed zo! Ik kijk al uit naar de volgende keer."
+
+msgid "CONTEXT_GNU_COOP_LOSS"
+msgstr ""
+"Het is je niet gelukt, maar je hebt wél gewerkt aan je teamwork. Ik weet "
+"zeker dat het volgende keer gaat lukken!"
+
+msgid "CONTEXT_NOLOK_NAME"
+msgstr "Nolok"
+
+msgid "CONTEXT_NOLOK_ACTION_TYPE"
+msgstr "Nolok-actie"
+
+msgid "CONTEXT_NOLOK_EVENT_START"
+msgstr "Mijn beurt! Ik weet al wat ik ga doen…"
+
+msgid "CONTEXT_NOLOK_MINIGAME_SOLO_MODERATION"
+msgstr ""
+"Ik daag je uit voor een minispel! Als je me kunt verslaan, houd je je "
+"spullen - als je verliest, krijg ik een van je taarten…"
+
+msgid "CONTEXT_NOLOK_MINIGAME_SOLO"
+msgstr "Minispel voor één speler"
+
+msgid "CONTEXT_NOLOK_MINIGAME_COOP_MODERATION"
+msgstr "Ík tegen jullie allen? Jullie denken toch niet dat jullie kans maken?"
+
+msgid "CONTEXT_NOLOK_MINIGAME_COOP"
+msgstr "Minispel voor meerdere spelers"
+
+msgid "CONTEXT_NOLOK_SOLO_VICTORY"
+msgstr "Wees blij dat ik je gespaard heb!"
+
+msgid "CONTEXT_NOLOK_SOLO_LOSS"
+msgstr "Ik kijk er naar uit je wéér in te maken!"
+
+msgid "CONTEXT_NOLOK_COOP_VICTORY"
+msgstr "Volgende keer ga je eraan."
+
+msgid "CONTEXT_NOLOK_COOP_LOSS"
+msgstr "Haha, wat een makkie was dat, zeg."
+
+msgid "CONTEXT_NOLOK_LOSE_COOKIES_MODERATION"
+msgstr ""
+"Haha, je verliest [color=#00aaff]{amount}[/color] koekjes. Ik weet zeker dat "
+"[color=#dd44ff]{player}[/color] ze goed kan gebruiken."
+
+msgid "CONTEXT_NOLOK_LOSE_COOKIES"
+msgstr "Daar gaan je koekjes"
+
+msgid "CONTEXT_NOLOK_ROLL_MODIFIER_MODERATION"
+msgstr ""
+"Rustig aan, makker. De komende [color=#dd44ff]{duration}[/color] beurten "
+"beweeg je [color=#00aaff]{amount}[/color] langzamer."
+
+msgid "CONTEXT_NOLOK_ROLL_MODIFIER"
+msgstr "Vervloekte dobbelsteen"
+
+msgid "CONTEXT_SHOW_TUTORIAL"
+msgstr "Het lijkt er op dat dit je eerste keer is. Zal ik de regels uitleggen?"
+
+msgid "CONTEXT_TUTORIAL_DICE"
+msgstr ""
+"Het spel wordt gespeeld in beurten. Tijdens je beurt rol je een dobbelsteen "
+"en ga je net zoveel stappen vooruit als de dobbelsteen aangeeft."
+
+msgid "CONTEXT_TUTORIAL_COOKIES"
+msgstr ""
+"Je verdient koekjes door minispellen te winnen. Met die koekjes kun je "
+"onderweg, op de winkelvakjes, items kopen."
+
+msgid "CONTEXT_TUTORIAL_CAKES"
+msgstr ""
+"Winnen doe je door de meeste taarten te verzamelen. Koekjes worden gebruikt "
+"als tiebreaker. Je kunt taarten kopen op speciale plekken op het bord. Als "
+"je er een koopt, gaat de taart naar een andere plek."
+
+msgid "CONTEXT_TUTORIAL_SPACES_NORMAL"
+msgstr ""
+"Je kunt op verschillende vakjes landen: op blauwe krijg je koekjes, op rode "
+"verlies je koekjes."
+
+msgid "CONTEXT_TUTORIAL_SPACES_SPECIAL"
+msgstr ""
+"Op groene vakjes gebeurt er iets speciaals. Op gevechtsvakjes kun je een "
+"andere speler uitdagen voor een minispel."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES"
+msgstr ""
+"Als elke speler geweest is, wordt er een minispel gespeeld. Er zijn drie "
+"soorten minispellen:"
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_FFA"
+msgstr "Vrije uitloop, waar iedereen elkaar uitdaagt om te winnen."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_2V2"
+msgstr "Twee-tegen-twee, waar je in teams van twee speelt."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_1V3"
+msgstr ""
+"En tot slot één-tegen-drie, waar één speler het opneemt tegen de rest. De "
+"solospeler ontvangt daarbij een bonus."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_SPECIAL"
+msgstr ""
+"Als een speler op een GNU- of Nolok-vakje landt, wordt er een speciaal soort "
+"minispel gespeeld. GNU-minispellen zijn in je voordeel; Nolok-minispellen in "
+"je nadeel. Blijf daar dus van weg!"
+
+msgid "CONTEXT_TUTORIAL_END"
+msgstr "Nu kun je gaan spelen. Veel plezier!"
+
+msgid "CONTEXT_CAKE_PLACED"
+msgstr "Hier is de taart - kom hem maar halen!"
+
+msgid "CONTEXT_CAKE_WANT_BUY"
+msgstr "Wil je een taart kopen?"
+
+msgid "CONTEXT_CAKE_BUY_AMOUNT"
+msgstr "Hoeveel taarten wil je kopen?"
+
+msgid "CONTEXT_CAKE_COLLECTED"
+msgstr ""
+"Goed zo, [color=#00aaff]{player}[/color]. [color=#dd44ff]{amount}[/color] "
+"taart(en) voor jou."
+
+msgid "CONTEXT_CAKE_CANT_AFFORD"
+msgstr "Sorry, je hebt niet genoeg koekjes om een taart te kopen."
+
+msgid "SHOP_LABEL_TITLE"
+msgstr "Winkel"
+
+msgid "SHOP_LABEL_DESCRIPTION"
+msgstr "Itemomschrijving"
+
+msgid "SHOP_ITEM_NO_DESCRIPTION"
+msgstr "Geen omschrijving"
+
+msgid "REWARDSCREEN_MINIGAME_RESULTS"
+msgstr "Minispelresultaten"
+
+msgid "REWARDSCREEN_MINIGAME_WINNER"
+msgstr "Winnaar!"
+
+msgid "REWARDSCREEN_MINIGAME_REWARD"
+msgstr "Beloning:"
+
+msgid "REWARDSCREEN_PRESS_BUTTON"
+msgstr "Druk op"
+
+msgid "MINIGAME_ACTION_MOVEMENT"
+msgstr "Verplaatsen"
+
+msgid "MINIGAME_TYPE_FFA"
+msgstr "Buutvrij-minispel"
+
+msgid "MINIGAME_TYPE_2v2"
+msgstr "Twee-tegen-twee-minispel"
+
+msgid "MINIGAME_TYPE_1v3"
+msgstr "Eén-tegen-drie-minispel"
+
+msgid "MINIGAME_TYPE_DUEL"
+msgstr "Duel-minispel"
+
+msgid "MINIGAME_TYPE_GNU_COOP"
+msgstr "GNU-samenwerkingsminispel"
+
+msgid "MINIGAME_TYPE_GNU_SOLO"
+msgstr "GNU-solominispel"
+
+msgid "MINIGAME_TYPE_NOLOK_COOP"
+msgstr "Nolok-samenwerkingsminispel"
+
+msgid "MINIGAME_TYPE_NOLOK_SOLO"
+msgstr "Nolok-solominispel"
+
+msgid "ERROR"
+msgstr "Foutmelding"
+
+msgid "SAVE_GAME_CANNOT_SAVE"
+msgstr "Het spel kan niet worden opgeslagen"
+
+msgid "SAVE_GAME_DISABLED"
+msgstr "Het opslaan van spellen is uitgeschakeld op deze server"
+
+#~ msgid "MENU_LABEL_NOT_READY_ELLIPSIS"
+#~ msgstr "Nog niet klaar…"
+
+#~ msgid "MENU_LABEL_NUM_1"
+#~ msgstr "1"
+
+#~ msgid "MENU_LABEL_NUM_3"
+#~ msgstr "3"
+
+#~ msgid "MENU_LABEL_OK"
+#~ msgstr "Oké"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_2"
+#~ msgstr "Kies een personage voor speler 2"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_4"
+#~ msgstr "Kies een personage voor speler 4"
+
+#~ msgid "MENU_LABEL_BOARD_SETTINGS"
+#~ msgstr "Bordinstellingen"
+
+#~ msgid "MENU_LABEL_XBOX"
+#~ msgstr "XBOX"
+
+#~ msgid "MENU_LABEL_TURNS"
+#~ msgstr "Aantal beurten:"
+
+#~ msgid "MENU_LABEL_TITLE"
+#~ msgstr "Super Tux Party"
+
+#~ msgid "MENU_LABEL_DESCRIPTION"
+#~ msgstr "Omschrijving"
+
+#~ msgid "MENU_CONTROLS_AXIS_MINUS"
+#~ msgstr "As -"
+
+#~ msgid "MENU_CONTROLS_AXIS_PLUS"
+#~ msgstr "As +"
+
+#~ msgid "MENU_CONTROLS_AXIS_X_LEFT"
+#~ msgstr "X Links"
+
+#~ msgid "MENU_CONTROLS_AXIS_X_RIGHT"
+#~ msgstr "X Rechts"
+
+#~ msgid "MENU_CONTROLS_AXIS_Y_LEFT"
+#~ msgstr "Y Links"
+
+#~ msgid "MENU_CONTROLS_AXIS_Y_RIGHT"
+#~ msgstr "Y Rechts"
+
+#~ msgid "MENU_CONTROLS_BUTTON_UNKNOWN"
+#~ msgstr "Onbekende Knop"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD"
+#~ msgstr "Controller"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON"
+#~ msgstr "Controller knop"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_1"
+#~ msgstr "Controller knop 1"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_2"
+#~ msgstr "Controller knop 2"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_3"
+#~ msgstr "Controller knop 3"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_4"
+#~ msgstr "Controller knop 4"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_A"
+#~ msgstr "Controller knop A"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_B"
+#~ msgstr "Controller knop B"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_CIRCLE"
+#~ msgstr "Controller knop Rondje"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_CROSS"
+#~ msgstr "Controller knop Kruisje"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_SQUARE"
+#~ msgstr "Controller knop Vierkantje"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_TRIANGLE"
+#~ msgstr "Controller knop Driehoekje"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_X"
+#~ msgstr "Controller knop X"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_BUTTON_Y"
+#~ msgstr "Controller knop Y"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_SELECT"
+#~ msgstr "Controller Select"
+
+#~ msgid "MENU_CONTROLS_GAMEPAD_START"
+#~ msgstr "Controller Start"

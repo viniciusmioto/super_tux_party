@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="15mm" height="7mm" viewBox="0 0 16 8" version="1.1" id="svg8" xmlns="http://www.w3.org/2000/svg">
+  <g id="layer1" transform="matrix(0.782037, 0, 0, 0.966254, 0.49874, 0.469474)">
+    <g id="g843" transform="translate(-33.192629,-91.558917)">
+      <text style="font-size: 2.82223px; line-height: 1.25; font-family: sans-serif; stroke-width: 0.264583; white-space: pre;" x="37.869347" y="94.6595" id="text1464"><tspan id="tspan1462" x="37.869347" y="94.6595" style="stroke-width:0.264583"/></text>
+      <g id="g2016" transform="matrix(0.96094004,0,0,0.91950988,1.2965659,7.3721304)">
+        <g id="g1498" transform="matrix(1.3785506,0,0,1.4508396,-20.121698,-44.844617)">
+          <path id="rect835-3" style="fill-opacity: 1; stroke: none; stroke-width: 0.108525; stroke-linejoin: round; stroke-opacity: 1; paint-order: markers; fill: rgb(229, 59, 59);" d="m 40.913686,94.543953 c -1.088778,0 -2.177561,1.062168 -2.177556,2.209954 -5e-6,1.147799 0.816583,2.209971 2.177556,2.209971 h 9.799003 c 1.360975,0 2.441913,-1.075951 2.441884,-2.291111 -2.8e-5,-1.215128 -1.120769,-2.128807 -2.441884,-2.128814 z"/>
+          <ellipse style="fill:#ffffff;fill-opacity:1;stroke-width:0.406036;stroke-linejoin:round;paint-order:markers fill stroke" id="path855" cx="42.080139" cy="96.753922" rx="3.4047737" ry="2.7151902"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

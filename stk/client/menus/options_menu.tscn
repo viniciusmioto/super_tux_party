@@ -1,0 +1,298 @@
+[gd_scene load_steps=13 format=3 uid="uid://jeq4trt5v2ii"]
+
+[ext_resource type="Theme" uid="uid://d3w3vt3s6ujoh" path="res://assets/defaults/default_theme.tres" id="1"]
+[ext_resource type="Script" path="res://client/menus/options_menu.gd" id="3"]
+[ext_resource type="Script" path="res://common/scenes/sound_button/sound_button.gd" id="4"]
+[ext_resource type="PackedScene" path="res://common/scenes/sound_button/option_button.tscn" id="5"]
+[ext_resource type="Script" path="res://client/menus/options_menu_tab_container.gd" id="6"]
+[ext_resource type="PackedScene" uid="uid://bwy7gmeseew1j" path="res://common/scenes/sound_button/sound_button.tscn" id="8"]
+[ext_resource type="PackedScene" path="res://common/scenes/sound_button/check_box.tscn" id="9"]
+[ext_resource type="PackedScene" uid="uid://bvsena8q5rdqh" path="res://client/menus/control_remapping/player_controls_mapper.tscn" id="10"]
+[ext_resource type="PackedScene" path="res://common/scenes/sound_button/check_button.tscn" id="11"]
+[ext_resource type="PackedScene" uid="uid://ceknwq06ye8c4" path="res://client/menus/control_remapping/control_remap_button.tscn" id="12"]
+[ext_resource type="PackedScene" uid="uid://5fg71k8bgd0k" path="res://common/scenes/sound_button/hslider.tscn" id="13"]
+
+[sub_resource type="Shortcut" id="2"]
+
+[node name="OptionsMenu" type="CenterContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("3")
+
+[node name="Menu" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(750, 0)
+layout_mode = 2
+theme = ExtResource("1")
+
+[node name="TabContainer" type="TabContainer" parent="Menu"]
+layout_mode = 2
+script = ExtResource("6")
+
+[node name="Visual" type="VBoxContainer" parent="Menu/TabContainer"]
+layout_mode = 2
+
+[node name="Language" type="HBoxContainer" parent="Menu/TabContainer/Visual"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Menu/TabContainer/Visual/Language"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MENU_OPTIONS_LANGUAGE"
+
+[node name="OptionButton" parent="Menu/TabContainer/Visual/Language" instance=ExtResource("5")]
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../../Fullscreen")
+focus_next = NodePath("../../Fullscreen")
+item_count = 1
+popup/item_0/text = "MENU_OPTIONS_SYSTEM_DEFAULT"
+popup/item_0/id = 0
+
+[node name="Fullscreen" parent="Menu/TabContainer/Visual" instance=ExtResource("11")]
+layout_mode = 2
+focus_neighbor_top = NodePath("../Language/OptionButton")
+text = "MENU_OPTIONS_FULLSCREEN"
+flat = true
+
+[node name="VSync" parent="Menu/TabContainer/Visual" instance=ExtResource("11")]
+layout_mode = 2
+text = "MENU_OPTIONS_VSYNC"
+flat = true
+
+[node name="FXAA" parent="Menu/TabContainer/Visual" instance=ExtResource("11")]
+layout_mode = 2
+text = "MENU_OPTIONS_FXAA"
+flat = true
+
+[node name="MSAA" type="HBoxContainer" parent="Menu/TabContainer/Visual"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Menu/TabContainer/Visual/MSAA"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MENU_OPTIONS_MSAA"
+
+[node name="OptionButton" parent="Menu/TabContainer/Visual/MSAA" instance=ExtResource("5")]
+layout_mode = 2
+item_count = 5
+popup/item_0/text = "Off"
+popup/item_0/id = 0
+popup/item_1/text = "2x MSAA"
+popup/item_1/id = 1
+popup/item_2/text = "4x MSAA"
+popup/item_2/id = 2
+popup/item_3/text = "8x MSAA"
+popup/item_3/id = 3
+popup/item_4/text = "16x MSAA"
+popup/item_4/id = 4
+
+[node name="FrameCap" type="HBoxContainer" parent="Menu/TabContainer/Visual"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Menu/TabContainer/Visual/FrameCap"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MENU_OPTIONS_FRAME_CAP"
+
+[node name="OptionButton" parent="Menu/TabContainer/Visual/FrameCap" instance=ExtResource("5")]
+layout_mode = 2
+item_count = 6
+popup/item_0/text = "30"
+popup/item_0/id = 0
+popup/item_1/text = "60"
+popup/item_1/id = 1
+popup/item_2/text = "120"
+popup/item_2/id = 2
+popup/item_3/text = "144"
+popup/item_3/id = 3
+popup/item_4/text = "244"
+popup/item_4/id = 4
+popup/item_5/text = "∞"
+popup/item_5/id = 5
+
+[node name="Quality" type="HBoxContainer" parent="Menu/TabContainer/Visual"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Menu/TabContainer/Visual/Quality"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MENU_OPTIONS_GRAPHIC_QUALITY"
+
+[node name="OptionButton" type="OptionButton" parent="Menu/TabContainer/Visual/Quality"]
+layout_mode = 2
+item_count = 3
+popup/item_0/text = "MENU_OPTIONS_GRAPHIC_QUALITY_HIGH"
+popup/item_0/id = 0
+popup/item_1/text = "MENU_OPTIONS_GRAPHIC_QUALITY_MEDIUM"
+popup/item_1/id = 1
+popup/item_2/text = "MENU_OPTIONS_GRAPHIC_QUALITY_LOW"
+popup/item_2/id = 2
+script = ExtResource("4")
+
+[node name="Audio" type="VBoxContainer" parent="Menu/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Master" type="HBoxContainer" parent="Menu/TabContainer/Audio"]
+layout_mode = 2
+
+[node name="CheckBox" parent="Menu/TabContainer/Audio/Master" instance=ExtResource("9")]
+layout_mode = 2
+text = "MENU_OPTIONS_MASTER"
+flat = true
+
+[node name="Label" type="Label" parent="Menu/TabContainer/Audio/Master"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "100%"
+
+[node name="MasterVolume" parent="Menu/TabContainer/Audio" instance=ExtResource("13")]
+layout_mode = 2
+min_value = -80.0
+max_value = 0.0
+ticks_on_borders = true
+
+[node name="MuteUnfocus" parent="Menu/TabContainer/Audio" instance=ExtResource("11")]
+layout_mode = 2
+text = "MENU_OPTIONS_MUTE_ON_WINDOW_UNFOCUS"
+flat = true
+
+[node name="Music" type="HBoxContainer" parent="Menu/TabContainer/Audio"]
+layout_mode = 2
+
+[node name="CheckBox" parent="Menu/TabContainer/Audio/Music" instance=ExtResource("9")]
+layout_mode = 2
+text = "MENU_OPTIONS_MUSIC"
+flat = true
+
+[node name="Label" type="Label" parent="Menu/TabContainer/Audio/Music"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "100%"
+
+[node name="MusicVolume" parent="Menu/TabContainer/Audio" instance=ExtResource("13")]
+layout_mode = 2
+min_value = -80.0
+max_value = 0.0
+ticks_on_borders = true
+
+[node name="Effects" type="HBoxContainer" parent="Menu/TabContainer/Audio"]
+layout_mode = 2
+
+[node name="CheckBox" parent="Menu/TabContainer/Audio/Effects" instance=ExtResource("9")]
+layout_mode = 2
+text = "MENU_OPTIONS_EFFECTS"
+flat = true
+
+[node name="Label" type="Label" parent="Menu/TabContainer/Audio/Effects"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "100%"
+
+[node name="EffectsVolume" parent="Menu/TabContainer/Audio" instance=ExtResource("13")]
+layout_mode = 2
+min_value = -80.0
+max_value = 0.0
+ticks_on_borders = true
+
+[node name="Controls" type="VBoxContainer" parent="Menu/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Player1" parent="Menu/TabContainer/Controls" instance=ExtResource("8")]
+layout_mode = 2
+text = "MENU_LABEL_PLAYER1"
+
+[node name="Player2" parent="Menu/TabContainer/Controls" instance=ExtResource("8")]
+layout_mode = 2
+text = "MENU_LABEL_PLAYER2"
+
+[node name="Player3" parent="Menu/TabContainer/Controls" instance=ExtResource("8")]
+layout_mode = 2
+text = "MENU_LABEL_PLAYER3"
+
+[node name="Player4" parent="Menu/TabContainer/Controls" instance=ExtResource("8")]
+layout_mode = 2
+text = "MENU_LABEL_PLAYER4"
+
+[node name="screenshot" type="HBoxContainer" parent="Menu/TabContainer/Controls"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Menu/TabContainer/Controls/screenshot"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MENU_CONTROLS_SCREENSHOT"
+
+[node name="Button" parent="Menu/TabContainer/Controls/screenshot" instance=ExtResource("12")]
+custom_minimum_size = Vector2(29, 0)
+layout_mode = 2
+action = "screenshot"
+
+[node name="debug" type="HBoxContainer" parent="Menu/TabContainer/Controls"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Menu/TabContainer/Controls/debug"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MENU_CONTROLS_DEV_MENU"
+
+[node name="Button" parent="Menu/TabContainer/Controls/debug" instance=ExtResource("12")]
+custom_minimum_size = Vector2(29, 0)
+layout_mode = 2
+action = "debug"
+
+[node name="Misc" type="VBoxContainer" parent="Menu/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="PauseUnfocus" parent="Menu/TabContainer/Misc" instance=ExtResource("11")]
+layout_mode = 2
+text = "MENU_LABEL_PAUSE_ON_WINDOW_UNFOCUS"
+flat = true
+
+[node name="Credits" type="VBoxContainer" parent="Menu/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Menu/TabContainer/Credits"]
+custom_minimum_size = Vector2(734, 360)
+layout_mode = 2
+bbcode_enabled = true
+
+[node name="Back" parent="Menu" instance=ExtResource("8")]
+layout_mode = 2
+shortcut = SubResource("2")
+shortcut_in_tooltip = false
+text = "MENU_LABEL_BACK"
+custom_click = "res://assets/sounds/ui/click2.wav"
+
+[node name="ControlRemapper" parent="." instance=ExtResource("10")]
+visible = false
+layout_mode = 2
+
+[connection signal="tab_selected" from="Menu/TabContainer" to="." method="_on_TabContainer_tab_selected"]
+[connection signal="item_selected" from="Menu/TabContainer/Visual/Language/OptionButton" to="." method="_on_Language_item_selected"]
+[connection signal="toggled" from="Menu/TabContainer/Visual/Fullscreen" to="." method="_on_Fullscreen_toggled"]
+[connection signal="toggled" from="Menu/TabContainer/Visual/VSync" to="." method="_on_VSync_toggled"]
+[connection signal="toggled" from="Menu/TabContainer/Visual/FXAA" to="." method="_on_FXAA_toggled"]
+[connection signal="item_selected" from="Menu/TabContainer/Visual/MSAA/OptionButton" to="." method="_on_MSAA_item_selected"]
+[connection signal="item_selected" from="Menu/TabContainer/Visual/FrameCap/OptionButton" to="." method="_on_FrameCap_item_selected"]
+[connection signal="button_down" from="Menu/TabContainer/Visual/Quality/OptionButton" to="Menu/TabContainer/Visual/Quality/OptionButton" method="_cancel_sound"]
+[connection signal="item_focused" from="Menu/TabContainer/Visual/Quality/OptionButton" to="Menu/TabContainer/Visual/Quality/OptionButton" method="_select_with_arg"]
+[connection signal="item_selected" from="Menu/TabContainer/Visual/Quality/OptionButton" to="." method="_on_GraphicQuality_item_selected"]
+[connection signal="item_selected" from="Menu/TabContainer/Visual/Quality/OptionButton" to="Menu/TabContainer/Visual/Quality/OptionButton" method="_click_with_arg"]
+[connection signal="pressed" from="Menu/TabContainer/Visual/Quality/OptionButton" to="Menu/TabContainer/Visual/Quality/OptionButton" method="_click"]
+[connection signal="toggled" from="Menu/TabContainer/Audio/Master/CheckBox" to="." method="_on_bus_toggled" binds= [0]]
+[connection signal="value_changed" from="Menu/TabContainer/Audio/MasterVolume" to="." method="_on_volume_changed" binds= [0]]
+[connection signal="toggled" from="Menu/TabContainer/Audio/MuteUnfocus" to="." method="_on_MuteUnfocus_toggled"]
+[connection signal="toggled" from="Menu/TabContainer/Audio/Music/CheckBox" to="." method="_on_bus_toggled" binds= [1]]
+[connection signal="value_changed" from="Menu/TabContainer/Audio/MusicVolume" to="." method="_on_volume_changed" binds= [1]]
+[connection signal="toggled" from="Menu/TabContainer/Audio/Effects/CheckBox" to="." method="_on_bus_toggled" binds= [2]]
+[connection signal="value_changed" from="Menu/TabContainer/Audio/EffectsVolume" to="." method="_on_volume_changed" binds= [2]]
+[connection signal="pressed" from="Menu/TabContainer/Controls/Player1" to="." method="_on_change_controls_pressed" binds= [1]]
+[connection signal="pressed" from="Menu/TabContainer/Controls/Player2" to="." method="_on_change_controls_pressed" binds= [2]]
+[connection signal="pressed" from="Menu/TabContainer/Controls/Player3" to="." method="_on_change_controls_pressed" binds= [3]]
+[connection signal="pressed" from="Menu/TabContainer/Controls/Player4" to="." method="_on_change_controls_pressed" binds= [4]]
+[connection signal="toggled" from="Menu/TabContainer/Misc/PauseUnfocus" to="." method="_on_PauseUnfocus_toggled"]
+[connection signal="pressed" from="Menu/Back" to="." method="emit_signal" binds= ["quit"]]
+[connection signal="quit" from="ControlRemapper" to="." method="_on_ControlRemapper_quit"]

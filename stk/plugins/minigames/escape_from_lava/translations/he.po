@@ -1,0 +1,41 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2023-03-16 00:03+0000\n"
+"Last-Translator: \"Omer I.S.\" <omeritzicschwartz@gmail.com>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/super-tux-party/"
+"minigamesescape_from_lava/he/>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 4.16.2-dev\n"
+
+msgid "ESCAPE_FROM_LAVA_FINISH_MSG"
+msgstr "סיום!"
+
+msgid "MINIGAME_NAME"
+msgstr "בריחה מהלבה"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"השחקנים מתחרים זה בזה עד לפסגה בעוד הלבה מגיחה מתחתם.\n"
+"עליהם לעבור מספר דלתות. אחת מהדלתות האלו חסומה ולא תיפתח.\n"
+"השחקן הראשון שמגיע לפסגה בבטחה מנצח!"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "לזוז ימינה"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "לזוז שמאלה"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "לזוז למטה"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "לזוז למעלה"

@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://ckr817omogtl6"]
+
+[ext_resource type="Texture2D" uid="uid://bids740ogyur6" path="res://plugins/boards/KDEValley/dragons/eyes.png" id="1_kffcu"]
+
+[resource]
+resource_name = "eyes"
+cull_mode = 2
+diffuse_mode = 3
+specular_mode = 1
+albedo_texture = ExtResource("1_kffcu")
+metallic_specular = 0.0

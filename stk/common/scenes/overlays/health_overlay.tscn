@@ -1,0 +1,83 @@
+[gd_scene load_steps=2 format=3 uid="uid://lyrdfa6nrvwh"]
+
+[ext_resource type="Script" path="res://common/scenes/overlays/health_overlay.gd" id="1"]
+
+[node name="HealthOverlay" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1")
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Player1" type="VBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icons" type="HBoxContainer" parent="Player1"]
+offset_right = 40.0
+
+[node name="Health" type="HBoxContainer" parent="Player1"]
+offset_top = 4.0
+offset_right = 40.0
+offset_bottom = 36.0
+
+[node name="Player2" type="VBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icons" type="HBoxContainer" parent="Player2"]
+offset_right = 40.0
+
+[node name="Health" type="HBoxContainer" parent="Player2"]
+offset_top = 4.0
+offset_right = 40.0
+offset_bottom = 36.0
+
+[node name="Player3" type="VBoxContainer" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icons" type="HBoxContainer" parent="Player3"]
+offset_right = 40.0
+
+[node name="Health" type="HBoxContainer" parent="Player3"]
+offset_top = 4.0
+offset_right = 40.0
+offset_bottom = 36.0
+
+[node name="Player4" type="VBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icons" type="HBoxContainer" parent="Player4"]
+offset_right = 40.0
+
+[node name="Health" type="HBoxContainer" parent="Player4"]
+offset_top = 4.0
+offset_right = 40.0
+offset_bottom = 36.0

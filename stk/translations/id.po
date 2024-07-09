@@ -1,0 +1,664 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2021-06-11 01:32+0000\n"
+"Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/super-tux-"
+"party/super-tux-party/id/>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.7-dev\n"
+
+msgid "CONTEXT_LABEL_BUY_CAKE"
+msgstr "Beli sebuah kue dengan {amount} kuki"
+
+msgid "CONTEXT_LABEL_DUEL_REWARD"
+msgstr "Hadiah Duel:"
+
+msgid "CONTEXT_LABEL_DUEL_SELECT"
+msgstr "Pilih Lawan:"
+
+msgid "CONTEXT_LABEL_FINISH"
+msgstr "Selesai!"
+
+msgid "CONTEXT_LABEL_GO"
+msgstr "Mulai!"
+
+msgid "CONTEXT_LABEL_PLAYER_ROLLED"
+msgstr "{name} melempar {value}:"
+
+msgid "CONTEXT_LABEL_READY_QUESTION"
+msgstr "Siap?"
+
+msgid "CONTEXT_LABEL_ROLL"
+msgstr "Lempar!"
+
+msgid "CONTEXT_LABEL_ROLL_PLAYER"
+msgstr "Lempar {name}!"
+
+msgid "CONTEXT_LABEL_STEAL_ONE_CAKE"
+msgstr "Pemenang mencuri 1 kue"
+
+msgid "CONTEXT_LABEL_STEAL_TEN_COOKIES"
+msgstr "Pemenang mencuri 10 kuki"
+
+msgid "CONTEXT_LABEL_TURN_NUM"
+msgstr "Giliran {turn}/{total}"
+
+msgid "CONTEXT_LABEL_VS"
+msgstr "VS."
+
+msgid "CONTEXT_LABEL_YOUR_TURN"
+msgstr "Sekarang giliranmu!"
+
+msgid "CONTEXT_NOTIFICATION_NOT_ENOUGH_COOKIES"
+msgstr "Kamu tidak memiliki cukup kuki untuk membeli itu"
+
+msgid "CONTEXT_NOTIFICATION_NOT_ENOUGH_SPACE"
+msgstr "Tidak ada ruang tersisa di inventaris Anda"
+
+msgid "MENU_CONTROLS_ACTION_1"
+msgstr "Tindakan 1"
+
+msgid "MENU_CONTROLS_ACTION_2"
+msgstr "Tindakan 2"
+
+msgid "MENU_CONTROLS_ACTION_3"
+msgstr "Tindakan 3"
+
+msgid "MENU_CONTROLS_ACTION_4"
+msgstr "Tindakan 4"
+
+msgid "MENU_CONTROLS_UNKNOWN_GAMEPAD_AXIS"
+msgstr ""
+
+msgid "MENU_CONTROLS_GENERIC_GAMEPAD_BUTTON"
+msgstr "Tombol Gamepad {button}"
+
+msgid "MENU_CONTROLS_MOUSE"
+msgstr "Tetikus"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON"
+msgstr "Tombol tetikus"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_LEFT"
+msgstr "Tombol tetikus kiri"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_MIDDLE"
+msgstr "Tombol tetikus tengah"
+
+msgid "MENU_CONTROLS_MOUSE_BUTTON_RIGHT"
+msgstr "Tombol tetikus kanan"
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_DOWN"
+msgstr ""
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_LEFT"
+msgstr ""
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_RIGHT"
+msgstr ""
+
+msgid "MENU_CONTROLS_MOUSE_WHEEL_UP"
+msgstr ""
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT"
+msgstr "Trigger Kiri"
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT_2"
+msgstr "Trigger Kiri 2"
+
+msgid "MENU_CONTROLS_TRIGGER_LEFT_3"
+msgstr "Trigger Kiri 3"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT"
+msgstr "Trigger Kanan"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT_2"
+msgstr "Trigger Kanan 2"
+
+msgid "MENU_CONTROLS_TRIGGER_RIGHT_3"
+msgstr "Trigger Kanan 3"
+
+msgid "MENU_CONTROLS_DIR_DOWN"
+msgstr "Bawah"
+
+msgid "MENU_CONTROLS_DIR_LEFT"
+msgstr "Kiri"
+
+msgid "MENU_CONTROLS_DIR_RIGHT"
+msgstr "Kanan"
+
+msgid "MENU_CONTROLS_DIR_UP"
+msgstr "Atas"
+
+msgid "MENU_CONTROLS_SCREENSHOT"
+msgstr "Ambil tangkapan layar"
+
+msgid "MENU_CONTROLS_DEV_MENU"
+msgstr "Buka menu pengembang"
+
+msgid "MENU_IO_ENTER_SAVEGAME_NAME"
+msgstr "Masukkan nama savegame:"
+
+msgid "MENU_IO_LOAD_GAME"
+msgstr "Muat Gim"
+
+msgid "MENU_IO_SAVE"
+msgstr "Simpan"
+
+msgid "MENU_IO_SAVE_GAME"
+msgstr "Simpan Permainan"
+
+msgid "MENU_LABEL_BACK"
+msgstr "Kembali"
+
+msgid "MENU_LABEL_CANCEL"
+msgstr "Batal"
+
+msgid "MENU_LABEL_CONTINUE"
+msgstr "Lanjut"
+
+msgid "MENU_LABEL_DESKTOP"
+msgstr "Keluar ke Destop"
+
+msgid "MENU_SETTINGS_AWARD_LINEAR"
+msgstr ""
+
+msgid "MENU_LABEL_NEW_GAME"
+msgstr "Permainan Baru"
+
+msgid "MENU_LABEL_START"
+msgstr ""
+
+msgid "MENU_LABEL_PAUSE"
+msgstr "Jeda"
+
+msgid "MENU_LABEL_PAUSED"
+msgstr "Dijeda"
+
+msgid "MENU_LABEL_PAUSE_ON_WINDOW_UNFOCUS"
+msgstr "Jeda ketika fokus jendela hilang"
+
+msgid "MENU_LABEL_PLAY"
+msgstr "Main"
+
+msgid "MENU_LABEL_ONLINE"
+msgstr ""
+
+msgid "MENU_LABEL_PLAYER1"
+msgstr "Pemain1"
+
+msgid "MENU_LABEL_PLAYER2"
+msgstr "Pemain2"
+
+msgid "MENU_LABEL_PLAYER3"
+msgstr "Pemain3"
+
+msgid "MENU_LABEL_PLAYER4"
+msgstr "Pemain4"
+
+msgid "MENU_LABEL_PRESS_ANY_KEY"
+msgstr "Tekan tombol apapun"
+
+msgid "MENU_LABEL_QUIT"
+msgstr "Keluar"
+
+msgid "MENU_LABEL_READY"
+msgstr "Siap!"
+
+msgid "MENU_LABEL_RESUME"
+msgstr "Lanjut"
+
+msgid "MENU_LABEL_RETURN_MENU"
+msgstr "Kembali ke Menu Utama"
+
+msgid "MENU_LABEL_SELECT_BOARD"
+msgstr "Pilih papan:"
+
+msgid "MENU_LABEL_SELECT_CHARACTER"
+msgstr ""
+
+msgid "MENU_LABEL_TRY"
+msgstr "Coba"
+
+msgid "MENU_SETTINGS_AWARD_WINNER_TAKES_ALL"
+msgstr ""
+
+msgid "MENU_SETTINGS_AWARD_TYPE"
+msgstr ""
+
+msgid "MENU_LABEL_CREDITS"
+msgstr "Kredit"
+
+msgid "MENU_LABEL_SCREENSHOTS"
+msgstr "Tangkapan-tangkapan layar"
+
+msgid "MENU_OPTIONS"
+msgstr "Pengaturan"
+
+msgid "MENU_OPTIONS_AUDIO"
+msgstr "Audio"
+
+msgid "MENU_OPTIONS_CONTROLS"
+msgstr "Kendali"
+
+msgid "MENU_OPTIONS_EFFECTS"
+msgstr "Efek"
+
+msgid "MENU_OPTIONS_FRAME_CAP"
+msgstr ""
+
+msgid "MENU_OPTIONS_FULLSCREEN"
+msgstr "Layar penuh"
+
+msgid "MENU_OPTIONS_MSAA"
+msgstr ""
+
+msgid "MENU_OPTIONS_LANGUAGE"
+msgstr "Bahasa"
+
+msgid "MENU_OPTIONS_MASTER"
+msgstr ""
+
+msgid "MENU_OPTIONS_MISC"
+msgstr "Lainnya."
+
+msgid "MENU_OPTIONS_MUSIC"
+msgstr "Musik"
+
+msgid "MENU_OPTIONS_MUTE_ON_WINDOW_UNFOCUS"
+msgstr ""
+
+msgid "MENU_OPTIONS_SYSTEM_DEFAULT"
+msgstr "Default Sistem"
+
+msgid "MENU_OPTIONS_VISUAL"
+msgstr "Visual"
+
+msgid "MENU_OPTIONS_VSYNC"
+msgstr "VSync"
+
+msgid "DIALOG_YES"
+msgstr "Ya"
+
+msgid "DIALOG_NO"
+msgstr "Tidak"
+
+msgid "MENU_LABEL_CONNECTION_ERROR_TITLE"
+msgstr ""
+
+msgid "MENU_LABEL_CONNECTION_TIMEOUT"
+msgstr ""
+
+msgid "MENU_LABEL_NO_SERVER_VERSION"
+msgstr ""
+
+msgid "MENU_LABEL_VERSION_MISMATCH_TITLE"
+msgstr ""
+
+msgid "MENU_LABEL_VERSION_MISMATCH"
+msgstr ""
+
+msgid "MENU_LABEL_CHOOSE_SERVER"
+msgstr ""
+
+msgid "MENU_LABEL_COPY"
+msgstr ""
+
+msgid "MENU_LABEL_LOBBY_CREATE"
+msgstr ""
+
+msgid "MENU_LABEL_LOBBY_JOIN"
+msgstr ""
+
+msgid "MENU_LOBBY_SETTINGS"
+msgstr ""
+
+msgid "MENU_SETTINGS_PUBLIC"
+msgstr ""
+
+msgid "MENU_SETTINGS_CAKE_COST"
+msgstr ""
+
+msgid "MENU_SETTINGS_TURNS"
+msgstr ""
+
+msgid "MENU_SETTINGS_ENABLE_TIMEOUT"
+msgstr ""
+
+msgid "MENU_SETTINGS_TIMEOUT"
+msgstr ""
+
+msgid "AI_DIFFICULTY"
+msgstr "Kesulitan AI:"
+
+msgid "DIFFICULTY_EASY"
+msgstr "Mudah"
+
+msgid "DIFFICULTY_NORMAL"
+msgstr "Normal"
+
+msgid "DIFFICULTY_HARD"
+msgstr "Sukar"
+
+msgid "CONTEXT_GNU_ACTION_TYPE"
+msgstr "Aksi GNU"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY"
+msgstr "Kualitas Grafis"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_HIGH"
+msgstr "Tinggi"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_MEDIUM"
+msgstr "Sedang"
+
+msgid "MENU_OPTIONS_GRAPHIC_QUALITY_LOW"
+msgstr "Rendah"
+
+msgid "MENU_OPTIONS_FXAA"
+msgstr ""
+
+msgid "MENU_GRAPHIC_QUALITY_REBOOT_NOTICE"
+msgstr "Mengubah kualitas grafik diterapkan setelah restart"
+
+msgid "MENU_LOBBY_ADD_PLAYER"
+msgstr ""
+
+msgid "CONTEXT_SPEAKER_SARA"
+msgstr "Sara"
+
+msgid "CONTEXT_WINNER_ANNOUNCEMENT"
+msgstr ""
+"Aku tahu kalian semua berjuang keras untuk menang, tetapi sekarang permainan "
+"telah berakhir dan kami membutuhkan pemenang. Dan pemenang ini adalah…"
+
+msgid "CONTEXT_WINNER_REVEAL_ONE_PLAYER"
+msgstr "[color=#ff3300]{0}[/color]!"
+
+msgid "CONTEXT_WINNER_REVEAL_TWO_PLAYER"
+msgstr "[color=#ff3300]{0}[/color] dan [color=#33ff00]{1}[/color]!"
+
+msgid "CONTEXT_WINNER_REVEAL_THREE_PLAYER"
+msgstr ""
+"[color=#ff3300]{0}[/color], [color=#33ff00]{1}[/color] dan [color=#00ff88]{2}"
+"[/color]!"
+
+msgid "CONTEXT_WINNER_REVEAL_FOUR_PLAYER"
+msgstr ""
+"[color=#ff3300]{0}[/color], [color=#33ff00]{1}[/color], [color=#00ff88]{2}[/"
+"color] dan [color=#ffff33]{3}[/color]!"
+
+msgid "CONTEXT_LABEL_CAKES"
+msgstr "Kue-kue"
+
+msgid "CONTEXT_LABEL_COOKIES"
+msgstr "Kuki-kuki"
+
+msgid "CONTEXT_GNU_NAME"
+msgstr "GNU"
+
+msgid "CONTEXT_GNU_EVENT_START"
+msgstr ""
+"Hei yang di sana, butuh bantuan? Biar kulihat, apa yang dapat kulakukan "
+"untukmu hari ini…"
+
+msgid "CONTEXT_GNU_MINIGAME_SOLO_MODERATION"
+msgstr ""
+
+msgid "CONTEXT_GNU_MINIGAME_SOLO"
+msgstr "Minigame Solo"
+
+msgid "CONTEXT_GNU_MINIGAME_COOP_MODERATION"
+msgstr "Ayo bermain bersama! Aku yakin ini akan terasa menyenangkan"
+
+msgid "CONTEXT_GNU_MINIGAME_COOP"
+msgstr "Minigame Coop"
+
+msgid "CONTEXT_GNU_SOLO_VICTORY"
+msgstr "Bagus. Ini hadiahmu!"
+
+msgid "CONTEXT_GNU_SOLO_LOSS"
+msgstr "Itu tidak berhasil. Mungkin lain kali."
+
+msgid "CONTEXT_GNU_COOP_VICTORY"
+msgstr ""
+
+msgid "CONTEXT_GNU_COOP_LOSS"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_NAME"
+msgstr "Nolok"
+
+msgid "CONTEXT_NOLOK_ACTION_TYPE"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_EVENT_START"
+msgstr "Ini giliranku! Aku tahu pasti, apa yang harus kulakukan…"
+
+msgid "CONTEXT_NOLOK_MINIGAME_SOLO_MODERATION"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_MINIGAME_SOLO"
+msgstr "Minigame Solo"
+
+msgid "CONTEXT_NOLOK_MINIGAME_COOP_MODERATION"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_MINIGAME_COOP"
+msgstr "Minigame Coop"
+
+msgid "CONTEXT_NOLOK_SOLO_VICTORY"
+msgstr "Bersyukurlah aku menyelamatkanmu!"
+
+msgid "CONTEXT_NOLOK_SOLO_LOSS"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_COOP_VICTORY"
+msgstr "Lain kali kau takkan menang."
+
+msgid "CONTEXT_NOLOK_COOP_LOSS"
+msgstr "Haha, kemenangan yang mudah."
+
+msgid "CONTEXT_NOLOK_LOSE_COOKIES_MODERATION"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_LOSE_COOKIES"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_ROLL_MODIFIER_MODERATION"
+msgstr ""
+
+msgid "CONTEXT_NOLOK_ROLL_MODIFIER"
+msgstr ""
+
+msgid "CONTEXT_SHOW_TUTORIAL"
+msgstr ""
+"Kelihatannya ini pertama kali kamu bermain. Ingin aku menjelaskan "
+"peraturannya?"
+
+msgid "CONTEXT_TUTORIAL_DICE"
+msgstr ""
+
+msgid "CONTEXT_TUTORIAL_COOKIES"
+msgstr ""
+
+msgid "CONTEXT_TUTORIAL_CAKES"
+msgstr ""
+
+msgid "CONTEXT_TUTORIAL_SPACES_NORMAL"
+msgstr ""
+"Ada berbagai jenis tempat kamu dapat mendarat: Tempat biru memberimu kuki, "
+"sedangkan tempat merah mengambil kukimu."
+
+msgid "CONTEXT_TUTORIAL_SPACES_SPECIAL"
+msgstr ""
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES"
+msgstr ""
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_FFA"
+msgstr ""
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_2V2"
+msgstr ""
+"Dua vs dua, di mana kamu bermain dalam tim yang terdiri dari dua orang."
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_1V3"
+msgstr ""
+
+msgid "CONTEXT_TUTORIAL_MINIGAMES_SPECIAL"
+msgstr ""
+
+msgid "CONTEXT_TUTORIAL_END"
+msgstr "Itu saja, sekarang kamu siap untuk pergi! Selamat bersenang-senang!"
+
+msgid "CONTEXT_CAKE_PLACED"
+msgstr "Ini kuenya, datang dan dapatkan!"
+
+msgid "CONTEXT_CAKE_WANT_BUY"
+msgstr "Apakah kamu ingin membeli sebuah kue?"
+
+msgid "CONTEXT_CAKE_BUY_AMOUNT"
+msgstr "Berapa kue yang ingin kamu beli?"
+
+msgid "CONTEXT_CAKE_COLLECTED"
+msgstr ""
+
+msgid "CONTEXT_CAKE_CANT_AFFORD"
+msgstr ""
+"Aku minta maaf tapi kamu tidak memiliki cukup kuki untuk membeli sebuah kue."
+
+msgid "SHOP_LABEL_TITLE"
+msgstr "Toko Item"
+
+msgid "SHOP_LABEL_DESCRIPTION"
+msgstr "Keterangan item"
+
+msgid "SHOP_ITEM_NO_DESCRIPTION"
+msgstr "Tak ada keterangan"
+
+msgid "REWARDSCREEN_MINIGAME_RESULTS"
+msgstr "Hasil Minigame"
+
+msgid "REWARDSCREEN_MINIGAME_WINNER"
+msgstr "Pemenang!"
+
+msgid "REWARDSCREEN_MINIGAME_REWARD"
+msgstr "Hadiah:"
+
+msgid "REWARDSCREEN_PRESS_BUTTON"
+msgstr "Tekan"
+
+msgid "MINIGAME_ACTION_MOVEMENT"
+msgstr "Bergerak"
+
+msgid "MINIGAME_TYPE_FFA"
+msgstr ""
+
+msgid "MINIGAME_TYPE_2v2"
+msgstr "Minigame dua lawan dua"
+
+msgid "MINIGAME_TYPE_1v3"
+msgstr "Minigame satu lawan tiga"
+
+msgid "MINIGAME_TYPE_DUEL"
+msgstr "Minigame duel"
+
+msgid "MINIGAME_TYPE_GNU_COOP"
+msgstr "Minigame GNU Coop"
+
+msgid "MINIGAME_TYPE_GNU_SOLO"
+msgstr "Minigame GNU Solo"
+
+msgid "MINIGAME_TYPE_NOLOK_COOP"
+msgstr "Minigame Nolok Coop"
+
+msgid "MINIGAME_TYPE_NOLOK_SOLO"
+msgstr "Minigame Nolok Solo"
+
+msgid "ERROR"
+msgstr ""
+
+msgid "SAVE_GAME_CANNOT_SAVE"
+msgstr ""
+
+msgid "SAVE_GAME_DISABLED"
+msgstr ""
+
+#~ msgid "MENU_LABEL_CHARACTER"
+#~ msgstr "Karakter:"
+
+#~ msgid "MENU_LABEL_LINEAR"
+#~ msgstr "Linier"
+
+#~ msgid "MENU_LABEL_NINTENDO_DS"
+#~ msgstr "Nintendo DS"
+
+#~ msgid "MENU_LABEL_NOT_READY_ELLIPSIS"
+#~ msgstr "Belum siap…"
+
+#~ msgid "MENU_LABEL_NUMBERS"
+#~ msgstr "Nomor"
+
+#~ msgid "MENU_LABEL_NUM_1"
+#~ msgstr "1"
+
+#~ msgid "MENU_LABEL_NUM_2"
+#~ msgstr "2"
+
+#~ msgid "MENU_LABEL_NUM_3"
+#~ msgstr "3"
+
+#~ msgid "MENU_LABEL_NUM_4"
+#~ msgstr "4"
+
+#~ msgid "MENU_LABEL_OK"
+#~ msgstr "Oke"
+
+#~ msgid "MENU_LABEL_PLAYSTATION"
+#~ msgstr "PlayStation"
+
+#~ msgid "MENU_LABEL_REWARD_SYSTEM"
+#~ msgstr "Sistem Hadiah:"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_1"
+#~ msgstr "Pilih karakter untuk pemain 1"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_2"
+#~ msgstr "Pilih karakter untuk pemain 2"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_3"
+#~ msgstr "Pilih karakter untuk pemain 3"
+
+#~ msgid "MENU_LABEL_SELECT_CHARACTER_PLAYER_4"
+#~ msgstr "Pilih karakter untuk pemain 4"
+
+#~ msgid "MENU_LABEL_SELECT_NUM_PLAYERS"
+#~ msgstr "Pilih jumlah pemain"
+
+#~ msgid "MENU_LABEL_BOARD_SETTINGS"
+#~ msgstr "Pengaturan Papan"
+
+#~ msgid "MENU_LABEL_WINNER_TAKES_ALL"
+#~ msgstr "Pemenang mendapat semuanya"
+
+#~ msgid "MENU_LABEL_XBOX"
+#~ msgstr "XBOX"
+
+#~ msgid "MENU_LABEL_CAKE_COST"
+#~ msgstr "Harga kue:"
+
+#~ msgid "MENU_LABEL_TURNS"
+#~ msgstr "Giliran:"
+
+#~ msgid "MENU_LABEL_TITLE"
+#~ msgstr "Super Tux Party"

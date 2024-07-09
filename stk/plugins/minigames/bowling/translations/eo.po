@@ -1,0 +1,52 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2021-10-01 00:40+0000\n"
+"Last-Translator: phlostically <phlostically@mailinator.com>\n"
+"Language-Team: Esperanto <https://hosted.weblate.org/projects/"
+"super-tux-party/minigamesbowling/eo/>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9-dev\n"
+
+msgid "MINIGAME_NAME"
+msgstr "Kegloludo"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+"La sola ludanto devas pafi ĉiujn aliajn ludantojn for de la platformo por "
+"gajni.\n"
+"Se la tempolimo estos atingita, la grupo gajnos.\n"
+"Atentu pri falantaj skatoloj. Ili senkonsciigas vin se ili batas vin, sed "
+"ili ankaŭ blokas kuglojn."
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Movi sin supren"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Movi sin malsupren"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Movi sin maldekstren"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Movi sin dekstren"
+
+msgid "MINIGAME_ACTION_JUMP"
+msgstr "Salti"
+
+msgid "MINIGAME_ACTION_THROW"
+msgstr "Ĵeti pilkon"
+
+msgid "BOWLING_FINISH_MSG"
+msgstr "Finu!"
+
+msgid "MINIGAME_ACTION_MOVE"
+msgstr "Movi sin"

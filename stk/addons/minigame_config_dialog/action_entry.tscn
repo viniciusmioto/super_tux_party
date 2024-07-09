@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dtlds8s740kbn"]
+
+[node name="Action" type="HBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1280.0
+offset_bottom = -720.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="."]
+offset_top = 3.0
+offset_bottom = 17.0
+size_flags_horizontal = 3
+
+[node name="Remove" type="Button" parent="."]
+offset_left = 4.0
+offset_right = 23.0
+offset_bottom = 20.0
+text = "x"
+
+[connection signal="pressed" from="Remove" to="." method="queue_free"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bbjyqebn0cmp7"
+path="res://.godot/imported/Red Curtain.ogg-e980d67a9914535f37de4ccef265c43b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/menus/Red Curtain.ogg"
+dest_files=["res://.godot/imported/Red Curtain.ogg-e980d67a9914535f37de4ccef265c43b.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

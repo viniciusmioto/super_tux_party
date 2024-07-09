@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://q2xb08bih6oq"]
+
+[resource]
+resource_name = "trash_yellow"
+cull_mode = 2
+albedo_color = Color(0.905882, 0.905882, 0.278431, 1)
+roughness = 0.4

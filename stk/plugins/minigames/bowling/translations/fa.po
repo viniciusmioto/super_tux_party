@@ -1,0 +1,28 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2019-10-29 23:15:51.285615\n"
+"Last-Translator: Automatically generated\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "MINIGAME_NAME"
+msgstr ""
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr ""
+
+msgid "MINIGAME_ACTION_JUMP"
+msgstr ""
+
+msgid "MINIGAME_ACTION_THROW"
+msgstr ""
+
+msgid "BOWLING_FINISH_MSG"
+msgstr ""
