@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://ctv63qqc8166c"]
+
+[ext_resource type="PackedScene" uid="uid://b80beknynrm1x" path="res://plugins/minigames/forest_run/Forest Arena/exported/Castle.escn" id="1_y7h1v"]
+[ext_resource type="Material" uid="uid://vhs1rpuqw4me" path="res://plugins/minigames/forest_run/Forest Arena/material.tres" id="2_sedrk"]
+[ext_resource type="PackedScene" uid="uid://exje1g3t7h3i" path="res://plugins/minigames/forest_run/Forest Arena/exported/CastleDoorL.escn" id="3_p5ery"]
+[ext_resource type="PackedScene" uid="uid://cf8e2se8g568b" path="res://plugins/minigames/forest_run/Forest Arena/exported/CastleDoorR.escn" id="4_bir14"]
+
+[node name="Castle" instance=ExtResource("1_y7h1v")]
+
+[node name="ForestCastle" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_sedrk")
+
+[node name="Scene Root" parent="." index="1" instance=ExtResource("3_p5ery")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 2, 2.25)
+
+[node name="ForestCastleDoorL" parent="Scene Root" index="0"]
+surface_material_override/0 = ExtResource("2_sedrk")
+
+[node name="Scene Root2" parent="." index="2" instance=ExtResource("4_bir14")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 2, 2.25)
+
+[node name="ForestCastleDoorR" parent="Scene Root2" index="0"]
+surface_material_override/0 = ExtResource("2_sedrk")
+
+[editable path="Scene Root"]
+[editable path="Scene Root2"]

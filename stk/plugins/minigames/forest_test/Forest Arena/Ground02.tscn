@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://fdylxk741ovc"]
+
+[ext_resource type="PackedScene" uid="uid://bx4opo6run0ql" path="res://plugins/minigames/forest_run/Forest Arena/exported/Ground02.escn" id="1_siofb"]
+[ext_resource type="Material" uid="uid://vhs1rpuqw4me" path="res://plugins/minigames/forest_run/Forest Arena/material.tres" id="2_x8r7l"]
+
+[sub_resource type="BoxShape3D" id="2"]
+size = Vector3(2, 2, 2)
+
+[node name="Ground02" instance=ExtResource("1_siofb")]
+
+[node name="ForestGround02" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+surface_material_override/0 = ExtResource("2_x8r7l")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.95, 0)
+shape = SubResource("2")

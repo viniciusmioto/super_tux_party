@@ -1,8 +1,8 @@
 {
   "name": "MINIGAME_NAME",
-  "scene_path": "res://plugins/minigames/forest_run/minigame.tscn",
-  "image_path": "res://plugins/minigames/forest_run/screenshot.png",
-  "translation_directory": "res://plugins/minigames/forest_run/translations",
+  "scene_path": "res://plugins/minigames/forest_test/minigame.tscn",
+  "image_path": "res://plugins/minigames/forest_test/screenshot.png",
+  "translation_directory": "res://plugins/minigames/forest_test/translations",
   "type": ["GnuSolo"],
   "description": "MINIGAME_DESCRIPTION",
   "controls": [

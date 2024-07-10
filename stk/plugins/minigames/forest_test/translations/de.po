@@ -1,0 +1,38 @@
+# Translations template for Super Tux Party.
+# Copyright (C) 2019 Super Tux Party Contributors
+# This file is distributed under the same license as the Super Tux Party project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7\n"
+"PO-Revision-Date: 2020-10-14 21:26+0000\n"
+"Last-Translator: Florian Kothmeier <floriankothmeier@web.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/super-tux-party/"
+"minigamesforest_run/de/>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.3-dev\n"
+
+msgid "MINIGAME_NAME"
+msgstr "Waldlauf"
+
+msgid "MINIGAME_DESCRIPTION"
+msgstr "Erreiche das Ziel in diesem Jump and Run minigame"
+
+msgid "MINIGAME_ACTION_UP"
+msgstr "Nach oben bewegen"
+
+msgid "MINIGAME_ACTION_DOWN"
+msgstr "Nach unten bewegen"
+
+msgid "MINIGAME_ACTION_LEFT"
+msgstr "Nach links bewegen"
+
+msgid "MINIGAME_ACTION_RIGHT"
+msgstr "Nach rechts bewegen"
+
+msgid "MINIGAME_ACTION_JUMP"
+msgstr "Springen"
